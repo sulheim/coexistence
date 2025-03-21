@@ -1,0 +1,3085 @@
+,Well,Batch,CFUs/mL,Strain,Carbon source,Replicate
+0,Inoculum,0,20689655.172413792,At,,
+1,Inoculum,0,20689655.172413792,At,,
+2,Inoculum,0,14778325.123152709,At,,
+3,A1,1,420000000.0,At,Acetate,1.0
+4,A2,1,380000000.0,At,Acetate,2.0
+5,A3,1,360000000.0,At,Acetate,3.0
+6,A4,1,6800000000.0,At,D-Glucose,1.0
+7,A5,1,5200000000.0,At,D-Glucose,2.0
+8,A6,1,3400000000.0,At,D-Glucose,3.0
+9,A7,1,42000000.0,At,Citrate,1.0
+10,A8,1,44000000.0,At,Citrate,2.0
+11,A9,1,36000000.0,At,Citrate,3.0
+12,A10,1,100000000.0,At,Glutarate,1.0
+13,A11,1,160000000.0,At,Glutarate,2.0
+14,A12,1,120000000.0,At,Glutarate,3.0
+15,B1,1,4200000000.0,At,Glycerol,1.0
+16,B2,1,4600000000.0,At,Glycerol,2.0
+17,B3,1,4000000000.0,At,Glycerol,3.0
+18,B4,1,500000000.0,At,Inosine,1.0
+19,B5,1,380000000.0,At,Inosine,2.0
+20,B6,1,460000000.0,At,Inosine,3.0
+21,B7,1,2800000000.0,At,L-Alanine,1.0
+22,B8,1,2600000000.0,At,L-Alanine,2.0
+23,B9,1,4000000000.0,At,L-Alanine,3.0
+24,B10,1,180000000.0,At,L-Glutamate,1.0
+25,B11,1,240000000.0,At,L-Glutamate,2.0
+26,B12,1,160000000.0,At,L-Glutamate,3.0
+27,C1,1,1200000000.0,At,L-Histidine,1.0
+28,C2,1,1800000000.0,At,L-Histidine,2.0
+29,C3,1,1000000000.0,At,L-Histidine,3.0
+30,C4,1,80000000.0,At,L-Isoleucine,1.0
+31,C5,1,160000000.0,At,L-Isoleucine,2.0
+32,C6,1,40000000.0,At,L-Isoleucine,3.0
+33,C7,1,140000000.0,At,Malate,1.0
+34,C8,1,200000000.0,At,Malate,2.0
+35,C9,1,120000000.0,At,Malate,3.0
+36,C10,1,2600000000.0,At,Mannitol,1.0
+37,C11,1,1600000000.0,At,Mannitol,2.0
+38,C12,1,3400000000.0,At,Mannitol,3.0
+39,D1,1,3600000000.0,At,Mannose,1.0
+40,D2,1,2600000000.0,At,Mannose,2.0
+41,D3,1,3400000000.0,At,Mannose,3.0
+42,D4,1,2800000000.0,At,Myo-inositol,1.0
+43,D5,1,1600000000.0,At,Myo-inositol,2.0
+44,D6,1,3200000000.0,At,Myo-inositol,3.0
+45,D7,1,4200000000.0,At,D-Xylose,1.0
+46,D8,1,5200000000.0,At,D-Xylose,2.0
+47,D9,1,4800000000.0,At,D-Xylose,3.0
+48,D10,1,5400000000.0,At,Ribose,1.0
+49,D11,1,8800000000.0,At,Ribose,2.0
+50,D12,1,6600000000.0,At,Ribose,3.0
+51,E1,1,4000000000.0,At,Citrate + D-Glucose,1.0
+52,E2,1,3600000000.0,At,Citrate + D-Glucose,2.0
+53,E3,1,2800000000.0,At,Citrate + D-Glucose,3.0
+54,E4,1,2400000000.0,At,Glycerol + L-Isoleucine,1.0
+55,E5,1,2600000000.0,At,Glycerol + L-Isoleucine,2.0
+56,E6,1,2400000000.0,At,Glycerol + L-Isoleucine,3.0
+57,E7,1,1000000000.0,At,Glutarate + Inosine,1.0
+58,E8,1,800000000.0,At,Glutarate + Inosine,2.0
+59,E9,1,600000000.0,At,Glutarate + Inosine,3.0
+60,E10,1,120000000.0,At,Malate + Citrate,1.0
+61,E11,1,140000000.0,At,Malate + Citrate,2.0
+62,E12,1,180000000.0,At,Malate + Citrate,3.0
+63,F1,1,800000000.0,At,Acetate + L-Alanine,1.0
+64,F2,1,1200000000.0,At,Acetate + L-Alanine,2.0
+65,F3,1,200000000.0,At,Acetate + L-Alanine,3.0
+66,F4,1,1400000000.0,At,L-Glutamate + Mannose,1.0
+67,F5,1,1800000000.0,At,L-Glutamate + Mannose,2.0
+68,F6,1,2000000000.0,At,L-Glutamate + Mannose,3.0
+69,F7,1,2200000000.0,At,L-Histidine + Mannose,1.0
+70,F8,1,2400000000.0,At,L-Histidine + Mannose,2.0
+71,F9,1,800000000.0,At,L-Histidine + Mannose,3.0
+72,F10,1,1200000000.0,At,Mannitol + Acetate,1.0
+73,F11,1,200000000.0,At,Mannitol + Acetate,2.0
+74,F12,1,1400000000.0,At,Mannitol + Acetate,3.0
+75,G1,1,1600000000.0,At,Myo-inositol + L-Glutamate,1.0
+76,G2,1,1400000000.0,At,Myo-inositol + L-Glutamate,2.0
+77,G3,1,1200000000.0,At,Myo-inositol + L-Glutamate,3.0
+78,G4,1,1600000000.0,At,Ribose + Glutarate,1.0
+79,G5,1,1600000000.0,At,Ribose + Glutarate,2.0
+80,G6,1,1600000000.0,At,Ribose + Glutarate,3.0
+81,G7,1,2000000000.0,At,D-Xylose + L-Histidine,1.0
+82,G8,1,3200000000.0,At,D-Xylose + L-Histidine,2.0
+83,G9,1,3400000000.0,At,D-Xylose + L-Histidine,3.0
+84,G10,1,5000000000.0,At,Glycerol + Inosine,1.0
+85,G11,1,4800000000.0,At,Glycerol + Inosine,2.0
+86,G12,1,4400000000.0,At,Glycerol + Inosine,3.0
+87,H1,1,5600000000.0,At,L-Alanine + D-Glucose,1.0
+88,H2,1,5000000000.0,At,L-Alanine + D-Glucose,2.0
+89,H3,1,5400000000.0,At,L-Alanine + D-Glucose,3.0
+90,H4,1,80000000.0,At,Malate + L-Isoleucine,1.0
+91,H5,1,140000000.0,At,Malate + L-Isoleucine,2.0
+92,H6,1,100000000.0,At,Malate + L-Isoleucine,3.0
+93,H7,1,3000000000.0,At,Mannitol + Myo-inositol,1.0
+94,H8,1,3400000000.0,At,Mannitol + Myo-inositol,2.0
+95,H9,1,3600000000.0,At,Mannitol + Myo-inositol,3.0
+96,H10,1,12000000.0,At,No CS,1.0
+97,H11,1,20000000.0,At,No CS,2.0
+98,H12,1,22000000.0,At,No CS,3.0
+99,A1,2,1800000000.0,At,Acetate,1.0
+100,A2,2,1200000000.0,At,Acetate,2.0
+101,A3,2,1000000000.0,At,Acetate,3.0
+102,A4,2,6400000000.0,At,D-Glucose,1.0
+103,A5,2,6000000000.0,At,D-Glucose,2.0
+104,A6,2,5400000000.0,At,D-Glucose,3.0
+105,A7,2,260000000.0,At,Citrate,1.0
+106,A8,2,140000000.0,At,Citrate,2.0
+107,A9,2,160000000.0,At,Citrate,3.0
+108,A10,2,42000000.0,At,Glutarate,1.0
+109,A11,2,48000000.0,At,Glutarate,2.0
+110,A12,2,66000000.0,At,Glutarate,3.0
+111,B1,2,6800000000.0,At,Glycerol,1.0
+112,B2,2,4800000000.0,At,Glycerol,2.0
+113,B3,2,6200000000.0,At,Glycerol,3.0
+114,B4,2,720000000.0,At,Inosine,1.0
+115,B5,2,620000000.0,At,Inosine,2.0
+116,B6,2,460000000.0,At,Inosine,3.0
+117,B7,2,2400000000.0,At,L-Alanine,1.0
+118,B8,2,4000000000.0,At,L-Alanine,2.0
+119,B9,2,4200000000.0,At,L-Alanine,3.0
+120,B10,2,36000000.0,At,L-Glutamate,1.0
+121,B11,2,34000000.0,At,L-Glutamate,2.0
+122,B12,2,,At,L-Glutamate,3.0
+123,C1,2,2000000000.0,At,L-Histidine,1.0
+124,C2,2,2000000000.0,At,L-Histidine,2.0
+125,C3,2,1200000000.0,At,L-Histidine,3.0
+126,C4,2,10800000.0,At,L-Isoleucine,1.0
+127,C5,2,8800000.0,At,L-Isoleucine,2.0
+128,C6,2,7800000.0,At,L-Isoleucine,3.0
+129,C7,2,60000000.0,At,Malate,1.0
+130,C8,2,120000000.0,At,Malate,2.0
+131,C9,2,100000000.0,At,Malate,3.0
+132,C10,2,3200000000.0,At,Mannitol,1.0
+133,C11,2,2000000000.0,At,Mannitol,2.0
+134,C12,2,3000000000.0,At,Mannitol,3.0
+135,D1,2,4400000000.0,At,Mannose,1.0
+136,D2,2,3400000000.0,At,Mannose,2.0
+137,D3,2,4000000000.0,At,Mannose,3.0
+138,D4,2,4000000000.0,At,Myo-inositol,1.0
+139,D5,2,3600000000.0,At,Myo-inositol,2.0
+140,D6,2,5000000000.0,At,Myo-inositol,3.0
+141,D7,2,4600000000.0,At,D-Xylose,1.0
+142,D8,2,6000000000.0,At,D-Xylose,2.0
+143,D9,2,6400000000.0,At,D-Xylose,3.0
+144,D10,2,4800000000.0,At,Ribose,1.0
+145,D11,2,5000000000.0,At,Ribose,2.0
+146,D12,2,5000000000.0,At,Ribose,3.0
+147,E1,2,4000000000.0,At,Citrate + D-Glucose,1.0
+148,E2,2,2400000000.0,At,Citrate + D-Glucose,2.0
+149,E3,2,2600000000.0,At,Citrate + D-Glucose,3.0
+150,E4,2,2000000000.0,At,Glycerol + L-Isoleucine,1.0
+151,E5,2,1800000000.0,At,Glycerol + L-Isoleucine,2.0
+152,E6,2,1400000000.0,At,Glycerol + L-Isoleucine,3.0
+153,E7,2,1400000000.0,At,Glutarate + Inosine,1.0
+154,E8,2,400000000.0,At,Glutarate + Inosine,2.0
+155,E9,2,800000000.0,At,Glutarate + Inosine,3.0
+156,E10,2,120000000.0,At,Malate + Citrate,1.0
+157,E11,2,140000000.0,At,Malate + Citrate,2.0
+158,E12,2,120000000.0,At,Malate + Citrate,3.0
+159,F1,2,800000000.0,At,Acetate + L-Alanine,1.0
+160,F2,2,400000000.0,At,Acetate + L-Alanine,2.0
+161,F3,2,1000000000.0,At,Acetate + L-Alanine,3.0
+162,F4,2,1600000000.0,At,L-Glutamate + Mannose,1.0
+163,F5,2,1000000000.0,At,L-Glutamate + Mannose,2.0
+164,F6,2,1800000000.0,At,L-Glutamate + Mannose,3.0
+165,F7,2,2400000000.0,At,L-Histidine + Mannose,1.0
+166,F8,2,1600000000.0,At,L-Histidine + Mannose,2.0
+167,F9,2,2400000000.0,At,L-Histidine + Mannose,3.0
+168,F10,2,2000000000.0,At,Mannitol + Acetate,1.0
+169,F11,2,1800000000.0,At,Mannitol + Acetate,2.0
+170,F12,2,1600000000.0,At,Mannitol + Acetate,3.0
+171,G1,2,1800000000.0,At,Myo-inositol + L-Glutamate,1.0
+172,G2,2,2200000000.0,At,Myo-inositol + L-Glutamate,2.0
+173,G3,2,1200000000.0,At,Myo-inositol + L-Glutamate,3.0
+174,G4,2,1000000000.0,At,Ribose + Glutarate,1.0
+175,G5,2,2400000000.0,At,Ribose + Glutarate,2.0
+176,G6,2,2600000000.0,At,Ribose + Glutarate,3.0
+177,G7,2,3200000000.0,At,D-Xylose + L-Histidine,1.0
+178,G8,2,4400000000.0,At,D-Xylose + L-Histidine,2.0
+179,G9,2,3800000000.0,At,D-Xylose + L-Histidine,3.0
+180,G10,2,6800000000.0,At,Glycerol + Inosine,1.0
+181,G11,2,6600000000.0,At,Glycerol + Inosine,2.0
+182,G12,2,7000000000.0,At,Glycerol + Inosine,3.0
+183,H1,2,4600000000.0,At,L-Alanine + D-Glucose,1.0
+184,H2,2,5000000000.0,At,L-Alanine + D-Glucose,2.0
+185,H3,2,5200000000.0,At,L-Alanine + D-Glucose,3.0
+186,H4,2,26000000.0,At,Malate + L-Isoleucine,1.0
+187,H5,2,38000000.0,At,Malate + L-Isoleucine,2.0
+188,H6,2,28000000.0,At,Malate + L-Isoleucine,3.0
+189,H7,2,4200000000.0,At,Mannitol + Myo-inositol,1.0
+190,H8,2,5600000000.0,At,Mannitol + Myo-inositol,2.0
+191,H9,2,3800000000.0,At,Mannitol + Myo-inositol,3.0
+192,H10,2,800000.0,At,No CS,1.0
+193,H11,2,1000000.0,At,No CS,2.0
+194,H12,2,1200000.0,At,No CS,3.0
+195,A1,3,1200000000.0,At,Acetate,1.0
+196,A2,3,1200000000.0,At,Acetate,2.0
+197,A3,3,1600000000.0,At,Acetate,3.0
+198,A4,3,8000000000.0,At,D-Glucose,1.0
+199,A5,3,14000000000.0,At,D-Glucose,2.0
+200,A6,3,10000000000.0,At,D-Glucose,3.0
+201,A7,3,260000000.0,At,Citrate,1.0
+202,A8,3,240000000.0,At,Citrate,2.0
+203,A9,3,220000000.0,At,Citrate,3.0
+204,A10,3,30000000.0,At,Glutarate,1.0
+205,A11,3,28000000.0,At,Glutarate,2.0
+206,A12,3,44000000.0,At,Glutarate,3.0
+207,B1,3,8000000000.0,At,Glycerol,1.0
+208,B2,3,6000000000.0,At,Glycerol,2.0
+209,B3,3,6000000000.0,At,Glycerol,3.0
+210,B4,3,800000000.0,At,Inosine,1.0
+211,B5,3,1000000000.0,At,Inosine,2.0
+212,B6,3,800000000.0,At,Inosine,3.0
+213,B7,3,3200000000.0,At,L-Alanine,1.0
+214,B8,3,2200000000.0,At,L-Alanine,2.0
+215,B9,3,3000000000.0,At,L-Alanine,3.0
+216,B10,3,56000000.0,At,L-Glutamate,1.0
+217,B11,3,52000000.0,At,L-Glutamate,2.0
+218,B12,3,86000000.0,At,L-Glutamate,3.0
+219,C1,3,2200000000.0,At,L-Histidine,1.0
+220,C2,3,1600000000.0,At,L-Histidine,2.0
+221,C3,3,1600000000.0,At,L-Histidine,3.0
+222,C4,3,2200000.0,At,L-Isoleucine,1.0
+223,C5,3,2200000.0,At,L-Isoleucine,2.0
+224,C6,3,2400000.0,At,L-Isoleucine,3.0
+225,C7,3,220000000.0,At,Malate,1.0
+226,C8,3,220000000.0,At,Malate,2.0
+227,C9,3,240000000.0,At,Malate,3.0
+228,C10,3,2800000000.0,At,Mannitol,1.0
+229,C11,3,3200000000.0,At,Mannitol,2.0
+230,C12,3,2400000000.0,At,Mannitol,3.0
+231,D1,3,3600000000.0,At,Mannose,1.0
+232,D2,3,2600000000.0,At,Mannose,2.0
+233,D3,3,3000000000.0,At,Mannose,3.0
+234,D4,3,3600000000.0,At,Myo-inositol,1.0
+235,D5,3,3400000000.0,At,Myo-inositol,2.0
+236,D6,3,3000000000.0,At,Myo-inositol,3.0
+237,D7,3,2800000000.0,At,D-Xylose,1.0
+238,D8,3,3400000000.0,At,D-Xylose,2.0
+239,D9,3,3200000000.0,At,D-Xylose,3.0
+240,D10,3,2600000000.0,At,Ribose,1.0
+241,D11,3,3400000000.0,At,Ribose,2.0
+242,D12,3,3600000000.0,At,Ribose,3.0
+243,E1,3,2600000000.0,At,Citrate + D-Glucose,1.0
+244,E2,3,4000000000.0,At,Citrate + D-Glucose,2.0
+245,E3,3,1800000000.0,At,Citrate + D-Glucose,3.0
+246,E4,3,2400000000.0,At,Glycerol + L-Isoleucine,1.0
+247,E5,3,3200000000.0,At,Glycerol + L-Isoleucine,2.0
+248,E6,3,2800000000.0,At,Glycerol + L-Isoleucine,3.0
+249,E7,3,120000000.0,At,Glutarate + Inosine,1.0
+250,E8,3,240000000.0,At,Glutarate + Inosine,2.0
+251,E9,3,300000000.0,At,Glutarate + Inosine,3.0
+252,E10,3,160000000.0,At,Malate + Citrate,1.0
+253,E11,3,160000000.0,At,Malate + Citrate,2.0
+254,E12,3,180000000.0,At,Malate + Citrate,3.0
+255,F1,3,1000000000.0,At,Acetate + L-Alanine,1.0
+256,F2,3,600000000.0,At,Acetate + L-Alanine,2.0
+257,F3,3,800000000.0,At,Acetate + L-Alanine,3.0
+258,F4,3,2600000000.0,At,L-Glutamate + Mannose,1.0
+259,F5,3,3200000000.0,At,L-Glutamate + Mannose,2.0
+260,F6,3,2800000000.0,At,L-Glutamate + Mannose,3.0
+261,F7,3,4000000000.0,At,L-Histidine + Mannose,1.0
+262,F8,3,3200000000.0,At,L-Histidine + Mannose,2.0
+263,F9,3,2200000000.0,At,L-Histidine + Mannose,3.0
+264,F10,3,1600000000.0,At,Mannitol + Acetate,1.0
+265,F11,3,2600000000.0,At,Mannitol + Acetate,2.0
+266,F12,3,2000000000.0,At,Mannitol + Acetate,3.0
+267,G1,3,1200000000.0,At,Myo-inositol + L-Glutamate,1.0
+268,G2,3,1400000000.0,At,Myo-inositol + L-Glutamate,2.0
+269,G3,3,2000000000.0,At,Myo-inositol + L-Glutamate,3.0
+270,G4,3,1200000000.0,At,Ribose + Glutarate,1.0
+271,G5,3,1200000000.0,At,Ribose + Glutarate,2.0
+272,G6,3,800000000.0,At,Ribose + Glutarate,3.0
+273,G7,3,3800000000.0,At,D-Xylose + L-Histidine,1.0
+274,G8,3,3400000000.0,At,D-Xylose + L-Histidine,2.0
+275,G9,3,3200000000.0,At,D-Xylose + L-Histidine,3.0
+276,G10,3,12000000000.0,At,Glycerol + Inosine,1.0
+277,G11,3,12000000000.0,At,Glycerol + Inosine,2.0
+278,G12,3,14000000000.0,At,Glycerol + Inosine,3.0
+279,H1,3,12000000000.0,At,L-Alanine + D-Glucose,1.0
+280,H2,3,4000000000.0,At,L-Alanine + D-Glucose,2.0
+281,H3,3,10000000000.0,At,L-Alanine + D-Glucose,3.0
+282,H4,3,34000000.0,At,Malate + L-Isoleucine,1.0
+283,H5,3,24000000.0,At,Malate + L-Isoleucine,2.0
+284,H6,3,26000000.0,At,Malate + L-Isoleucine,3.0
+285,H7,3,2800000000.0,At,Mannitol + Myo-inositol,1.0
+286,H8,3,1800000000.0,At,Mannitol + Myo-inositol,2.0
+287,H9,3,1600000000.0,At,Mannitol + Myo-inositol,3.0
+288,H10,3,600000.0,At,No CS,1.0
+289,H11,3,400000.0,At,No CS,2.0
+290,H12,3,1000000.0,At,No CS,3.0
+291,A1,4,1800000000.0,At,Acetate,1.0
+292,A2,4,2200000000.0,At,Acetate,2.0
+293,A3,4,1600000000.0,At,Acetate,3.0
+294,A4,4,12000000000.0,At,D-Glucose,1.0
+295,A5,4,10000000000.0,At,D-Glucose,2.0
+296,A6,4,12000000000.0,At,D-Glucose,3.0
+297,A7,4,112000000.0,At,Citrate,1.0
+298,A8,4,140000000.0,At,Citrate,2.0
+299,A9,4,104000000.0,At,Citrate,3.0
+300,A10,4,24000000.0,At,Glutarate,1.0
+301,A11,4,32000000.0,At,Glutarate,2.0
+302,A12,4,14000000.0,At,Glutarate,3.0
+303,B1,4,10000000000.0,At,Glycerol,1.0
+304,B2,4,8000000000.0,At,Glycerol,2.0
+305,B3,4,8000000000.0,At,Glycerol,3.0
+306,B4,4,400000000.0,At,Inosine,1.0
+307,B5,4,600000000.0,At,Inosine,2.0
+308,B6,4,800000000.0,At,Inosine,3.0
+309,B7,4,2600000000.0,At,L-Alanine,1.0
+310,B8,4,3000000000.0,At,L-Alanine,2.0
+311,B9,4,2400000000.0,At,L-Alanine,3.0
+312,B10,4,48000000.0,At,L-Glutamate,1.0
+313,B11,4,46000000.0,At,L-Glutamate,2.0
+314,B12,4,50000000.0,At,L-Glutamate,3.0
+315,C1,4,2600000000.0,At,L-Histidine,1.0
+316,C2,4,2200000000.0,At,L-Histidine,2.0
+317,C3,4,1800000000.0,At,L-Histidine,3.0
+318,C4,4,1000000.0,At,L-Isoleucine,1.0
+319,C5,4,1200000.0,At,L-Isoleucine,2.0
+320,C6,4,1000000.0,At,L-Isoleucine,3.0
+321,C7,4,112000000.0,At,Malate,1.0
+322,C8,4,106000000.0,At,Malate,2.0
+323,C9,4,90000000.0,At,Malate,3.0
+324,C10,4,3000000000.0,At,Mannitol,1.0
+325,C11,4,2600000000.0,At,Mannitol,2.0
+326,C12,4,2800000000.0,At,Mannitol,3.0
+327,D1,4,4600000000.0,At,Mannose,1.0
+328,D2,4,3200000000.0,At,Mannose,2.0
+329,D3,4,3000000000.0,At,Mannose,3.0
+330,D4,4,2200000000.0,At,Myo-inositol,1.0
+331,D5,4,2600000000.0,At,Myo-inositol,2.0
+332,D6,4,2400000000.0,At,Myo-inositol,3.0
+333,D7,4,2200000000.0,At,D-Xylose,1.0
+334,D8,4,3200000000.0,At,D-Xylose,2.0
+335,D9,4,4000000000.0,At,D-Xylose,3.0
+336,D10,4,3400000000.0,At,Ribose,1.0
+337,D11,4,4000000000.0,At,Ribose,2.0
+338,D12,4,3000000000.0,At,Ribose,3.0
+339,E1,4,3800000000.0,At,Citrate + D-Glucose,1.0
+340,E2,4,3200000000.0,At,Citrate + D-Glucose,2.0
+341,E3,4,2600000000.0,At,Citrate + D-Glucose,3.0
+342,E4,4,1000000000.0,At,Glycerol + L-Isoleucine,1.0
+343,E5,4,1200000000.0,At,Glycerol + L-Isoleucine,2.0
+344,E6,4,1400000000.0,At,Glycerol + L-Isoleucine,3.0
+345,E7,4,160000000.0,At,Glutarate + Inosine,1.0
+346,E8,4,220000000.0,At,Glutarate + Inosine,2.0
+347,E9,4,240000000.0,At,Glutarate + Inosine,3.0
+348,E10,4,120000000.0,At,Malate + Citrate,1.0
+349,E11,4,80000000.0,At,Malate + Citrate,2.0
+350,E12,4,100000000.0,At,Malate + Citrate,3.0
+351,F1,4,1200000000.0,At,Acetate + L-Alanine,1.0
+352,F2,4,800000000.0,At,Acetate + L-Alanine,2.0
+353,F3,4,800000000.0,At,Acetate + L-Alanine,3.0
+354,F4,4,2200000000.0,At,L-Glutamate + Mannose,1.0
+355,F5,4,1600000000.0,At,L-Glutamate + Mannose,2.0
+356,F6,4,2400000000.0,At,L-Glutamate + Mannose,3.0
+357,F7,4,3000000000.0,At,L-Histidine + Mannose,1.0
+358,F8,4,2000000000.0,At,L-Histidine + Mannose,2.0
+359,F9,4,3200000000.0,At,L-Histidine + Mannose,3.0
+360,F10,4,1800000000.0,At,Mannitol + Acetate,1.0
+361,F11,4,1600000000.0,At,Mannitol + Acetate,2.0
+362,F12,4,1400000000.0,At,Mannitol + Acetate,3.0
+363,G1,4,1600000000.0,At,Myo-inositol + L-Glutamate,1.0
+364,G2,4,1200000000.0,At,Myo-inositol + L-Glutamate,2.0
+365,G3,4,1200000000.0,At,Myo-inositol + L-Glutamate,3.0
+366,G4,4,1000000000.0,At,Ribose + Glutarate,1.0
+367,G5,4,1200000000.0,At,Ribose + Glutarate,2.0
+368,G6,4,1600000000.0,At,Ribose + Glutarate,3.0
+369,G7,4,4000000000.0,At,D-Xylose + L-Histidine,1.0
+370,G8,4,3400000000.0,At,D-Xylose + L-Histidine,2.0
+371,G9,4,2800000000.0,At,D-Xylose + L-Histidine,3.0
+372,G10,4,4800000000.0,At,Glycerol + Inosine,1.0
+373,G11,4,5600000000.0,At,Glycerol + Inosine,2.0
+374,G12,4,4000000000.0,At,Glycerol + Inosine,3.0
+375,H1,4,3600000000.0,At,L-Alanine + D-Glucose,1.0
+376,H2,4,2800000000.0,At,L-Alanine + D-Glucose,2.0
+377,H3,4,2800000000.0,At,L-Alanine + D-Glucose,3.0
+378,H4,4,28000000.0,At,Malate + L-Isoleucine,1.0
+379,H5,4,20000000.0,At,Malate + L-Isoleucine,2.0
+380,H6,4,18000000.0,At,Malate + L-Isoleucine,3.0
+381,H7,4,,At,Mannitol + Myo-inositol,1.0
+382,H8,4,,At,Mannitol + Myo-inositol,2.0
+383,H9,4,1200000000.0,At,Mannitol + Myo-inositol,3.0
+384,H10,4,76000.0,At,No CS,1.0
+385,H11,4,88000.0,At,No CS,2.0
+386,H12,4,220000.0,At,No CS,3.0
+387,A1,5,1800000000.0,At,Acetate,1.0
+388,A2,5,1000000000.0,At,Acetate,2.0
+389,A3,5,1200000000.0,At,Acetate,3.0
+390,A4,5,8000000000.0,At,D-Glucose,1.0
+391,A5,5,12000000000.0,At,D-Glucose,2.0
+392,A6,5,10000000000.0,At,D-Glucose,3.0
+393,A7,5,76000000.0,At,Citrate,1.0
+394,A8,5,70000000.0,At,Citrate,2.0
+395,A9,5,58000000.0,At,Citrate,3.0
+396,A10,5,20000000.0,At,Glutarate,1.0
+397,A11,5,20000000.0,At,Glutarate,2.0
+398,A12,5,28000000.0,At,Glutarate,3.0
+399,B1,5,10000000000.0,At,Glycerol,1.0
+400,B2,5,4000000000.0,At,Glycerol,2.0
+401,B3,5,6000000000.0,At,Glycerol,3.0
+402,B4,5,1600000000.0,At,Inosine,1.0
+403,B5,5,1400000000.0,At,Inosine,2.0
+404,B6,5,1200000000.0,At,Inosine,3.0
+405,B7,5,4200000000.0,At,L-Alanine,1.0
+406,B8,5,3600000000.0,At,L-Alanine,2.0
+407,B9,5,3600000000.0,At,L-Alanine,3.0
+408,B10,5,40000000.0,At,L-Glutamate,1.0
+409,B11,5,42000000.0,At,L-Glutamate,2.0
+410,B12,5,48000000.0,At,L-Glutamate,3.0
+411,C1,5,2600000000.0,At,L-Histidine,1.0
+412,C2,5,1600000000.0,At,L-Histidine,2.0
+413,C3,5,2400000000.0,At,L-Histidine,3.0
+414,C4,5,2000000.0,At,L-Isoleucine,1.0
+415,C5,5,1200000.0,At,L-Isoleucine,2.0
+416,C6,5,1200000.0,At,L-Isoleucine,3.0
+417,C7,5,260000000.0,At,Malate,1.0
+418,C8,5,160000000.0,At,Malate,2.0
+419,C9,5,140000000.0,At,Malate,3.0
+420,C10,5,5200000000.0,At,Mannitol,1.0
+421,C11,5,6200000000.0,At,Mannitol,2.0
+422,C12,5,4200000000.0,At,Mannitol,3.0
+423,D1,5,4000000000.0,At,Mannose,1.0
+424,D2,5,8000000000.0,At,Mannose,2.0
+425,D3,5,12000000000.0,At,Mannose,3.0
+426,D4,5,3400000000.0,At,Myo-inositol,1.0
+427,D5,5,3000000000.0,At,Myo-inositol,2.0
+428,D6,5,3200000000.0,At,Myo-inositol,3.0
+429,D7,5,8000000000.0,At,D-Xylose,1.0
+430,D8,5,6000000000.0,At,D-Xylose,2.0
+431,D9,5,10000000000.0,At,D-Xylose,3.0
+432,D10,5,3800000000.0,At,Ribose,1.0
+433,D11,5,4200000000.0,At,Ribose,2.0
+434,D12,5,5600000000.0,At,Ribose,3.0
+435,E1,5,2800000000.0,At,Citrate + D-Glucose,1.0
+436,E2,5,2800000000.0,At,Citrate + D-Glucose,2.0
+437,E3,5,2200000000.0,At,Citrate + D-Glucose,3.0
+438,E4,5,1800000000.0,At,Glycerol + L-Isoleucine,1.0
+439,E5,5,1400000000.0,At,Glycerol + L-Isoleucine,2.0
+440,E6,5,1800000000.0,At,Glycerol + L-Isoleucine,3.0
+441,E7,5,100000000.0,At,Glutarate + Inosine,1.0
+442,E8,5,120000000.0,At,Glutarate + Inosine,2.0
+443,E9,5,120000000.0,At,Glutarate + Inosine,3.0
+444,E10,5,120000000.0,At,Malate + Citrate,1.0
+445,E11,5,120000000.0,At,Malate + Citrate,2.0
+446,E12,5,100000000.0,At,Malate + Citrate,3.0
+447,F1,5,240000000.0,At,Acetate + L-Alanine,1.0
+448,F2,5,280000000.0,At,Acetate + L-Alanine,2.0
+449,F3,5,300000000.0,At,Acetate + L-Alanine,3.0
+450,F4,5,2000000000.0,At,L-Glutamate + Mannose,1.0
+451,F5,5,1800000000.0,At,L-Glutamate + Mannose,2.0
+452,F6,5,1000000000.0,At,L-Glutamate + Mannose,3.0
+453,F7,5,1200000000.0,At,L-Histidine + Mannose,1.0
+454,F8,5,1800000000.0,At,L-Histidine + Mannose,2.0
+455,F9,5,2200000000.0,At,L-Histidine + Mannose,3.0
+456,F10,5,1200000000.0,At,Mannitol + Acetate,1.0
+457,F11,5,800000000.0,At,Mannitol + Acetate,2.0
+458,F12,5,1600000000.0,At,Mannitol + Acetate,3.0
+459,G1,5,1800000000.0,At,Myo-inositol + L-Glutamate,1.0
+460,G2,5,1400000000.0,At,Myo-inositol + L-Glutamate,2.0
+461,G3,5,2000000000.0,At,Myo-inositol + L-Glutamate,3.0
+462,G4,5,1400000000.0,At,Ribose + Glutarate,1.0
+463,G5,5,2200000000.0,At,Ribose + Glutarate,2.0
+464,G6,5,2800000000.0,At,Ribose + Glutarate,3.0
+465,G7,5,2800000000.0,At,D-Xylose + L-Histidine,1.0
+466,G8,5,2600000000.0,At,D-Xylose + L-Histidine,2.0
+467,G9,5,3800000000.0,At,D-Xylose + L-Histidine,3.0
+468,G10,5,4400000000.0,At,Glycerol + Inosine,1.0
+469,G11,5,4000000000.0,At,Glycerol + Inosine,2.0
+470,G12,5,4800000000.0,At,Glycerol + Inosine,3.0
+471,H1,5,4000000000.0,At,L-Alanine + D-Glucose,1.0
+472,H2,5,2800000000.0,At,L-Alanine + D-Glucose,2.0
+473,H3,5,3200000000.0,At,L-Alanine + D-Glucose,3.0
+474,H4,5,8000000.0,At,Malate + L-Isoleucine,1.0
+475,H5,5,16000000.0,At,Malate + L-Isoleucine,2.0
+476,H6,5,16000000.0,At,Malate + L-Isoleucine,3.0
+477,H7,5,3000000000.0,At,Mannitol + Myo-inositol,1.0
+478,H8,5,3600000000.0,At,Mannitol + Myo-inositol,2.0
+479,H9,5,3400000000.0,At,Mannitol + Myo-inositol,3.0
+480,H10,5,240000.0,At,No CS,1.0
+481,H11,5,220000.0,At,No CS,2.0
+482,H12,5,200000.0,At,No CS,3.0
+483,A1,6,1600000000.0,At,Acetate,1.0
+484,A2,6,400000000.0,At,Acetate,2.0
+485,A3,6,400000000.0,At,Acetate,3.0
+486,A4,6,8000000000.0,At,D-Glucose,1.0
+487,A5,6,12000000000.0,At,D-Glucose,2.0
+488,A6,6,14000000000.0,At,D-Glucose,3.0
+489,A7,6,40000000.0,At,Citrate,1.0
+490,A8,6,54000000.0,At,Citrate,2.0
+491,A9,6,50000000.0,At,Citrate,3.0
+492,A10,6,16000000.0,At,Glutarate,1.0
+493,A11,6,18000000.0,At,Glutarate,2.0
+494,A12,6,22000000.0,At,Glutarate,3.0
+495,B1,6,8000000000.0,At,Glycerol,1.0
+496,B2,6,12000000000.0,At,Glycerol,2.0
+497,B3,6,10000000000.0,At,Glycerol,3.0
+498,B4,6,1600000000.0,At,Inosine,1.0
+499,B5,6,1400000000.0,At,Inosine,2.0
+500,B6,6,600000000.0,At,Inosine,3.0
+501,B7,6,5800000000.0,At,L-Alanine,1.0
+502,B8,6,4000000000.0,At,L-Alanine,2.0
+503,B9,6,4200000000.0,At,L-Alanine,3.0
+504,B10,6,38000000.0,At,L-Glutamate,1.0
+505,B11,6,44000000.0,At,L-Glutamate,2.0
+506,B12,6,48000000.0,At,L-Glutamate,3.0
+507,C1,6,2400000000.0,At,L-Histidine,1.0
+508,C2,6,1800000000.0,At,L-Histidine,2.0
+509,C3,6,1800000000.0,At,L-Histidine,3.0
+510,C4,6,1200000.0,At,L-Isoleucine,1.0
+511,C5,6,2000000.0,At,L-Isoleucine,2.0
+512,C6,6,2000000.0,At,L-Isoleucine,3.0
+513,C7,6,220000000.0,At,Malate,1.0
+514,C8,6,80000000.0,At,Malate,2.0
+515,C9,6,160000000.0,At,Malate,3.0
+516,C10,6,2200000000.0,At,Mannitol,1.0
+517,C11,6,3000000000.0,At,Mannitol,2.0
+518,C12,6,2000000000.0,At,Mannitol,3.0
+519,D1,6,6000000000.0,At,Mannose,1.0
+520,D2,6,8000000000.0,At,Mannose,2.0
+521,D3,6,8400000000.0,At,Mannose,3.0
+522,D4,6,4800000000.0,At,Myo-inositol,1.0
+523,D5,6,2800000000.0,At,Myo-inositol,2.0
+524,D6,6,3400000000.0,At,Myo-inositol,3.0
+525,D7,6,12000000000.0,At,D-Xylose,1.0
+526,D8,6,10000000000.0,At,D-Xylose,2.0
+527,D9,6,10000000000.0,At,D-Xylose,3.0
+528,D10,6,6000000000.0,At,Ribose,1.0
+529,D11,6,6000000000.0,At,Ribose,2.0
+530,D12,6,10000000000.0,At,Ribose,3.0
+531,E1,6,2800000000.0,At,Citrate + D-Glucose,1.0
+532,E2,6,2200000000.0,At,Citrate + D-Glucose,2.0
+533,E3,6,2000000000.0,At,Citrate + D-Glucose,3.0
+534,E4,6,2200000000.0,At,Glycerol + L-Isoleucine,1.0
+535,E5,6,2200000000.0,At,Glycerol + L-Isoleucine,2.0
+536,E6,6,2000000000.0,At,Glycerol + L-Isoleucine,3.0
+537,E7,6,100000000.0,At,Glutarate + Inosine,1.0
+538,E8,6,140000000.0,At,Glutarate + Inosine,2.0
+539,E9,6,100000000.0,At,Glutarate + Inosine,3.0
+540,E10,6,120000000.0,At,Malate + Citrate,1.0
+541,E11,6,140000000.0,At,Malate + Citrate,2.0
+542,E12,6,200000000.0,At,Malate + Citrate,3.0
+543,F1,6,200000000.0,At,Acetate + L-Alanine,1.0
+544,F2,6,160000000.0,At,Acetate + L-Alanine,2.0
+545,F3,6,180000000.0,At,Acetate + L-Alanine,3.0
+546,F4,6,2000000000.0,At,L-Glutamate + Mannose,1.0
+547,F5,6,1800000000.0,At,L-Glutamate + Mannose,2.0
+548,F6,6,2200000000.0,At,L-Glutamate + Mannose,3.0
+549,F7,6,2800000000.0,At,L-Histidine + Mannose,1.0
+550,F8,6,3400000000.0,At,L-Histidine + Mannose,2.0
+551,F9,6,2800000000.0,At,L-Histidine + Mannose,3.0
+552,F10,6,2600000000.0,At,Mannitol + Acetate,1.0
+553,F11,6,1600000000.0,At,Mannitol + Acetate,2.0
+554,F12,6,3200000000.0,At,Mannitol + Acetate,3.0
+555,G1,6,2600000000.0,At,Myo-inositol + L-Glutamate,1.0
+556,G2,6,2000000000.0,At,Myo-inositol + L-Glutamate,2.0
+557,G3,6,2000000000.0,At,Myo-inositol + L-Glutamate,3.0
+558,G4,6,2200000000.0,At,Ribose + Glutarate,1.0
+559,G5,6,1400000000.0,At,Ribose + Glutarate,2.0
+560,G6,6,2600000000.0,At,Ribose + Glutarate,3.0
+561,G7,6,2600000000.0,At,D-Xylose + L-Histidine,1.0
+562,G8,6,4000000000.0,At,D-Xylose + L-Histidine,2.0
+563,G9,6,3200000000.0,At,D-Xylose + L-Histidine,3.0
+564,G10,6,4600000000.0,At,Glycerol + Inosine,1.0
+565,G11,6,4400000000.0,At,Glycerol + Inosine,2.0
+566,G12,6,4200000000.0,At,Glycerol + Inosine,3.0
+567,H1,6,2800000000.0,At,L-Alanine + D-Glucose,1.0
+568,H2,6,3000000000.0,At,L-Alanine + D-Glucose,2.0
+569,H3,6,3200000000.0,At,L-Alanine + D-Glucose,3.0
+570,H4,6,5600000.0,At,Malate + L-Isoleucine,1.0
+571,H5,6,6000000.0,At,Malate + L-Isoleucine,2.0
+572,H6,6,5000000.0,At,Malate + L-Isoleucine,3.0
+573,H7,6,2200000000.0,At,Mannitol + Myo-inositol,1.0
+574,H8,6,3400000000.0,At,Mannitol + Myo-inositol,2.0
+575,H9,6,3000000000.0,At,Mannitol + Myo-inositol,3.0
+576,H10,6,140000.0,At,No CS,1.0
+577,H11,6,120000.0,At,No CS,2.0
+578,H12,6,140000.0,At,No CS,3.0
+579,A1,7,1400000000.0,At,Acetate,1.0
+580,A2,7,1200000000.0,At,Acetate,2.0
+581,A3,7,1200000000.0,At,Acetate,3.0
+582,A4,7,8000000000.0,At,D-Glucose,1.0
+583,A5,7,16000000000.0,At,D-Glucose,2.0
+584,A6,7,12000000000.0,At,D-Glucose,3.0
+585,A7,7,140000000.0,At,Citrate,1.0
+586,A8,7,60000000.0,At,Citrate,2.0
+587,A9,7,80000000.0,At,Citrate,3.0
+588,A10,7,6000000.0,At,Glutarate,1.0
+589,A11,7,10000000.0,At,Glutarate,2.0
+590,A12,7,14000000.0,At,Glutarate,3.0
+591,B1,7,10000000000.0,At,Glycerol,1.0
+592,B2,7,12000000000.0,At,Glycerol,2.0
+593,B3,7,12000000000.0,At,Glycerol,3.0
+594,B4,7,1000000000.0,At,Inosine,1.0
+595,B5,7,1800000000.0,At,Inosine,2.0
+596,B6,7,800000000.0,At,Inosine,3.0
+597,B7,7,3800000000.0,At,L-Alanine,1.0
+598,B8,7,3000000000.0,At,L-Alanine,2.0
+599,B9,7,3400000000.0,At,L-Alanine,3.0
+600,B10,7,160000000.0,At,L-Glutamate,1.0
+601,B11,7,100000000.0,At,L-Glutamate,2.0
+602,B12,7,120000000.0,At,L-Glutamate,3.0
+603,C1,7,2800000000.0,At,L-Histidine,1.0
+604,C2,7,3000000000.0,At,L-Histidine,2.0
+605,C3,7,1800000000.0,At,L-Histidine,3.0
+606,C4,7,3600000.0,At,L-Isoleucine,1.0
+607,C5,7,3400000.0,At,L-Isoleucine,2.0
+608,C6,7,1400000.0,At,L-Isoleucine,3.0
+609,C7,7,280000000.0,At,Malate,1.0
+610,C8,7,180000000.0,At,Malate,2.0
+611,C9,7,340000000.0,At,Malate,3.0
+612,C10,7,3000000000.0,At,Mannitol,1.0
+613,C11,7,3200000000.0,At,Mannitol,2.0
+614,C12,7,3600000000.0,At,Mannitol,3.0
+615,D1,7,6000000000.0,At,Mannose,1.0
+616,D2,7,12000000000.0,At,Mannose,2.0
+617,D3,7,6000000000.0,At,Mannose,3.0
+618,D4,7,2800000000.0,At,Myo-inositol,1.0
+619,D5,7,3400000000.0,At,Myo-inositol,2.0
+620,D6,7,4000000000.0,At,Myo-inositol,3.0
+621,D7,7,4000000000.0,At,D-Xylose,1.0
+622,D8,7,3600000000.0,At,D-Xylose,2.0
+623,D9,7,4000000000.0,At,D-Xylose,3.0
+624,D10,7,4400000000.0,At,Ribose,1.0
+625,D11,7,4800000000.0,At,Ribose,2.0
+626,D12,7,3600000000.0,At,Ribose,3.0
+627,E1,7,3200000000.0,At,Citrate + D-Glucose,1.0
+628,E2,7,3000000000.0,At,Citrate + D-Glucose,2.0
+629,E3,7,2800000000.0,At,Citrate + D-Glucose,3.0
+630,E4,7,3400000000.0,At,Glycerol + L-Isoleucine,1.0
+631,E5,7,2600000000.0,At,Glycerol + L-Isoleucine,2.0
+632,E6,7,2400000000.0,At,Glycerol + L-Isoleucine,3.0
+633,E7,7,160000000.0,At,Glutarate + Inosine,1.0
+634,E8,7,240000000.0,At,Glutarate + Inosine,2.0
+635,E9,7,240000000.0,At,Glutarate + Inosine,3.0
+636,E10,7,200000000.0,At,Malate + Citrate,1.0
+637,E11,7,180000000.0,At,Malate + Citrate,2.0
+638,E12,7,280000000.0,At,Malate + Citrate,3.0
+639,F1,7,1400000000.0,At,Acetate + L-Alanine,1.0
+640,F2,7,1400000000.0,At,Acetate + L-Alanine,2.0
+641,F3,7,1000000000.0,At,Acetate + L-Alanine,3.0
+642,F4,7,3000000000.0,At,L-Glutamate + Mannose,1.0
+643,F5,7,2400000000.0,At,L-Glutamate + Mannose,2.0
+644,F6,7,2600000000.0,At,L-Glutamate + Mannose,3.0
+645,F7,7,2200000000.0,At,L-Histidine + Mannose,1.0
+646,F8,7,2200000000.0,At,L-Histidine + Mannose,2.0
+647,F9,7,2600000000.0,At,L-Histidine + Mannose,3.0
+648,F10,7,2000000000.0,At,Mannitol + Acetate,1.0
+649,F11,7,1400000000.0,At,Mannitol + Acetate,2.0
+650,F12,7,1600000000.0,At,Mannitol + Acetate,3.0
+651,G1,7,1800000000.0,At,Myo-inositol + L-Glutamate,1.0
+652,G2,7,2000000000.0,At,Myo-inositol + L-Glutamate,2.0
+653,G3,7,1800000000.0,At,Myo-inositol + L-Glutamate,3.0
+654,G4,7,1800000000.0,At,Ribose + Glutarate,1.0
+655,G5,7,1000000000.0,At,Ribose + Glutarate,2.0
+656,G6,7,1400000000.0,At,Ribose + Glutarate,3.0
+657,G7,7,3000000000.0,At,D-Xylose + L-Histidine,1.0
+658,G8,7,2800000000.0,At,D-Xylose + L-Histidine,2.0
+659,G9,7,2200000000.0,At,D-Xylose + L-Histidine,3.0
+660,G10,7,4800000000.0,At,Glycerol + Inosine,1.0
+661,G11,7,3800000000.0,At,Glycerol + Inosine,2.0
+662,G12,7,4600000000.0,At,Glycerol + Inosine,3.0
+663,H1,7,4400000000.0,At,L-Alanine + D-Glucose,1.0
+664,H2,7,4600000000.0,At,L-Alanine + D-Glucose,2.0
+665,H3,7,5000000000.0,At,L-Alanine + D-Glucose,3.0
+666,H4,7,8000000.0,At,Malate + L-Isoleucine,1.0
+667,H5,7,6800000.0,At,Malate + L-Isoleucine,2.0
+668,H6,7,8600000.0,At,Malate + L-Isoleucine,3.0
+669,H7,7,2400000000.0,At,Mannitol + Myo-inositol,1.0
+670,H8,7,2200000000.0,At,Mannitol + Myo-inositol,2.0
+671,H9,7,3400000000.0,At,Mannitol + Myo-inositol,3.0
+672,H10,7,140000.0,At,No CS,1.0
+673,H11,7,220000.0,At,No CS,2.0
+674,H12,7,220000.0,At,No CS,3.0
+675,A1,8,600000000.0,At,Acetate,1.0
+676,A2,8,800000000.0,At,Acetate,2.0
+677,A3,8,400000000.0,At,Acetate,3.0
+678,A4,8,10000000000.0,At,D-Glucose,1.0
+679,A5,8,3400000000.0,At,D-Glucose,2.0
+680,A6,8,3200000000.0,At,D-Glucose,3.0
+681,A7,8,120000000.0,At,Citrate,1.0
+682,A8,8,,At,Citrate,2.0
+683,A9,8,,At,Citrate,3.0
+684,A10,8,4000000.0,At,Glutarate,1.0
+685,A11,8,4000000.0,At,Glutarate,2.0
+686,A12,8,28000000.0,At,Glutarate,3.0
+687,B1,8,6000000000.0,At,Glycerol,1.0
+688,B2,8,14000000000.0,At,Glycerol,2.0
+689,B3,8,12000000000.0,At,Glycerol,3.0
+690,B4,8,1000000000.0,At,Inosine,1.0
+691,B5,8,,At,Inosine,2.0
+692,B6,8,1200000000.0,At,Inosine,3.0
+693,B7,8,4000000000.0,At,L-Alanine,1.0
+694,B8,8,4000000000.0,At,L-Alanine,2.0
+695,B9,8,4200000000.0,At,L-Alanine,3.0
+696,B10,8,80000000.0,At,L-Glutamate,1.0
+697,B11,8,80000000.0,At,L-Glutamate,2.0
+698,B12,8,140000000.0,At,L-Glutamate,3.0
+699,C1,8,4200000000.0,At,L-Histidine,1.0
+700,C2,8,3000000000.0,At,L-Histidine,2.0
+701,C3,8,800000000.0,At,L-Histidine,3.0
+702,C4,8,6000000.0,At,L-Isoleucine,1.0
+703,C5,8,12000000.0,At,L-Isoleucine,2.0
+704,C6,8,12000000.0,At,L-Isoleucine,3.0
+705,C7,8,260000000.0,At,Malate,1.0
+706,C8,8,,At,Malate,2.0
+707,C9,8,260000000.0,At,Malate,3.0
+708,C10,8,2800000000.0,At,Mannitol,1.0
+709,C11,8,3200000000.0,At,Mannitol,2.0
+710,C12,8,4000000000.0,At,Mannitol,3.0
+711,D1,8,6000000000.0,At,Mannose,1.0
+712,D2,8,4800000000.0,At,Mannose,2.0
+713,D3,8,6000000000.0,At,Mannose,3.0
+714,D4,8,5000000000.0,At,Myo-inositol,1.0
+715,D5,8,3200000000.0,At,Myo-inositol,2.0
+716,D6,8,4200000000.0,At,Myo-inositol,3.0
+717,D7,8,8000000000.0,At,D-Xylose,1.0
+718,D8,8,4800000000.0,At,D-Xylose,2.0
+719,D9,8,10000000000.0,At,D-Xylose,3.0
+720,D10,8,12000000000.0,At,Ribose,1.0
+721,D11,8,14000000000.0,At,Ribose,2.0
+722,D12,8,16000000000.0,At,Ribose,3.0
+723,E1,8,3200000000.0,At,Citrate + D-Glucose,1.0
+724,E2,8,3600000000.0,At,Citrate + D-Glucose,2.0
+725,E3,8,3400000000.0,At,Citrate + D-Glucose,3.0
+726,E4,8,3200000000.0,At,Glycerol + L-Isoleucine,1.0
+727,E5,8,1600000000.0,At,Glycerol + L-Isoleucine,2.0
+728,E6,8,3200000000.0,At,Glycerol + L-Isoleucine,3.0
+729,E7,8,420000000.0,At,Glutarate + Inosine,1.0
+730,E8,8,380000000.0,At,Glutarate + Inosine,2.0
+731,E9,8,400000000.0,At,Glutarate + Inosine,3.0
+732,E10,8,600000000.0,At,Malate + Citrate,1.0
+733,E11,8,800000000.0,At,Malate + Citrate,2.0
+734,E12,8,600000000.0,At,Malate + Citrate,3.0
+735,F1,8,1800000000.0,At,Acetate + L-Alanine,1.0
+736,F2,8,1200000000.0,At,Acetate + L-Alanine,2.0
+737,F3,8,1600000000.0,At,Acetate + L-Alanine,3.0
+738,F4,8,2800000000.0,At,L-Glutamate + Mannose,1.0
+739,F5,8,3000000000.0,At,L-Glutamate + Mannose,2.0
+740,F6,8,3600000000.0,At,L-Glutamate + Mannose,3.0
+741,F7,8,4200000000.0,At,L-Histidine + Mannose,1.0
+742,F8,8,3800000000.0,At,L-Histidine + Mannose,2.0
+743,F9,8,4400000000.0,At,L-Histidine + Mannose,3.0
+744,F10,8,3400000000.0,At,Mannitol + Acetate,1.0
+745,F11,8,2800000000.0,At,Mannitol + Acetate,2.0
+746,F12,8,3200000000.0,At,Mannitol + Acetate,3.0
+747,G1,8,3400000000.0,At,Myo-inositol + L-Glutamate,1.0
+748,G2,8,2000000000.0,At,Myo-inositol + L-Glutamate,2.0
+749,G3,8,3000000000.0,At,Myo-inositol + L-Glutamate,3.0
+750,G4,8,2200000000.0,At,Ribose + Glutarate,1.0
+751,G5,8,3000000000.0,At,Ribose + Glutarate,2.0
+752,G6,8,2400000000.0,At,Ribose + Glutarate,3.0
+753,G7,8,4200000000.0,At,D-Xylose + L-Histidine,1.0
+754,G8,8,4200000000.0,At,D-Xylose + L-Histidine,2.0
+755,G9,8,3000000000.0,At,D-Xylose + L-Histidine,3.0
+756,G10,8,6000000000.0,At,Glycerol + Inosine,1.0
+757,G11,8,5600000000.0,At,Glycerol + Inosine,2.0
+758,G12,8,6600000000.0,At,Glycerol + Inosine,3.0
+759,H1,8,12000000000.0,At,L-Alanine + D-Glucose,1.0
+760,H2,8,6000000000.0,At,L-Alanine + D-Glucose,2.0
+761,H3,8,8000000000.0,At,L-Alanine + D-Glucose,3.0
+762,H4,8,6000000.0,At,Malate + L-Isoleucine,1.0
+763,H5,8,6000000.0,At,Malate + L-Isoleucine,2.0
+764,H6,8,6000000.0,At,Malate + L-Isoleucine,3.0
+765,H7,8,1400000000.0,At,Mannitol + Myo-inositol,1.0
+766,H8,8,3000000000.0,At,Mannitol + Myo-inositol,2.0
+767,H9,8,2400000000.0,At,Mannitol + Myo-inositol,3.0
+768,H10,8,480000.0,At,No CS,1.0
+769,H11,8,400000.0,At,No CS,2.0
+770,H12,8,1200000.0,At,No CS,3.0
+771,Inoculum,0,7980295.566502463,Ct,,
+772,Inoculum,0,6502463.054187193,Ct,,
+773,Inoculum,0,6798029.5566502465,Ct,,
+774,A1,1,80000000.0,Ct,Acetate,1.0
+775,A2,1,100000000.0,Ct,Acetate,2.0
+776,A3,1,140000000.0,Ct,Acetate,3.0
+777,A4,1,120000000.0,Ct,D-Glucose,1.0
+778,A5,1,140000000.0,Ct,D-Glucose,2.0
+779,A6,1,140000000.0,Ct,D-Glucose,3.0
+780,A7,1,26000000.0,Ct,Citrate,1.0
+781,A8,1,20000000.0,Ct,Citrate,2.0
+782,A9,1,28000000.0,Ct,Citrate,3.0
+783,A10,1,3200000000.0,Ct,Glutarate,1.0
+784,A11,1,2200000000.0,Ct,Glutarate,2.0
+785,A12,1,4200000000.0,Ct,Glutarate,3.0
+786,B1,1,200000000.0,Ct,Glycerol,1.0
+787,B2,1,200000000.0,Ct,Glycerol,2.0
+788,B3,1,220000000.0,Ct,Glycerol,3.0
+789,B4,1,80000000.0,Ct,Inosine,1.0
+790,B5,1,66000000.0,Ct,Inosine,2.0
+791,B6,1,70000000.0,Ct,Inosine,3.0
+792,B7,1,100000000.0,Ct,L-Alanine,1.0
+793,B8,1,220000000.0,Ct,L-Alanine,2.0
+794,B9,1,60000000.0,Ct,L-Alanine,3.0
+795,B10,1,560000000.0,Ct,L-Glutamate,1.0
+796,B11,1,500000000.0,Ct,L-Glutamate,2.0
+797,B12,1,720000000.0,Ct,L-Glutamate,3.0
+798,C1,1,2200000000.0,Ct,L-Histidine,1.0
+799,C2,1,2400000000.0,Ct,L-Histidine,2.0
+800,C3,1,1600000000.0,Ct,L-Histidine,3.0
+801,C4,1,2800000000.0,Ct,L-Isoleucine,1.0
+802,C5,1,1800000000.0,Ct,L-Isoleucine,2.0
+803,C6,1,1200000000.0,Ct,L-Isoleucine,3.0
+804,C7,1,480000000.0,Ct,Malate,1.0
+805,C8,1,460000000.0,Ct,Malate,2.0
+806,C9,1,320000000.0,Ct,Malate,3.0
+807,C10,1,180000000.0,Ct,Mannitol,1.0
+808,C11,1,140000000.0,Ct,Mannitol,2.0
+809,C12,1,60000000.0,Ct,Mannitol,3.0
+810,D1,1,120000000.0,Ct,Mannose,1.0
+811,D2,1,120000000.0,Ct,Mannose,2.0
+812,D3,1,100000000.0,Ct,Mannose,3.0
+813,D4,1,60000000.0,Ct,Myo-inositol,1.0
+814,D5,1,120000000.0,Ct,Myo-inositol,2.0
+815,D6,1,80000000.0,Ct,Myo-inositol,3.0
+816,D7,1,20000000.0,Ct,D-Xylose,1.0
+817,D8,1,60000000.0,Ct,D-Xylose,2.0
+818,D9,1,20000000.0,Ct,D-Xylose,3.0
+819,D10,1,80000000.0,Ct,Ribose,1.0
+820,D11,1,120000000.0,Ct,Ribose,2.0
+821,D12,1,160000000.0,Ct,Ribose,3.0
+822,E1,1,520000000.0,Ct,Citrate + D-Glucose,1.0
+823,E2,1,460000000.0,Ct,Citrate + D-Glucose,2.0
+824,E3,1,500000000.0,Ct,Citrate + D-Glucose,3.0
+825,E4,1,1600000000.0,Ct,Glycerol + L-Isoleucine,1.0
+826,E5,1,1800000000.0,Ct,Glycerol + L-Isoleucine,2.0
+827,E6,1,3000000000.0,Ct,Glycerol + L-Isoleucine,3.0
+828,E7,1,1800000000.0,Ct,Glutarate + Inosine,1.0
+829,E8,1,600000000.0,Ct,Glutarate + Inosine,2.0
+830,E9,1,2200000000.0,Ct,Glutarate + Inosine,3.0
+831,E10,1,340000000.0,Ct,Malate + Citrate,1.0
+832,E11,1,520000000.0,Ct,Malate + Citrate,2.0
+833,E12,1,540000000.0,Ct,Malate + Citrate,3.0
+834,F1,1,600000000.0,Ct,Acetate + L-Alanine,1.0
+835,F2,1,620000000.0,Ct,Acetate + L-Alanine,2.0
+836,F3,1,720000000.0,Ct,Acetate + L-Alanine,3.0
+837,F4,1,500000000.0,Ct,L-Glutamate + Mannose,1.0
+838,F5,1,520000000.0,Ct,L-Glutamate + Mannose,2.0
+839,F6,1,520000000.0,Ct,L-Glutamate + Mannose,3.0
+840,F7,1,400000000.0,Ct,L-Histidine + Mannose,1.0
+841,F8,1,520000000.0,Ct,L-Histidine + Mannose,2.0
+842,F9,1,460000000.0,Ct,L-Histidine + Mannose,3.0
+843,F10,1,640000000.0,Ct,Mannitol + Acetate,1.0
+844,F11,1,600000000.0,Ct,Mannitol + Acetate,2.0
+845,F12,1,620000000.0,Ct,Mannitol + Acetate,3.0
+846,G1,1,580000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+847,G2,1,500000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+848,G3,1,720000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+849,G4,1,2000000000.0,Ct,Ribose + Glutarate,1.0
+850,G5,1,2200000000.0,Ct,Ribose + Glutarate,2.0
+851,G6,1,2800000000.0,Ct,Ribose + Glutarate,3.0
+852,G7,1,300000000.0,Ct,D-Xylose + L-Histidine,1.0
+853,G8,1,540000000.0,Ct,D-Xylose + L-Histidine,2.0
+854,G9,1,480000000.0,Ct,D-Xylose + L-Histidine,3.0
+855,G10,1,80000000.0,Ct,Glycerol + Inosine,1.0
+856,G11,1,120000000.0,Ct,Glycerol + Inosine,2.0
+857,G12,1,20000000.0,Ct,Glycerol + Inosine,3.0
+858,H1,1,160000000.0,Ct,L-Alanine + D-Glucose,1.0
+859,H2,1,220000000.0,Ct,L-Alanine + D-Glucose,2.0
+860,H3,1,180000000.0,Ct,L-Alanine + D-Glucose,3.0
+861,H4,1,3400000000.0,Ct,Malate + L-Isoleucine,1.0
+862,H5,1,3800000000.0,Ct,Malate + L-Isoleucine,2.0
+863,H6,1,4800000000.0,Ct,Malate + L-Isoleucine,3.0
+864,H7,1,40000000.0,Ct,Mannitol + Myo-inositol,1.0
+865,H8,1,100000000.0,Ct,Mannitol + Myo-inositol,2.0
+866,H9,1,120000000.0,Ct,Mannitol + Myo-inositol,3.0
+867,H10,1,32000000.0,Ct,No CS,1.0
+868,H11,1,24000000.0,Ct,No CS,2.0
+869,H12,1,24000000.0,Ct,No CS,3.0
+870,A1,2,48000000.0,Ct,Acetate,1.0
+871,A2,2,98000000.0,Ct,Acetate,2.0
+872,A3,2,106000000.0,Ct,Acetate,3.0
+873,A4,2,32000000.0,Ct,D-Glucose,1.0
+874,A5,2,20000000.0,Ct,D-Glucose,2.0
+875,A6,2,28000000.0,Ct,D-Glucose,3.0
+876,A7,2,18000000.0,Ct,Citrate,1.0
+877,A8,2,18000000.0,Ct,Citrate,2.0
+878,A9,2,20000000.0,Ct,Citrate,3.0
+879,A10,2,2800000000.0,Ct,Glutarate,1.0
+880,A11,2,3200000000.0,Ct,Glutarate,2.0
+881,A12,2,4000000000.0,Ct,Glutarate,3.0
+882,B1,2,280000000.0,Ct,Glycerol,1.0
+883,B2,2,100000000.0,Ct,Glycerol,2.0
+884,B3,2,100000000.0,Ct,Glycerol,3.0
+885,B4,2,14000000.0,Ct,Inosine,1.0
+886,B5,2,22000000.0,Ct,Inosine,2.0
+887,B6,2,14000000.0,Ct,Inosine,3.0
+888,B7,2,28000000.0,Ct,L-Alanine,1.0
+889,B8,2,18000000.0,Ct,L-Alanine,2.0
+890,B9,2,20000000.0,Ct,L-Alanine,3.0
+891,B10,2,520000000.0,Ct,L-Glutamate,1.0
+892,B11,2,440000000.0,Ct,L-Glutamate,2.0
+893,B12,2,,Ct,L-Glutamate,3.0
+894,C1,2,860000000.0,Ct,L-Histidine,1.0
+895,C2,2,640000000.0,Ct,L-Histidine,2.0
+896,C3,2,700000000.0,Ct,L-Histidine,3.0
+897,C4,2,3400000000.0,Ct,L-Isoleucine,1.0
+898,C5,2,4200000000.0,Ct,L-Isoleucine,2.0
+899,C6,2,4400000000.0,Ct,L-Isoleucine,3.0
+900,C7,2,300000000.0,Ct,Malate,1.0
+901,C8,2,280000000.0,Ct,Malate,2.0
+902,C9,2,460000000.0,Ct,Malate,3.0
+903,C10,2,100000000.0,Ct,Mannitol,1.0
+904,C11,2,60000000.0,Ct,Mannitol,2.0
+905,C12,2,80000000.0,Ct,Mannitol,3.0
+906,D1,2,80000000.0,Ct,Mannose,1.0
+907,D2,2,120000000.0,Ct,Mannose,2.0
+908,D3,2,120000000.0,Ct,Mannose,3.0
+909,D4,2,66000000.0,Ct,Myo-inositol,1.0
+910,D5,2,78000000.0,Ct,Myo-inositol,2.0
+911,D6,2,76000000.0,Ct,Myo-inositol,3.0
+912,D7,2,24000000.0,Ct,D-Xylose,1.0
+913,D8,2,28000000.0,Ct,D-Xylose,2.0
+914,D9,2,26000000.0,Ct,D-Xylose,3.0
+915,D10,2,2000000.0,Ct,Ribose,1.0
+916,D11,2,6000000.0,Ct,Ribose,2.0
+917,D12,2,4000000.0,Ct,Ribose,3.0
+918,E1,2,300000000.0,Ct,Citrate + D-Glucose,1.0
+919,E2,2,380000000.0,Ct,Citrate + D-Glucose,2.0
+920,E3,2,540000000.0,Ct,Citrate + D-Glucose,3.0
+921,E4,2,2200000000.0,Ct,Glycerol + L-Isoleucine,1.0
+922,E5,2,2200000000.0,Ct,Glycerol + L-Isoleucine,2.0
+923,E6,2,2000000000.0,Ct,Glycerol + L-Isoleucine,3.0
+924,E7,2,3200000000.0,Ct,Glutarate + Inosine,1.0
+925,E8,2,1800000000.0,Ct,Glutarate + Inosine,2.0
+926,E9,2,1600000000.0,Ct,Glutarate + Inosine,3.0
+927,E10,2,340000000.0,Ct,Malate + Citrate,1.0
+928,E11,2,280000000.0,Ct,Malate + Citrate,2.0
+929,E12,2,380000000.0,Ct,Malate + Citrate,3.0
+930,F1,2,700000000.0,Ct,Acetate + L-Alanine,1.0
+931,F2,2,640000000.0,Ct,Acetate + L-Alanine,2.0
+932,F3,2,660000000.0,Ct,Acetate + L-Alanine,3.0
+933,F4,2,600000000.0,Ct,L-Glutamate + Mannose,1.0
+934,F5,2,400000000.0,Ct,L-Glutamate + Mannose,2.0
+935,F6,2,340000000.0,Ct,L-Glutamate + Mannose,3.0
+936,F7,2,320000000.0,Ct,L-Histidine + Mannose,1.0
+937,F8,2,440000000.0,Ct,L-Histidine + Mannose,2.0
+938,F9,2,320000000.0,Ct,L-Histidine + Mannose,3.0
+939,F10,2,480000000.0,Ct,Mannitol + Acetate,1.0
+940,F11,2,580000000.0,Ct,Mannitol + Acetate,2.0
+941,F12,2,620000000.0,Ct,Mannitol + Acetate,3.0
+942,G1,2,380000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+943,G2,2,640000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+944,G3,2,460000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+945,G4,2,1600000000.0,Ct,Ribose + Glutarate,1.0
+946,G5,2,2200000000.0,Ct,Ribose + Glutarate,2.0
+947,G6,2,1400000000.0,Ct,Ribose + Glutarate,3.0
+948,G7,2,220000000.0,Ct,D-Xylose + L-Histidine,1.0
+949,G8,2,280000000.0,Ct,D-Xylose + L-Histidine,2.0
+950,G9,2,280000000.0,Ct,D-Xylose + L-Histidine,3.0
+951,G10,2,52000000.0,Ct,Glycerol + Inosine,1.0
+952,G11,2,40000000.0,Ct,Glycerol + Inosine,2.0
+953,G12,2,42000000.0,Ct,Glycerol + Inosine,3.0
+954,H1,2,60000000.0,Ct,L-Alanine + D-Glucose,1.0
+955,H2,2,80000000.0,Ct,L-Alanine + D-Glucose,2.0
+956,H3,2,62000000.0,Ct,L-Alanine + D-Glucose,3.0
+957,H4,2,2600000000.0,Ct,Malate + L-Isoleucine,1.0
+958,H5,2,4400000000.0,Ct,Malate + L-Isoleucine,2.0
+959,H6,2,4000000000.0,Ct,Malate + L-Isoleucine,3.0
+960,H7,2,340000000.0,Ct,Mannitol + Myo-inositol,1.0
+961,H8,2,220000000.0,Ct,Mannitol + Myo-inositol,2.0
+962,H9,2,200000000.0,Ct,Mannitol + Myo-inositol,3.0
+963,H10,2,200000.0,Ct,No CS,1.0
+964,H11,2,220000.0,Ct,No CS,2.0
+965,H12,2,380000.0,Ct,No CS,3.0
+966,A1,3,20000000.0,Ct,Acetate,1.0
+967,A2,3,220000000.0,Ct,Acetate,2.0
+968,A3,3,220000000.0,Ct,Acetate,3.0
+969,A4,3,22000000.0,Ct,D-Glucose,1.0
+970,A5,3,24000000.0,Ct,D-Glucose,2.0
+971,A6,3,18000000.0,Ct,D-Glucose,3.0
+972,A7,3,240000000.0,Ct,Citrate,1.0
+973,A8,3,160000000.0,Ct,Citrate,2.0
+974,A9,3,600000000.0,Ct,Citrate,3.0
+975,A10,3,4600000000.0,Ct,Glutarate,1.0
+976,A11,3,1800000000.0,Ct,Glutarate,2.0
+977,A12,3,4000000000.0,Ct,Glutarate,3.0
+978,B1,3,140000000.0,Ct,Glycerol,1.0
+979,B2,3,200000000.0,Ct,Glycerol,2.0
+980,B3,3,240000000.0,Ct,Glycerol,3.0
+981,B4,3,4000000.0,Ct,Inosine,1.0
+982,B5,3,4600000.0,Ct,Inosine,2.0
+983,B6,3,4800000.0,Ct,Inosine,3.0
+984,B7,3,14000000.0,Ct,L-Alanine,1.0
+985,B8,3,10000000.0,Ct,L-Alanine,2.0
+986,B9,3,10000000.0,Ct,L-Alanine,3.0
+987,B10,3,460000000.0,Ct,L-Glutamate,1.0
+988,B11,3,440000000.0,Ct,L-Glutamate,2.0
+989,B12,3,620000000.0,Ct,L-Glutamate,3.0
+990,C1,3,2000000000.0,Ct,L-Histidine,1.0
+991,C2,3,1600000000.0,Ct,L-Histidine,2.0
+992,C3,3,2200000000.0,Ct,L-Histidine,3.0
+993,C4,3,4200000000.0,Ct,L-Isoleucine,1.0
+994,C5,3,5600000000.0,Ct,L-Isoleucine,2.0
+995,C6,3,6800000000.0,Ct,L-Isoleucine,3.0
+996,C7,3,340000000.0,Ct,Malate,1.0
+997,C8,3,420000000.0,Ct,Malate,2.0
+998,C9,3,380000000.0,Ct,Malate,3.0
+999,C10,3,200000000.0,Ct,Mannitol,1.0
+1000,C11,3,180000000.0,Ct,Mannitol,2.0
+1001,C12,3,100000000.0,Ct,Mannitol,3.0
+1002,D1,3,60000000.0,Ct,Mannose,1.0
+1003,D2,3,60000000.0,Ct,Mannose,2.0
+1004,D3,3,80000000.0,Ct,Mannose,3.0
+1005,D4,3,120000000.0,Ct,Myo-inositol,1.0
+1006,D5,3,140000000.0,Ct,Myo-inositol,2.0
+1007,D6,3,140000000.0,Ct,Myo-inositol,3.0
+1008,D7,3,16000000.0,Ct,D-Xylose,1.0
+1009,D8,3,34000000.0,Ct,D-Xylose,2.0
+1010,D9,3,20000000.0,Ct,D-Xylose,3.0
+1011,D10,3,2800000.0,Ct,Ribose,1.0
+1012,D11,3,2600000.0,Ct,Ribose,2.0
+1013,D12,3,3200000.0,Ct,Ribose,3.0
+1014,E1,3,320000000.0,Ct,Citrate + D-Glucose,1.0
+1015,E2,3,340000000.0,Ct,Citrate + D-Glucose,2.0
+1016,E3,3,460000000.0,Ct,Citrate + D-Glucose,3.0
+1017,E4,3,2400000000.0,Ct,Glycerol + L-Isoleucine,1.0
+1018,E5,3,2000000000.0,Ct,Glycerol + L-Isoleucine,2.0
+1019,E6,3,3000000000.0,Ct,Glycerol + L-Isoleucine,3.0
+1020,E7,3,1000000000.0,Ct,Glutarate + Inosine,1.0
+1021,E8,3,1800000000.0,Ct,Glutarate + Inosine,2.0
+1022,E9,3,1800000000.0,Ct,Glutarate + Inosine,3.0
+1023,E10,3,460000000.0,Ct,Malate + Citrate,1.0
+1024,E11,3,380000000.0,Ct,Malate + Citrate,2.0
+1025,E12,3,400000000.0,Ct,Malate + Citrate,3.0
+1026,F1,3,2200000000.0,Ct,Acetate + L-Alanine,1.0
+1027,F2,3,1400000000.0,Ct,Acetate + L-Alanine,2.0
+1028,F3,3,1200000000.0,Ct,Acetate + L-Alanine,3.0
+1029,F4,3,520000000.0,Ct,L-Glutamate + Mannose,1.0
+1030,F5,3,560000000.0,Ct,L-Glutamate + Mannose,2.0
+1031,F6,3,520000000.0,Ct,L-Glutamate + Mannose,3.0
+1032,F7,3,420000000.0,Ct,L-Histidine + Mannose,1.0
+1033,F8,3,380000000.0,Ct,L-Histidine + Mannose,2.0
+1034,F9,3,500000000.0,Ct,L-Histidine + Mannose,3.0
+1035,F10,3,460000000.0,Ct,Mannitol + Acetate,1.0
+1036,F11,3,480000000.0,Ct,Mannitol + Acetate,2.0
+1037,F12,3,680000000.0,Ct,Mannitol + Acetate,3.0
+1038,G1,3,660000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+1039,G2,3,760000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+1040,G3,3,440000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+1041,G4,3,2600000000.0,Ct,Ribose + Glutarate,1.0
+1042,G5,3,1600000000.0,Ct,Ribose + Glutarate,2.0
+1043,G6,3,2000000000.0,Ct,Ribose + Glutarate,3.0
+1044,G7,3,260000000.0,Ct,D-Xylose + L-Histidine,1.0
+1045,G8,3,320000000.0,Ct,D-Xylose + L-Histidine,2.0
+1046,G9,3,260000000.0,Ct,D-Xylose + L-Histidine,3.0
+1047,G10,3,48000000.0,Ct,Glycerol + Inosine,1.0
+1048,G11,3,48000000.0,Ct,Glycerol + Inosine,2.0
+1049,G12,3,64000000.0,Ct,Glycerol + Inosine,3.0
+1050,H1,3,64000000.0,Ct,L-Alanine + D-Glucose,1.0
+1051,H2,3,46000000.0,Ct,L-Alanine + D-Glucose,2.0
+1052,H3,3,56000000.0,Ct,L-Alanine + D-Glucose,3.0
+1053,H4,3,4200000000.0,Ct,Malate + L-Isoleucine,1.0
+1054,H5,3,5600000000.0,Ct,Malate + L-Isoleucine,2.0
+1055,H6,3,4800000000.0,Ct,Malate + L-Isoleucine,3.0
+1056,H7,3,260000000.0,Ct,Mannitol + Myo-inositol,1.0
+1057,H8,3,260000000.0,Ct,Mannitol + Myo-inositol,2.0
+1058,H9,3,300000000.0,Ct,Mannitol + Myo-inositol,3.0
+1059,H10,3,340000.0,Ct,No CS,1.0
+1060,H11,3,520000.0,Ct,No CS,2.0
+1061,H12,3,500000.0,Ct,No CS,3.0
+1062,A1,4,56000000.0,Ct,Acetate,1.0
+1063,A2,4,74000000.0,Ct,Acetate,2.0
+1064,A3,4,70000000.0,Ct,Acetate,3.0
+1065,A4,4,22000000.0,Ct,D-Glucose,1.0
+1066,A5,4,30000000.0,Ct,D-Glucose,2.0
+1067,A6,4,20000000.0,Ct,D-Glucose,3.0
+1068,A7,4,1600000000.0,Ct,Citrate,1.0
+1069,A8,4,1200000000.0,Ct,Citrate,2.0
+1070,A9,4,1000000000.0,Ct,Citrate,3.0
+1071,A10,4,4200000000.0,Ct,Glutarate,1.0
+1072,A11,4,3600000000.0,Ct,Glutarate,2.0
+1073,A12,4,3000000000.0,Ct,Glutarate,3.0
+1074,B1,4,220000000.0,Ct,Glycerol,1.0
+1075,B2,4,240000000.0,Ct,Glycerol,2.0
+1076,B3,4,200000000.0,Ct,Glycerol,3.0
+1077,B4,4,5200000.0,Ct,Inosine,1.0
+1078,B5,4,8200000.0,Ct,Inosine,2.0
+1079,B6,4,8800000.0,Ct,Inosine,3.0
+1080,B7,4,6000000.0,Ct,L-Alanine,1.0
+1081,B8,4,6000000.0,Ct,L-Alanine,2.0
+1082,B9,4,16000000.0,Ct,L-Alanine,3.0
+1083,B10,4,420000000.0,Ct,L-Glutamate,1.0
+1084,B11,4,500000000.0,Ct,L-Glutamate,2.0
+1085,B12,4,540000000.0,Ct,L-Glutamate,3.0
+1086,C1,4,640000000.0,Ct,L-Histidine,1.0
+1087,C2,4,840000000.0,Ct,L-Histidine,2.0
+1088,C3,4,600000000.0,Ct,L-Histidine,3.0
+1089,C4,4,5200000000.0,Ct,L-Isoleucine,1.0
+1090,C5,4,7000000000.0,Ct,L-Isoleucine,2.0
+1091,C6,4,6800000000.0,Ct,L-Isoleucine,3.0
+1092,C7,4,280000000.0,Ct,Malate,1.0
+1093,C8,4,520000000.0,Ct,Malate,2.0
+1094,C9,4,580000000.0,Ct,Malate,3.0
+1095,C10,4,120000000.0,Ct,Mannitol,1.0
+1096,C11,4,120000000.0,Ct,Mannitol,2.0
+1097,C12,4,180000000.0,Ct,Mannitol,3.0
+1098,D1,4,80000000.0,Ct,Mannose,1.0
+1099,D2,4,68000000.0,Ct,Mannose,2.0
+1100,D3,4,76000000.0,Ct,Mannose,3.0
+1101,D4,4,88000000.0,Ct,Myo-inositol,1.0
+1102,D5,4,90000000.0,Ct,Myo-inositol,2.0
+1103,D6,4,80000000.0,Ct,Myo-inositol,3.0
+1104,D7,4,18000000.0,Ct,D-Xylose,1.0
+1105,D8,4,16000000.0,Ct,D-Xylose,2.0
+1106,D9,4,14000000.0,Ct,D-Xylose,3.0
+1107,D10,4,8000000.0,Ct,Ribose,1.0
+1108,D11,4,4000000.0,Ct,Ribose,2.0
+1109,D12,4,3000000.0,Ct,Ribose,3.0
+1110,E1,4,340000000.0,Ct,Citrate + D-Glucose,1.0
+1111,E2,4,460000000.0,Ct,Citrate + D-Glucose,2.0
+1112,E3,4,440000000.0,Ct,Citrate + D-Glucose,3.0
+1113,E4,4,2600000000.0,Ct,Glycerol + L-Isoleucine,1.0
+1114,E5,4,4000000000.0,Ct,Glycerol + L-Isoleucine,2.0
+1115,E6,4,3000000000.0,Ct,Glycerol + L-Isoleucine,3.0
+1116,E7,4,2000000000.0,Ct,Glutarate + Inosine,1.0
+1117,E8,4,2200000000.0,Ct,Glutarate + Inosine,2.0
+1118,E9,4,800000000.0,Ct,Glutarate + Inosine,3.0
+1119,E10,4,660000000.0,Ct,Malate + Citrate,1.0
+1120,E11,4,480000000.0,Ct,Malate + Citrate,2.0
+1121,E12,4,460000000.0,Ct,Malate + Citrate,3.0
+1122,F1,4,1800000000.0,Ct,Acetate + L-Alanine,1.0
+1123,F2,4,2600000000.0,Ct,Acetate + L-Alanine,2.0
+1124,F3,4,2000000000.0,Ct,Acetate + L-Alanine,3.0
+1125,F4,4,700000000.0,Ct,L-Glutamate + Mannose,1.0
+1126,F5,4,680000000.0,Ct,L-Glutamate + Mannose,2.0
+1127,F6,4,640000000.0,Ct,L-Glutamate + Mannose,3.0
+1128,F7,4,660000000.0,Ct,L-Histidine + Mannose,1.0
+1129,F8,4,560000000.0,Ct,L-Histidine + Mannose,2.0
+1130,F9,4,480000000.0,Ct,L-Histidine + Mannose,3.0
+1131,F10,4,1000000000.0,Ct,Mannitol + Acetate,1.0
+1132,F11,4,1800000000.0,Ct,Mannitol + Acetate,2.0
+1133,F12,4,1400000000.0,Ct,Mannitol + Acetate,3.0
+1134,G1,4,700000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+1135,G2,4,560000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+1136,G3,4,540000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+1137,G4,4,2200000000.0,Ct,Ribose + Glutarate,1.0
+1138,G5,4,1800000000.0,Ct,Ribose + Glutarate,2.0
+1139,G6,4,2200000000.0,Ct,Ribose + Glutarate,3.0
+1140,G7,4,200000000.0,Ct,D-Xylose + L-Histidine,1.0
+1141,G8,4,140000000.0,Ct,D-Xylose + L-Histidine,2.0
+1142,G9,4,220000000.0,Ct,D-Xylose + L-Histidine,3.0
+1143,G10,4,74000000.0,Ct,Glycerol + Inosine,1.0
+1144,G11,4,70000000.0,Ct,Glycerol + Inosine,2.0
+1145,G12,4,56000000.0,Ct,Glycerol + Inosine,3.0
+1146,H1,4,40000000.0,Ct,L-Alanine + D-Glucose,1.0
+1147,H2,4,20000000.0,Ct,L-Alanine + D-Glucose,2.0
+1148,H3,4,46000000.0,Ct,L-Alanine + D-Glucose,3.0
+1149,H4,4,1800000000.0,Ct,Malate + L-Isoleucine,1.0
+1150,H5,4,800000000.0,Ct,Malate + L-Isoleucine,2.0
+1151,H6,4,1600000000.0,Ct,Malate + L-Isoleucine,3.0
+1152,H7,4,,Ct,Mannitol + Myo-inositol,1.0
+1153,H8,4,220000000.0,Ct,Mannitol + Myo-inositol,2.0
+1154,H9,4,200000000.0,Ct,Mannitol + Myo-inositol,3.0
+1155,H10,4,160000.0,Ct,No CS,1.0
+1156,H11,4,280000.0,Ct,No CS,2.0
+1157,H12,4,340000.0,Ct,No CS,3.0
+1158,A1,5,260000000.0,Ct,Acetate,1.0
+1159,A2,5,600000000.0,Ct,Acetate,2.0
+1160,A3,5,580000000.0,Ct,Acetate,3.0
+1161,A4,5,24000000.0,Ct,D-Glucose,1.0
+1162,A5,5,30000000.0,Ct,D-Glucose,2.0
+1163,A6,5,32000000.0,Ct,D-Glucose,3.0
+1164,A7,5,920000000.0,Ct,Citrate,1.0
+1165,A8,5,780000000.0,Ct,Citrate,2.0
+1166,A9,5,600000000.0,Ct,Citrate,3.0
+1167,A10,5,3800000000.0,Ct,Glutarate,1.0
+1168,A11,5,2600000000.0,Ct,Glutarate,2.0
+1169,A12,5,2600000000.0,Ct,Glutarate,3.0
+1170,B1,5,200000000.0,Ct,Glycerol,1.0
+1171,B2,5,120000000.0,Ct,Glycerol,2.0
+1172,B3,5,100000000.0,Ct,Glycerol,3.0
+1173,B4,5,4000000.0,Ct,Inosine,1.0
+1174,B5,5,4000000.0,Ct,Inosine,2.0
+1175,B6,5,4400000.0,Ct,Inosine,3.0
+1176,B7,5,22000000.0,Ct,L-Alanine,1.0
+1177,B8,5,8000000.0,Ct,L-Alanine,2.0
+1178,B9,5,6000000.0,Ct,L-Alanine,3.0
+1179,B10,5,500000000.0,Ct,L-Glutamate,1.0
+1180,B11,5,460000000.0,Ct,L-Glutamate,2.0
+1181,B12,5,440000000.0,Ct,L-Glutamate,3.0
+1182,C1,5,580000000.0,Ct,L-Histidine,1.0
+1183,C2,5,660000000.0,Ct,L-Histidine,2.0
+1184,C3,5,700000000.0,Ct,L-Histidine,3.0
+1185,C4,5,5200000000.0,Ct,L-Isoleucine,1.0
+1186,C5,5,5800000000.0,Ct,L-Isoleucine,2.0
+1187,C6,5,5000000000.0,Ct,L-Isoleucine,3.0
+1188,C7,5,580000000.0,Ct,Malate,1.0
+1189,C8,5,440000000.0,Ct,Malate,2.0
+1190,C9,5,460000000.0,Ct,Malate,3.0
+1191,C10,5,440000000.0,Ct,Mannitol,1.0
+1192,C11,5,540000000.0,Ct,Mannitol,2.0
+1193,C12,5,160000000.0,Ct,Mannitol,3.0
+1194,D1,5,100000000.0,Ct,Mannose,1.0
+1195,D2,5,40000000.0,Ct,Mannose,2.0
+1196,D3,5,80000000.0,Ct,Mannose,3.0
+1197,D4,5,100000000.0,Ct,Myo-inositol,1.0
+1198,D5,5,20000000.0,Ct,Myo-inositol,2.0
+1199,D6,5,80000000.0,Ct,Myo-inositol,3.0
+1200,D7,5,20000000.0,Ct,D-Xylose,1.0
+1201,D8,5,22000000.0,Ct,D-Xylose,2.0
+1202,D9,5,30000000.0,Ct,D-Xylose,3.0
+1203,D10,5,8000000.0,Ct,Ribose,1.0
+1204,D11,5,8000000.0,Ct,Ribose,2.0
+1205,D12,5,6000000.0,Ct,Ribose,3.0
+1206,E1,5,320000000.0,Ct,Citrate + D-Glucose,1.0
+1207,E2,5,560000000.0,Ct,Citrate + D-Glucose,2.0
+1208,E3,5,620000000.0,Ct,Citrate + D-Glucose,3.0
+1209,E4,5,3600000000.0,Ct,Glycerol + L-Isoleucine,1.0
+1210,E5,5,3600000000.0,Ct,Glycerol + L-Isoleucine,2.0
+1211,E6,5,3200000000.0,Ct,Glycerol + L-Isoleucine,3.0
+1212,E7,5,2200000000.0,Ct,Glutarate + Inosine,1.0
+1213,E8,5,1800000000.0,Ct,Glutarate + Inosine,2.0
+1214,E9,5,2200000000.0,Ct,Glutarate + Inosine,3.0
+1215,E10,5,540000000.0,Ct,Malate + Citrate,1.0
+1216,E11,5,640000000.0,Ct,Malate + Citrate,2.0
+1217,E12,5,360000000.0,Ct,Malate + Citrate,3.0
+1218,F1,5,840000000.0,Ct,Acetate + L-Alanine,1.0
+1219,F2,5,720000000.0,Ct,Acetate + L-Alanine,2.0
+1220,F3,5,880000000.0,Ct,Acetate + L-Alanine,3.0
+1221,F4,5,460000000.0,Ct,L-Glutamate + Mannose,1.0
+1222,F5,5,480000000.0,Ct,L-Glutamate + Mannose,2.0
+1223,F6,5,520000000.0,Ct,L-Glutamate + Mannose,3.0
+1224,F7,5,420000000.0,Ct,L-Histidine + Mannose,1.0
+1225,F8,5,220000000.0,Ct,L-Histidine + Mannose,2.0
+1226,F9,5,380000000.0,Ct,L-Histidine + Mannose,3.0
+1227,F10,5,420000000.0,Ct,Mannitol + Acetate,1.0
+1228,F11,5,460000000.0,Ct,Mannitol + Acetate,2.0
+1229,F12,5,640000000.0,Ct,Mannitol + Acetate,3.0
+1230,G1,5,600000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+1231,G2,5,1200000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+1232,G3,5,1600000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+1233,G4,5,2400000000.0,Ct,Ribose + Glutarate,1.0
+1234,G5,5,2000000000.0,Ct,Ribose + Glutarate,2.0
+1235,G6,5,2800000000.0,Ct,Ribose + Glutarate,3.0
+1236,G7,5,,Ct,D-Xylose + L-Histidine,1.0
+1237,G8,5,220000000.0,Ct,D-Xylose + L-Histidine,2.0
+1238,G9,5,300000000.0,Ct,D-Xylose + L-Histidine,3.0
+1239,G10,5,68000000.0,Ct,Glycerol + Inosine,1.0
+1240,G11,5,56000000.0,Ct,Glycerol + Inosine,2.0
+1241,G12,5,66000000.0,Ct,Glycerol + Inosine,3.0
+1242,H1,5,36000000.0,Ct,L-Alanine + D-Glucose,1.0
+1243,H2,5,32000000.0,Ct,L-Alanine + D-Glucose,2.0
+1244,H3,5,42000000.0,Ct,L-Alanine + D-Glucose,3.0
+1245,H4,5,3800000000.0,Ct,Malate + L-Isoleucine,1.0
+1246,H5,5,3800000000.0,Ct,Malate + L-Isoleucine,2.0
+1247,H6,5,3600000000.0,Ct,Malate + L-Isoleucine,3.0
+1248,H7,5,120000000.0,Ct,Mannitol + Myo-inositol,1.0
+1249,H8,5,120000000.0,Ct,Mannitol + Myo-inositol,2.0
+1250,H9,5,180000000.0,Ct,Mannitol + Myo-inositol,3.0
+1251,H10,5,140000.0,Ct,No CS,1.0
+1252,H11,5,140000.0,Ct,No CS,2.0
+1253,H12,5,240000.0,Ct,No CS,3.0
+1254,A1,6,320000000.0,Ct,Acetate,1.0
+1255,A2,6,900000000.0,Ct,Acetate,2.0
+1256,A3,6,780000000.0,Ct,Acetate,3.0
+1257,A4,6,32000000.0,Ct,D-Glucose,1.0
+1258,A5,6,36000000.0,Ct,D-Glucose,2.0
+1259,A6,6,38000000.0,Ct,D-Glucose,3.0
+1260,A7,6,620000000.0,Ct,Citrate,1.0
+1261,A8,6,600000000.0,Ct,Citrate,2.0
+1262,A9,6,700000000.0,Ct,Citrate,3.0
+1263,A10,6,3600000000.0,Ct,Glutarate,1.0
+1264,A11,6,4400000000.0,Ct,Glutarate,2.0
+1265,A12,6,4800000000.0,Ct,Glutarate,3.0
+1266,B1,6,140000000.0,Ct,Glycerol,1.0
+1267,B2,6,120000000.0,Ct,Glycerol,2.0
+1268,B3,6,120000000.0,Ct,Glycerol,3.0
+1269,B4,6,4000000.0,Ct,Inosine,1.0
+1270,B5,6,5200000.0,Ct,Inosine,2.0
+1271,B6,6,4400000.0,Ct,Inosine,3.0
+1272,B7,6,16000000.0,Ct,L-Alanine,1.0
+1273,B8,6,20000000.0,Ct,L-Alanine,2.0
+1274,B9,6,12000000.0,Ct,L-Alanine,3.0
+1275,B10,6,540000000.0,Ct,L-Glutamate,1.0
+1276,B11,6,660000000.0,Ct,L-Glutamate,2.0
+1277,B12,6,560000000.0,Ct,L-Glutamate,3.0
+1278,C1,6,420000000.0,Ct,L-Histidine,1.0
+1279,C2,6,640000000.0,Ct,L-Histidine,2.0
+1280,C3,6,900000000.0,Ct,L-Histidine,3.0
+1281,C4,6,6800000000.0,Ct,L-Isoleucine,1.0
+1282,C5,6,8000000000.0,Ct,L-Isoleucine,2.0
+1283,C6,6,7600000000.0,Ct,L-Isoleucine,3.0
+1284,C7,6,920000000.0,Ct,Malate,1.0
+1285,C8,6,800000000.0,Ct,Malate,2.0
+1286,C9,6,800000000.0,Ct,Malate,3.0
+1287,C10,6,200000000.0,Ct,Mannitol,1.0
+1288,C11,6,80000000.0,Ct,Mannitol,2.0
+1289,C12,6,120000000.0,Ct,Mannitol,3.0
+1290,D1,6,98000000.0,Ct,Mannose,1.0
+1291,D2,6,90000000.0,Ct,Mannose,2.0
+1292,D3,6,88000000.0,Ct,Mannose,3.0
+1293,D4,6,94000000.0,Ct,Myo-inositol,1.0
+1294,D5,6,98000000.0,Ct,Myo-inositol,2.0
+1295,D6,6,92000000.0,Ct,Myo-inositol,3.0
+1296,D7,6,26000000.0,Ct,D-Xylose,1.0
+1297,D8,6,20000000.0,Ct,D-Xylose,2.0
+1298,D9,6,22000000.0,Ct,D-Xylose,3.0
+1299,D10,6,20000000.0,Ct,Ribose,1.0
+1300,D11,6,16000000.0,Ct,Ribose,2.0
+1301,D12,6,18000000.0,Ct,Ribose,3.0
+1302,E1,6,360000000.0,Ct,Citrate + D-Glucose,1.0
+1303,E2,6,800000000.0,Ct,Citrate + D-Glucose,2.0
+1304,E3,6,680000000.0,Ct,Citrate + D-Glucose,3.0
+1305,E4,6,4000000000.0,Ct,Glycerol + L-Isoleucine,1.0
+1306,E5,6,4200000000.0,Ct,Glycerol + L-Isoleucine,2.0
+1307,E6,6,2400000000.0,Ct,Glycerol + L-Isoleucine,3.0
+1308,E7,6,1400000000.0,Ct,Glutarate + Inosine,1.0
+1309,E8,6,2400000000.0,Ct,Glutarate + Inosine,2.0
+1310,E9,6,2600000000.0,Ct,Glutarate + Inosine,3.0
+1311,E10,6,600000000.0,Ct,Malate + Citrate,1.0
+1312,E11,6,760000000.0,Ct,Malate + Citrate,2.0
+1313,E12,6,440000000.0,Ct,Malate + Citrate,3.0
+1314,F1,6,660000000.0,Ct,Acetate + L-Alanine,1.0
+1315,F2,6,940000000.0,Ct,Acetate + L-Alanine,2.0
+1316,F3,6,640000000.0,Ct,Acetate + L-Alanine,3.0
+1317,F4,6,540000000.0,Ct,L-Glutamate + Mannose,1.0
+1318,F5,6,840000000.0,Ct,L-Glutamate + Mannose,2.0
+1319,F6,6,900000000.0,Ct,L-Glutamate + Mannose,3.0
+1320,F7,6,660000000.0,Ct,L-Histidine + Mannose,1.0
+1321,F8,6,520000000.0,Ct,L-Histidine + Mannose,2.0
+1322,F9,6,580000000.0,Ct,L-Histidine + Mannose,3.0
+1323,F10,6,660000000.0,Ct,Mannitol + Acetate,1.0
+1324,F11,6,720000000.0,Ct,Mannitol + Acetate,2.0
+1325,F12,6,680000000.0,Ct,Mannitol + Acetate,3.0
+1326,G1,6,920000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+1327,G2,6,680000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+1328,G3,6,760000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+1329,G4,6,2000000000.0,Ct,Ribose + Glutarate,1.0
+1330,G5,6,3000000000.0,Ct,Ribose + Glutarate,2.0
+1331,G6,6,1200000000.0,Ct,Ribose + Glutarate,3.0
+1332,G7,6,320000000.0,Ct,D-Xylose + L-Histidine,1.0
+1333,G8,6,240000000.0,Ct,D-Xylose + L-Histidine,2.0
+1334,G9,6,280000000.0,Ct,D-Xylose + L-Histidine,3.0
+1335,G10,6,68000000.0,Ct,Glycerol + Inosine,1.0
+1336,G11,6,64000000.0,Ct,Glycerol + Inosine,2.0
+1337,G12,6,72000000.0,Ct,Glycerol + Inosine,3.0
+1338,H1,6,44000000.0,Ct,L-Alanine + D-Glucose,1.0
+1339,H2,6,46000000.0,Ct,L-Alanine + D-Glucose,2.0
+1340,H3,6,58000000.0,Ct,L-Alanine + D-Glucose,3.0
+1341,H4,6,6800000000.0,Ct,Malate + L-Isoleucine,1.0
+1342,H5,6,5000000000.0,Ct,Malate + L-Isoleucine,2.0
+1343,H6,6,5400000000.0,Ct,Malate + L-Isoleucine,3.0
+1344,H7,6,240000000.0,Ct,Mannitol + Myo-inositol,1.0
+1345,H8,6,220000000.0,Ct,Mannitol + Myo-inositol,2.0
+1346,H9,6,200000000.0,Ct,Mannitol + Myo-inositol,3.0
+1347,H10,6,160000.0,Ct,No CS,1.0
+1348,H11,6,160000.0,Ct,No CS,2.0
+1349,H12,6,460000.0,Ct,No CS,3.0
+1350,A1,7,660000000.0,Ct,Acetate,1.0
+1351,A2,7,920000000.0,Ct,Acetate,2.0
+1352,A3,7,720000000.0,Ct,Acetate,3.0
+1353,A4,7,24000000.0,Ct,D-Glucose,1.0
+1354,A5,7,18000000.0,Ct,D-Glucose,2.0
+1355,A6,7,6000000.0,Ct,D-Glucose,3.0
+1356,A7,7,980000000.0,Ct,Citrate,1.0
+1357,A8,7,900000000.0,Ct,Citrate,2.0
+1358,A9,7,940000000.0,Ct,Citrate,3.0
+1359,A10,7,1600000000.0,Ct,Glutarate,1.0
+1360,A11,7,2600000000.0,Ct,Glutarate,2.0
+1361,A12,7,2800000000.0,Ct,Glutarate,3.0
+1362,B1,7,180000000.0,Ct,Glycerol,1.0
+1363,B2,7,140000000.0,Ct,Glycerol,2.0
+1364,B3,7,180000000.0,Ct,Glycerol,3.0
+1365,B4,7,7400000.0,Ct,Inosine,1.0
+1366,B5,7,9800000.0,Ct,Inosine,2.0
+1367,B6,7,6000000.0,Ct,Inosine,3.0
+1368,B7,7,14000000.0,Ct,L-Alanine,1.0
+1369,B8,7,26000000.0,Ct,L-Alanine,2.0
+1370,B9,7,36000000.0,Ct,L-Alanine,3.0
+1371,B10,7,880000000.0,Ct,L-Glutamate,1.0
+1372,B11,7,480000000.0,Ct,L-Glutamate,2.0
+1373,B12,7,860000000.0,Ct,L-Glutamate,3.0
+1374,C1,7,600000000.0,Ct,L-Histidine,1.0
+1375,C2,7,520000000.0,Ct,L-Histidine,2.0
+1376,C3,7,500000000.0,Ct,L-Histidine,3.0
+1377,C4,7,5600000000.0,Ct,L-Isoleucine,1.0
+1378,C5,7,9400000000.0,Ct,L-Isoleucine,2.0
+1379,C6,7,5200000000.0,Ct,L-Isoleucine,3.0
+1380,C7,7,860000000.0,Ct,Malate,1.0
+1381,C8,7,760000000.0,Ct,Malate,2.0
+1382,C9,7,960000000.0,Ct,Malate,3.0
+1383,C10,7,116000000.0,Ct,Mannitol,1.0
+1384,C11,7,134000000.0,Ct,Mannitol,2.0
+1385,C12,7,104000000.0,Ct,Mannitol,3.0
+1386,D1,7,90000000.0,Ct,Mannose,1.0
+1387,D2,7,78000000.0,Ct,Mannose,2.0
+1388,D3,7,84000000.0,Ct,Mannose,3.0
+1389,D4,7,200000000.0,Ct,Myo-inositol,1.0
+1390,D5,7,140000000.0,Ct,Myo-inositol,2.0
+1391,D6,7,160000000.0,Ct,Myo-inositol,3.0
+1392,D7,7,36000000.0,Ct,D-Xylose,1.0
+1393,D8,7,24000000.0,Ct,D-Xylose,2.0
+1394,D9,7,26000000.0,Ct,D-Xylose,3.0
+1395,D10,7,20000000.0,Ct,Ribose,1.0
+1396,D11,7,6000000.0,Ct,Ribose,2.0
+1397,D12,7,16000000.0,Ct,Ribose,3.0
+1398,E1,7,720000000.0,Ct,Citrate + D-Glucose,1.0
+1399,E2,7,880000000.0,Ct,Citrate + D-Glucose,2.0
+1400,E3,7,840000000.0,Ct,Citrate + D-Glucose,3.0
+1401,E4,7,3600000000.0,Ct,Glycerol + L-Isoleucine,1.0
+1402,E5,7,3200000000.0,Ct,Glycerol + L-Isoleucine,2.0
+1403,E6,7,3400000000.0,Ct,Glycerol + L-Isoleucine,3.0
+1404,E7,7,1800000000.0,Ct,Glutarate + Inosine,1.0
+1405,E8,7,2000000000.0,Ct,Glutarate + Inosine,2.0
+1406,E9,7,2800000000.0,Ct,Glutarate + Inosine,3.0
+1407,E10,7,800000000.0,Ct,Malate + Citrate,1.0
+1408,E11,7,760000000.0,Ct,Malate + Citrate,2.0
+1409,E12,7,240000000.0,Ct,Malate + Citrate,3.0
+1410,F1,7,1000000000.0,Ct,Acetate + L-Alanine,1.0
+1411,F2,7,1040000000.0,Ct,Acetate + L-Alanine,2.0
+1412,F3,7,1000000000.0,Ct,Acetate + L-Alanine,3.0
+1413,F4,7,520000000.0,Ct,L-Glutamate + Mannose,1.0
+1414,F5,7,640000000.0,Ct,L-Glutamate + Mannose,2.0
+1415,F6,7,720000000.0,Ct,L-Glutamate + Mannose,3.0
+1416,F7,7,380000000.0,Ct,L-Histidine + Mannose,1.0
+1417,F8,7,460000000.0,Ct,L-Histidine + Mannose,2.0
+1418,F9,7,420000000.0,Ct,L-Histidine + Mannose,3.0
+1419,F10,7,600000000.0,Ct,Mannitol + Acetate,1.0
+1420,F11,7,640000000.0,Ct,Mannitol + Acetate,2.0
+1421,F12,7,840000000.0,Ct,Mannitol + Acetate,3.0
+1422,G1,7,680000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+1423,G2,7,720000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+1424,G3,7,660000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+1425,G4,7,1200000000.0,Ct,Ribose + Glutarate,1.0
+1426,G5,7,620000000.0,Ct,Ribose + Glutarate,2.0
+1427,G6,7,1000000000.0,Ct,Ribose + Glutarate,3.0
+1428,G7,7,260000000.0,Ct,D-Xylose + L-Histidine,1.0
+1429,G8,7,260000000.0,Ct,D-Xylose + L-Histidine,2.0
+1430,G9,7,240000000.0,Ct,D-Xylose + L-Histidine,3.0
+1431,G10,7,66000000.0,Ct,Glycerol + Inosine,1.0
+1432,G11,7,66000000.0,Ct,Glycerol + Inosine,2.0
+1433,G12,7,64000000.0,Ct,Glycerol + Inosine,3.0
+1434,H1,7,50000000.0,Ct,L-Alanine + D-Glucose,1.0
+1435,H2,7,34000000.0,Ct,L-Alanine + D-Glucose,2.0
+1436,H3,7,46000000.0,Ct,L-Alanine + D-Glucose,3.0
+1437,H4,7,5600000000.0,Ct,Malate + L-Isoleucine,1.0
+1438,H5,7,3600000000.0,Ct,Malate + L-Isoleucine,2.0
+1439,H6,7,3800000000.0,Ct,Malate + L-Isoleucine,3.0
+1440,H7,7,220000000.0,Ct,Mannitol + Myo-inositol,1.0
+1441,H8,7,140000000.0,Ct,Mannitol + Myo-inositol,2.0
+1442,H9,7,200000000.0,Ct,Mannitol + Myo-inositol,3.0
+1443,H10,7,82000.0,Ct,No CS,1.0
+1444,H11,7,70000.0,Ct,No CS,2.0
+1445,H12,7,88000.0,Ct,No CS,3.0
+1446,A1,8,1000000000.0,Ct,Acetate,1.0
+1447,A2,8,640000000.0,Ct,Acetate,2.0
+1448,A3,8,660000000.0,Ct,Acetate,3.0
+1449,A4,8,20000000.0,Ct,D-Glucose,1.0
+1450,A5,8,46000000.0,Ct,D-Glucose,2.0
+1451,A6,8,20000000.0,Ct,D-Glucose,3.0
+1452,A7,8,600000000.0,Ct,Citrate,1.0
+1453,A8,8,500000000.0,Ct,Citrate,2.0
+1454,A9,8,620000000.0,Ct,Citrate,3.0
+1455,A10,8,1800000000.0,Ct,Glutarate,1.0
+1456,A11,8,3400000000.0,Ct,Glutarate,2.0
+1457,A12,8,4600000000.0,Ct,Glutarate,3.0
+1458,B1,8,200000000.0,Ct,Glycerol,1.0
+1459,B2,8,140000000.0,Ct,Glycerol,2.0
+1460,B3,8,360000000.0,Ct,Glycerol,3.0
+1461,B4,8,7600000.0,Ct,Inosine,1.0
+1462,B5,8,,Ct,Inosine,2.0
+1463,B6,8,8600000.0,Ct,Inosine,3.0
+1464,B7,8,28000000.0,Ct,L-Alanine,1.0
+1465,B8,8,16000000.0,Ct,L-Alanine,2.0
+1466,B9,8,30000000.0,Ct,L-Alanine,3.0
+1467,B10,8,640000000.0,Ct,L-Glutamate,1.0
+1468,B11,8,800000000.0,Ct,L-Glutamate,2.0
+1469,B12,8,960000000.0,Ct,L-Glutamate,3.0
+1470,C1,8,580000000.0,Ct,L-Histidine,1.0
+1471,C2,8,800000000.0,Ct,L-Histidine,2.0
+1472,C3,8,1400000000.0,Ct,L-Histidine,3.0
+1473,C4,8,6000000000.0,Ct,L-Isoleucine,1.0
+1474,C5,8,6800000000.0,Ct,L-Isoleucine,2.0
+1475,C6,8,8200000000.0,Ct,L-Isoleucine,3.0
+1476,C7,8,800000000.0,Ct,Malate,1.0
+1477,C8,8,,Ct,Malate,2.0
+1478,C9,8,640000000.0,Ct,Malate,3.0
+1479,C10,8,114000000.0,Ct,Mannitol,1.0
+1480,C11,8,76000000.0,Ct,Mannitol,2.0
+1481,C12,8,102000000.0,Ct,Mannitol,3.0
+1482,D1,8,98000000.0,Ct,Mannose,1.0
+1483,D2,8,86000000.0,Ct,Mannose,2.0
+1484,D3,8,88000000.0,Ct,Mannose,3.0
+1485,D4,8,120000000.0,Ct,Myo-inositol,1.0
+1486,D5,8,180000000.0,Ct,Myo-inositol,2.0
+1487,D6,8,140000000.0,Ct,Myo-inositol,3.0
+1488,D7,8,26000000.0,Ct,D-Xylose,1.0
+1489,D8,8,46000000.0,Ct,D-Xylose,2.0
+1490,D9,8,34000000.0,Ct,D-Xylose,3.0
+1491,D10,8,10000000.0,Ct,Ribose,1.0
+1492,D11,8,4000000.0,Ct,Ribose,2.0
+1493,D12,8,18000000.0,Ct,Ribose,3.0
+1494,E1,8,780000000.0,Ct,Citrate + D-Glucose,1.0
+1495,E2,8,980000000.0,Ct,Citrate + D-Glucose,2.0
+1496,E3,8,1060000000.0,Ct,Citrate + D-Glucose,3.0
+1497,E4,8,3600000000.0,Ct,Glycerol + L-Isoleucine,1.0
+1498,E5,8,4000000000.0,Ct,Glycerol + L-Isoleucine,2.0
+1499,E6,8,2600000000.0,Ct,Glycerol + L-Isoleucine,3.0
+1500,E7,8,2200000000.0,Ct,Glutarate + Inosine,1.0
+1501,E8,8,1800000000.0,Ct,Glutarate + Inosine,2.0
+1502,E9,8,3000000000.0,Ct,Glutarate + Inosine,3.0
+1503,E10,8,660000000.0,Ct,Malate + Citrate,1.0
+1504,E11,8,540000000.0,Ct,Malate + Citrate,2.0
+1505,E12,8,560000000.0,Ct,Malate + Citrate,3.0
+1506,F1,8,880000000.0,Ct,Acetate + L-Alanine,1.0
+1507,F2,8,960000000.0,Ct,Acetate + L-Alanine,2.0
+1508,F3,8,880000000.0,Ct,Acetate + L-Alanine,3.0
+1509,F4,8,700000000.0,Ct,L-Glutamate + Mannose,1.0
+1510,F5,8,500000000.0,Ct,L-Glutamate + Mannose,2.0
+1511,F6,8,720000000.0,Ct,L-Glutamate + Mannose,3.0
+1512,F7,8,480000000.0,Ct,L-Histidine + Mannose,1.0
+1513,F8,8,440000000.0,Ct,L-Histidine + Mannose,2.0
+1514,F9,8,480000000.0,Ct,L-Histidine + Mannose,3.0
+1515,F10,8,740000000.0,Ct,Mannitol + Acetate,1.0
+1516,F11,8,800000000.0,Ct,Mannitol + Acetate,2.0
+1517,F12,8,1000000000.0,Ct,Mannitol + Acetate,3.0
+1518,G1,8,760000000.0,Ct,Myo-inositol + L-Glutamate,1.0
+1519,G2,8,560000000.0,Ct,Myo-inositol + L-Glutamate,2.0
+1520,G3,8,760000000.0,Ct,Myo-inositol + L-Glutamate,3.0
+1521,G4,8,1120000000.0,Ct,Ribose + Glutarate,1.0
+1522,G5,8,1000000000.0,Ct,Ribose + Glutarate,2.0
+1523,G6,8,1040000000.0,Ct,Ribose + Glutarate,3.0
+1524,G7,8,220000000.0,Ct,D-Xylose + L-Histidine,1.0
+1525,G8,8,340000000.0,Ct,D-Xylose + L-Histidine,2.0
+1526,G9,8,320000000.0,Ct,D-Xylose + L-Histidine,3.0
+1527,G10,8,52000000.0,Ct,Glycerol + Inosine,1.0
+1528,G11,8,44000000.0,Ct,Glycerol + Inosine,2.0
+1529,G12,8,48000000.0,Ct,Glycerol + Inosine,3.0
+1530,H1,8,52000000.0,Ct,L-Alanine + D-Glucose,1.0
+1531,H2,8,36000000.0,Ct,L-Alanine + D-Glucose,2.0
+1532,H3,8,34000000.0,Ct,L-Alanine + D-Glucose,3.0
+1533,H4,8,6000000000.0,Ct,Malate + L-Isoleucine,1.0
+1534,H5,8,6600000000.0,Ct,Malate + L-Isoleucine,2.0
+1535,H6,8,6400000000.0,Ct,Malate + L-Isoleucine,3.0
+1536,H7,8,54000000.0,Ct,Mannitol + Myo-inositol,1.0
+1537,H8,8,74000000.0,Ct,Mannitol + Myo-inositol,2.0
+1538,H9,8,68000000.0,Ct,Mannitol + Myo-inositol,3.0
+1539,H10,8,56000.0,Ct,No CS,1.0
+1540,H11,8,62000.0,Ct,No CS,2.0
+1541,H12,8,56000.0,Ct,No CS,3.0
+1542,Inoculum,0,50246305.41871921,Ml,,
+1543,Inoculum,0,53201970.44334976,Ml,,
+1544,Inoculum,0,56157635.467980295,Ml,,
+1545,A1,1,520000000.0,Ml,Acetate,1.0
+1546,A2,1,380000000.0,Ml,Acetate,2.0
+1547,A3,1,520000000.0,Ml,Acetate,3.0
+1548,A4,1,300000000.0,Ml,D-Glucose,1.0
+1549,A5,1,400000000.0,Ml,D-Glucose,2.0
+1550,A6,1,380000000.0,Ml,D-Glucose,3.0
+1551,A7,1,500000000.0,Ml,Citrate,1.0
+1552,A8,1,440000000.0,Ml,Citrate,2.0
+1553,A9,1,340000000.0,Ml,Citrate,3.0
+1554,A10,1,62000000.0,Ml,Glutarate,1.0
+1555,A11,1,52000000.0,Ml,Glutarate,2.0
+1556,A12,1,72000000.0,Ml,Glutarate,3.0
+1557,B1,1,540000000.0,Ml,Glycerol,1.0
+1558,B2,1,500000000.0,Ml,Glycerol,2.0
+1559,B3,1,380000000.0,Ml,Glycerol,3.0
+1560,B4,1,240000000.0,Ml,Inosine,1.0
+1561,B5,1,320000000.0,Ml,Inosine,2.0
+1562,B6,1,280000000.0,Ml,Inosine,3.0
+1563,B7,1,180000000.0,Ml,L-Alanine,1.0
+1564,B8,1,140000000.0,Ml,L-Alanine,2.0
+1565,B9,1,180000000.0,Ml,L-Alanine,3.0
+1566,B10,1,280000000.0,Ml,L-Glutamate,1.0
+1567,B11,1,340000000.0,Ml,L-Glutamate,2.0
+1568,B12,1,440000000.0,Ml,L-Glutamate,3.0
+1569,C1,1,340000000.0,Ml,L-Histidine,1.0
+1570,C2,1,200000000.0,Ml,L-Histidine,2.0
+1571,C3,1,280000000.0,Ml,L-Histidine,3.0
+1572,C4,1,420000000.0,Ml,L-Isoleucine,1.0
+1573,C5,1,440000000.0,Ml,L-Isoleucine,2.0
+1574,C6,1,400000000.0,Ml,L-Isoleucine,3.0
+1575,C7,1,400000000.0,Ml,Malate,1.0
+1576,C8,1,480000000.0,Ml,Malate,2.0
+1577,C9,1,460000000.0,Ml,Malate,3.0
+1578,C10,1,52000000.0,Ml,Mannitol,1.0
+1579,C11,1,46000000.0,Ml,Mannitol,2.0
+1580,C12,1,50000000.0,Ml,Mannitol,3.0
+1581,D1,1,460000000.0,Ml,Mannose,1.0
+1582,D2,1,280000000.0,Ml,Mannose,2.0
+1583,D3,1,440000000.0,Ml,Mannose,3.0
+1584,D4,1,44000000.0,Ml,Myo-inositol,1.0
+1585,D5,1,24000000.0,Ml,Myo-inositol,2.0
+1586,D6,1,34000000.0,Ml,Myo-inositol,3.0
+1587,D7,1,52000000.0,Ml,D-Xylose,1.0
+1588,D8,1,50000000.0,Ml,D-Xylose,2.0
+1589,D9,1,52000000.0,Ml,D-Xylose,3.0
+1590,D10,1,220000000.0,Ml,Ribose,1.0
+1591,D11,1,160000000.0,Ml,Ribose,2.0
+1592,D12,1,320000000.0,Ml,Ribose,3.0
+1593,E1,1,540000000.0,Ml,Citrate + D-Glucose,1.0
+1594,E2,1,360000000.0,Ml,Citrate + D-Glucose,2.0
+1595,E3,1,320000000.0,Ml,Citrate + D-Glucose,3.0
+1596,E4,1,580000000.0,Ml,Glycerol + L-Isoleucine,1.0
+1597,E5,1,560000000.0,Ml,Glycerol + L-Isoleucine,2.0
+1598,E6,1,540000000.0,Ml,Glycerol + L-Isoleucine,3.0
+1599,E7,1,1200000000.0,Ml,Glutarate + Inosine,1.0
+1600,E8,1,3000000000.0,Ml,Glutarate + Inosine,2.0
+1601,E9,1,1800000000.0,Ml,Glutarate + Inosine,3.0
+1602,E10,1,2200000000.0,Ml,Malate + Citrate,1.0
+1603,E11,1,3400000000.0,Ml,Malate + Citrate,2.0
+1604,E12,1,,Ml,Malate + Citrate,3.0
+1605,F1,1,420000000.0,Ml,Acetate + L-Alanine,1.0
+1606,F2,1,320000000.0,Ml,Acetate + L-Alanine,2.0
+1607,F3,1,380000000.0,Ml,Acetate + L-Alanine,3.0
+1608,F4,1,620000000.0,Ml,L-Glutamate + Mannose,1.0
+1609,F5,1,640000000.0,Ml,L-Glutamate + Mannose,2.0
+1610,F6,1,560000000.0,Ml,L-Glutamate + Mannose,3.0
+1611,F7,1,260000000.0,Ml,L-Histidine + Mannose,1.0
+1612,F8,1,460000000.0,Ml,L-Histidine + Mannose,2.0
+1613,F9,1,380000000.0,Ml,L-Histidine + Mannose,3.0
+1614,F10,1,440000000.0,Ml,Mannitol + Acetate,1.0
+1615,F11,1,460000000.0,Ml,Mannitol + Acetate,2.0
+1616,F12,1,360000000.0,Ml,Mannitol + Acetate,3.0
+1617,G1,1,340000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+1618,G2,1,320000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+1619,G3,1,200000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+1620,G4,1,340000000.0,Ml,Ribose + Glutarate,1.0
+1621,G5,1,360000000.0,Ml,Ribose + Glutarate,2.0
+1622,G6,1,240000000.0,Ml,Ribose + Glutarate,3.0
+1623,G7,1,86000000.0,Ml,D-Xylose + L-Histidine,1.0
+1624,G8,1,66000000.0,Ml,D-Xylose + L-Histidine,2.0
+1625,G9,1,78000000.0,Ml,D-Xylose + L-Histidine,3.0
+1626,G10,1,400000000.0,Ml,Glycerol + Inosine,1.0
+1627,G11,1,380000000.0,Ml,Glycerol + Inosine,2.0
+1628,G12,1,160000000.0,Ml,Glycerol + Inosine,3.0
+1629,H1,1,380000000.0,Ml,L-Alanine + D-Glucose,1.0
+1630,H2,1,300000000.0,Ml,L-Alanine + D-Glucose,2.0
+1631,H3,1,400000000.0,Ml,L-Alanine + D-Glucose,3.0
+1632,H4,1,360000000.0,Ml,Malate + L-Isoleucine,1.0
+1633,H5,1,340000000.0,Ml,Malate + L-Isoleucine,2.0
+1634,H6,1,320000000.0,Ml,Malate + L-Isoleucine,3.0
+1635,H7,1,40000000.0,Ml,Mannitol + Myo-inositol,1.0
+1636,H8,1,52000000.0,Ml,Mannitol + Myo-inositol,2.0
+1637,H9,1,68000000.0,Ml,Mannitol + Myo-inositol,3.0
+1638,H10,1,1600000.0,Ml,No CS,1.0
+1639,H11,1,800000.0,Ml,No CS,2.0
+1640,H12,1,1400000.0,Ml,No CS,3.0
+1641,A1,2,160000000.0,Ml,Acetate,1.0
+1642,A2,2,260000000.0,Ml,Acetate,2.0
+1643,A3,2,300000000.0,Ml,Acetate,3.0
+1644,A4,2,80000000.0,Ml,D-Glucose,1.0
+1645,A5,2,180000000.0,Ml,D-Glucose,2.0
+1646,A6,2,100000000.0,Ml,D-Glucose,3.0
+1647,A7,2,120000000.0,Ml,Citrate,1.0
+1648,A8,2,100000000.0,Ml,Citrate,2.0
+1649,A9,2,80000000.0,Ml,Citrate,3.0
+1650,A10,2,62000000.0,Ml,Glutarate,1.0
+1651,A11,2,160000000.0,Ml,Glutarate,2.0
+1652,A12,2,220000000.0,Ml,Glutarate,3.0
+1653,B1,2,160000000.0,Ml,Glycerol,1.0
+1654,B2,2,120000000.0,Ml,Glycerol,2.0
+1655,B3,2,40000000.0,Ml,Glycerol,3.0
+1656,B4,2,140000000.0,Ml,Inosine,1.0
+1657,B5,2,240000000.0,Ml,Inosine,2.0
+1658,B6,2,220000000.0,Ml,Inosine,3.0
+1659,B7,2,20000000.0,Ml,L-Alanine,1.0
+1660,B8,2,24000000.0,Ml,L-Alanine,2.0
+1661,B9,2,26000000.0,Ml,L-Alanine,3.0
+1662,B10,2,260000000.0,Ml,L-Glutamate,1.0
+1663,B11,2,240000000.0,Ml,L-Glutamate,2.0
+1664,B12,2,,Ml,L-Glutamate,3.0
+1665,C1,2,44000000.0,Ml,L-Histidine,1.0
+1666,C2,2,28000000.0,Ml,L-Histidine,2.0
+1667,C3,2,26000000.0,Ml,L-Histidine,3.0
+1668,C4,2,60000000.0,Ml,L-Isoleucine,1.0
+1669,C5,2,140000000.0,Ml,L-Isoleucine,2.0
+1670,C6,2,140000000.0,Ml,L-Isoleucine,3.0
+1671,C7,2,320000000.0,Ml,Malate,1.0
+1672,C8,2,400000000.0,Ml,Malate,2.0
+1673,C9,2,360000000.0,Ml,Malate,3.0
+1674,C10,2,20000000.0,Ml,Mannitol,1.0
+1675,C11,2,22000000.0,Ml,Mannitol,2.0
+1676,C12,2,24000000.0,Ml,Mannitol,3.0
+1677,D1,2,320000000.0,Ml,Mannose,1.0
+1678,D2,2,220000000.0,Ml,Mannose,2.0
+1679,D3,2,320000000.0,Ml,Mannose,3.0
+1680,D4,2,14000000.0,Ml,Myo-inositol,1.0
+1681,D5,2,14000000.0,Ml,Myo-inositol,2.0
+1682,D6,2,12000000.0,Ml,Myo-inositol,3.0
+1683,D7,2,18000000.0,Ml,D-Xylose,1.0
+1684,D8,2,18000000.0,Ml,D-Xylose,2.0
+1685,D9,2,20000000.0,Ml,D-Xylose,3.0
+1686,D10,2,120000000.0,Ml,Ribose,1.0
+1687,D11,2,60000000.0,Ml,Ribose,2.0
+1688,D12,2,100000000.0,Ml,Ribose,3.0
+1689,E1,2,200000000.0,Ml,Citrate + D-Glucose,1.0
+1690,E2,2,180000000.0,Ml,Citrate + D-Glucose,2.0
+1691,E3,2,120000000.0,Ml,Citrate + D-Glucose,3.0
+1692,E4,2,300000000.0,Ml,Glycerol + L-Isoleucine,1.0
+1693,E5,2,400000000.0,Ml,Glycerol + L-Isoleucine,2.0
+1694,E6,2,320000000.0,Ml,Glycerol + L-Isoleucine,3.0
+1695,E7,2,2600000000.0,Ml,Glutarate + Inosine,1.0
+1696,E8,2,1400000000.0,Ml,Glutarate + Inosine,2.0
+1697,E9,2,1800000000.0,Ml,Glutarate + Inosine,3.0
+1698,E10,2,2400000000.0,Ml,Malate + Citrate,1.0
+1699,E11,2,2200000000.0,Ml,Malate + Citrate,2.0
+1700,E12,2,2600000000.0,Ml,Malate + Citrate,3.0
+1701,F1,2,260000000.0,Ml,Acetate + L-Alanine,1.0
+1702,F2,2,240000000.0,Ml,Acetate + L-Alanine,2.0
+1703,F3,2,200000000.0,Ml,Acetate + L-Alanine,3.0
+1704,F4,2,400000000.0,Ml,L-Glutamate + Mannose,1.0
+1705,F5,2,360000000.0,Ml,L-Glutamate + Mannose,2.0
+1706,F6,2,240000000.0,Ml,L-Glutamate + Mannose,3.0
+1707,F7,2,32000000.0,Ml,L-Histidine + Mannose,1.0
+1708,F8,2,54000000.0,Ml,L-Histidine + Mannose,2.0
+1709,F9,2,54000000.0,Ml,L-Histidine + Mannose,3.0
+1710,F10,2,56000000.0,Ml,Mannitol + Acetate,1.0
+1711,F11,2,72000000.0,Ml,Mannitol + Acetate,2.0
+1712,F12,2,52000000.0,Ml,Mannitol + Acetate,3.0
+1713,G1,2,44000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+1714,G2,2,34000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+1715,G3,2,32000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+1716,G4,2,340000000.0,Ml,Ribose + Glutarate,1.0
+1717,G5,2,480000000.0,Ml,Ribose + Glutarate,2.0
+1718,G6,2,420000000.0,Ml,Ribose + Glutarate,3.0
+1719,G7,2,16000000.0,Ml,D-Xylose + L-Histidine,1.0
+1720,G8,2,22000000.0,Ml,D-Xylose + L-Histidine,2.0
+1721,G9,2,16000000.0,Ml,D-Xylose + L-Histidine,3.0
+1722,G10,2,200000000.0,Ml,Glycerol + Inosine,1.0
+1723,G11,2,220000000.0,Ml,Glycerol + Inosine,2.0
+1724,G12,2,100000000.0,Ml,Glycerol + Inosine,3.0
+1725,H1,2,240000000.0,Ml,L-Alanine + D-Glucose,1.0
+1726,H2,2,200000000.0,Ml,L-Alanine + D-Glucose,2.0
+1727,H3,2,160000000.0,Ml,L-Alanine + D-Glucose,3.0
+1728,H4,2,140000000.0,Ml,Malate + L-Isoleucine,1.0
+1729,H5,2,200000000.0,Ml,Malate + L-Isoleucine,2.0
+1730,H6,2,120000000.0,Ml,Malate + L-Isoleucine,3.0
+1731,H7,2,22000000.0,Ml,Mannitol + Myo-inositol,1.0
+1732,H8,2,32000000.0,Ml,Mannitol + Myo-inositol,2.0
+1733,H9,2,20000000.0,Ml,Mannitol + Myo-inositol,3.0
+1734,H10,2,1600.0,Ml,No CS,1.0
+1735,H11,2,800.0,Ml,No CS,2.0
+1736,H12,2,1400.0,Ml,No CS,3.0
+1737,A1,3,100000000.0,Ml,Acetate,1.0
+1738,A2,3,120000000.0,Ml,Acetate,2.0
+1739,A3,3,120000000.0,Ml,Acetate,3.0
+1740,A4,3,180000000.0,Ml,D-Glucose,1.0
+1741,A5,3,60000000.0,Ml,D-Glucose,2.0
+1742,A6,3,60000000.0,Ml,D-Glucose,3.0
+1743,A7,3,320000000.0,Ml,Citrate,1.0
+1744,A8,3,240000000.0,Ml,Citrate,2.0
+1745,A9,3,120000000.0,Ml,Citrate,3.0
+1746,A10,3,120000000.0,Ml,Glutarate,1.0
+1747,A11,3,200000000.0,Ml,Glutarate,2.0
+1748,A12,3,140000000.0,Ml,Glutarate,3.0
+1749,B1,3,220000000.0,Ml,Glycerol,1.0
+1750,B2,3,80000000.0,Ml,Glycerol,2.0
+1751,B3,3,160000000.0,Ml,Glycerol,3.0
+1752,B4,3,200000000.0,Ml,Inosine,1.0
+1753,B5,3,300000000.0,Ml,Inosine,2.0
+1754,B6,3,320000000.0,Ml,Inosine,3.0
+1755,B7,3,32000000.0,Ml,L-Alanine,1.0
+1756,B8,3,30000000.0,Ml,L-Alanine,2.0
+1757,B9,3,40000000.0,Ml,L-Alanine,3.0
+1758,B10,3,300000000.0,Ml,L-Glutamate,1.0
+1759,B11,3,460000000.0,Ml,L-Glutamate,2.0
+1760,B12,3,420000000.0,Ml,L-Glutamate,3.0
+1761,C1,3,24000000.0,Ml,L-Histidine,1.0
+1762,C2,3,16000000.0,Ml,L-Histidine,2.0
+1763,C3,3,26000000.0,Ml,L-Histidine,3.0
+1764,C4,3,160000000.0,Ml,L-Isoleucine,1.0
+1765,C5,3,240000000.0,Ml,L-Isoleucine,2.0
+1766,C6,3,180000000.0,Ml,L-Isoleucine,3.0
+1767,C7,3,360000000.0,Ml,Malate,1.0
+1768,C8,3,400000000.0,Ml,Malate,2.0
+1769,C9,3,400000000.0,Ml,Malate,3.0
+1770,C10,3,24000000.0,Ml,Mannitol,1.0
+1771,C11,3,16000000.0,Ml,Mannitol,2.0
+1772,C12,3,20000000.0,Ml,Mannitol,3.0
+1773,D1,3,200000000.0,Ml,Mannose,1.0
+1774,D2,3,160000000.0,Ml,Mannose,2.0
+1775,D3,3,200000000.0,Ml,Mannose,3.0
+1776,D4,3,16000000.0,Ml,Myo-inositol,1.0
+1777,D5,3,16000000.0,Ml,Myo-inositol,2.0
+1778,D6,3,24000000.0,Ml,Myo-inositol,3.0
+1779,D7,3,14000000.0,Ml,D-Xylose,1.0
+1780,D8,3,22000000.0,Ml,D-Xylose,2.0
+1781,D9,3,18000000.0,Ml,D-Xylose,3.0
+1782,D10,3,240000000.0,Ml,Ribose,1.0
+1783,D11,3,320000000.0,Ml,Ribose,2.0
+1784,D12,3,360000000.0,Ml,Ribose,3.0
+1785,E1,3,160000000.0,Ml,Citrate + D-Glucose,1.0
+1786,E2,3,160000000.0,Ml,Citrate + D-Glucose,2.0
+1787,E3,3,140000000.0,Ml,Citrate + D-Glucose,3.0
+1788,E4,3,340000000.0,Ml,Glycerol + L-Isoleucine,1.0
+1789,E5,3,240000000.0,Ml,Glycerol + L-Isoleucine,2.0
+1790,E6,3,420000000.0,Ml,Glycerol + L-Isoleucine,3.0
+1791,E7,3,2400000000.0,Ml,Glutarate + Inosine,1.0
+1792,E8,3,1400000000.0,Ml,Glutarate + Inosine,2.0
+1793,E9,3,1800000000.0,Ml,Glutarate + Inosine,3.0
+1794,E10,3,2400000000.0,Ml,Malate + Citrate,1.0
+1795,E11,3,1800000000.0,Ml,Malate + Citrate,2.0
+1796,E12,3,1400000000.0,Ml,Malate + Citrate,3.0
+1797,F1,3,260000000.0,Ml,Acetate + L-Alanine,1.0
+1798,F2,3,420000000.0,Ml,Acetate + L-Alanine,2.0
+1799,F3,3,300000000.0,Ml,Acetate + L-Alanine,3.0
+1800,F4,3,360000000.0,Ml,L-Glutamate + Mannose,1.0
+1801,F5,3,260000000.0,Ml,L-Glutamate + Mannose,2.0
+1802,F6,3,200000000.0,Ml,L-Glutamate + Mannose,3.0
+1803,F7,3,48000000.0,Ml,L-Histidine + Mannose,1.0
+1804,F8,3,44000000.0,Ml,L-Histidine + Mannose,2.0
+1805,F9,3,34000000.0,Ml,L-Histidine + Mannose,3.0
+1806,F10,3,50000000.0,Ml,Mannitol + Acetate,1.0
+1807,F11,3,52000000.0,Ml,Mannitol + Acetate,2.0
+1808,F12,3,48000000.0,Ml,Mannitol + Acetate,3.0
+1809,G1,3,46000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+1810,G2,3,36000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+1811,G3,3,44000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+1812,G4,3,1600000000.0,Ml,Ribose + Glutarate,1.0
+1813,G5,3,1000000000.0,Ml,Ribose + Glutarate,2.0
+1814,G6,3,800000000.0,Ml,Ribose + Glutarate,3.0
+1815,G7,3,32000000.0,Ml,D-Xylose + L-Histidine,1.0
+1816,G8,3,18000000.0,Ml,D-Xylose + L-Histidine,2.0
+1817,G9,3,28000000.0,Ml,D-Xylose + L-Histidine,3.0
+1818,G10,3,220000000.0,Ml,Glycerol + Inosine,1.0
+1819,G11,3,80000000.0,Ml,Glycerol + Inosine,2.0
+1820,G12,3,140000000.0,Ml,Glycerol + Inosine,3.0
+1821,H1,3,100000000.0,Ml,L-Alanine + D-Glucose,1.0
+1822,H2,3,180000000.0,Ml,L-Alanine + D-Glucose,2.0
+1823,H3,3,120000000.0,Ml,L-Alanine + D-Glucose,3.0
+1824,H4,3,120000000.0,Ml,Malate + L-Isoleucine,1.0
+1825,H5,3,180000000.0,Ml,Malate + L-Isoleucine,2.0
+1826,H6,3,180000000.0,Ml,Malate + L-Isoleucine,3.0
+1827,H7,3,14000000.0,Ml,Mannitol + Myo-inositol,1.0
+1828,H8,3,16000000.0,Ml,Mannitol + Myo-inositol,2.0
+1829,H9,3,14000000.0,Ml,Mannitol + Myo-inositol,3.0
+1830,H10,3,,Ml,No CS,1.0
+1831,H11,3,,Ml,No CS,2.0
+1832,H12,3,,Ml,No CS,3.0
+1833,A1,4,76000000.0,Ml,Acetate,1.0
+1834,A2,4,112000000.0,Ml,Acetate,2.0
+1835,A3,4,92000000.0,Ml,Acetate,3.0
+1836,A4,4,76000000.0,Ml,D-Glucose,1.0
+1837,A5,4,72000000.0,Ml,D-Glucose,2.0
+1838,A6,4,70000000.0,Ml,D-Glucose,3.0
+1839,A7,4,660000000.0,Ml,Citrate,1.0
+1840,A8,4,560000000.0,Ml,Citrate,2.0
+1841,A9,4,580000000.0,Ml,Citrate,3.0
+1842,A10,4,90000000.0,Ml,Glutarate,1.0
+1843,A11,4,76000000.0,Ml,Glutarate,2.0
+1844,A12,4,88000000.0,Ml,Glutarate,3.0
+1845,B1,4,180000000.0,Ml,Glycerol,1.0
+1846,B2,4,160000000.0,Ml,Glycerol,2.0
+1847,B3,4,120000000.0,Ml,Glycerol,3.0
+1848,B4,4,260000000.0,Ml,Inosine,1.0
+1849,B5,4,340000000.0,Ml,Inosine,2.0
+1850,B6,4,380000000.0,Ml,Inosine,3.0
+1851,B7,4,12000000.0,Ml,L-Alanine,1.0
+1852,B8,4,14000000.0,Ml,L-Alanine,2.0
+1853,B9,4,22000000.0,Ml,L-Alanine,3.0
+1854,B10,4,380000000.0,Ml,L-Glutamate,1.0
+1855,B11,4,300000000.0,Ml,L-Glutamate,2.0
+1856,B12,4,420000000.0,Ml,L-Glutamate,3.0
+1857,C1,4,24000000.0,Ml,L-Histidine,1.0
+1858,C2,4,18000000.0,Ml,L-Histidine,2.0
+1859,C3,4,26000000.0,Ml,L-Histidine,3.0
+1860,C4,4,160000000.0,Ml,L-Isoleucine,1.0
+1861,C5,4,240000000.0,Ml,L-Isoleucine,2.0
+1862,C6,4,140000000.0,Ml,L-Isoleucine,3.0
+1863,C7,4,400000000.0,Ml,Malate,1.0
+1864,C8,4,420000000.0,Ml,Malate,2.0
+1865,C9,4,440000000.0,Ml,Malate,3.0
+1866,C10,4,24000000.0,Ml,Mannitol,1.0
+1867,C11,4,22000000.0,Ml,Mannitol,2.0
+1868,C12,4,20000000.0,Ml,Mannitol,3.0
+1869,D1,4,280000000.0,Ml,Mannose,1.0
+1870,D2,4,220000000.0,Ml,Mannose,2.0
+1871,D3,4,120000000.0,Ml,Mannose,3.0
+1872,D4,4,16000000.0,Ml,Myo-inositol,1.0
+1873,D5,4,10000000.0,Ml,Myo-inositol,2.0
+1874,D6,4,20000000.0,Ml,Myo-inositol,3.0
+1875,D7,4,22000000.0,Ml,D-Xylose,1.0
+1876,D8,4,26000000.0,Ml,D-Xylose,2.0
+1877,D9,4,14000000.0,Ml,D-Xylose,3.0
+1878,D10,4,360000000.0,Ml,Ribose,1.0
+1879,D11,4,340000000.0,Ml,Ribose,2.0
+1880,D12,4,340000000.0,Ml,Ribose,3.0
+1881,E1,4,200000000.0,Ml,Citrate + D-Glucose,1.0
+1882,E2,4,220000000.0,Ml,Citrate + D-Glucose,2.0
+1883,E3,4,160000000.0,Ml,Citrate + D-Glucose,3.0
+1884,E4,4,260000000.0,Ml,Glycerol + L-Isoleucine,1.0
+1885,E5,4,320000000.0,Ml,Glycerol + L-Isoleucine,2.0
+1886,E6,4,240000000.0,Ml,Glycerol + L-Isoleucine,3.0
+1887,E7,4,1600000000.0,Ml,Glutarate + Inosine,1.0
+1888,E8,4,1800000000.0,Ml,Glutarate + Inosine,2.0
+1889,E9,4,1400000000.0,Ml,Glutarate + Inosine,3.0
+1890,E10,4,3600000000.0,Ml,Malate + Citrate,1.0
+1891,E11,4,2000000000.0,Ml,Malate + Citrate,2.0
+1892,E12,4,2800000000.0,Ml,Malate + Citrate,3.0
+1893,F1,4,800000000.0,Ml,Acetate + L-Alanine,1.0
+1894,F2,4,800000000.0,Ml,Acetate + L-Alanine,2.0
+1895,F3,4,1000000000.0,Ml,Acetate + L-Alanine,3.0
+1896,F4,4,280000000.0,Ml,L-Glutamate + Mannose,1.0
+1897,F5,4,440000000.0,Ml,L-Glutamate + Mannose,2.0
+1898,F6,4,300000000.0,Ml,L-Glutamate + Mannose,3.0
+1899,F7,4,28000000.0,Ml,L-Histidine + Mannose,1.0
+1900,F8,4,26000000.0,Ml,L-Histidine + Mannose,2.0
+1901,F9,4,34000000.0,Ml,L-Histidine + Mannose,3.0
+1902,F10,4,200000000.0,Ml,Mannitol + Acetate,1.0
+1903,F11,4,120000000.0,Ml,Mannitol + Acetate,2.0
+1904,F12,4,120000000.0,Ml,Mannitol + Acetate,3.0
+1905,G1,4,32000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+1906,G2,4,44000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+1907,G3,4,42000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+1908,G4,4,1200000000.0,Ml,Ribose + Glutarate,1.0
+1909,G5,4,1200000000.0,Ml,Ribose + Glutarate,2.0
+1910,G6,4,600000000.0,Ml,Ribose + Glutarate,3.0
+1911,G7,4,18000000.0,Ml,D-Xylose + L-Histidine,1.0
+1912,G8,4,16000000.0,Ml,D-Xylose + L-Histidine,2.0
+1913,G9,4,22000000.0,Ml,D-Xylose + L-Histidine,3.0
+1914,G10,4,140000000.0,Ml,Glycerol + Inosine,1.0
+1915,G11,4,100000000.0,Ml,Glycerol + Inosine,2.0
+1916,G12,4,80000000.0,Ml,Glycerol + Inosine,3.0
+1917,H1,4,140000000.0,Ml,L-Alanine + D-Glucose,1.0
+1918,H2,4,100000000.0,Ml,L-Alanine + D-Glucose,2.0
+1919,H3,4,140000000.0,Ml,L-Alanine + D-Glucose,3.0
+1920,H4,4,80000000.0,Ml,Malate + L-Isoleucine,1.0
+1921,H5,4,80000000.0,Ml,Malate + L-Isoleucine,2.0
+1922,H6,4,140000000.0,Ml,Malate + L-Isoleucine,3.0
+1923,H7,4,16000000.0,Ml,Mannitol + Myo-inositol,1.0
+1924,H8,4,14000000.0,Ml,Mannitol + Myo-inositol,2.0
+1925,H9,4,30000000.0,Ml,Mannitol + Myo-inositol,3.0
+1926,H10,4,,Ml,No CS,1.0
+1927,H11,4,,Ml,No CS,2.0
+1928,H12,4,,Ml,No CS,3.0
+1929,A1,5,84000000.0,Ml,Acetate,1.0
+1930,A2,5,80000000.0,Ml,Acetate,2.0
+1931,A3,5,72000000.0,Ml,Acetate,3.0
+1932,A4,5,60000000.0,Ml,D-Glucose,1.0
+1933,A5,5,58000000.0,Ml,D-Glucose,2.0
+1934,A6,5,60000000.0,Ml,D-Glucose,3.0
+1935,A7,5,1400000000.0,Ml,Citrate,1.0
+1936,A8,5,1800000000.0,Ml,Citrate,2.0
+1937,A9,5,1400000000.0,Ml,Citrate,3.0
+1938,A10,5,160000000.0,Ml,Glutarate,1.0
+1939,A11,5,100000000.0,Ml,Glutarate,2.0
+1940,A12,5,120000000.0,Ml,Glutarate,3.0
+1941,B1,5,140000000.0,Ml,Glycerol,1.0
+1942,B2,5,120000000.0,Ml,Glycerol,2.0
+1943,B3,5,260000000.0,Ml,Glycerol,3.0
+1944,B4,5,160000000.0,Ml,Inosine,1.0
+1945,B5,5,360000000.0,Ml,Inosine,2.0
+1946,B6,5,520000000.0,Ml,Inosine,3.0
+1947,B7,5,30000000.0,Ml,L-Alanine,1.0
+1948,B8,5,28000000.0,Ml,L-Alanine,2.0
+1949,B9,5,26000000.0,Ml,L-Alanine,3.0
+1950,B10,5,320000000.0,Ml,L-Glutamate,1.0
+1951,B11,5,320000000.0,Ml,L-Glutamate,2.0
+1952,B12,5,440000000.0,Ml,L-Glutamate,3.0
+1953,C1,5,20000000.0,Ml,L-Histidine,1.0
+1954,C2,5,16000000.0,Ml,L-Histidine,2.0
+1955,C3,5,24000000.0,Ml,L-Histidine,3.0
+1956,C4,5,200000000.0,Ml,L-Isoleucine,1.0
+1957,C5,5,320000000.0,Ml,L-Isoleucine,2.0
+1958,C6,5,280000000.0,Ml,L-Isoleucine,3.0
+1959,C7,5,700000000.0,Ml,Malate,1.0
+1960,C8,5,500000000.0,Ml,Malate,2.0
+1961,C9,5,460000000.0,Ml,Malate,3.0
+1962,C10,5,28000000.0,Ml,Mannitol,1.0
+1963,C11,5,14000000.0,Ml,Mannitol,2.0
+1964,C12,5,14000000.0,Ml,Mannitol,3.0
+1965,D1,5,240000000.0,Ml,Mannose,1.0
+1966,D2,5,240000000.0,Ml,Mannose,2.0
+1967,D3,5,180000000.0,Ml,Mannose,3.0
+1968,D4,5,20000000.0,Ml,Myo-inositol,1.0
+1969,D5,5,20000000.0,Ml,Myo-inositol,2.0
+1970,D6,5,8000000.0,Ml,Myo-inositol,3.0
+1971,D7,5,18000000.0,Ml,D-Xylose,1.0
+1972,D8,5,18000000.0,Ml,D-Xylose,2.0
+1973,D9,5,20000000.0,Ml,D-Xylose,3.0
+1974,D10,5,440000000.0,Ml,Ribose,1.0
+1975,D11,5,320000000.0,Ml,Ribose,2.0
+1976,D12,5,420000000.0,Ml,Ribose,3.0
+1977,E1,5,80000000.0,Ml,Citrate + D-Glucose,1.0
+1978,E2,5,88000000.0,Ml,Citrate + D-Glucose,2.0
+1979,E3,5,72000000.0,Ml,Citrate + D-Glucose,3.0
+1980,E4,5,300000000.0,Ml,Glycerol + L-Isoleucine,1.0
+1981,E5,5,180000000.0,Ml,Glycerol + L-Isoleucine,2.0
+1982,E6,5,280000000.0,Ml,Glycerol + L-Isoleucine,3.0
+1983,E7,5,1000000000.0,Ml,Glutarate + Inosine,1.0
+1984,E8,5,1600000000.0,Ml,Glutarate + Inosine,2.0
+1985,E9,5,2200000000.0,Ml,Glutarate + Inosine,3.0
+1986,E10,5,2000000000.0,Ml,Malate + Citrate,1.0
+1987,E11,5,2000000000.0,Ml,Malate + Citrate,2.0
+1988,E12,5,3200000000.0,Ml,Malate + Citrate,3.0
+1989,F1,5,380000000.0,Ml,Acetate + L-Alanine,1.0
+1990,F2,5,340000000.0,Ml,Acetate + L-Alanine,2.0
+1991,F3,5,260000000.0,Ml,Acetate + L-Alanine,3.0
+1992,F4,5,260000000.0,Ml,L-Glutamate + Mannose,1.0
+1993,F5,5,300000000.0,Ml,L-Glutamate + Mannose,2.0
+1994,F6,5,160000000.0,Ml,L-Glutamate + Mannose,3.0
+1995,F7,5,36000000.0,Ml,L-Histidine + Mannose,1.0
+1996,F8,5,42000000.0,Ml,L-Histidine + Mannose,2.0
+1997,F9,5,32000000.0,Ml,L-Histidine + Mannose,3.0
+1998,F10,5,64000000.0,Ml,Mannitol + Acetate,1.0
+1999,F11,5,52000000.0,Ml,Mannitol + Acetate,2.0
+2000,F12,5,36000000.0,Ml,Mannitol + Acetate,3.0
+2001,G1,5,56000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+2002,G2,5,54000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+2003,G3,5,44000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+2004,G4,5,800000000.0,Ml,Ribose + Glutarate,1.0
+2005,G5,5,1200000000.0,Ml,Ribose + Glutarate,2.0
+2006,G6,5,800000000.0,Ml,Ribose + Glutarate,3.0
+2007,G7,5,,Ml,D-Xylose + L-Histidine,1.0
+2008,G8,5,16000000.0,Ml,D-Xylose + L-Histidine,2.0
+2009,G9,5,26000000.0,Ml,D-Xylose + L-Histidine,3.0
+2010,G10,5,120000000.0,Ml,Glycerol + Inosine,1.0
+2011,G11,5,80000000.0,Ml,Glycerol + Inosine,2.0
+2012,G12,5,120000000.0,Ml,Glycerol + Inosine,3.0
+2013,H1,5,52000000.0,Ml,L-Alanine + D-Glucose,1.0
+2014,H2,5,48000000.0,Ml,L-Alanine + D-Glucose,2.0
+2015,H3,5,56000000.0,Ml,L-Alanine + D-Glucose,3.0
+2016,H4,5,200000000.0,Ml,Malate + L-Isoleucine,1.0
+2017,H5,5,180000000.0,Ml,Malate + L-Isoleucine,2.0
+2018,H6,5,140000000.0,Ml,Malate + L-Isoleucine,3.0
+2019,H7,5,9000000.0,Ml,Mannitol + Myo-inositol,1.0
+2020,H8,5,11200000.0,Ml,Mannitol + Myo-inositol,2.0
+2021,H9,5,9200000.0,Ml,Mannitol + Myo-inositol,3.0
+2022,H10,5,,Ml,No CS,1.0
+2023,H11,5,,Ml,No CS,2.0
+2024,H12,5,,Ml,No CS,3.0
+2025,A1,6,280000000.0,Ml,Acetate,1.0
+2026,A2,6,260000000.0,Ml,Acetate,2.0
+2027,A3,6,180000000.0,Ml,Acetate,3.0
+2028,A4,6,120000000.0,Ml,D-Glucose,1.0
+2029,A5,6,160000000.0,Ml,D-Glucose,2.0
+2030,A6,6,80000000.0,Ml,D-Glucose,3.0
+2031,A7,6,1800000000.0,Ml,Citrate,1.0
+2032,A8,6,1200000000.0,Ml,Citrate,2.0
+2033,A9,6,800000000.0,Ml,Citrate,3.0
+2034,A10,6,280000000.0,Ml,Glutarate,1.0
+2035,A11,6,180000000.0,Ml,Glutarate,2.0
+2036,A12,6,140000000.0,Ml,Glutarate,3.0
+2037,B1,6,120000000.0,Ml,Glycerol,1.0
+2038,B2,6,140000000.0,Ml,Glycerol,2.0
+2039,B3,6,180000000.0,Ml,Glycerol,3.0
+2040,B4,6,320000000.0,Ml,Inosine,1.0
+2041,B5,6,440000000.0,Ml,Inosine,2.0
+2042,B6,6,420000000.0,Ml,Inosine,3.0
+2043,B7,6,26000000.0,Ml,L-Alanine,1.0
+2044,B8,6,16000000.0,Ml,L-Alanine,2.0
+2045,B9,6,32000000.0,Ml,L-Alanine,3.0
+2046,B10,6,440000000.0,Ml,L-Glutamate,1.0
+2047,B11,6,280000000.0,Ml,L-Glutamate,2.0
+2048,B12,6,400000000.0,Ml,L-Glutamate,3.0
+2049,C1,6,16000000.0,Ml,L-Histidine,1.0
+2050,C2,6,16000000.0,Ml,L-Histidine,2.0
+2051,C3,6,26000000.0,Ml,L-Histidine,3.0
+2052,C4,6,220000000.0,Ml,L-Isoleucine,1.0
+2053,C5,6,260000000.0,Ml,L-Isoleucine,2.0
+2054,C6,6,180000000.0,Ml,L-Isoleucine,3.0
+2055,C7,6,1200000000.0,Ml,Malate,1.0
+2056,C8,6,1600000000.0,Ml,Malate,2.0
+2057,C9,6,800000000.0,Ml,Malate,3.0
+2058,C10,6,,Ml,Mannitol,1.0
+2059,C11,6,,Ml,Mannitol,2.0
+2060,C12,6,,Ml,Mannitol,3.0
+2061,D1,6,400000000.0,Ml,Mannose,1.0
+2062,D2,6,220000000.0,Ml,Mannose,2.0
+2063,D3,6,200000000.0,Ml,Mannose,3.0
+2064,D4,6,12000000.0,Ml,Myo-inositol,1.0
+2065,D5,6,16000000.0,Ml,Myo-inositol,2.0
+2066,D6,6,22000000.0,Ml,Myo-inositol,3.0
+2067,D7,6,20000000.0,Ml,D-Xylose,1.0
+2068,D8,6,16000000.0,Ml,D-Xylose,2.0
+2069,D9,6,16000000.0,Ml,D-Xylose,3.0
+2070,D10,6,400000000.0,Ml,Ribose,1.0
+2071,D11,6,500000000.0,Ml,Ribose,2.0
+2072,D12,6,340000000.0,Ml,Ribose,3.0
+2073,E1,6,160000000.0,Ml,Citrate + D-Glucose,1.0
+2074,E2,6,120000000.0,Ml,Citrate + D-Glucose,2.0
+2075,E3,6,100000000.0,Ml,Citrate + D-Glucose,3.0
+2076,E4,6,380000000.0,Ml,Glycerol + L-Isoleucine,1.0
+2077,E5,6,340000000.0,Ml,Glycerol + L-Isoleucine,2.0
+2078,E6,6,360000000.0,Ml,Glycerol + L-Isoleucine,3.0
+2079,E7,6,4000000000.0,Ml,Glutarate + Inosine,1.0
+2080,E8,6,2600000000.0,Ml,Glutarate + Inosine,2.0
+2081,E9,6,3400000000.0,Ml,Glutarate + Inosine,3.0
+2082,E10,6,2600000000.0,Ml,Malate + Citrate,1.0
+2083,E11,6,2000000000.0,Ml,Malate + Citrate,2.0
+2084,E12,6,2200000000.0,Ml,Malate + Citrate,3.0
+2085,F1,6,200000000.0,Ml,Acetate + L-Alanine,1.0
+2086,F2,6,400000000.0,Ml,Acetate + L-Alanine,2.0
+2087,F3,6,360000000.0,Ml,Acetate + L-Alanine,3.0
+2088,F4,6,500000000.0,Ml,L-Glutamate + Mannose,1.0
+2089,F5,6,360000000.0,Ml,L-Glutamate + Mannose,2.0
+2090,F6,6,280000000.0,Ml,L-Glutamate + Mannose,3.0
+2091,F7,6,36000000.0,Ml,L-Histidine + Mannose,1.0
+2092,F8,6,50000000.0,Ml,L-Histidine + Mannose,2.0
+2093,F9,6,32000000.0,Ml,L-Histidine + Mannose,3.0
+2094,F10,6,100000000.0,Ml,Mannitol + Acetate,1.0
+2095,F11,6,60000000.0,Ml,Mannitol + Acetate,2.0
+2096,F12,6,80000000.0,Ml,Mannitol + Acetate,3.0
+2097,G1,6,56000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+2098,G2,6,40000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+2099,G3,6,38000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+2100,G4,6,240000000.0,Ml,Ribose + Glutarate,1.0
+2101,G5,6,860000000.0,Ml,Ribose + Glutarate,2.0
+2102,G6,6,240000000.0,Ml,Ribose + Glutarate,3.0
+2103,G7,6,30000000.0,Ml,D-Xylose + L-Histidine,1.0
+2104,G8,6,24000000.0,Ml,D-Xylose + L-Histidine,2.0
+2105,G9,6,12000000.0,Ml,D-Xylose + L-Histidine,3.0
+2106,G10,6,180000000.0,Ml,Glycerol + Inosine,1.0
+2107,G11,6,80000000.0,Ml,Glycerol + Inosine,2.0
+2108,G12,6,260000000.0,Ml,Glycerol + Inosine,3.0
+2109,H1,6,32000000.0,Ml,L-Alanine + D-Glucose,1.0
+2110,H2,6,30000000.0,Ml,L-Alanine + D-Glucose,2.0
+2111,H3,6,34000000.0,Ml,L-Alanine + D-Glucose,3.0
+2112,H4,6,260000000.0,Ml,Malate + L-Isoleucine,1.0
+2113,H5,6,180000000.0,Ml,Malate + L-Isoleucine,2.0
+2114,H6,6,240000000.0,Ml,Malate + L-Isoleucine,3.0
+2115,H7,6,12000000.0,Ml,Mannitol + Myo-inositol,1.0
+2116,H8,6,22000000.0,Ml,Mannitol + Myo-inositol,2.0
+2117,H9,6,14000000.0,Ml,Mannitol + Myo-inositol,3.0
+2118,H10,6,,Ml,No CS,1.0
+2119,H11,6,,Ml,No CS,2.0
+2120,H12,6,,Ml,No CS,3.0
+2121,A1,7,360000000.0,Ml,Acetate,1.0
+2122,A2,7,140000000.0,Ml,Acetate,2.0
+2123,A3,7,160000000.0,Ml,Acetate,3.0
+2124,A4,7,160000000.0,Ml,D-Glucose,1.0
+2125,A5,7,140000000.0,Ml,D-Glucose,2.0
+2126,A6,7,140000000.0,Ml,D-Glucose,3.0
+2127,A7,7,2000000000.0,Ml,Citrate,1.0
+2128,A8,7,2200000000.0,Ml,Citrate,2.0
+2129,A9,7,3000000000.0,Ml,Citrate,3.0
+2130,A10,7,60000000.0,Ml,Glutarate,1.0
+2131,A11,7,140000000.0,Ml,Glutarate,2.0
+2132,A12,7,200000000.0,Ml,Glutarate,3.0
+2133,B1,7,80000000.0,Ml,Glycerol,1.0
+2134,B2,7,80000000.0,Ml,Glycerol,2.0
+2135,B3,7,100000000.0,Ml,Glycerol,3.0
+2136,B4,7,340000000.0,Ml,Inosine,1.0
+2137,B5,7,480000000.0,Ml,Inosine,2.0
+2138,B6,7,320000000.0,Ml,Inosine,3.0
+2139,B7,7,38000000.0,Ml,L-Alanine,1.0
+2140,B8,7,40000000.0,Ml,L-Alanine,2.0
+2141,B9,7,38000000.0,Ml,L-Alanine,3.0
+2142,B10,7,500000000.0,Ml,L-Glutamate,1.0
+2143,B11,7,320000000.0,Ml,L-Glutamate,2.0
+2144,B12,7,400000000.0,Ml,L-Glutamate,3.0
+2145,C1,7,24000000.0,Ml,L-Histidine,1.0
+2146,C2,7,26000000.0,Ml,L-Histidine,2.0
+2147,C3,7,32000000.0,Ml,L-Histidine,3.0
+2148,C4,7,320000000.0,Ml,L-Isoleucine,1.0
+2149,C5,7,320000000.0,Ml,L-Isoleucine,2.0
+2150,C6,7,100000000.0,Ml,L-Isoleucine,3.0
+2151,C7,7,1600000000.0,Ml,Malate,1.0
+2152,C8,7,1200000000.0,Ml,Malate,2.0
+2153,C9,7,1800000000.0,Ml,Malate,3.0
+2154,C10,7,34000000.0,Ml,Mannitol,1.0
+2155,C11,7,16000000.0,Ml,Mannitol,2.0
+2156,C12,7,22000000.0,Ml,Mannitol,3.0
+2157,D1,7,160000000.0,Ml,Mannose,1.0
+2158,D2,7,200000000.0,Ml,Mannose,2.0
+2159,D3,7,320000000.0,Ml,Mannose,3.0
+2160,D4,7,20000000.0,Ml,Myo-inositol,1.0
+2161,D5,7,18000000.0,Ml,Myo-inositol,2.0
+2162,D6,7,12000000.0,Ml,Myo-inositol,3.0
+2163,D7,7,18000000.0,Ml,D-Xylose,1.0
+2164,D8,7,14000000.0,Ml,D-Xylose,2.0
+2165,D9,7,20000000.0,Ml,D-Xylose,3.0
+2166,D10,7,240000000.0,Ml,Ribose,1.0
+2167,D11,7,160000000.0,Ml,Ribose,2.0
+2168,D12,7,320000000.0,Ml,Ribose,3.0
+2169,E1,7,180000000.0,Ml,Citrate + D-Glucose,1.0
+2170,E2,7,120000000.0,Ml,Citrate + D-Glucose,2.0
+2171,E3,7,80000000.0,Ml,Citrate + D-Glucose,3.0
+2172,E4,7,300000000.0,Ml,Glycerol + L-Isoleucine,1.0
+2173,E5,7,360000000.0,Ml,Glycerol + L-Isoleucine,2.0
+2174,E6,7,420000000.0,Ml,Glycerol + L-Isoleucine,3.0
+2175,E7,7,2200000000.0,Ml,Glutarate + Inosine,1.0
+2176,E8,7,3200000000.0,Ml,Glutarate + Inosine,2.0
+2177,E9,7,3200000000.0,Ml,Glutarate + Inosine,3.0
+2178,E10,7,2000000000.0,Ml,Malate + Citrate,1.0
+2179,E11,7,1800000000.0,Ml,Malate + Citrate,2.0
+2180,E12,7,2800000000.0,Ml,Malate + Citrate,3.0
+2181,F1,7,240000000.0,Ml,Acetate + L-Alanine,1.0
+2182,F2,7,360000000.0,Ml,Acetate + L-Alanine,2.0
+2183,F3,7,400000000.0,Ml,Acetate + L-Alanine,3.0
+2184,F4,7,260000000.0,Ml,L-Glutamate + Mannose,1.0
+2185,F5,7,140000000.0,Ml,L-Glutamate + Mannose,2.0
+2186,F6,7,200000000.0,Ml,L-Glutamate + Mannose,3.0
+2187,F7,7,24000000.0,Ml,L-Histidine + Mannose,1.0
+2188,F8,7,46000000.0,Ml,L-Histidine + Mannose,2.0
+2189,F9,7,34000000.0,Ml,L-Histidine + Mannose,3.0
+2190,F10,7,50000000.0,Ml,Mannitol + Acetate,1.0
+2191,F11,7,68000000.0,Ml,Mannitol + Acetate,2.0
+2192,F12,7,32000000.0,Ml,Mannitol + Acetate,3.0
+2193,G1,7,52000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+2194,G2,7,38000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+2195,G3,7,42000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+2196,G4,7,360000000.0,Ml,Ribose + Glutarate,1.0
+2197,G5,7,160000000.0,Ml,Ribose + Glutarate,2.0
+2198,G6,7,140000000.0,Ml,Ribose + Glutarate,3.0
+2199,G7,7,22000000.0,Ml,D-Xylose + L-Histidine,1.0
+2200,G8,7,14000000.0,Ml,D-Xylose + L-Histidine,2.0
+2201,G9,7,18000000.0,Ml,D-Xylose + L-Histidine,3.0
+2202,G10,7,120000000.0,Ml,Glycerol + Inosine,1.0
+2203,G11,7,140000000.0,Ml,Glycerol + Inosine,2.0
+2204,G12,7,160000000.0,Ml,Glycerol + Inosine,3.0
+2205,H1,7,68000000.0,Ml,L-Alanine + D-Glucose,1.0
+2206,H2,7,46000000.0,Ml,L-Alanine + D-Glucose,2.0
+2207,H3,7,64000000.0,Ml,L-Alanine + D-Glucose,3.0
+2208,H4,7,200000000.0,Ml,Malate + L-Isoleucine,1.0
+2209,H5,7,320000000.0,Ml,Malate + L-Isoleucine,2.0
+2210,H6,7,120000000.0,Ml,Malate + L-Isoleucine,3.0
+2211,H7,7,14000000.0,Ml,Mannitol + Myo-inositol,1.0
+2212,H8,7,16000000.0,Ml,Mannitol + Myo-inositol,2.0
+2213,H9,7,16000000.0,Ml,Mannitol + Myo-inositol,3.0
+2214,H10,7,,Ml,No CS,1.0
+2215,H11,7,,Ml,No CS,2.0
+2216,H12,7,,Ml,No CS,3.0
+2217,A1,8,48000000.0,Ml,Acetate,1.0
+2218,A2,8,120000000.0,Ml,Acetate,2.0
+2219,A3,8,80000000.0,Ml,Acetate,3.0
+2220,A4,8,100000000.0,Ml,D-Glucose,1.0
+2221,A5,8,60000000.0,Ml,D-Glucose,2.0
+2222,A6,8,60000000.0,Ml,D-Glucose,3.0
+2223,A7,8,1400000000.0,Ml,Citrate,1.0
+2224,A8,8,600000000.0,Ml,Citrate,2.0
+2225,A9,8,600000000.0,Ml,Citrate,3.0
+2226,A10,8,140000000.0,Ml,Glutarate,1.0
+2227,A11,8,60000000.0,Ml,Glutarate,2.0
+2228,A12,8,180000000.0,Ml,Glutarate,3.0
+2229,B1,8,200000000.0,Ml,Glycerol,1.0
+2230,B2,8,80000000.0,Ml,Glycerol,2.0
+2231,B3,8,180000000.0,Ml,Glycerol,3.0
+2232,B4,8,480000000.0,Ml,Inosine,1.0
+2233,B5,8,,Ml,Inosine,2.0
+2234,B6,8,500000000.0,Ml,Inosine,3.0
+2235,B7,8,30000000.0,Ml,L-Alanine,1.0
+2236,B8,8,28000000.0,Ml,L-Alanine,2.0
+2237,B9,8,22000000.0,Ml,L-Alanine,3.0
+2238,B10,8,460000000.0,Ml,L-Glutamate,1.0
+2239,B11,8,520000000.0,Ml,L-Glutamate,2.0
+2240,B12,8,380000000.0,Ml,L-Glutamate,3.0
+2241,C1,8,26000000.0,Ml,L-Histidine,1.0
+2242,C2,8,38000000.0,Ml,L-Histidine,2.0
+2243,C3,8,38000000.0,Ml,L-Histidine,3.0
+2244,C4,8,260000000.0,Ml,L-Isoleucine,1.0
+2245,C5,8,80000000.0,Ml,L-Isoleucine,2.0
+2246,C6,8,140000000.0,Ml,L-Isoleucine,3.0
+2247,C7,8,800000000.0,Ml,Malate,1.0
+2248,C8,8,3000000000.0,Ml,Malate,2.0
+2249,C9,8,1000000000.0,Ml,Malate,3.0
+2250,C10,8,18000000.0,Ml,Mannitol,1.0
+2251,C11,8,18000000.0,Ml,Mannitol,2.0
+2252,C12,8,6000000.0,Ml,Mannitol,3.0
+2253,D1,8,180000000.0,Ml,Mannose,1.0
+2254,D2,8,180000000.0,Ml,Mannose,2.0
+2255,D3,8,360000000.0,Ml,Mannose,3.0
+2256,D4,8,16000000.0,Ml,Myo-inositol,1.0
+2257,D5,8,12000000.0,Ml,Myo-inositol,2.0
+2258,D6,8,10000000.0,Ml,Myo-inositol,3.0
+2259,D7,8,12000000.0,Ml,D-Xylose,1.0
+2260,D8,8,18000000.0,Ml,D-Xylose,2.0
+2261,D9,8,8000000.0,Ml,D-Xylose,3.0
+2262,D10,8,280000000.0,Ml,Ribose,1.0
+2263,D11,8,280000000.0,Ml,Ribose,2.0
+2264,D12,8,320000000.0,Ml,Ribose,3.0
+2265,E1,8,240000000.0,Ml,Citrate + D-Glucose,1.0
+2266,E2,8,180000000.0,Ml,Citrate + D-Glucose,2.0
+2267,E3,8,160000000.0,Ml,Citrate + D-Glucose,3.0
+2268,E4,8,360000000.0,Ml,Glycerol + L-Isoleucine,1.0
+2269,E5,8,240000000.0,Ml,Glycerol + L-Isoleucine,2.0
+2270,E6,8,320000000.0,Ml,Glycerol + L-Isoleucine,3.0
+2271,E7,8,3200000000.0,Ml,Glutarate + Inosine,1.0
+2272,E8,8,1800000000.0,Ml,Glutarate + Inosine,2.0
+2273,E9,8,2200000000.0,Ml,Glutarate + Inosine,3.0
+2274,E10,8,1600000000.0,Ml,Malate + Citrate,1.0
+2275,E11,8,1800000000.0,Ml,Malate + Citrate,2.0
+2276,E12,8,2400000000.0,Ml,Malate + Citrate,3.0
+2277,F1,8,300000000.0,Ml,Acetate + L-Alanine,1.0
+2278,F2,8,240000000.0,Ml,Acetate + L-Alanine,2.0
+2279,F3,8,240000000.0,Ml,Acetate + L-Alanine,3.0
+2280,F4,8,260000000.0,Ml,L-Glutamate + Mannose,1.0
+2281,F5,8,240000000.0,Ml,L-Glutamate + Mannose,2.0
+2282,F6,8,160000000.0,Ml,L-Glutamate + Mannose,3.0
+2283,F7,8,80000000.0,Ml,L-Histidine + Mannose,1.0
+2284,F8,8,60000000.0,Ml,L-Histidine + Mannose,2.0
+2285,F9,8,40000000.0,Ml,L-Histidine + Mannose,3.0
+2286,F10,8,120000000.0,Ml,Mannitol + Acetate,1.0
+2287,F11,8,100000000.0,Ml,Mannitol + Acetate,2.0
+2288,F12,8,80000000.0,Ml,Mannitol + Acetate,3.0
+2289,G1,8,36000000.0,Ml,Myo-inositol + L-Glutamate,1.0
+2290,G2,8,34000000.0,Ml,Myo-inositol + L-Glutamate,2.0
+2291,G3,8,28000000.0,Ml,Myo-inositol + L-Glutamate,3.0
+2292,G4,8,300000000.0,Ml,Ribose + Glutarate,1.0
+2293,G5,8,320000000.0,Ml,Ribose + Glutarate,2.0
+2294,G6,8,240000000.0,Ml,Ribose + Glutarate,3.0
+2295,G7,8,14000000.0,Ml,D-Xylose + L-Histidine,1.0
+2296,G8,8,16000000.0,Ml,D-Xylose + L-Histidine,2.0
+2297,G9,8,12000000.0,Ml,D-Xylose + L-Histidine,3.0
+2298,G10,8,80000000.0,Ml,Glycerol + Inosine,1.0
+2299,G11,8,140000000.0,Ml,Glycerol + Inosine,2.0
+2300,G12,8,200000000.0,Ml,Glycerol + Inosine,3.0
+2301,H1,8,120000000.0,Ml,L-Alanine + D-Glucose,1.0
+2302,H2,8,100000000.0,Ml,L-Alanine + D-Glucose,2.0
+2303,H3,8,80000000.0,Ml,L-Alanine + D-Glucose,3.0
+2304,H4,8,80000000.0,Ml,Malate + L-Isoleucine,1.0
+2305,H5,8,160000000.0,Ml,Malate + L-Isoleucine,2.0
+2306,H6,8,140000000.0,Ml,Malate + L-Isoleucine,3.0
+2307,H7,8,12000000.0,Ml,Mannitol + Myo-inositol,1.0
+2308,H8,8,10000000.0,Ml,Mannitol + Myo-inositol,2.0
+2309,H9,8,10000000.0,Ml,Mannitol + Myo-inositol,3.0
+2310,H10,8,,Ml,No CS,1.0
+2311,H11,8,,Ml,No CS,2.0
+2312,H12,8,,Ml,No CS,3.0
+2313,Inoculum,0,26600985.22167488,Oa,,
+2314,Inoculum,0,20689655.172413792,Oa,,
+2315,Inoculum,0,14778325.123152709,Oa,,
+2316,A1,1,220000000.0,Oa,Acetate,1.0
+2317,A2,1,260000000.0,Oa,Acetate,2.0
+2318,A3,1,200000000.0,Oa,Acetate,3.0
+2319,A4,1,1600000000.0,Oa,D-Glucose,1.0
+2320,A5,1,1600000000.0,Oa,D-Glucose,2.0
+2321,A6,1,1800000000.0,Oa,D-Glucose,3.0
+2322,A7,1,2000000000.0,Oa,Citrate,1.0
+2323,A8,1,3400000000.0,Oa,Citrate,2.0
+2324,A9,1,2800000000.0,Oa,Citrate,3.0
+2325,A10,1,1800000000.0,Oa,Glutarate,1.0
+2326,A11,1,2600000000.0,Oa,Glutarate,2.0
+2327,A12,1,2200000000.0,Oa,Glutarate,3.0
+2328,B1,1,1200000000.0,Oa,Glycerol,1.0
+2329,B2,1,400000000.0,Oa,Glycerol,2.0
+2330,B3,1,1400000000.0,Oa,Glycerol,3.0
+2331,B4,1,220000000.0,Oa,Inosine,1.0
+2332,B5,1,180000000.0,Oa,Inosine,2.0
+2333,B6,1,260000000.0,Oa,Inosine,3.0
+2334,B7,1,2200000000.0,Oa,L-Alanine,1.0
+2335,B8,1,2800000000.0,Oa,L-Alanine,2.0
+2336,B9,1,2200000000.0,Oa,L-Alanine,3.0
+2337,B10,1,220000000.0,Oa,L-Glutamate,1.0
+2338,B11,1,220000000.0,Oa,L-Glutamate,2.0
+2339,B12,1,260000000.0,Oa,L-Glutamate,3.0
+2340,C1,1,1800000000.0,Oa,L-Histidine,1.0
+2341,C2,1,1600000000.0,Oa,L-Histidine,2.0
+2342,C3,1,2600000000.0,Oa,L-Histidine,3.0
+2343,C4,1,3000000000.0,Oa,L-Isoleucine,1.0
+2344,C5,1,2600000000.0,Oa,L-Isoleucine,2.0
+2345,C6,1,2400000000.0,Oa,L-Isoleucine,3.0
+2346,C7,1,800000000.0,Oa,Malate,1.0
+2347,C8,1,1400000000.0,Oa,Malate,2.0
+2348,C9,1,400000000.0,Oa,Malate,3.0
+2349,C10,1,180000000.0,Oa,Mannitol,1.0
+2350,C11,1,120000000.0,Oa,Mannitol,2.0
+2351,C12,1,220000000.0,Oa,Mannitol,3.0
+2352,D1,1,2000000000.0,Oa,Mannose,1.0
+2353,D2,1,1200000000.0,Oa,Mannose,2.0
+2354,D3,1,1200000000.0,Oa,Mannose,3.0
+2355,D4,1,1000000000.0,Oa,Myo-inositol,1.0
+2356,D5,1,600000000.0,Oa,Myo-inositol,2.0
+2357,D6,1,600000000.0,Oa,Myo-inositol,3.0
+2358,D7,1,1000000000.0,Oa,D-Xylose,1.0
+2359,D8,1,200000000.0,Oa,D-Xylose,2.0
+2360,D9,1,800000000.0,Oa,D-Xylose,3.0
+2361,D10,1,2800000000.0,Oa,Ribose,1.0
+2362,D11,1,2600000000.0,Oa,Ribose,2.0
+2363,D12,1,3200000000.0,Oa,Ribose,3.0
+2364,E1,1,1800000000.0,Oa,Citrate + D-Glucose,1.0
+2365,E2,1,2600000000.0,Oa,Citrate + D-Glucose,2.0
+2366,E3,1,2400000000.0,Oa,Citrate + D-Glucose,3.0
+2367,E4,1,2000000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2368,E5,1,2600000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2369,E6,1,1800000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2370,E7,1,400000000.0,Oa,Glutarate + Inosine,1.0
+2371,E8,1,600000000.0,Oa,Glutarate + Inosine,2.0
+2372,E9,1,800000000.0,Oa,Glutarate + Inosine,3.0
+2373,E10,1,400000000.0,Oa,Malate + Citrate,1.0
+2374,E11,1,800000000.0,Oa,Malate + Citrate,2.0
+2375,E12,1,,Oa,Malate + Citrate,3.0
+2376,F1,1,1600000000.0,Oa,Acetate + L-Alanine,1.0
+2377,F2,1,1800000000.0,Oa,Acetate + L-Alanine,2.0
+2378,F3,1,1200000000.0,Oa,Acetate + L-Alanine,3.0
+2379,F4,1,1400000000.0,Oa,L-Glutamate + Mannose,1.0
+2380,F5,1,400000000.0,Oa,L-Glutamate + Mannose,2.0
+2381,F6,1,800000000.0,Oa,L-Glutamate + Mannose,3.0
+2382,F7,1,1400000000.0,Oa,L-Histidine + Mannose,1.0
+2383,F8,1,1800000000.0,Oa,L-Histidine + Mannose,2.0
+2384,F9,1,1800000000.0,Oa,L-Histidine + Mannose,3.0
+2385,F10,1,280000000.0,Oa,Mannitol + Acetate,1.0
+2386,F11,1,240000000.0,Oa,Mannitol + Acetate,2.0
+2387,F12,1,260000000.0,Oa,Mannitol + Acetate,3.0
+2388,G1,1,1000000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2389,G2,1,1000000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2390,G3,1,800000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2391,G4,1,2600000000.0,Oa,Ribose + Glutarate,1.0
+2392,G5,1,2800000000.0,Oa,Ribose + Glutarate,2.0
+2393,G6,1,3200000000.0,Oa,Ribose + Glutarate,3.0
+2394,G7,1,2000000000.0,Oa,D-Xylose + L-Histidine,1.0
+2395,G8,1,1800000000.0,Oa,D-Xylose + L-Histidine,2.0
+2396,G9,1,1400000000.0,Oa,D-Xylose + L-Histidine,3.0
+2397,G10,1,220000000.0,Oa,Glycerol + Inosine,1.0
+2398,G11,1,320000000.0,Oa,Glycerol + Inosine,2.0
+2399,G12,1,220000000.0,Oa,Glycerol + Inosine,3.0
+2400,H1,1,2600000000.0,Oa,L-Alanine + D-Glucose,1.0
+2401,H2,1,1400000000.0,Oa,L-Alanine + D-Glucose,2.0
+2402,H3,1,1400000000.0,Oa,L-Alanine + D-Glucose,3.0
+2403,H4,1,1600000000.0,Oa,Malate + L-Isoleucine,1.0
+2404,H5,1,1200000000.0,Oa,Malate + L-Isoleucine,2.0
+2405,H6,1,1800000000.0,Oa,Malate + L-Isoleucine,3.0
+2406,H7,1,1000000000.0,Oa,Mannitol + Myo-inositol,1.0
+2407,H8,1,400000000.0,Oa,Mannitol + Myo-inositol,2.0
+2408,H9,1,1400000000.0,Oa,Mannitol + Myo-inositol,3.0
+2409,H10,1,18000000.0,Oa,No CS,1.0
+2410,H11,1,12000000.0,Oa,No CS,2.0
+2411,H12,1,16000000.0,Oa,No CS,3.0
+2412,A1,2,1600000000.0,Oa,Acetate,1.0
+2413,A2,2,1000000000.0,Oa,Acetate,2.0
+2414,A3,2,800000000.0,Oa,Acetate,3.0
+2415,A4,2,1400000000.0,Oa,D-Glucose,1.0
+2416,A5,2,800000000.0,Oa,D-Glucose,2.0
+2417,A6,2,1200000000.0,Oa,D-Glucose,3.0
+2418,A7,2,1200000000.0,Oa,Citrate,1.0
+2419,A8,2,1400000000.0,Oa,Citrate,2.0
+2420,A9,2,1200000000.0,Oa,Citrate,3.0
+2421,A10,2,3000000000.0,Oa,Glutarate,1.0
+2422,A11,2,2400000000.0,Oa,Glutarate,2.0
+2423,A12,2,2000000000.0,Oa,Glutarate,3.0
+2424,B1,2,140000000.0,Oa,Glycerol,1.0
+2425,B2,2,60000000.0,Oa,Glycerol,2.0
+2426,B3,2,40000000.0,Oa,Glycerol,3.0
+2427,B4,2,200000000.0,Oa,Inosine,1.0
+2428,B5,2,400000000.0,Oa,Inosine,2.0
+2429,B6,2,400000000.0,Oa,Inosine,3.0
+2430,B7,2,3000000000.0,Oa,L-Alanine,1.0
+2431,B8,2,2400000000.0,Oa,L-Alanine,2.0
+2432,B9,2,2000000000.0,Oa,L-Alanine,3.0
+2433,B10,2,640000000.0,Oa,L-Glutamate,1.0
+2434,B11,2,560000000.0,Oa,L-Glutamate,2.0
+2435,B12,2,,Oa,L-Glutamate,3.0
+2436,C1,2,2400000000.0,Oa,L-Histidine,1.0
+2437,C2,2,1600000000.0,Oa,L-Histidine,2.0
+2438,C3,2,2000000000.0,Oa,L-Histidine,3.0
+2439,C4,2,600000000.0,Oa,L-Isoleucine,1.0
+2440,C5,2,1200000000.0,Oa,L-Isoleucine,2.0
+2441,C6,2,800000000.0,Oa,L-Isoleucine,3.0
+2442,C7,2,800000000.0,Oa,Malate,1.0
+2443,C8,2,400000000.0,Oa,Malate,2.0
+2444,C9,2,1000000000.0,Oa,Malate,3.0
+2445,C10,2,16000000.0,Oa,Mannitol,1.0
+2446,C11,2,12000000.0,Oa,Mannitol,2.0
+2447,C12,2,30000000.0,Oa,Mannitol,3.0
+2448,D1,2,800000000.0,Oa,Mannose,1.0
+2449,D2,2,400000000.0,Oa,Mannose,2.0
+2450,D3,2,800000000.0,Oa,Mannose,3.0
+2451,D4,2,200000000.0,Oa,Myo-inositol,1.0
+2452,D5,2,260000000.0,Oa,Myo-inositol,2.0
+2453,D6,2,280000000.0,Oa,Myo-inositol,3.0
+2454,D7,2,280000000.0,Oa,D-Xylose,1.0
+2455,D8,2,300000000.0,Oa,D-Xylose,2.0
+2456,D9,2,200000000.0,Oa,D-Xylose,3.0
+2457,D10,2,2200000000.0,Oa,Ribose,1.0
+2458,D11,2,2200000000.0,Oa,Ribose,2.0
+2459,D12,2,2600000000.0,Oa,Ribose,3.0
+2460,E1,2,2800000000.0,Oa,Citrate + D-Glucose,1.0
+2461,E2,2,1800000000.0,Oa,Citrate + D-Glucose,2.0
+2462,E3,2,3000000000.0,Oa,Citrate + D-Glucose,3.0
+2463,E4,2,1000000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2464,E5,2,1800000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2465,E6,2,1600000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2466,E7,2,122000000.0,Oa,Glutarate + Inosine,1.0
+2467,E8,2,56000000.0,Oa,Glutarate + Inosine,2.0
+2468,E9,2,140000000.0,Oa,Glutarate + Inosine,3.0
+2469,E10,2,280000000.0,Oa,Malate + Citrate,1.0
+2470,E11,2,240000000.0,Oa,Malate + Citrate,2.0
+2471,E12,2,260000000.0,Oa,Malate + Citrate,3.0
+2472,F1,2,2200000000.0,Oa,Acetate + L-Alanine,1.0
+2473,F2,2,1600000000.0,Oa,Acetate + L-Alanine,2.0
+2474,F3,2,1200000000.0,Oa,Acetate + L-Alanine,3.0
+2475,F4,2,100000000.0,Oa,L-Glutamate + Mannose,1.0
+2476,F5,2,180000000.0,Oa,L-Glutamate + Mannose,2.0
+2477,F6,2,160000000.0,Oa,L-Glutamate + Mannose,3.0
+2478,F7,2,1000000000.0,Oa,L-Histidine + Mannose,1.0
+2479,F8,2,800000000.0,Oa,L-Histidine + Mannose,2.0
+2480,F9,2,560000000.0,Oa,L-Histidine + Mannose,3.0
+2481,F10,2,32000000.0,Oa,Mannitol + Acetate,1.0
+2482,F11,2,50000000.0,Oa,Mannitol + Acetate,2.0
+2483,F12,2,48000000.0,Oa,Mannitol + Acetate,3.0
+2484,G1,2,300000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2485,G2,2,260000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2486,G3,2,280000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2487,G4,2,1200000000.0,Oa,Ribose + Glutarate,1.0
+2488,G5,2,2600000000.0,Oa,Ribose + Glutarate,2.0
+2489,G6,2,2200000000.0,Oa,Ribose + Glutarate,3.0
+2490,G7,2,800000000.0,Oa,D-Xylose + L-Histidine,1.0
+2491,G8,2,1400000000.0,Oa,D-Xylose + L-Histidine,2.0
+2492,G9,2,1000000000.0,Oa,D-Xylose + L-Histidine,3.0
+2493,G10,2,80000000.0,Oa,Glycerol + Inosine,1.0
+2494,G11,2,140000000.0,Oa,Glycerol + Inosine,2.0
+2495,G12,2,120000000.0,Oa,Glycerol + Inosine,3.0
+2496,H1,2,1600000000.0,Oa,L-Alanine + D-Glucose,1.0
+2497,H2,2,1800000000.0,Oa,L-Alanine + D-Glucose,2.0
+2498,H3,2,2000000000.0,Oa,L-Alanine + D-Glucose,3.0
+2499,H4,2,800000000.0,Oa,Malate + L-Isoleucine,1.0
+2500,H5,2,1600000000.0,Oa,Malate + L-Isoleucine,2.0
+2501,H6,2,1200000000.0,Oa,Malate + L-Isoleucine,3.0
+2502,H7,2,460000000.0,Oa,Mannitol + Myo-inositol,1.0
+2503,H8,2,240000000.0,Oa,Mannitol + Myo-inositol,2.0
+2504,H9,2,220000000.0,Oa,Mannitol + Myo-inositol,3.0
+2505,H10,2,140000.0,Oa,No CS,1.0
+2506,H11,2,200000.0,Oa,No CS,2.0
+2507,H12,2,180000.0,Oa,No CS,3.0
+2508,A1,3,2400000000.0,Oa,Acetate,1.0
+2509,A2,3,2000000000.0,Oa,Acetate,2.0
+2510,A3,3,1400000000.0,Oa,Acetate,3.0
+2511,A4,3,800000000.0,Oa,D-Glucose,1.0
+2512,A5,3,1000000000.0,Oa,D-Glucose,2.0
+2513,A6,3,800000000.0,Oa,D-Glucose,3.0
+2514,A7,3,2000000000.0,Oa,Citrate,1.0
+2515,A8,3,1800000000.0,Oa,Citrate,2.0
+2516,A9,3,1800000000.0,Oa,Citrate,3.0
+2517,A10,3,1600000000.0,Oa,Glutarate,1.0
+2518,A11,3,2400000000.0,Oa,Glutarate,2.0
+2519,A12,3,2800000000.0,Oa,Glutarate,3.0
+2520,B1,3,60000000.0,Oa,Glycerol,1.0
+2521,B2,3,48000000.0,Oa,Glycerol,2.0
+2522,B3,3,44000000.0,Oa,Glycerol,3.0
+2523,B4,3,120000000.0,Oa,Inosine,1.0
+2524,B5,3,140000000.0,Oa,Inosine,2.0
+2525,B6,3,120000000.0,Oa,Inosine,3.0
+2526,B7,3,3200000000.0,Oa,L-Alanine,1.0
+2527,B8,3,3600000000.0,Oa,L-Alanine,2.0
+2528,B9,3,3200000000.0,Oa,L-Alanine,3.0
+2529,B10,3,200000000.0,Oa,L-Glutamate,1.0
+2530,B11,3,160000000.0,Oa,L-Glutamate,2.0
+2531,B12,3,260000000.0,Oa,L-Glutamate,3.0
+2532,C1,3,2600000000.0,Oa,L-Histidine,1.0
+2533,C2,3,1400000000.0,Oa,L-Histidine,2.0
+2534,C3,3,1800000000.0,Oa,L-Histidine,3.0
+2535,C4,3,80000000.0,Oa,L-Isoleucine,1.0
+2536,C5,3,180000000.0,Oa,L-Isoleucine,2.0
+2537,C6,3,140000000.0,Oa,L-Isoleucine,3.0
+2538,C7,3,1800000000.0,Oa,Malate,1.0
+2539,C8,3,1000000000.0,Oa,Malate,2.0
+2540,C9,3,1200000000.0,Oa,Malate,3.0
+2541,C10,3,22000000.0,Oa,Mannitol,1.0
+2542,C11,3,20000000.0,Oa,Mannitol,2.0
+2543,C12,3,18000000.0,Oa,Mannitol,3.0
+2544,D1,3,800000000.0,Oa,Mannose,1.0
+2545,D2,3,1000000000.0,Oa,Mannose,2.0
+2546,D3,3,1000000000.0,Oa,Mannose,3.0
+2547,D4,3,200000000.0,Oa,Myo-inositol,1.0
+2548,D5,3,260000000.0,Oa,Myo-inositol,2.0
+2549,D6,3,240000000.0,Oa,Myo-inositol,3.0
+2550,D7,3,160000000.0,Oa,D-Xylose,1.0
+2551,D8,3,180000000.0,Oa,D-Xylose,2.0
+2552,D9,3,240000000.0,Oa,D-Xylose,3.0
+2553,D10,3,1600000000.0,Oa,Ribose,1.0
+2554,D11,3,1000000000.0,Oa,Ribose,2.0
+2555,D12,3,1600000000.0,Oa,Ribose,3.0
+2556,E1,3,3000000000.0,Oa,Citrate + D-Glucose,1.0
+2557,E2,3,2600000000.0,Oa,Citrate + D-Glucose,2.0
+2558,E3,3,2200000000.0,Oa,Citrate + D-Glucose,3.0
+2559,E4,3,1600000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2560,E5,3,2200000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2561,E6,3,1600000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2562,E7,3,94000000.0,Oa,Glutarate + Inosine,1.0
+2563,E8,3,84000000.0,Oa,Glutarate + Inosine,2.0
+2564,E9,3,80000000.0,Oa,Glutarate + Inosine,3.0
+2565,E10,3,200000000.0,Oa,Malate + Citrate,1.0
+2566,E11,3,160000000.0,Oa,Malate + Citrate,2.0
+2567,E12,3,220000000.0,Oa,Malate + Citrate,3.0
+2568,F1,3,1400000000.0,Oa,Acetate + L-Alanine,1.0
+2569,F2,3,600000000.0,Oa,Acetate + L-Alanine,2.0
+2570,F3,3,1200000000.0,Oa,Acetate + L-Alanine,3.0
+2571,F4,3,200000000.0,Oa,L-Glutamate + Mannose,1.0
+2572,F5,3,140000000.0,Oa,L-Glutamate + Mannose,2.0
+2573,F6,3,140000000.0,Oa,L-Glutamate + Mannose,3.0
+2574,F7,3,1400000000.0,Oa,L-Histidine + Mannose,1.0
+2575,F8,3,1000000000.0,Oa,L-Histidine + Mannose,2.0
+2576,F9,3,1400000000.0,Oa,L-Histidine + Mannose,3.0
+2577,F10,3,180000000.0,Oa,Mannitol + Acetate,1.0
+2578,F11,3,160000000.0,Oa,Mannitol + Acetate,2.0
+2579,F12,3,80000000.0,Oa,Mannitol + Acetate,3.0
+2580,G1,3,240000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2581,G2,3,220000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2582,G3,3,180000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2583,G4,3,1400000000.0,Oa,Ribose + Glutarate,1.0
+2584,G5,3,2400000000.0,Oa,Ribose + Glutarate,2.0
+2585,G6,3,1800000000.0,Oa,Ribose + Glutarate,3.0
+2586,G7,3,800000000.0,Oa,D-Xylose + L-Histidine,1.0
+2587,G8,3,1600000000.0,Oa,D-Xylose + L-Histidine,2.0
+2588,G9,3,2200000000.0,Oa,D-Xylose + L-Histidine,3.0
+2589,G10,3,160000000.0,Oa,Glycerol + Inosine,1.0
+2590,G11,3,100000000.0,Oa,Glycerol + Inosine,2.0
+2591,G12,3,80000000.0,Oa,Glycerol + Inosine,3.0
+2592,H1,3,1000000000.0,Oa,L-Alanine + D-Glucose,1.0
+2593,H2,3,1800000000.0,Oa,L-Alanine + D-Glucose,2.0
+2594,H3,3,1200000000.0,Oa,L-Alanine + D-Glucose,3.0
+2595,H4,3,1200000000.0,Oa,Malate + L-Isoleucine,1.0
+2596,H5,3,1400000000.0,Oa,Malate + L-Isoleucine,2.0
+2597,H6,3,1200000000.0,Oa,Malate + L-Isoleucine,3.0
+2598,H7,3,260000000.0,Oa,Mannitol + Myo-inositol,1.0
+2599,H8,3,180000000.0,Oa,Mannitol + Myo-inositol,2.0
+2600,H9,3,160000000.0,Oa,Mannitol + Myo-inositol,3.0
+2601,H10,3,18000.0,Oa,No CS,1.0
+2602,H11,3,20000.0,Oa,No CS,2.0
+2603,H12,3,22000.0,Oa,No CS,3.0
+2604,A1,4,2800000000.0,Oa,Acetate,1.0
+2605,A2,4,1600000000.0,Oa,Acetate,2.0
+2606,A3,4,2200000000.0,Oa,Acetate,3.0
+2607,A4,4,600000000.0,Oa,D-Glucose,1.0
+2608,A5,4,1000000000.0,Oa,D-Glucose,2.0
+2609,A6,4,1000000000.0,Oa,D-Glucose,3.0
+2610,A7,4,1400000000.0,Oa,Citrate,1.0
+2611,A8,4,1600000000.0,Oa,Citrate,2.0
+2612,A9,4,2200000000.0,Oa,Citrate,3.0
+2613,A10,4,1600000000.0,Oa,Glutarate,1.0
+2614,A11,4,2000000000.0,Oa,Glutarate,2.0
+2615,A12,4,2000000000.0,Oa,Glutarate,3.0
+2616,B1,4,100000000.0,Oa,Glycerol,1.0
+2617,B2,4,40000000.0,Oa,Glycerol,2.0
+2618,B3,4,60000000.0,Oa,Glycerol,3.0
+2619,B4,4,120000000.0,Oa,Inosine,1.0
+2620,B5,4,160000000.0,Oa,Inosine,2.0
+2621,B6,4,240000000.0,Oa,Inosine,3.0
+2622,B7,4,2200000000.0,Oa,L-Alanine,1.0
+2623,B8,4,3600000000.0,Oa,L-Alanine,2.0
+2624,B9,4,2800000000.0,Oa,L-Alanine,3.0
+2625,B10,4,100000000.0,Oa,L-Glutamate,1.0
+2626,B11,4,160000000.0,Oa,L-Glutamate,2.0
+2627,B12,4,140000000.0,Oa,L-Glutamate,3.0
+2628,C1,4,2000000000.0,Oa,L-Histidine,1.0
+2629,C2,4,2000000000.0,Oa,L-Histidine,2.0
+2630,C3,4,1600000000.0,Oa,L-Histidine,3.0
+2631,C4,4,100000000.0,Oa,L-Isoleucine,1.0
+2632,C5,4,160000000.0,Oa,L-Isoleucine,2.0
+2633,C6,4,100000000.0,Oa,L-Isoleucine,3.0
+2634,C7,4,1200000000.0,Oa,Malate,1.0
+2635,C8,4,2000000000.0,Oa,Malate,2.0
+2636,C9,4,800000000.0,Oa,Malate,3.0
+2637,C10,4,24000000.0,Oa,Mannitol,1.0
+2638,C11,4,24000000.0,Oa,Mannitol,2.0
+2639,C12,4,18000000.0,Oa,Mannitol,3.0
+2640,D1,4,800000000.0,Oa,Mannose,1.0
+2641,D2,4,600000000.0,Oa,Mannose,2.0
+2642,D3,4,600000000.0,Oa,Mannose,3.0
+2643,D4,4,60000000.0,Oa,Myo-inositol,1.0
+2644,D5,4,100000000.0,Oa,Myo-inositol,2.0
+2645,D6,4,80000000.0,Oa,Myo-inositol,3.0
+2646,D7,4,180000000.0,Oa,D-Xylose,1.0
+2647,D8,4,140000000.0,Oa,D-Xylose,2.0
+2648,D9,4,120000000.0,Oa,D-Xylose,3.0
+2649,D10,4,2800000000.0,Oa,Ribose,1.0
+2650,D11,4,3000000000.0,Oa,Ribose,2.0
+2651,D12,4,3400000000.0,Oa,Ribose,3.0
+2652,E1,4,3000000000.0,Oa,Citrate + D-Glucose,1.0
+2653,E2,4,2200000000.0,Oa,Citrate + D-Glucose,2.0
+2654,E3,4,2200000000.0,Oa,Citrate + D-Glucose,3.0
+2655,E4,4,800000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2656,E5,4,1600000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2657,E6,4,1800000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2658,E7,4,132000000.0,Oa,Glutarate + Inosine,1.0
+2659,E8,4,120000000.0,Oa,Glutarate + Inosine,2.0
+2660,E9,4,124000000.0,Oa,Glutarate + Inosine,3.0
+2661,E10,4,220000000.0,Oa,Malate + Citrate,1.0
+2662,E11,4,200000000.0,Oa,Malate + Citrate,2.0
+2663,E12,4,200000000.0,Oa,Malate + Citrate,3.0
+2664,F1,4,1800000000.0,Oa,Acetate + L-Alanine,1.0
+2665,F2,4,1800000000.0,Oa,Acetate + L-Alanine,2.0
+2666,F3,4,2000000000.0,Oa,Acetate + L-Alanine,3.0
+2667,F4,4,300000000.0,Oa,L-Glutamate + Mannose,1.0
+2668,F5,4,180000000.0,Oa,L-Glutamate + Mannose,2.0
+2669,F6,4,220000000.0,Oa,L-Glutamate + Mannose,3.0
+2670,F7,4,800000000.0,Oa,L-Histidine + Mannose,1.0
+2671,F8,4,1200000000.0,Oa,L-Histidine + Mannose,2.0
+2672,F9,4,1400000000.0,Oa,L-Histidine + Mannose,3.0
+2673,F10,4,60000000.0,Oa,Mannitol + Acetate,1.0
+2674,F11,4,100000000.0,Oa,Mannitol + Acetate,2.0
+2675,F12,4,60000000.0,Oa,Mannitol + Acetate,3.0
+2676,G1,4,200000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2677,G2,4,140000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2678,G3,4,140000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2679,G4,4,1400000000.0,Oa,Ribose + Glutarate,1.0
+2680,G5,4,2000000000.0,Oa,Ribose + Glutarate,2.0
+2681,G6,4,800000000.0,Oa,Ribose + Glutarate,3.0
+2682,G7,4,1600000000.0,Oa,D-Xylose + L-Histidine,1.0
+2683,G8,4,1200000000.0,Oa,D-Xylose + L-Histidine,2.0
+2684,G9,4,1200000000.0,Oa,D-Xylose + L-Histidine,3.0
+2685,G10,4,34000000.0,Oa,Glycerol + Inosine,1.0
+2686,G11,4,48000000.0,Oa,Glycerol + Inosine,2.0
+2687,G12,4,40000000.0,Oa,Glycerol + Inosine,3.0
+2688,H1,4,1200000000.0,Oa,L-Alanine + D-Glucose,1.0
+2689,H2,4,1000000000.0,Oa,L-Alanine + D-Glucose,2.0
+2690,H3,4,1800000000.0,Oa,L-Alanine + D-Glucose,3.0
+2691,H4,4,600000000.0,Oa,Malate + L-Isoleucine,1.0
+2692,H5,4,400000000.0,Oa,Malate + L-Isoleucine,2.0
+2693,H6,4,1400000000.0,Oa,Malate + L-Isoleucine,3.0
+2694,H7,4,280000000.0,Oa,Mannitol + Myo-inositol,1.0
+2695,H8,4,240000000.0,Oa,Mannitol + Myo-inositol,2.0
+2696,H9,4,140000000.0,Oa,Mannitol + Myo-inositol,3.0
+2697,H10,4,800.0,Oa,No CS,1.0
+2698,H11,4,1000.0,Oa,No CS,2.0
+2699,H12,4,600.0,Oa,No CS,3.0
+2700,A1,5,2800000000.0,Oa,Acetate,1.0
+2701,A2,5,1800000000.0,Oa,Acetate,2.0
+2702,A3,5,2600000000.0,Oa,Acetate,3.0
+2703,A4,5,800000000.0,Oa,D-Glucose,1.0
+2704,A5,5,800000000.0,Oa,D-Glucose,2.0
+2705,A6,5,800000000.0,Oa,D-Glucose,3.0
+2706,A7,5,2000000000.0,Oa,Citrate,1.0
+2707,A8,5,2000000000.0,Oa,Citrate,2.0
+2708,A9,5,1600000000.0,Oa,Citrate,3.0
+2709,A10,5,3000000000.0,Oa,Glutarate,1.0
+2710,A11,5,3000000000.0,Oa,Glutarate,2.0
+2711,A12,5,2600000000.0,Oa,Glutarate,3.0
+2712,B1,5,60000000.0,Oa,Glycerol,1.0
+2713,B2,5,40000000.0,Oa,Glycerol,2.0
+2714,B3,5,40000000.0,Oa,Glycerol,3.0
+2715,B4,5,120000000.0,Oa,Inosine,1.0
+2716,B5,5,160000000.0,Oa,Inosine,2.0
+2717,B6,5,280000000.0,Oa,Inosine,3.0
+2718,B7,5,2800000000.0,Oa,L-Alanine,1.0
+2719,B8,5,3600000000.0,Oa,L-Alanine,2.0
+2720,B9,5,5000000000.0,Oa,L-Alanine,3.0
+2721,B10,5,160000000.0,Oa,L-Glutamate,1.0
+2722,B11,5,140000000.0,Oa,L-Glutamate,2.0
+2723,B12,5,120000000.0,Oa,L-Glutamate,3.0
+2724,C1,5,2400000000.0,Oa,L-Histidine,1.0
+2725,C2,5,2000000000.0,Oa,L-Histidine,2.0
+2726,C3,5,2200000000.0,Oa,L-Histidine,3.0
+2727,C4,5,100000000.0,Oa,L-Isoleucine,1.0
+2728,C5,5,140000000.0,Oa,L-Isoleucine,2.0
+2729,C6,5,100000000.0,Oa,L-Isoleucine,3.0
+2730,C7,5,1200000000.0,Oa,Malate,1.0
+2731,C8,5,1200000000.0,Oa,Malate,2.0
+2732,C9,5,1200000000.0,Oa,Malate,3.0
+2733,C10,5,16000000.0,Oa,Mannitol,1.0
+2734,C11,5,20000000.0,Oa,Mannitol,2.0
+2735,C12,5,26000000.0,Oa,Mannitol,3.0
+2736,D1,5,800000000.0,Oa,Mannose,1.0
+2737,D2,5,1000000000.0,Oa,Mannose,2.0
+2738,D3,5,600000000.0,Oa,Mannose,3.0
+2739,D4,5,80000000.0,Oa,Myo-inositol,1.0
+2740,D5,5,100000000.0,Oa,Myo-inositol,2.0
+2741,D6,5,80000000.0,Oa,Myo-inositol,3.0
+2742,D7,5,80000000.0,Oa,D-Xylose,1.0
+2743,D8,5,120000000.0,Oa,D-Xylose,2.0
+2744,D9,5,100000000.0,Oa,D-Xylose,3.0
+2745,D10,5,3600000000.0,Oa,Ribose,1.0
+2746,D11,5,4000000000.0,Oa,Ribose,2.0
+2747,D12,5,4000000000.0,Oa,Ribose,3.0
+2748,E1,5,2800000000.0,Oa,Citrate + D-Glucose,1.0
+2749,E2,5,3400000000.0,Oa,Citrate + D-Glucose,2.0
+2750,E3,5,2000000000.0,Oa,Citrate + D-Glucose,3.0
+2751,E4,5,120000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2752,E5,5,120000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2753,E6,5,180000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2754,E7,5,140000000.0,Oa,Glutarate + Inosine,1.0
+2755,E8,5,220000000.0,Oa,Glutarate + Inosine,2.0
+2756,E9,5,100000000.0,Oa,Glutarate + Inosine,3.0
+2757,E10,5,140000000.0,Oa,Malate + Citrate,1.0
+2758,E11,5,120000000.0,Oa,Malate + Citrate,2.0
+2759,E12,5,140000000.0,Oa,Malate + Citrate,3.0
+2760,F1,5,1000000000.0,Oa,Acetate + L-Alanine,1.0
+2761,F2,5,600000000.0,Oa,Acetate + L-Alanine,2.0
+2762,F3,5,1200000000.0,Oa,Acetate + L-Alanine,3.0
+2763,F4,5,140000000.0,Oa,L-Glutamate + Mannose,1.0
+2764,F5,5,100000000.0,Oa,L-Glutamate + Mannose,2.0
+2765,F6,5,140000000.0,Oa,L-Glutamate + Mannose,3.0
+2766,F7,5,280000000.0,Oa,L-Histidine + Mannose,1.0
+2767,F8,5,320000000.0,Oa,L-Histidine + Mannose,2.0
+2768,F9,5,340000000.0,Oa,L-Histidine + Mannose,3.0
+2769,F10,5,40000000.0,Oa,Mannitol + Acetate,1.0
+2770,F11,5,40000000.0,Oa,Mannitol + Acetate,2.0
+2771,F12,5,100000000.0,Oa,Mannitol + Acetate,3.0
+2772,G1,5,180000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2773,G2,5,180000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2774,G3,5,160000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2775,G4,5,800000000.0,Oa,Ribose + Glutarate,1.0
+2776,G5,5,1000000000.0,Oa,Ribose + Glutarate,2.0
+2777,G6,5,1000000000.0,Oa,Ribose + Glutarate,3.0
+2778,G7,5,600000000.0,Oa,D-Xylose + L-Histidine,1.0
+2779,G8,5,1000000000.0,Oa,D-Xylose + L-Histidine,2.0
+2780,G9,5,1400000000.0,Oa,D-Xylose + L-Histidine,3.0
+2781,G10,5,60000000.0,Oa,Glycerol + Inosine,1.0
+2782,G11,5,40000000.0,Oa,Glycerol + Inosine,2.0
+2783,G12,5,40000000.0,Oa,Glycerol + Inosine,3.0
+2784,H1,5,2200000000.0,Oa,L-Alanine + D-Glucose,1.0
+2785,H2,5,1600000000.0,Oa,L-Alanine + D-Glucose,2.0
+2786,H3,5,1800000000.0,Oa,L-Alanine + D-Glucose,3.0
+2787,H4,5,1200000000.0,Oa,Malate + L-Isoleucine,1.0
+2788,H5,5,1000000000.0,Oa,Malate + L-Isoleucine,2.0
+2789,H6,5,1200000000.0,Oa,Malate + L-Isoleucine,3.0
+2790,H7,5,120000000.0,Oa,Mannitol + Myo-inositol,1.0
+2791,H8,5,80000000.0,Oa,Mannitol + Myo-inositol,2.0
+2792,H9,5,140000000.0,Oa,Mannitol + Myo-inositol,3.0
+2793,H10,5,1800.0,Oa,No CS,1.0
+2794,H11,5,4800.0,Oa,No CS,2.0
+2795,H12,5,4000.0,Oa,No CS,3.0
+2796,A1,6,2400000000.0,Oa,Acetate,1.0
+2797,A2,6,1600000000.0,Oa,Acetate,2.0
+2798,A3,6,1800000000.0,Oa,Acetate,3.0
+2799,A4,6,1000000000.0,Oa,D-Glucose,1.0
+2800,A5,6,1400000000.0,Oa,D-Glucose,2.0
+2801,A6,6,1200000000.0,Oa,D-Glucose,3.0
+2802,A7,6,2800000000.0,Oa,Citrate,1.0
+2803,A8,6,2200000000.0,Oa,Citrate,2.0
+2804,A9,6,1600000000.0,Oa,Citrate,3.0
+2805,A10,6,2200000000.0,Oa,Glutarate,1.0
+2806,A11,6,2200000000.0,Oa,Glutarate,2.0
+2807,A12,6,2400000000.0,Oa,Glutarate,3.0
+2808,B1,6,28000000.0,Oa,Glycerol,1.0
+2809,B2,6,24000000.0,Oa,Glycerol,2.0
+2810,B3,6,22000000.0,Oa,Glycerol,3.0
+2811,B4,6,200000000.0,Oa,Inosine,1.0
+2812,B5,6,240000000.0,Oa,Inosine,2.0
+2813,B6,6,280000000.0,Oa,Inosine,3.0
+2814,B7,6,2400000000.0,Oa,L-Alanine,1.0
+2815,B8,6,2000000000.0,Oa,L-Alanine,2.0
+2816,B9,6,2400000000.0,Oa,L-Alanine,3.0
+2817,B10,6,100000000.0,Oa,L-Glutamate,1.0
+2818,B11,6,120000000.0,Oa,L-Glutamate,2.0
+2819,B12,6,60000000.0,Oa,L-Glutamate,3.0
+2820,C1,6,2000000000.0,Oa,L-Histidine,1.0
+2821,C2,6,2000000000.0,Oa,L-Histidine,2.0
+2822,C3,6,1800000000.0,Oa,L-Histidine,3.0
+2823,C4,6,90000000.0,Oa,L-Isoleucine,1.0
+2824,C5,6,42000000.0,Oa,L-Isoleucine,2.0
+2825,C6,6,36000000.0,Oa,L-Isoleucine,3.0
+2826,C7,6,1200000000.0,Oa,Malate,1.0
+2827,C8,6,800000000.0,Oa,Malate,2.0
+2828,C9,6,600000000.0,Oa,Malate,3.0
+2829,C10,6,20000000.0,Oa,Mannitol,1.0
+2830,C11,6,52000000.0,Oa,Mannitol,2.0
+2831,C12,6,,Oa,Mannitol,3.0
+2832,D1,6,240000000.0,Oa,Mannose,1.0
+2833,D2,6,340000000.0,Oa,Mannose,2.0
+2834,D3,6,220000000.0,Oa,Mannose,3.0
+2835,D4,6,140000000.0,Oa,Myo-inositol,1.0
+2836,D5,6,80000000.0,Oa,Myo-inositol,2.0
+2837,D6,6,40000000.0,Oa,Myo-inositol,3.0
+2838,D7,6,40000000.0,Oa,D-Xylose,1.0
+2839,D8,6,100000000.0,Oa,D-Xylose,2.0
+2840,D9,6,100000000.0,Oa,D-Xylose,3.0
+2841,D10,6,2000000000.0,Oa,Ribose,1.0
+2842,D11,6,2200000000.0,Oa,Ribose,2.0
+2843,D12,6,4000000000.0,Oa,Ribose,3.0
+2844,E1,6,1600000000.0,Oa,Citrate + D-Glucose,1.0
+2845,E2,6,1800000000.0,Oa,Citrate + D-Glucose,2.0
+2846,E3,6,2000000000.0,Oa,Citrate + D-Glucose,3.0
+2847,E4,6,100000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2848,E5,6,140000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2849,E6,6,160000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2850,E7,6,160000000.0,Oa,Glutarate + Inosine,1.0
+2851,E8,6,220000000.0,Oa,Glutarate + Inosine,2.0
+2852,E9,6,140000000.0,Oa,Glutarate + Inosine,3.0
+2853,E10,6,180000000.0,Oa,Malate + Citrate,1.0
+2854,E11,6,60000000.0,Oa,Malate + Citrate,2.0
+2855,E12,6,160000000.0,Oa,Malate + Citrate,3.0
+2856,F1,6,1000000000.0,Oa,Acetate + L-Alanine,1.0
+2857,F2,6,600000000.0,Oa,Acetate + L-Alanine,2.0
+2858,F3,6,1200000000.0,Oa,Acetate + L-Alanine,3.0
+2859,F4,6,48000000.0,Oa,L-Glutamate + Mannose,1.0
+2860,F5,6,52000000.0,Oa,L-Glutamate + Mannose,2.0
+2861,F6,6,62000000.0,Oa,L-Glutamate + Mannose,3.0
+2862,F7,6,800000000.0,Oa,L-Histidine + Mannose,1.0
+2863,F8,6,400000000.0,Oa,L-Histidine + Mannose,2.0
+2864,F9,6,1000000000.0,Oa,L-Histidine + Mannose,3.0
+2865,F10,6,140000000.0,Oa,Mannitol + Acetate,1.0
+2866,F11,6,80000000.0,Oa,Mannitol + Acetate,2.0
+2867,F12,6,120000000.0,Oa,Mannitol + Acetate,3.0
+2868,G1,6,160000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2869,G2,6,140000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2870,G3,6,140000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2871,G4,6,400000000.0,Oa,Ribose + Glutarate,1.0
+2872,G5,6,800000000.0,Oa,Ribose + Glutarate,2.0
+2873,G6,6,400000000.0,Oa,Ribose + Glutarate,3.0
+2874,G7,6,1200000000.0,Oa,D-Xylose + L-Histidine,1.0
+2875,G8,6,1400000000.0,Oa,D-Xylose + L-Histidine,2.0
+2876,G9,6,1200000000.0,Oa,D-Xylose + L-Histidine,3.0
+2877,G10,6,14000000.0,Oa,Glycerol + Inosine,1.0
+2878,G11,6,22000000.0,Oa,Glycerol + Inosine,2.0
+2879,G12,6,26000000.0,Oa,Glycerol + Inosine,3.0
+2880,H1,6,800000000.0,Oa,L-Alanine + D-Glucose,1.0
+2881,H2,6,1200000000.0,Oa,L-Alanine + D-Glucose,2.0
+2882,H3,6,1800000000.0,Oa,L-Alanine + D-Glucose,3.0
+2883,H4,6,800000000.0,Oa,Malate + L-Isoleucine,1.0
+2884,H5,6,1400000000.0,Oa,Malate + L-Isoleucine,2.0
+2885,H6,6,1200000000.0,Oa,Malate + L-Isoleucine,3.0
+2886,H7,6,14000000.0,Oa,Mannitol + Myo-inositol,1.0
+2887,H8,6,22000000.0,Oa,Mannitol + Myo-inositol,2.0
+2888,H9,6,24000000.0,Oa,Mannitol + Myo-inositol,3.0
+2889,H10,6,1200.0,Oa,No CS,1.0
+2890,H11,6,1000.0,Oa,No CS,2.0
+2891,H12,6,1000.0,Oa,No CS,3.0
+2892,A1,7,2400000000.0,Oa,Acetate,1.0
+2893,A2,7,1400000000.0,Oa,Acetate,2.0
+2894,A3,7,1800000000.0,Oa,Acetate,3.0
+2895,A4,7,380000000.0,Oa,D-Glucose,1.0
+2896,A5,7,600000000.0,Oa,D-Glucose,2.0
+2897,A6,7,460000000.0,Oa,D-Glucose,3.0
+2898,A7,7,2600000000.0,Oa,Citrate,1.0
+2899,A8,7,2400000000.0,Oa,Citrate,2.0
+2900,A9,7,3600000000.0,Oa,Citrate,3.0
+2901,A10,7,3200000000.0,Oa,Glutarate,1.0
+2902,A11,7,3400000000.0,Oa,Glutarate,2.0
+2903,A12,7,3600000000.0,Oa,Glutarate,3.0
+2904,B1,7,22000000.0,Oa,Glycerol,1.0
+2905,B2,7,28000000.0,Oa,Glycerol,2.0
+2906,B3,7,20000000.0,Oa,Glycerol,3.0
+2907,B4,7,160000000.0,Oa,Inosine,1.0
+2908,B5,7,420000000.0,Oa,Inosine,2.0
+2909,B6,7,320000000.0,Oa,Inosine,3.0
+2910,B7,7,2400000000.0,Oa,L-Alanine,1.0
+2911,B8,7,3600000000.0,Oa,L-Alanine,2.0
+2912,B9,7,3600000000.0,Oa,L-Alanine,3.0
+2913,B10,7,80000000.0,Oa,L-Glutamate,1.0
+2914,B11,7,140000000.0,Oa,L-Glutamate,2.0
+2915,B12,7,120000000.0,Oa,L-Glutamate,3.0
+2916,C1,7,1800000000.0,Oa,L-Histidine,1.0
+2917,C2,7,2400000000.0,Oa,L-Histidine,2.0
+2918,C3,7,2400000000.0,Oa,L-Histidine,3.0
+2919,C4,7,80000000.0,Oa,L-Isoleucine,1.0
+2920,C5,7,160000000.0,Oa,L-Isoleucine,2.0
+2921,C6,7,60000000.0,Oa,L-Isoleucine,3.0
+2922,C7,7,1200000000.0,Oa,Malate,1.0
+2923,C8,7,1000000000.0,Oa,Malate,2.0
+2924,C9,7,1000000000.0,Oa,Malate,3.0
+2925,C10,7,24000000.0,Oa,Mannitol,1.0
+2926,C11,7,30000000.0,Oa,Mannitol,2.0
+2927,C12,7,30000000.0,Oa,Mannitol,3.0
+2928,D1,7,380000000.0,Oa,Mannose,1.0
+2929,D2,7,260000000.0,Oa,Mannose,2.0
+2930,D3,7,240000000.0,Oa,Mannose,3.0
+2931,D4,7,120000000.0,Oa,Myo-inositol,1.0
+2932,D5,7,80000000.0,Oa,Myo-inositol,2.0
+2933,D6,7,60000000.0,Oa,Myo-inositol,3.0
+2934,D7,7,40000000.0,Oa,D-Xylose,1.0
+2935,D8,7,54000000.0,Oa,D-Xylose,2.0
+2936,D9,7,42000000.0,Oa,D-Xylose,3.0
+2937,D10,7,4600000000.0,Oa,Ribose,1.0
+2938,D11,7,2400000000.0,Oa,Ribose,2.0
+2939,D12,7,3800000000.0,Oa,Ribose,3.0
+2940,E1,7,3000000000.0,Oa,Citrate + D-Glucose,1.0
+2941,E2,7,2600000000.0,Oa,Citrate + D-Glucose,2.0
+2942,E3,7,2400000000.0,Oa,Citrate + D-Glucose,3.0
+2943,E4,7,100000000.0,Oa,Glycerol + L-Isoleucine,1.0
+2944,E5,7,120000000.0,Oa,Glycerol + L-Isoleucine,2.0
+2945,E6,7,180000000.0,Oa,Glycerol + L-Isoleucine,3.0
+2946,E7,7,180000000.0,Oa,Glutarate + Inosine,1.0
+2947,E8,7,160000000.0,Oa,Glutarate + Inosine,2.0
+2948,E9,7,220000000.0,Oa,Glutarate + Inosine,3.0
+2949,E10,7,260000000.0,Oa,Malate + Citrate,1.0
+2950,E11,7,140000000.0,Oa,Malate + Citrate,2.0
+2951,E12,7,200000000.0,Oa,Malate + Citrate,3.0
+2952,F1,7,1800000000.0,Oa,Acetate + L-Alanine,1.0
+2953,F2,7,1800000000.0,Oa,Acetate + L-Alanine,2.0
+2954,F3,7,3000000000.0,Oa,Acetate + L-Alanine,3.0
+2955,F4,7,80000000.0,Oa,L-Glutamate + Mannose,1.0
+2956,F5,7,60000000.0,Oa,L-Glutamate + Mannose,2.0
+2957,F6,7,80000000.0,Oa,L-Glutamate + Mannose,3.0
+2958,F7,7,400000000.0,Oa,L-Histidine + Mannose,1.0
+2959,F8,7,320000000.0,Oa,L-Histidine + Mannose,2.0
+2960,F9,7,340000000.0,Oa,L-Histidine + Mannose,3.0
+2961,F10,7,80000000.0,Oa,Mannitol + Acetate,1.0
+2962,F11,7,80000000.0,Oa,Mannitol + Acetate,2.0
+2963,F12,7,80000000.0,Oa,Mannitol + Acetate,3.0
+2964,G1,7,200000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+2965,G2,7,140000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+2966,G3,7,180000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+2967,G4,7,160000000.0,Oa,Ribose + Glutarate,1.0
+2968,G5,7,180000000.0,Oa,Ribose + Glutarate,2.0
+2969,G6,7,120000000.0,Oa,Ribose + Glutarate,3.0
+2970,G7,7,480000000.0,Oa,D-Xylose + L-Histidine,1.0
+2971,G8,7,420000000.0,Oa,D-Xylose + L-Histidine,2.0
+2972,G9,7,500000000.0,Oa,D-Xylose + L-Histidine,3.0
+2973,G10,7,12000000.0,Oa,Glycerol + Inosine,1.0
+2974,G11,7,22000000.0,Oa,Glycerol + Inosine,2.0
+2975,G12,7,16000000.0,Oa,Glycerol + Inosine,3.0
+2976,H1,7,2200000000.0,Oa,L-Alanine + D-Glucose,1.0
+2977,H2,7,2800000000.0,Oa,L-Alanine + D-Glucose,2.0
+2978,H3,7,2400000000.0,Oa,L-Alanine + D-Glucose,3.0
+2979,H4,7,1000000000.0,Oa,Malate + L-Isoleucine,1.0
+2980,H5,7,800000000.0,Oa,Malate + L-Isoleucine,2.0
+2981,H6,7,1800000000.0,Oa,Malate + L-Isoleucine,3.0
+2982,H7,7,40000000.0,Oa,Mannitol + Myo-inositol,1.0
+2983,H8,7,42000000.0,Oa,Mannitol + Myo-inositol,2.0
+2984,H9,7,50000000.0,Oa,Mannitol + Myo-inositol,3.0
+2985,H10,7,800.0,Oa,No CS,1.0
+2986,H11,7,1600.0,Oa,No CS,2.0
+2987,H12,7,600.0,Oa,No CS,3.0
+2988,A1,8,2000000000.0,Oa,Acetate,1.0
+2989,A2,8,420000000.0,Oa,Acetate,2.0
+2990,A3,8,800000000.0,Oa,Acetate,3.0
+2991,A4,8,400000000.0,Oa,D-Glucose,1.0
+2992,A5,8,400000000.0,Oa,D-Glucose,2.0
+2993,A6,8,240000000.0,Oa,D-Glucose,3.0
+2994,A7,8,2000000000.0,Oa,Citrate,1.0
+2995,A8,8,1000000000.0,Oa,Citrate,2.0
+2996,A9,8,2200000000.0,Oa,Citrate,3.0
+2997,A10,8,2200000000.0,Oa,Glutarate,1.0
+2998,A11,8,3800000000.0,Oa,Glutarate,2.0
+2999,A12,8,4800000000.0,Oa,Glutarate,3.0
+3000,B1,8,60000000.0,Oa,Glycerol,1.0
+3001,B2,8,40000000.0,Oa,Glycerol,2.0
+3002,B3,8,60000000.0,Oa,Glycerol,3.0
+3003,B4,8,120000000.0,Oa,Inosine,1.0
+3004,B5,8,,Oa,Inosine,2.0
+3005,B6,8,140000000.0,Oa,Inosine,3.0
+3006,B7,8,4800000000.0,Oa,L-Alanine,1.0
+3007,B8,8,2800000000.0,Oa,L-Alanine,2.0
+3008,B9,8,3200000000.0,Oa,L-Alanine,3.0
+3009,B10,8,80000000.0,Oa,L-Glutamate,1.0
+3010,B11,8,140000000.0,Oa,L-Glutamate,2.0
+3011,B12,8,120000000.0,Oa,L-Glutamate,3.0
+3012,C1,8,2400000000.0,Oa,L-Histidine,1.0
+3013,C2,8,3000000000.0,Oa,L-Histidine,2.0
+3014,C3,8,1400000000.0,Oa,L-Histidine,3.0
+3015,C4,8,400000000.0,Oa,L-Isoleucine,1.0
+3016,C5,8,100000000.0,Oa,L-Isoleucine,2.0
+3017,C6,8,120000000.0,Oa,L-Isoleucine,3.0
+3018,C7,8,1400000000.0,Oa,Malate,1.0
+3019,C8,8,3200000000.0,Oa,Malate,2.0
+3020,C9,8,1200000000.0,Oa,Malate,3.0
+3021,C10,8,20000000.0,Oa,Mannitol,1.0
+3022,C11,8,14000000.0,Oa,Mannitol,2.0
+3023,C12,8,34000000.0,Oa,Mannitol,3.0
+3024,D1,8,180000000.0,Oa,Mannose,1.0
+3025,D2,8,140000000.0,Oa,Mannose,2.0
+3026,D3,8,220000000.0,Oa,Mannose,3.0
+3027,D4,8,120000000.0,Oa,Myo-inositol,1.0
+3028,D5,8,140000000.0,Oa,Myo-inositol,2.0
+3029,D6,8,120000000.0,Oa,Myo-inositol,3.0
+3030,D7,8,60000000.0,Oa,D-Xylose,1.0
+3031,D8,8,80000000.0,Oa,D-Xylose,2.0
+3032,D9,8,40000000.0,Oa,D-Xylose,3.0
+3033,D10,8,4400000000.0,Oa,Ribose,1.0
+3034,D11,8,3600000000.0,Oa,Ribose,2.0
+3035,D12,8,,Oa,Ribose,3.0
+3036,E1,8,2600000000.0,Oa,Citrate + D-Glucose,1.0
+3037,E2,8,3200000000.0,Oa,Citrate + D-Glucose,2.0
+3038,E3,8,1800000000.0,Oa,Citrate + D-Glucose,3.0
+3039,E4,8,78000000.0,Oa,Glycerol + L-Isoleucine,1.0
+3040,E5,8,86000000.0,Oa,Glycerol + L-Isoleucine,2.0
+3041,E6,8,72000000.0,Oa,Glycerol + L-Isoleucine,3.0
+3042,E7,8,340000000.0,Oa,Glutarate + Inosine,1.0
+3043,E8,8,200000000.0,Oa,Glutarate + Inosine,2.0
+3044,E9,8,320000000.0,Oa,Glutarate + Inosine,3.0
+3045,E10,8,380000000.0,Oa,Malate + Citrate,1.0
+3046,E11,8,220000000.0,Oa,Malate + Citrate,2.0
+3047,E12,8,220000000.0,Oa,Malate + Citrate,3.0
+3048,F1,8,2400000000.0,Oa,Acetate + L-Alanine,1.0
+3049,F2,8,1800000000.0,Oa,Acetate + L-Alanine,2.0
+3050,F3,8,1800000000.0,Oa,Acetate + L-Alanine,3.0
+3051,F4,8,80000000.0,Oa,L-Glutamate + Mannose,1.0
+3052,F5,8,100000000.0,Oa,L-Glutamate + Mannose,2.0
+3053,F6,8,60000000.0,Oa,L-Glutamate + Mannose,3.0
+3054,F7,8,340000000.0,Oa,L-Histidine + Mannose,1.0
+3055,F8,8,500000000.0,Oa,L-Histidine + Mannose,2.0
+3056,F9,8,360000000.0,Oa,L-Histidine + Mannose,3.0
+3057,F10,8,140000000.0,Oa,Mannitol + Acetate,1.0
+3058,F11,8,60000000.0,Oa,Mannitol + Acetate,2.0
+3059,F12,8,100000000.0,Oa,Mannitol + Acetate,3.0
+3060,G1,8,180000000.0,Oa,Myo-inositol + L-Glutamate,1.0
+3061,G2,8,80000000.0,Oa,Myo-inositol + L-Glutamate,2.0
+3062,G3,8,140000000.0,Oa,Myo-inositol + L-Glutamate,3.0
+3063,G4,8,60000000.0,Oa,Ribose + Glutarate,1.0
+3064,G5,8,300000000.0,Oa,Ribose + Glutarate,2.0
+3065,G6,8,80000000.0,Oa,Ribose + Glutarate,3.0
+3066,G7,8,1400000000.0,Oa,D-Xylose + L-Histidine,1.0
+3067,G8,8,1000000000.0,Oa,D-Xylose + L-Histidine,2.0
+3068,G9,8,1400000000.0,Oa,D-Xylose + L-Histidine,3.0
+3069,G10,8,40000000.0,Oa,Glycerol + Inosine,1.0
+3070,G11,8,20000000.0,Oa,Glycerol + Inosine,2.0
+3071,G12,8,40000000.0,Oa,Glycerol + Inosine,3.0
+3072,H1,8,3400000000.0,Oa,L-Alanine + D-Glucose,1.0
+3073,H2,8,2400000000.0,Oa,L-Alanine + D-Glucose,2.0
+3074,H3,8,2400000000.0,Oa,L-Alanine + D-Glucose,3.0
+3075,H4,8,1600000000.0,Oa,Malate + L-Isoleucine,1.0
+3076,H5,8,1000000000.0,Oa,Malate + L-Isoleucine,2.0
+3077,H6,8,600000000.0,Oa,Malate + L-Isoleucine,3.0
+3078,H7,8,34000000.0,Oa,Mannitol + Myo-inositol,1.0
+3079,H8,8,36000000.0,Oa,Mannitol + Myo-inositol,2.0
+3080,H9,8,34000000.0,Oa,Mannitol + Myo-inositol,3.0
+3081,H10,8,400.0,Oa,No CS,1.0
+3082,H11,8,400.0,Oa,No CS,2.0
+3083,H12,8,1400.0,Oa,No CS,3.0
