@@ -28,12 +28,25 @@ Todo:
 
 """
 epsilon = 1e-4
-N_min = 1e-6
+N_min = 1e-7
 R_min = 1e-6
+max_iterations = 10000
+
+class IterationLimit:
+    def __init__(self, max_calls):
+        self.calls = 0
+        self.max_calls = max_calls
+    def __call__(self, *args, **kwargs):
+        self.calls += 1
+        if self.calls > self.max_calls:
+            raise RuntimeError("Maximum iterations exceeded")
+        
+iteration_limit = IterationLimit(2000)
 
 class CRM(object):
     """
-    Write a proper documentation
+    Consumer Resource Model (CRM) class for simulating consumer-resource dynamics.
+
     """
     def __init__(self, N_species, N_resources, C, K = None, g = None, w = None, l = None, m = None, D = None, dilution_rate = 0, R_in = None, transfer_time = None, 
         transfer_dilution = None):
@@ -63,7 +76,8 @@ class CRM(object):
             self.g = np.array(g)
 
         if not isinstance(w, (list, np.ndarray)):
-            self.w = np.ones(self.N_resources)
+            # self.w = np.ones(self.N_resources)
+            self.w = 1
         else:
             self.w = np.array(w)
 
@@ -71,7 +85,7 @@ class CRM(object):
             self.l = np.zeros(self.N_species)#, self.N_resources)
         else:
             self.l = np.array(l)
-            assert self.l.shape == self.N_species
+            assert self.l.size == self.N_species
             
             
 
@@ -115,7 +129,7 @@ class CRM(object):
                 Ni = arr[:self.N_species, -1]/transfer_dilution
                 y0 = np.concatenate((Ni, R0))
             
-            sol = solve_ivp(CRM_fun, [0, t_transfer], y0, args = (ns, nr, self.C, self.K, self.g, 
+            sol = solve_ivp(CRM_fun_with_limit, [0, t_transfer], y0, args = (ns, nr, self.C, self.K, self.g, 
                                                     self.w, self.l, self.m, self.D,
                                                     self.dilution_rate, self.R_in), dense_output=True, method=method)
             # print("N solver steps", len(sol.t))
@@ -137,10 +151,21 @@ class CRM(object):
         ns, nr = self.N_species, self.N_resources
         if not self.R_in:
             self.R_in = R0
-        sol = solve_ivp(CRM_fun, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
+        
+        iteration_limit.calls = 0  # Reset the iteration limit counter
+        # try:    
+        sol = solve_ivp(CRM_fun_with_limit, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
                                                     self.w, self.l, self.m, self.D,
                                                     self.dilution_rate, self.R_in), 
-                        dense_output=True, method = method)
+                        dense_output=True, method = method,
+                        t_eval= np.arange(0, t_max, 10),
+                        # max_step = dt,
+                        # first_step = dt,
+                        rtol = 1e-3, atol = 1e-6)
+        #     print("solve_ivp terminated early:", e)
+        #     sol = None
+        # else:
+        # print("N solver steps", len(sol.t), sol.nfev, sol.njev, sol.nlu, sol.success)
 
         t = np.arange(0, t_max, dt)
         arr = sol.sol(t)
@@ -157,10 +182,16 @@ def calc_Jin(R, C, K):
     Jin = u * C 
     return Jin
 
-def calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate = 0):
+def calc_dN_dt_loop(N, g, m, Jin, w, l, ns, nr, dilution_rate = 0):
     dN_dt = np.zeros(ns)
     for i in range(ns):
         dN_dt[i] = N[i]*g[i]*(np.sum(w*(1-l[i])*Jin[i,:])-m[i]) - N[i]*dilution_rate
+    return dN_dt
+
+def calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate = 0):
+    # Vectorized version
+    growth = g * (np.sum(w * (1 - l[:, None]) * Jin, axis=1) - m)
+    dN_dt = N * (growth - dilution_rate)
     return dN_dt
 
 def calc_dR_dt_no_crossfeeding(N, Jin, ns, nr):
@@ -170,8 +201,25 @@ def calc_dR_dt_no_crossfeeding(N, Jin, ns, nr):
         dR_dt[j]= -np.sum(N*Jin[:, j])
     return dR_dt
 
-
 def calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0):
+    # Vectorized leakage calculation
+    # D: (ns, nr, nr), w: (nr,), l: (ns,), N: (ns,), Jin: (ns, nr)
+    if isinstance(w, (np.ndarray)):
+        w_ratio = w[np.newaxis, :, np.newaxis] / w[np.newaxis, np.newaxis, :]  # shape: (1, nr, nr)
+    else:
+        w_ratio = 1
+    lN = (l * N)[:, np.newaxis, np.newaxis]  # shape: (ns, 1, 1)
+    Jin_expanded = Jin[:, :, np.newaxis]     # shape: (ns, nr, 1)
+    leakage = D * w_ratio * lN * Jin_expanded  # shape: (ns, nr, nr)
+    leakage_sum = leakage.sum(axis=(0, 1))     # sum over species and consumed resource
+
+    dR_dt = -np.sum(N[:, np.newaxis] * Jin, axis=0) + leakage_sum
+
+    if dilution_rate > 0:
+        dR_dt += (R_in - R) * dilution_rate
+    return dR_dt
+
+def calc_dR_dt_loop(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0):
     dR_dt = np.zeros(nr)
     for j in range(nr):
         leakage = np.zeros((ns, nr))
@@ -184,6 +232,13 @@ def calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0):
         dR_dt += (R_in-R)*dilution_rate
     return dR_dt
 
+
+
+def CRM_fun_with_limit(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
+    iteration_limit()
+    return CRM_fun(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate, R_in)
+
+
 def CRM_fun(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
     N = y[:ns]
     R = y[ns:]
@@ -194,6 +249,9 @@ def CRM_fun(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
     Jin = calc_Jin(R, C, K)
     dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
     dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
+    # dR_dt_loop = calc_dR_dt_loop(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
+    # print("dR_dt", np.allclose(dR_dt, dR_dt_loop, 1e-5))
+
     return np.concatenate([dN_dt, dR_dt])
 
 if __name__ == "__main__":

@@ -7,6 +7,8 @@ import time
 from pathlib import Path
 from joblib import Parallel, delayed
 import scipy.stats as st
+from tqdm import tqdm
+
 
 
 def numerical_error(N):
@@ -18,50 +20,94 @@ def has_converged(N):
 def richness(N, min_value = 1e-4):
     return np.sum(N[-1, :]>min_value)
 
-# def run_parameter_swipe(n_cs_arr, K_std_arr, iterations, leakage, initial_c_conc = 10, initial_abundance = 1e-2, 
-#                         time = 1000, dilution_rate = 0.1, n_species = 4, K_mean = -1):
-#     final_abundance_matrix = np.zeros((len(n_cs_arr), len(K_std_arr), iterations, 4))
-#     # richness_matrix = np.zeros((len(n_cs_arr), len(K_std_arr), iterations))
-#     for ic, n_cs in enumerate(n_cs_arr):
-#         print(ic, n_cs)
-#         for j, K_std in enumerate(K_std_arr):
-#             print(K_std)
-#             k = 0
-#             while k < iterations:
-#                 R0 = np.zeros(n_cs) # Concentration of resources at t=0, (mass/volume)
-#                 R0[0]=initial_c_conc
-#                 l = leakage*np.ones((n_species, n_cs)) # Leakage fractions
-#                 N0 = np.ones(n_species)*initial_abundance
 
-#                 C = np.zeros((n_species, n_cs))
-#                 while C[:, 0].max()<2*dilution_rate:
-#                     C = np.random.lognormal(0, 1, (n_species, n_cs))
-#                     # C = (C.T/C.sum(axis=1)).T # The existing data is with this line on - toggle off!
-#                     C = C/C.max()
+def make_D(n_species, n_cs):
+    """
+    Create a random D matrix with the specified number of species and CS.
+    D is a 3D array where D[i, j, k] represents the transfer rate from species i in CS j to species k.
+    """
+    if n_cs == 1:
+        D = np.zeros((n_species, n_cs, n_cs))
+        for i in range(n_species):
+            D[i, 0, 0] = 1
+    else:
+        # Generate a random transfer matrix with log-normal distribution
+        # Ensure that the diagonal elements are zero (no self-transfer)
+        # and that each row sums to 1.
+        D = st.lognorm.rvs(0.95, 2e-06, 0.05, size=(n_species, n_cs, n_cs))
+        for i in range(n_cs):
+            D[:, i, i] = 0  # No self-transfer
+        for i in range(n_species):
+            D[i, :, :] /= D[i, :, :].sum(axis=0)  # Normalize each species' transfers
+        D = np.transpose(D, (0, 2, 1))  # Transpose to match the expected shape (N_species, N_cs, N_cs)
+    return D
 
+def run_simulation_combined(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abundance,
+                   time, dilution_rate, n_species, K_mean, transfer=False, 
+                   dt = 0.1,
+                   method='BDF',
+                   n_transfers=10, transfer_dilution=100, transfer_time=24):
+    """
+    Run a simulation with the specified parameters and return the final abundance matrix.
+    If transfer is True, run the transfer simulation; otherwise, run the standard CRM simulation.
+    """
+    final_abundance_matrix = np.zeros((iterations, n_species))
 
-#                 D  = np.random.uniform(0, 1, size = (n_species, n_cs, n_cs))
-#                 for i in range(n_cs):
-#                     D[:,i,i] = 0
-#                 # np.fill_diagonal(D, 0)
-#                 for i in range(n_species):
-#                     D[i,:,:] = D[i,:,:]/D[i, :,:].sum(axis = 0)
-#                 # D /= D.sum(axis=2, keepdims=True)
-#                 D = np.transpose(D, (0, 2, 1))
-#                 K = np.random.lognormal(K_mean, K_std, (n_species, n_cs))
-#                 c = CRM(n_species, n_cs, C, D = D, dilution_rate=dilution_rate, l = l, K = K)
-                
-#                 try:
-#                     sol = c.run(time, N0, R0, dt = 0.1, method = 'BDF')
-#                 except ValueError:
-#                     continue
-#                 else:
-#                     if has_converged(c.N) and not numerical_error(c.N):
-#                         final_abundance_matrix[ic,j,k,:] = c.N[-1,:]
-#                         # richness_matrix[ic,j,k] = richness(c.N)
-#                         k +=1
+    # Fixed arrays
+    R0 = np.zeros(n_cs)
+    R0[0] = initial_c_conc
+    l = leakage * np.ones(n_species)
+    N0 = np.ones(n_species) * initial_abundance    
 
-#     return final_abundance_matrix
+    runtime_errors = 0
+    k = 0
+    k_control = 0
+    k_numerical_error = 0
+    k_not_converged = 0
+
+    while k < iterations:
+        C = np.zeros((n_species, n_cs))
+        while C[:, 0].max() < 2 * dilution_rate:
+            C = st.gamma.rvs(1.2, 0.01, 0.16, size=(n_species, n_cs))
+            C = C / C.max()
+
+        D = make_D(n_species, n_cs)
+        K = np.random.lognormal(K_mean, K_std, (n_species, n_cs))
+        c = CRM(n_species, n_cs, C, D=D, dilution_rate=dilution_rate, l=l, K=K)
+
+        try:
+            if transfer:
+                sol = c.run_transfers(transfer_time, N0, R0, dt=dt,
+                                      transfer_dilution=transfer_dilution,
+                                      n_transfers=n_transfers, method=method)
+            else:
+                sol = c.run(time, N0, R0, dt=dt, method=method)
+        except (RuntimeError, ValueError):
+            runtime_errors += 1
+        else:
+            if transfer:
+                final_abundance_matrix[k, :] = c.N[-1, :]
+                k += 1
+            else:
+                if has_converged(c.N) and not numerical_error(c.N):
+                    final_abundance_matrix[k, :] = c.N[-1, :]
+                    k += 1
+                else:
+                    if numerical_error(c.N):
+                        k_numerical_error += 1
+                    if not has_converged(c.N):
+                        k_not_converged += 1
+        k_control += 1
+        if k_control > iterations * 3:
+            print("Too many iterations without convergence, breaking loop")
+            print(f"Runtime errors encountered: {runtime_errors}")
+            print(f"Numerical errors encountered: {k_numerical_error}")
+            print(f"Not converged: {k_not_converged}")
+            print(f"Total iterations attempted: {k_control}")
+            print(f"Successful iterations: {k}")
+            break
+
+    return final_abundance_matrix
 
 def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abundance,
                    time, dilution_rate, n_species, K_mean):
@@ -71,10 +117,15 @@ def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abu
     # Fixed arrays
     R0 = np.zeros(n_cs)
     R0[0] = initial_c_conc
-    l = leakage * np.ones((n_species, n_cs))
+    l = leakage * np.ones(n_species)
     N0 = np.ones(n_species) * initial_abundance    
-
-    for k in range(iterations):    
+    runtime_errors = 0
+    k = 0
+    k_control = 0
+    k_numerical_error = 0
+    k_not_converged = 0
+    while k < iterations:
+    # for k in range(iterations):    
         C = np.zeros((n_species, n_cs))
         while C[:, 0].max()<2*dilution_rate:
             # C = np.random.lognormal(0, 1, (n_species, n_cs))
@@ -86,15 +137,7 @@ def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abu
 
 
         # D  = np.random.uniform(0, 1, size = (n_species, n_cs, n_cs))
-        D = st.lognorm.rvs(0.95, 2e-06, 0.05, size = (n_species, n_cs, n_cs))
-
-        for i in range(n_cs):
-            D[:,i,i] = 0
-        # np.fill_diagonal(D, 0)
-        for i in range(n_species):
-            D[i,:,:] = D[i,:,:]/D[i, :,:].sum(axis = 0)
-        # D /= D.sum(axis=2, keepdims=True)
-        D = np.transpose(D, (0, 2, 1))
+        D = make_D(n_species, n_cs)
 
         
         K = np.random.lognormal(K_mean, K_std, (n_species, n_cs))
@@ -102,12 +145,30 @@ def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abu
         
         try:
             sol = c.run(time, N0, R0, dt=0.1, method='BDF')
-        except ValueError:
-            pass
+        # except ValueError:
+        #     pass
+        except RuntimeError as e:
+            runtime_errors += 1
+            # print(f"Runtime error during simulation: {e}")
         else:
             if has_converged(c.N) and not numerical_error(c.N):
                 final_abundance_matrix[k, :] = c.N[-1, :]
-
+                k+=1
+            else:
+                if numerical_error(c.N):
+                    k_numerical_error+=1
+                if not has_converged(c.N):
+                    k_not_converged+=1
+        k_control +=1
+        if k_control > iterations*3:
+            print("Too many iterations without convergence, breaking loop")
+            print(f"Runtime errors encountered: {runtime_errors}")
+            print(f"Numerical errors encountered: {k_numerical_error}")
+            print(f"Not converged: {k_not_converged}")
+            print(f"Total iterations attempted: {k_control}")
+            print(f"Successful iterations: {k}")
+            break
+    
     return final_abundance_matrix
 
 def run_simulation_transfer(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abundance,
@@ -118,9 +179,8 @@ def run_simulation_transfer(n_cs, K_std, iterations, leakage, initial_c_conc, in
     # Fixed arrays
     R0 = np.zeros(n_cs)
     R0[0] = initial_c_conc
-    l = leakage * np.ones((n_species, n_cs))
+    l = leakage * np.ones(n_species)
     N0 = np.ones(n_species) * initial_abundance    
-    print(n_cs, K_std)
     for k in range(iterations):    
         C = np.zeros((n_species, n_cs))
         while C[:, 0].max()<2*dilution_rate:
@@ -133,17 +193,8 @@ def run_simulation_transfer(n_cs, K_std, iterations, leakage, initial_c_conc, in
 
 
         # D  = np.random.uniform(0, 1, size = (n_species, n_cs, n_cs))
-        D = st.lognorm.rvs(0.95, 2e-06, 0.05, size = (n_species, n_cs, n_cs))
+        D = make_D(n_species, n_cs)
 
-        for i in range(n_cs):
-            D[:,i,i] = 0
-        # np.fill_diagonal(D, 0)
-        for i in range(n_species):
-            D[i,:,:] = D[i,:,:]/D[i, :,:].sum(axis = 0)
-        # D /= D.sum(axis=2, keepdims=True)
-        D = np.transpose(D, (0, 2, 1))
-
-        
         K = np.random.lognormal(K_mean, K_std, (n_species, n_cs))
         c = CRM(n_species, n_cs, C, D=D, dilution_rate=dilution_rate, l=l, K=K)
         
@@ -160,7 +211,7 @@ def run_simulation_transfer(n_cs, K_std, iterations, leakage, initial_c_conc, in
     return final_abundance_matrix
 
 def run_parameter_swipe_parallel(n_cs_arr, K_std_arr, iterations, leakage, initial_c_conc=10, 
-                                  initial_abundance=1e-2, time=1000, dilution_rate=0.1, 
+                                  initial_abundance=1e-2, time=2000, dilution_rate=0.1, 
                                   n_species=4, K_mean=-1, transfer = False):
     
     params_list = []
@@ -172,12 +223,23 @@ def run_parameter_swipe_parallel(n_cs_arr, K_std_arr, iterations, leakage, initi
     num_jobs = len(params_list)
     if transfer:
         print('Run transfer')
-        results = Parallel(n_jobs=-1)(delayed(run_simulation_transfer)(*params) for params in params_list)
+        results = Parallel(n_jobs=-1)(
+            tqdm(
+                (delayed(run_simulation_transfer)(*params) for params in params_list),
+                total=len(params_list)
+            )
+        )
     else:
-        results = Parallel(n_jobs=-1)(delayed(run_simulation)(*params) for params in params_list)
+        print('Run chemostat simulation')
+        results = Parallel(n_jobs=1)(
+            tqdm(
+                (delayed(run_simulation)(*params) for params in params_list),
+                total=len(params_list)
+            )
+        )
     # results = Parallel(n_jobs=-1)(delayed(test)(params[0]) for params in params_list)
 
-    
+    print(f"Finished {num_jobs} jobs")
     # Reshape results into final abundance matrix
     final_abundance_matrix = np.array(results).reshape(len(n_cs_arr), len(K_std_arr), iterations, n_species)
     
@@ -188,12 +250,12 @@ if __name__ == '__main__':
     t0 = time.time()
     parser = argparse.ArgumentParser(description = 'Parameter swipe')
     parser.add_argument("--cs_min", help = 'Minimal number of CS', default=1, type=int)
-    parser.add_argument("--cs_max", help = 'Maximal number of CS', default=48, type=int)
-    parser.add_argument("--N_cs", help = 'The number of different sizes of CS', default=13, type=int)
+    parser.add_argument("--cs_max", help = 'Maximal number of CS', default=50, type=int)
+    parser.add_argument("--N_cs", help = 'The number of different sizes of CS', default=11, type=int)
     parser.add_argument("--K_mean", help = 'Mean K std', default = -1, type=float)
     parser.add_argument("--K_std_min", help = 'Minimal K std', default = 0, type=float)
     parser.add_argument("--K_std_max", help = 'Maximal K std', default = 4, type=float)
-    parser.add_argument("--N_K_std", help = 'Number of different K std values', default = 11, type=int)
+    parser.add_argument("--N_K_std", help = 'Number of different K std values', default = 21, type=int)
     parser.add_argument("--iterations", help = 'Number of iterations per parameter combination', default = 10, type=int)
     parser.add_argument("--leakage", help = "Leakage fraction", default=0.1, type=float)
     parser.add_argument("--folder", help = 'Where to store data', default = './n_cs_vs_K_parameter_swipe', type=str)
