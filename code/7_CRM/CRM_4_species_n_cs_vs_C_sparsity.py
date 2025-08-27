@@ -1,6 +1,5 @@
 import numpy as np
 from scipy.integrate import solve_ivp
-from CRM import CRM
 import argparse
 import json
 import time
@@ -8,16 +7,10 @@ from pathlib import Path
 from joblib import Parallel, delayed
 import scipy.stats as st
 
+from CRM import CRM
+from CRM_utils import make_D, numerical_error, has_converged
 
 
-def numerical_error(N):
-    return N[-1, :].max() > 1e3
-
-def has_converged(N):
-    return np.abs((N[-1,:]-N[-10, :])/N[-1, :]).max() < 1e-3
-
-def richness(N, min_value = 1e-4):
-    return np.sum(N[-1, :]>min_value)
 
 
 

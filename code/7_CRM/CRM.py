@@ -3,6 +3,9 @@
 import numpy as np
 from scipy.integrate import solve_ivp
 
+from numba import cfunc,carray
+from numbalsoda import lsoda_sig,lsoda
+
 """
 Author: Snorre Sulheim
 Email: snorre.sulheim@unil.ch
@@ -27,9 +30,10 @@ Todo:
 - Add a class for sampling random species / parameters
 
 """
-epsilon = 1e-4
+epsilon = 1e-6
 N_min = 1e-7
-R_min = 1e-6
+R_min = 1e-9
+min_Jin = 1e-7
 max_iterations = 10000
 
 class IterationLimit:
@@ -41,27 +45,54 @@ class IterationLimit:
         if self.calls > self.max_calls:
             raise RuntimeError("Maximum iterations exceeded")
         
-iteration_limit = IterationLimit(2000)
+iteration_limit = IterationLimit(max_iterations)
+
+
+def steady_state_event(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate, R_in):
+    # y[:ns] are populations
+    N = y[:ns]
+    R = y[ns:]
+    Jin = calc_Jin(R, C, K)
+    dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
+    # Trigger event when max absolute change is below threshold
+    return np.max(np.abs(dN_dt)) - epsilon  # Set your threshold here
+
+steady_state_event.terminal = True
+steady_state_event.direction = -1
 
 class CRM(object):
     """
     Consumer Resource Model (CRM) class for simulating consumer-resource dynamics.
 
+    # g
+    FBA E. coli on glucose suggests that the yield on glucose is 0.087 g biomass per mmol glucose.
+    However, according to FBA (on glucose) 38% of carbon is released as CO2. Roughly 10% is lost as other byproducts.
+    Thus, roughly the yield is roughly 0.167 g/mol when accounting for byproducts. If not CO2 is included maybe a yield og 0.1 g/mmol is more appropriate.
     """
-    def __init__(self, N_species, N_resources, C, K = None, g = None, w = None, l = None, m = None, D = None, dilution_rate = 0, R_in = None, transfer_time = None, 
-        transfer_dilution = None):
+    def __init__(self, N_species, N_resources, C, K = None, g = 1, 
+                #  w = None,
+                 l = None,
+                #    m = None,
+                     D = None,
+                  dilution_rate = 0, R_in = None, transfer_time = None, 
+                  transfer_dilution = None,
+                  rtol = 1e-9, atol = 1e-9):
         self.N_resources = N_resources
         self.N_species = N_species
         self.R_in = R_in
+        self.rtol = rtol
+        self.atol = atol
+        w = None # Not implemented
+        m = None # Not implemented
         self._set_and_check_params(C, K, g, w, l, m, D, dilution_rate)
 
     def _set_and_check_params(self, C, K, g, w, l, m, D, dilution_rate):
         self.C = np.array(C)
         assert self.C.shape == (self.N_species, self.N_resources)
         
-        if not isinstance(K, (list, np.ndarray)):
-            self.K = np.ones(self.N_resources)
-        else:
+        if isinstance(K, (int, float)):
+            self.K = K * np.ones((self.N_species, self.N_resources))
+        elif isinstance(K, (list, np.ndarray)):
             K = np.array(K)
             if len(K.shape) == 1:
                 assert len(K) == self.N_resources
@@ -69,35 +100,43 @@ class CRM(object):
             else:
                 assert K.shape == (self.N_species, self.N_resources)
                 self.K = K
-
-        if not isinstance(g, (list, np.ndarray)):
-            self.g = np.ones(self.N_species)
         else:
+            self.K = np.ones((self.N_species, self.N_resources))
+
+        if g is None:
+            self.g = 1
+        elif isinstance(g, list):
             self.g = np.array(g)
+        else:
+            self.g = g
 
-        if not isinstance(w, (list, np.ndarray)):
-            # self.w = np.ones(self.N_resources)
+        if w is None:
             self.w = 1
-        else:
+        elif isinstance(w, list):
             self.w = np.array(w)
-
-        if not isinstance(l, (list, np.ndarray)):
-            self.l = np.zeros(self.N_species)#, self.N_resources)
         else:
+            self.w = w
+
+        if isinstance(l, (int, float)):
+            self.l = l * np.ones(self.N_species)
+        elif isinstance(l, (list, np.ndarray)):
             self.l = np.array(l)
             assert self.l.size == self.N_species
-            
-            
-
-
-        if not isinstance(m, (list, np.ndarray)):
-            self.m = np.zeros(self.N_species)
         else:
+            self.l = np.zeros(self.N_species)
+            
+
+        if isinstance(m, (int, float)):
+            self.m = m * np.ones(self.N_species)
+        elif isinstance(m, (list, np.ndarray)):
             self.m = np.array(m)
+            assert self.m.size == self.N_species
+        else:
+            self.m = np.zeros(self.N_species)
 
         if not isinstance(D, (list, np.ndarray)):
             self.D = np.zeros((self.N_resources, self.N_resources))
-            if np.sum(l)!= 0:
+            if np.sum(self.l)!= 0:
                 print("D must be specified if leakage is != 0")
                 raise IOError
         else:
@@ -114,7 +153,8 @@ class CRM(object):
         self.dilution_rate = dilution_rate
 
 
-    def run_transfers(self, t_transfer, N0, R0, dt = 0.1, n_transfers = 1, transfer_dilution = 100, method = 'RK45'):
+    def run_transfers(self, t_transfer, N0, R0, dt = 0.1, n_transfers = 1, 
+                      transfer_dilution = 100, method = 'RK45'):
         self.dilution_rate = 0
         ns, nr = self.N_species, self.N_resources
         # if not self.R_in:
@@ -146,27 +186,44 @@ class CRM(object):
 
 
 
-    def run(self, t_max, N0, R0, dt = 0.1, method = 'RK45'):
+    def run(self, t_max, N0, R0, dt = 0.1, method = 'RK45', max_calls = None):
         y0 = np.concatenate((N0, R0))
         ns, nr = self.N_species, self.N_resources
         if not self.R_in:
             self.R_in = R0
         
         iteration_limit.calls = 0  # Reset the iteration limit counter
+        if max_calls is None:
+            iteration_limit.max_calls = int(max(1e4, int(np.round(100 * ns * nr**2,0)))) # Set the maximum number of iterations based on system size
+        else:
+            iteration_limit.max_calls = max_calls
         # try:    
-        sol = solve_ivp(CRM_fun_with_limit, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
-                                                    self.w, self.l, self.m, self.D,
-                                                    self.dilution_rate, self.R_in), 
-                        dense_output=True, method = method,
-                        t_eval= np.arange(0, t_max, 10),
-                        # max_step = dt,
-                        # first_step = dt,
-                        rtol = 1e-3, atol = 1e-6)
+        if self.dilution_rate > 0:
+            sol = solve_ivp(CRM_fun_with_limit, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
+                                                        self.w, self.l, self.m, self.D,
+                                                        self.dilution_rate, self.R_in), 
+                            dense_output=True, method = method,
+                            # t_eval= np.arange(0, t_max, 10),
+                            # max_step = dt,
+                            # first_step = dt,
+                            # min_step = 1e-6,
+                            rtol = self.rtol, atol = self.atol)
+        else:
+            sol = solve_ivp(CRM_fun_with_limit_batch, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
+                                                        self.w, self.l, self.m, self.D,
+                                                        self.dilution_rate, self.R_in), 
+                            dense_output=True, method = method,
+                            events = steady_state_event,
+                            rtol = self.rtol, atol = self.atol)
         #     print("solve_ivp terminated early:", e)
         #     sol = None
         # else:
-        # print("N solver steps", len(sol.t), sol.nfev, sol.njev, sol.nlu, sol.success)
-
+        # if sol.nfev > 1000:
+        #     print(self.N_species, self.N_resources)
+        #     print("N solver steps", max(sol.t), sol.nfev, sol.njev, sol.nlu, sol.success)
+        if sol.success is False:
+            print(sol.message)
+        # print(iteration_limit.calls, iteration_limit.max_calls)
         t = np.arange(0, t_max, dt)
         arr = sol.sol(t)
         self.N = arr[:self.N_species].T
@@ -177,6 +234,13 @@ class CRM(object):
 def calc_Jin(R, C, K):
     # R is a vector of length nr 
     # K is a matrix of length ns x nr
+
+    if not np.isfinite(C).all() or (C < 0).any():
+        print("C has negative or non-finite values")
+        raise ValueError
+    if not np.isfinite(K).all() or (K < 0).any():        
+        print("K has negative or non-finite values")
+        raise ValueError
     
     u = R[None, :]/(R[None, :]+K)
     Jin = u * C 
@@ -194,11 +258,44 @@ def calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate = 0):
     dN_dt = N * (growth - dilution_rate)
     return dN_dt
 
+def calc_dN_dt_simple(N, g,Jin, l,  dilution_rate = 0):
+    # Vectorized version
+    growth = g * np.sum((1 - l[:, None]) * Jin, axis=1)
+    dN_dt = N * (growth - dilution_rate)
+    return dN_dt
+
+def calc_dN_dt_simple_batch(N, g,Jin, l):
+    # Vectorized version
+    growth = g * np.sum((1 - l[:, None]) * Jin, axis=1)
+    dN_dt = N * growth
+    return dN_dt
+
 def calc_dR_dt_no_crossfeeding(N, Jin, ns, nr):
     # ns, nr = Jin.shape
     dR_dt = np.zeros(nr)
     for j in range(nr):
         dR_dt[j]= -np.sum(N*Jin[:, j])
+    return dR_dt
+
+def calc_dR_dt_simple(N, Jin, D, l, dilution_rate = 0, R_in = 0, R = 0):
+    # Jin: (ns, nr), N: (ns,), D: (ns, nr, nr), l: (ns,)
+    Rup_matrix = Jin * N[:, np.newaxis]  # shape: (ns, nr)
+    Rl = Rup_matrix * l[:, np.newaxis]   # shape: (ns, nr)
+    leakage = D * Rl[:, :, np.newaxis]   # shape: (ns, nr, nr)
+    leakage_sum = leakage.sum(axis=(0, 1))  # sum over species and consumed resource
+    dR_dt = -np.sum(Rup_matrix, axis=0) + leakage_sum
+
+    if dilution_rate > 0:
+        dR_dt += (R_in - R) * dilution_rate
+    return dR_dt
+
+def calc_dR_dt_simple_batch(N, Jin, D, l):
+    # Jin: (ns, nr), N: (ns,), D: (ns, nr, nr), l: (ns,)
+    Rup_matrix = Jin * N[:, np.newaxis]  # shape: (ns, nr)
+    Rl = Rup_matrix * l[:, np.newaxis]   # shape: (ns, nr)
+    leakage = D * Rl[:, :, np.newaxis]   # shape: (ns, nr, nr)
+    leakage_sum = leakage.sum(axis=(0, 1))  # sum over species and consumed resource
+    dR_dt = -np.sum(Rup_matrix, axis=0) + leakage_sum
     return dR_dt
 
 def calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0):
@@ -208,6 +305,7 @@ def calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0):
         w_ratio = w[np.newaxis, :, np.newaxis] / w[np.newaxis, np.newaxis, :]  # shape: (1, nr, nr)
     else:
         w_ratio = 1
+        
     lN = (l * N)[:, np.newaxis, np.newaxis]  # shape: (ns, 1, 1)
     Jin_expanded = Jin[:, :, np.newaxis]     # shape: (ns, nr, 1)
     leakage = D * w_ratio * lN * Jin_expanded  # shape: (ns, nr, nr)
@@ -236,23 +334,177 @@ def calc_dR_dt_loop(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0)
 
 def CRM_fun_with_limit(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
     iteration_limit()
-    return CRM_fun(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate, R_in)
+    return CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in)
 
 
-def CRM_fun(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
+def CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
     N = y[:ns]
     R = y[ns:]
     N[N<N_min] = 0
     R[R<R_min] = 0
+    R[R==np.inf] = 0
+
+    if np.sum(N) < N_min:
+        return np.zeros_like(y)
+
+    if not np.isfinite(R).all() or (R < 0).any():
+        print(R)
+        print("R has negative or non-finite values")
+        raise ValueError
 
 
     Jin = calc_Jin(R, C, K)
-    dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
-    dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
-    # dR_dt_loop = calc_dR_dt_loop(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
-    # print("dR_dt", np.allclose(dR_dt, dR_dt_loop, 1e-5))
+    # Jin[Jin < min_Jin] = 0
+
+    
+    # dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
+    dN_dt = calc_dN_dt_simple(N, g, Jin, l, dilution_rate)
+    # dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
+    dR_dt = calc_dR_dt_simple(N, Jin, D, l, dilution_rate, R_in, R)
+    
+    dN_dt[N<N_min] = 0
 
     return np.concatenate([dN_dt, dR_dt])
+
+
+def CRM_fun_with_limit_batch(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
+    iteration_limit()
+    return CRM_fun_batch(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in)
+
+
+def CRM_fun_batch(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
+    N = y[:ns]
+    R = y[ns:]
+    N[N<N_min] = 0
+    R[R<R_min] = 0
+    R[R==np.inf] = 0
+
+
+    if np.sum(N) < N_min:
+        return np.zeros_like(y)
+
+    if not np.isfinite(R).all() or (R < 0).any():
+        print(R)
+        print("R has negative or non-finite values")
+        raise ValueError
+
+
+    Jin = calc_Jin(R, C, K)
+    # Jin[Jin < min_Jin] = 0
+
+    
+    # dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
+    dN_dt = calc_dN_dt_simple_batch(N, g, Jin, l)
+    # dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
+    dR_dt = calc_dR_dt_simple_batch(N, Jin, D, l)
+    
+    # dN_dt[N<N_min] = 0
+
+    # print('N:, ', dN_dt, N)
+    # print('R:, ', dR_dt, R)
+    # print(dR_dt)
+    return np.concatenate([dN_dt, dR_dt])
+
+
+def make_lsoda_crossfeeding(muMatrix,kMatrix,dTensor,lVector,supplyVec,delta,Ns,Nr):
+    """
+    Parameters
+    ----------
+    muMatrix : 2D array
+        uptake rates of shape (Ns,Nr) [C]
+    kMatrix : 2D array
+        half-saturation constants of shape (Ns,Nr) [K]
+    dTensor : 3D array
+        stoichiometric matrix of shape (Ns,Nr,Nr) [D]
+    lVector : 1D array
+        leakage fractions of shape (Ns,) [l]
+    supplyVec : 1D array
+        resource supply concentrations of shape (Nr,) [R]
+    delta : float
+        dilution rate [delta]
+    Ns : int
+        number of species
+    Nr : int
+        number of resources
+    """
+    @cfunc(lsoda_sig)
+    def cf_dynamics_lsoda(t, x, dx, p):
+        x_ = carray(x, (Ns+Nr,))
+        dx_ = carray(dx, (Ns+Nr,))
+        populations = x_[:Ns]
+        resources = x_[Ns:]
+        populations[populations<N_min] = 0
+        resources[resources<R_min] = 0
+
+        uptakeMatrix = (muMatrix.T * populations).T * resources/(kMatrix+resources)
+        resourceUsage = np.sum(uptakeMatrix,axis=0)
+        leakage_matrix = np.zeros((Ns,Nr))
+        for i in range(Ns):
+            leakage_matrix[i,:] = np.sum(dTensor[i].T*uptakeMatrix[i]*lVector[i], axis=1)
+        leakage = np.sum(leakage_matrix,axis=0)
+        # leakage = np.sum(np.dot(dTensor,(uptakeMatrix.T*lVector)),axis=1) ### Assuming that the stoichiometric matrix is the same for all species. Replace with loop species if dMatrix is species-specific. Note: try not to loop over resources - computationally expensive than species since Nr>Ns usually
+
+
+        dx_[:Ns] = (np.sum(uptakeMatrix,axis=1)*(1-lVector) - delta*populations )   
+        dx_[Ns:] = delta*(supplyVec[:Nr] - resources) - resourceUsage + leakage
+
+        dx_[:Ns][populations < 1e-20] = 0
+    return cf_dynamics_lsoda
+
+def run_lsoda_crossfeeding(muMatrix,kMatrix,dTensor,lVector,delta,Ns,Nr,N0,R0,t_max):
+    cf_dynamics_lsoda = make_lsoda_crossfeeding(muMatrix,kMatrix,dTensor,lVector,R0,delta,Ns,Nr)
+    funcptr = cf_dynamics_lsoda.address
+
+    
+
+    
+    initialConditions = np.concatenate((N0,R0))
+    t = np.linspace(0,t_max,1000)
+    
+    usol, success = lsoda(funcptr, initialConditions.flatten(), t,rtol=1e-8, atol=1e-8)
+
+    return usol, success
+
+
+def make_lsoda_crossfeeding_original(muMatrix,kMatrix,dTensor,lVector,supplyVec,delta,Ns,Nr):
+    """
+    Parameters
+    ----------
+    muMatrix : 2D array
+        uptake rates of shape (Ns,Nr) [C]
+    kMatrix : 2D array
+        half-saturation constants of shape (Ns,Nr) [K]
+    dTensor : 3D array
+        stoichiometric matrix of shape (Ns,Nr,Nr) [D]
+    lVector : 1D array
+        leakage fractions of shape (Ns,) [l]
+    supplyVec : 1D array
+        resource supply concentrations of shape (Nr,) [R]
+    delta : float
+        dilution rate [delta]
+    Ns : int
+        number of species
+    Nr : int
+        number of resources
+    """
+    @cfunc(lsoda_sig)
+    def cf_dynamics_lsoda(t, x, dx, p):
+        x_ = carray(x, (Ns+Nr,))
+        dx_ = carray(dx, (Ns+Nr,))
+        populations = x_[:Ns]
+        resources = x_[Ns:]
+
+        uptakeMatrix = (muMatrix.T * populations).T * resources/(kMatrix+resources)
+        resourceUsage = np.sum(uptakeMatrix,axis=0)          
+        leakage = np.sum(np.dot(dTensor,(uptakeMatrix.T*lVector)),axis=1) ### Assuming that the stoichiometric matrix is the same for all species. Replace with loop species if dMatrix is species-specific. Note: try not to loop over resources - computationally expensive than species since Nr>Ns usually
+
+
+        dx_[:Ns] = (np.sum(uptakeMatrix,axis=1)*(1-lVector) - delta*populations )   
+        dx_[Ns:] = delta*(supplyVec[:Nr] - resources) - resourceUsage + leakage
+
+        dx_[:Ns][populations < 1e-20] = 0
+    return cf_dynamics_lsoda
+
 
 if __name__ == "__main__":
     pass
