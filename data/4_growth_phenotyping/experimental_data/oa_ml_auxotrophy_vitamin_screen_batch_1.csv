@@ -1,0 +1,430 @@
+,Sample ID,Medium no.,Medium,Species,Timepoint,Hours,OD600
+0,1A,1,No AA,Ml,1,0.0,0.011
+1,1B,1,No AA,Ml,1,0.0,0.014
+2,1C,1,No AA,Ml,1,0.0,0.01
+3,2A,2,Cysteine,Ml,1,0.0,0.003
+4,2B,2,Cysteine,Ml,1,0.0,0.006
+5,2C,2,Cysteine,Ml,1,0.0,0.014
+6,3A,3,Proline,Ml,1,0.0,0.012
+7,3B,3,Proline,Ml,1,0.0,0.013
+8,3C,3,Proline,Ml,1,0.0,0.01
+9,4A,4,Cysteine + Proline,Ml,1,0.0,0.007
+10,4B,4,Cysteine + Proline,Ml,1,0.0,0.018
+11,4C,4,Cysteine + Proline,Ml,1,0.0,0.009
+12,5A,5,All AA,Ml,1,0.0,0.018
+13,5B,5,All AA,Ml,1,0.0,0.01
+14,5C,5,All AA,Ml,1,0.0,0.008
+15,6A,6,MM-,Oa,1,0.0,0.008
+16,6B,6,MM-,Oa,1,0.0,0.009
+17,6C,6,MM-,Oa,1,0.0,0.006
+18,7A,7,MM- + Thiamine,Oa,1,0.0,0.004
+19,7B,7,MM- + Thiamine,Oa,1,0.0,0.003
+20,7C,7,MM- + Thiamine,Oa,1,0.0,0.011
+21,8A,8,MM- + AA,Ml,1,0.0,0.004
+22,8B,8,MM- + AA,Ml,1,0.0,0.007
+23,8C,8,MM- + AA,Ml,1,0.0,0.006
+24,9A,9,MM- + AA + Thiamine,Ml,1,0.0,0.005
+25,9B,9,MM- + AA + Thiamine,Ml,1,0.0,0.006
+26,9C,9,MM- + AA + Thiamine,Ml,1,0.0,0.009
+27,10A,10,MM- + AA + Biotin,Ml,1,0.0,0.005
+28,10B,10,MM- + AA + Biotin,Ml,1,0.0,0.011
+29,10C,10,MM- + AA + Biotin,Ml,1,0.0,0.01
+30,11A,11,MM- + AA + Biotin + Thiamine,Ml,1,0.0,0.007
+31,11B,11,MM- + AA + Biotin + Thiamine,Ml,1,0.0,0.01
+32,11C,11,MM- + AA + Biotin + Thiamine,Ml,1,0.0,0.012
+33,1A,1,No AA,Ml,2,6.0,0.015
+34,1B,1,No AA,Ml,2,6.0,0.022
+35,1C,1,No AA,Ml,2,6.0,0.013
+36,2A,2,Cysteine,Ml,2,6.0,0.021
+37,2B,2,Cysteine,Ml,2,6.0,0.04
+38,2C,2,Cysteine,Ml,2,6.0,0.032
+39,3A,3,Proline,Ml,2,6.0,0.016
+40,3B,3,Proline,Ml,2,6.0,0.017
+41,3C,3,Proline,Ml,2,6.0,0.013
+42,4A,4,Cysteine + Proline,Ml,2,6.0,0.046
+43,4B,4,Cysteine + Proline,Ml,2,6.0,0.035
+44,4C,4,Cysteine + Proline,Ml,2,6.0,0.061
+45,5A,5,All AA,Ml,2,6.0,0.083
+46,5B,5,All AA,Ml,2,6.0,0.094
+47,5C,5,All AA,Ml,2,6.0,0.087
+48,6A,6,MM-,Oa,2,6.0,0.011
+49,6B,6,MM-,Oa,2,6.0,0.009
+50,6C,6,MM-,Oa,2,6.0,0.009
+51,7A,7,MM- + Thiamine,Oa,2,6.0,0.011
+52,7B,7,MM- + Thiamine,Oa,2,6.0,0.01
+53,7C,7,MM- + Thiamine,Oa,2,6.0,0.013
+54,8A,8,MM- + AA,Ml,2,6.0,0.092
+55,8B,8,MM- + AA,Ml,2,6.0,0.094
+56,8C,8,MM- + AA,Ml,2,6.0,0.092
+57,9A,9,MM- + AA + Thiamine,Ml,2,6.0,0.093
+58,9B,9,MM- + AA + Thiamine,Ml,2,6.0,0.095
+59,9C,9,MM- + AA + Thiamine,Ml,2,6.0,0.095
+60,10A,10,MM- + AA + Biotin,Ml,2,6.0,0.102
+61,10B,10,MM- + AA + Biotin,Ml,2,6.0,0.095
+62,10C,10,MM- + AA + Biotin,Ml,2,6.0,0.095
+63,11A,11,MM- + AA + Biotin + Thiamine,Ml,2,6.0,0.096
+64,11B,11,MM- + AA + Biotin + Thiamine,Ml,2,6.0,0.098
+65,11C,11,MM- + AA + Biotin + Thiamine,Ml,2,6.0,0.093
+66,1A,1,No AA,Ml,3,16.0,0.009
+67,1B,1,No AA,Ml,3,16.0,0.012
+68,1C,1,No AA,Ml,3,16.0,0.009
+69,2A,2,Cysteine,Ml,3,16.0,0.037
+70,2B,2,Cysteine,Ml,3,16.0,0.055
+71,2C,2,Cysteine,Ml,3,16.0,0.056
+72,3A,3,Proline,Ml,3,16.0,0.019
+73,3B,3,Proline,Ml,3,16.0,0.015
+74,3C,3,Proline,Ml,3,16.0,0.01
+75,4A,4,Cysteine + Proline,Ml,3,16.0,0.501
+76,4B,4,Cysteine + Proline,Ml,3,16.0,0.382
+77,4C,4,Cysteine + Proline,Ml,3,16.0,0.369
+78,5A,5,All AA,Ml,3,16.0,0.821
+79,5B,5,All AA,Ml,3,16.0,0.856
+80,5C,5,All AA,Ml,3,16.0,0.774
+81,6A,6,MM-,Oa,3,16.0,0.035
+82,6B,6,MM-,Oa,3,16.0,0.036
+83,6C,6,MM-,Oa,3,16.0,0.035
+84,7A,7,MM- + Thiamine,Oa,3,16.0,0.039
+85,7B,7,MM- + Thiamine,Oa,3,16.0,0.041
+86,7C,7,MM- + Thiamine,Oa,3,16.0,0.043
+87,8A,8,MM- + AA,Ml,3,16.0,0.286
+88,8B,8,MM- + AA,Ml,3,16.0,0.281
+89,8C,8,MM- + AA,Ml,3,16.0,0.303
+90,9A,9,MM- + AA + Thiamine,Ml,3,16.0,0.32
+91,9B,9,MM- + AA + Thiamine,Ml,3,16.0,0.315
+92,9C,9,MM- + AA + Thiamine,Ml,3,16.0,0.314
+93,10A,10,MM- + AA + Biotin,Ml,3,16.0,0.406
+94,10B,10,MM- + AA + Biotin,Ml,3,16.0,0.42
+95,10C,10,MM- + AA + Biotin,Ml,3,16.0,0.424
+96,11A,11,MM- + AA + Biotin + Thiamine,Ml,3,16.0,0.812
+97,11B,11,MM- + AA + Biotin + Thiamine,Ml,3,16.0,0.86
+98,11C,11,MM- + AA + Biotin + Thiamine,Ml,3,16.0,0.86
+99,1A,1,No AA,Ml,4,19.5,0.01
+100,1B,1,No AA,Ml,4,19.5,0.015
+101,1C,1,No AA,Ml,4,19.5,0.007
+102,2A,2,Cysteine,Ml,4,19.5,0.036
+103,2B,2,Cysteine,Ml,4,19.5,0.056
+104,2C,2,Cysteine,Ml,4,19.5,0.06
+105,3A,3,Proline,Ml,4,19.5,0.013
+106,3B,3,Proline,Ml,4,19.5,0.019
+107,3C,3,Proline,Ml,4,19.5,0.01
+108,4A,4,Cysteine + Proline,Ml,4,19.5,0.749
+109,4B,4,Cysteine + Proline,Ml,4,19.5,0.653
+110,4C,4,Cysteine + Proline,Ml,4,19.5,0.558
+111,5A,5,All AA,Ml,4,19.5,1.148
+112,5B,5,All AA,Ml,4,19.5,1.172
+113,5C,5,All AA,Ml,4,19.5,1.067
+114,6A,6,MM-,Oa,4,19.5,0.043
+115,6B,6,MM-,Oa,4,19.5,0.043
+116,6C,6,MM-,Oa,4,19.5,0.042
+117,7A,7,MM- + Thiamine,Oa,4,19.5,0.054
+118,7B,7,MM- + Thiamine,Oa,4,19.5,0.053
+119,7C,7,MM- + Thiamine,Oa,4,19.5,0.06
+120,8A,8,MM- + AA,Ml,4,19.5,0.318
+121,8B,8,MM- + AA,Ml,4,19.5,0.322
+122,8C,8,MM- + AA,Ml,4,19.5,0.337
+123,9A,9,MM- + AA + Thiamine,Ml,4,19.5,0.376
+124,9B,9,MM- + AA + Thiamine,Ml,4,19.5,0.372
+125,9C,9,MM- + AA + Thiamine,Ml,4,19.5,0.365
+126,10A,10,MM- + AA + Biotin,Ml,4,19.5,0.492
+127,10B,10,MM- + AA + Biotin,Ml,4,19.5,0.486
+128,10C,10,MM- + AA + Biotin,Ml,4,19.5,0.495
+129,11A,11,MM- + AA + Biotin + Thiamine,Ml,4,19.5,1.067
+130,11B,11,MM- + AA + Biotin + Thiamine,Ml,4,19.5,1.125
+131,11C,11,MM- + AA + Biotin + Thiamine,Ml,4,19.5,1.104
+132,1A,1,No AA,Ml,5,22.0,0.015
+133,1B,1,No AA,Ml,5,22.0,0.015
+134,1C,1,No AA,Ml,5,22.0,0.013
+135,2A,2,Cysteine,Ml,5,22.0,0.038
+136,2B,2,Cysteine,Ml,5,22.0,0.054
+137,2C,2,Cysteine,Ml,5,22.0,0.063
+138,3A,3,Proline,Ml,5,22.0,0.012
+139,3B,3,Proline,Ml,5,22.0,0.014
+140,3C,3,Proline,Ml,5,22.0,0.01
+141,4A,4,Cysteine + Proline,Ml,5,22.0,0.86
+142,4B,4,Cysteine + Proline,Ml,5,22.0,0.797
+143,4C,4,Cysteine + Proline,Ml,5,22.0,0.68
+144,5A,5,All AA,Ml,5,22.0,1.396
+145,5B,5,All AA,Ml,5,22.0,1.338
+146,5C,5,All AA,Ml,5,22.0,1.262
+147,6A,6,MM-,Oa,5,22.0,0.057
+148,6B,6,MM-,Oa,5,22.0,0.055
+149,6C,6,MM-,Oa,5,22.0,0.064
+150,7A,7,MM- + Thiamine,Oa,5,22.0,0.076
+151,7B,7,MM- + Thiamine,Oa,5,22.0,0.072
+152,7C,7,MM- + Thiamine,Oa,5,22.0,0.082
+153,8A,8,MM- + AA,Ml,5,22.0,0.318
+154,8B,8,MM- + AA,Ml,5,22.0,0.333
+155,8C,8,MM- + AA,Ml,5,22.0,0.362
+156,9A,9,MM- + AA + Thiamine,Ml,5,22.0,0.413
+157,9B,9,MM- + AA + Thiamine,Ml,5,22.0,0.411
+158,9C,9,MM- + AA + Thiamine,Ml,5,22.0,0.402
+159,10A,10,MM- + AA + Biotin,Ml,5,22.0,0.525
+160,10B,10,MM- + AA + Biotin,Ml,5,22.0,0.53
+161,10C,10,MM- + AA + Biotin,Ml,5,22.0,0.549
+162,11A,11,MM- + AA + Biotin + Thiamine,Ml,5,22.0,1.178
+163,11B,11,MM- + AA + Biotin + Thiamine,Ml,5,22.0,1.252
+164,11C,11,MM- + AA + Biotin + Thiamine,Ml,5,22.0,1.218
+165,1A,1,No AA,Ml,6,25.0,0.015
+166,1B,1,No AA,Ml,6,25.0,0.015
+167,1C,1,No AA,Ml,6,25.0,0.011
+168,2A,2,Cysteine,Ml,6,25.0,0.042
+169,2B,2,Cysteine,Ml,6,25.0,0.058
+170,2C,2,Cysteine,Ml,6,25.0,0.068
+171,3A,3,Proline,Ml,6,25.0,0.011
+172,3B,3,Proline,Ml,6,25.0,0.014
+173,3C,3,Proline,Ml,6,25.0,0.011
+174,4A,4,Cysteine + Proline,Ml,6,25.0,1.001
+175,4B,4,Cysteine + Proline,Ml,6,25.0,0.908
+176,4C,4,Cysteine + Proline,Ml,6,25.0,0.835
+177,5A,5,All AA,Ml,6,25.0,1.627
+178,5B,5,All AA,Ml,6,25.0,1.522
+179,5C,5,All AA,Ml,6,25.0,1.48
+180,6A,6,MM-,Oa,6,25.0,0.053
+181,6B,6,MM-,Oa,6,25.0,0.051
+182,6C,6,MM-,Oa,6,25.0,0.051
+183,7A,7,MM- + Thiamine,Oa,6,25.0,0.105
+184,7B,7,MM- + Thiamine,Oa,6,25.0,0.095
+185,7C,7,MM- + Thiamine,Oa,6,25.0,0.108
+186,8A,8,MM- + AA,Ml,6,25.0,0.348
+187,8B,8,MM- + AA,Ml,6,25.0,0.353
+188,8C,8,MM- + AA,Ml,6,25.0,0.378
+189,9A,9,MM- + AA + Thiamine,Ml,6,25.0,0.457
+190,9B,9,MM- + AA + Thiamine,Ml,6,25.0,0.457
+191,9C,9,MM- + AA + Thiamine,Ml,6,25.0,0.448
+192,10A,10,MM- + AA + Biotin,Ml,6,25.0,0.608
+193,10B,10,MM- + AA + Biotin,Ml,6,25.0,0.592
+194,10C,10,MM- + AA + Biotin,Ml,6,25.0,0.608
+195,11A,11,MM- + AA + Biotin + Thiamine,Ml,6,25.0,1.316
+196,11B,11,MM- + AA + Biotin + Thiamine,Ml,6,25.0,1.37
+197,11C,11,MM- + AA + Biotin + Thiamine,Ml,6,25.0,1.369
+198,1A,1,No AA,Ml,7,30.0,0.012
+199,1B,1,No AA,Ml,7,30.0,0.016
+200,1C,1,No AA,Ml,7,30.0,0.01
+201,2A,2,Cysteine,Ml,7,30.0,0.045
+202,2B,2,Cysteine,Ml,7,30.0,0.065
+203,2C,2,Cysteine,Ml,7,30.0,0.072
+204,3A,3,Proline,Ml,7,30.0,0.012
+205,3B,3,Proline,Ml,7,30.0,0.015
+206,3C,3,Proline,Ml,7,30.0,0.01
+207,4A,4,Cysteine + Proline,Ml,7,30.0,1.298
+208,4B,4,Cysteine + Proline,Ml,7,30.0,1.192
+209,4C,4,Cysteine + Proline,Ml,7,30.0,1.02
+210,5A,5,All AA,Ml,7,30.0,1.637
+211,5B,5,All AA,Ml,7,30.0,1.69
+212,5C,5,All AA,Ml,7,30.0,1.671
+213,6A,6,MM-,Oa,7,30.0,0.063
+214,6B,6,MM-,Oa,7,30.0,0.063
+215,6C,6,MM-,Oa,7,30.0,0.061
+216,7A,7,MM- + Thiamine,Oa,7,30.0,0.289
+217,7B,7,MM- + Thiamine,Oa,7,30.0,0.269
+218,7C,7,MM- + Thiamine,Oa,7,30.0,0.29
+219,8A,8,MM- + AA,Ml,7,30.0,0.4
+220,8B,8,MM- + AA,Ml,7,30.0,0.395
+221,8C,8,MM- + AA,Ml,7,30.0,0.426
+222,9A,9,MM- + AA + Thiamine,Ml,7,30.0,0.523
+223,9B,9,MM- + AA + Thiamine,Ml,7,30.0,0.533
+224,9C,9,MM- + AA + Thiamine,Ml,7,30.0,0.522
+225,10A,10,MM- + AA + Biotin,Ml,7,30.0,0.675
+226,10B,10,MM- + AA + Biotin,Ml,7,30.0,0.685
+227,10C,10,MM- + AA + Biotin,Ml,7,30.0,0.698
+228,11A,11,MM- + AA + Biotin + Thiamine,Ml,7,30.0,1.516
+229,11B,11,MM- + AA + Biotin + Thiamine,Ml,7,30.0,1.546
+230,11C,11,MM- + AA + Biotin + Thiamine,Ml,7,30.0,1.526
+231,1A,1,No AA,Ml,8,40.0,0.014
+232,1B,1,No AA,Ml,8,40.0,0.012
+233,1C,1,No AA,Ml,8,40.0,0.012
+234,2A,2,Cysteine,Ml,8,40.0,0.054
+235,2B,2,Cysteine,Ml,8,40.0,0.07
+236,2C,2,Cysteine,Ml,8,40.0,0.081
+237,3A,3,Proline,Ml,8,40.0,0.014
+238,3B,3,Proline,Ml,8,40.0,0.016
+239,3C,3,Proline,Ml,8,40.0,0.01
+240,4A,4,Cysteine + Proline,Ml,8,40.0,1.425
+241,4B,4,Cysteine + Proline,Ml,8,40.0,1.437
+242,4C,4,Cysteine + Proline,Ml,8,40.0,1.393
+243,5A,5,All AA,Ml,8,40.0,1.692
+244,5B,5,All AA,Ml,8,40.0,1.72
+245,5C,5,All AA,Ml,8,40.0,1.713
+246,6A,6,MM-,Oa,8,40.0,0.125
+247,6B,6,MM-,Oa,8,40.0,0.123
+248,6C,6,MM-,Oa,8,40.0,0.121
+249,7A,7,MM- + Thiamine,Oa,8,40.0,1.285
+250,7B,7,MM- + Thiamine,Oa,8,40.0,1.425
+251,7C,7,MM- + Thiamine,Oa,8,40.0,1.416
+252,8A,8,MM- + AA,Ml,8,40.0,0.441
+253,8B,8,MM- + AA,Ml,8,40.0,0.446
+254,8C,8,MM- + AA,Ml,8,40.0,0.471
+255,9A,9,MM- + AA + Thiamine,Ml,8,40.0,0.635
+256,9B,9,MM- + AA + Thiamine,Ml,8,40.0,0.69
+257,9C,9,MM- + AA + Thiamine,Ml,8,40.0,0.628
+258,10A,10,MM- + AA + Biotin,Ml,8,40.0,0.819
+259,10B,10,MM- + AA + Biotin,Ml,8,40.0,0.816
+260,10C,10,MM- + AA + Biotin,Ml,8,40.0,0.849
+261,11A,11,MM- + AA + Biotin + Thiamine,Ml,8,40.0,1.67
+262,11B,11,MM- + AA + Biotin + Thiamine,Ml,8,40.0,1.67
+263,11C,11,MM- + AA + Biotin + Thiamine,Ml,8,40.0,1.606
+264,1A,1,No AA,Ml,9,44.0,0.013
+265,1B,1,No AA,Ml,9,44.0,0.014
+266,1C,1,No AA,Ml,9,44.0,0.007
+267,2A,2,Cysteine,Ml,9,44.0,0.055
+268,2B,2,Cysteine,Ml,9,44.0,0.087
+269,2C,2,Cysteine,Ml,9,44.0,0.085
+270,3A,3,Proline,Ml,9,44.0,0.012
+271,3B,3,Proline,Ml,9,44.0,0.014
+272,3C,3,Proline,Ml,9,44.0,0.01
+273,4A,4,Cysteine + Proline,Ml,9,44.0,1.445
+274,4B,4,Cysteine + Proline,Ml,9,44.0,1.456
+275,4C,4,Cysteine + Proline,Ml,9,44.0,1.379
+276,5A,5,All AA,Ml,9,44.0,1.753
+277,5B,5,All AA,Ml,9,44.0,1.722
+278,5C,5,All AA,Ml,9,44.0,1.71
+279,6A,6,MM-,Oa,9,44.0,0.137
+280,6B,6,MM-,Oa,9,44.0,0.141
+281,6C,6,MM-,Oa,9,44.0,0.138
+282,7A,7,MM- + Thiamine,Oa,9,44.0,1.629
+283,7B,7,MM- + Thiamine,Oa,9,44.0,1.659
+284,7C,7,MM- + Thiamine,Oa,9,44.0,1.698
+285,8A,8,MM- + AA,Ml,9,44.0,0.446
+286,8B,8,MM- + AA,Ml,9,44.0,0.467
+287,8C,8,MM- + AA,Ml,9,44.0,0.495
+288,9A,9,MM- + AA + Thiamine,Ml,9,44.0,0.696
+289,9B,9,MM- + AA + Thiamine,Ml,9,44.0,0.696
+290,9C,9,MM- + AA + Thiamine,Ml,9,44.0,0.682
+291,10A,10,MM- + AA + Biotin,Ml,9,44.0,0.863
+292,10B,10,MM- + AA + Biotin,Ml,9,44.0,0.893
+293,10C,10,MM- + AA + Biotin,Ml,9,44.0,0.885
+294,11A,11,MM- + AA + Biotin + Thiamine,Ml,9,44.0,1.628
+295,11B,11,MM- + AA + Biotin + Thiamine,Ml,9,44.0,1.627
+296,11C,11,MM- + AA + Biotin + Thiamine,Ml,9,44.0,1.638
+297,1A,1,No AA,Ml,10,51.0,0.015
+298,1B,1,No AA,Ml,10,51.0,0.018
+299,1C,1,No AA,Ml,10,51.0,0.01
+300,2A,2,Cysteine,Ml,10,51.0,0.104
+301,2B,2,Cysteine,Ml,10,51.0,0.209
+302,2C,2,Cysteine,Ml,10,51.0,0.176
+303,3A,3,Proline,Ml,10,51.0,0.009
+304,3B,3,Proline,Ml,10,51.0,0.019
+305,3C,3,Proline,Ml,10,51.0,0.006
+306,4A,4,Cysteine + Proline,Ml,10,51.0,1.385
+307,4B,4,Cysteine + Proline,Ml,10,51.0,1.388
+308,4C,4,Cysteine + Proline,Ml,10,51.0,1.294
+309,5A,5,All AA,Ml,10,51.0,1.735
+310,5B,5,All AA,Ml,10,51.0,1.773
+311,5C,5,All AA,Ml,10,51.0,1.713
+312,6A,6,MM-,Oa,10,51.0,0.162
+313,6B,6,MM-,Oa,10,51.0,0.165
+314,6C,6,MM-,Oa,10,51.0,0.163
+315,7A,7,MM- + Thiamine,Oa,10,51.0,2.006
+316,7B,7,MM- + Thiamine,Oa,10,51.0,2.136
+317,7C,7,MM- + Thiamine,Oa,10,51.0,1.872
+318,8A,8,MM- + AA,Ml,10,51.0,0.485
+319,8B,8,MM- + AA,Ml,10,51.0,0.484
+320,8C,8,MM- + AA,Ml,10,51.0,0.52
+321,9A,9,MM- + AA + Thiamine,Ml,10,51.0,0.743
+322,9B,9,MM- + AA + Thiamine,Ml,10,51.0,0.813
+323,9C,9,MM- + AA + Thiamine,Ml,10,51.0,0.75
+324,10A,10,MM- + AA + Biotin,Ml,10,51.0,0.923
+325,10B,10,MM- + AA + Biotin,Ml,10,51.0,0.932
+326,10C,10,MM- + AA + Biotin,Ml,10,51.0,0.946
+327,11A,11,MM- + AA + Biotin + Thiamine,Ml,10,51.0,1.627
+328,11B,11,MM- + AA + Biotin + Thiamine,Ml,10,51.0,1.61
+329,11C,11,MM- + AA + Biotin + Thiamine,Ml,10,51.0,1.569
+330,1A,1,No AA,Ml,11,66.0,0.014
+331,1B,1,No AA,Ml,11,66.0,0.017
+332,1C,1,No AA,Ml,11,66.0,0.009
+333,2A,2,Cysteine,Ml,11,66.0,1.141
+334,2B,2,Cysteine,Ml,11,66.0,1.577
+335,2C,2,Cysteine,Ml,11,66.0,1.377
+336,3A,3,Proline,Ml,11,66.0,0.009
+337,3B,3,Proline,Ml,11,66.0,0.012
+338,3C,3,Proline,Ml,11,66.0,0.01
+339,4A,4,Cysteine + Proline,Ml,11,66.0,1.422
+340,4B,4,Cysteine + Proline,Ml,11,66.0,1.416
+341,4C,4,Cysteine + Proline,Ml,11,66.0,1.336
+342,5A,5,All AA,Ml,11,66.0,1.73
+343,5B,5,All AA,Ml,11,66.0,1.623
+344,5C,5,All AA,Ml,11,66.0,1.652
+345,6A,6,MM-,Oa,11,66.0,0.229
+346,6B,6,MM-,Oa,11,66.0,0.234
+347,6C,6,MM-,Oa,11,66.0,0.234
+348,7A,7,MM- + Thiamine,Oa,11,66.0,1.973
+349,7B,7,MM- + Thiamine,Oa,11,66.0,1.893
+350,7C,7,MM- + Thiamine,Oa,11,66.0,2.266
+351,8A,8,MM- + AA,Ml,11,66.0,0.573
+352,8B,8,MM- + AA,Ml,11,66.0,0.53
+353,8C,8,MM- + AA,Ml,11,66.0,0.567
+354,9A,9,MM- + AA + Thiamine,Ml,11,66.0,0.81
+355,9B,9,MM- + AA + Thiamine,Ml,11,66.0,1.241
+356,9C,9,MM- + AA + Thiamine,Ml,11,66.0,0.868
+357,10A,10,MM- + AA + Biotin,Ml,11,66.0,0.988
+358,10B,10,MM- + AA + Biotin,Ml,11,66.0,1.01
+359,10C,10,MM- + AA + Biotin,Ml,11,66.0,1.021
+360,11A,11,MM- + AA + Biotin + Thiamine,Ml,11,66.0,1.556
+361,11B,11,MM- + AA + Biotin + Thiamine,Ml,11,66.0,1.562
+362,11C,11,MM- + AA + Biotin + Thiamine,Ml,11,66.0,1.683
+363,1A,1,No AA,Ml,12,72.0,0.014
+364,1B,1,No AA,Ml,12,72.0,0.011
+365,1C,1,No AA,Ml,12,72.0,0.009
+366,2A,2,Cysteine,Ml,12,72.0,1.577
+367,2B,2,Cysteine,Ml,12,72.0,1.609
+368,2C,2,Cysteine,Ml,12,72.0,1.823
+369,3A,3,Proline,Ml,12,72.0,0.013
+370,3B,3,Proline,Ml,12,72.0,0.013
+371,3C,3,Proline,Ml,12,72.0,0.006
+372,4A,4,Cysteine + Proline,Ml,12,72.0,1.441
+373,4B,4,Cysteine + Proline,Ml,12,72.0,1.389
+374,4C,4,Cysteine + Proline,Ml,12,72.0,1.375
+375,5A,5,All AA,Ml,12,72.0,1.582
+376,5B,5,All AA,Ml,12,72.0,1.696
+377,5C,5,All AA,Ml,12,72.0,1.612
+378,6A,6,MM-,Oa,12,72.0,0.26
+379,6B,6,MM-,Oa,12,72.0,0.26
+380,6C,6,MM-,Oa,12,72.0,0.265
+381,7A,7,MM- + Thiamine,Oa,12,72.0,2.005
+382,7B,7,MM- + Thiamine,Oa,12,72.0,1.989
+383,7C,7,MM- + Thiamine,Oa,12,72.0,1.876
+384,8A,8,MM- + AA,Ml,12,72.0,0.553
+385,8B,8,MM- + AA,Ml,12,72.0,0.558
+386,8C,8,MM- + AA,Ml,12,72.0,0.573
+387,9A,9,MM- + AA + Thiamine,Ml,12,72.0,0.901
+388,9B,9,MM- + AA + Thiamine,Ml,12,72.0,1.503
+389,9C,9,MM- + AA + Thiamine,Ml,12,72.0,0.912
+390,10A,10,MM- + AA + Biotin,Ml,12,72.0,1.014
+391,10B,10,MM- + AA + Biotin,Ml,12,72.0,1.03
+392,10C,10,MM- + AA + Biotin,Ml,12,72.0,1.046
+393,11A,11,MM- + AA + Biotin + Thiamine,Ml,12,72.0,1.626
+394,11B,11,MM- + AA + Biotin + Thiamine,Ml,12,72.0,1.563
+395,11C,11,MM- + AA + Biotin + Thiamine,Ml,12,72.0,1.602
+396,1A,1,No AA,Ml,13,188.0,0.01
+397,1B,1,No AA,Ml,13,188.0,0.008
+398,1C,1,No AA,Ml,13,188.0,0.009
+399,2A,2,Cysteine,Ml,13,188.0,1.745
+400,2B,2,Cysteine,Ml,13,188.0,1.566
+401,2C,2,Cysteine,Ml,13,188.0,1.729
+402,3A,3,Proline,Ml,13,188.0,0.012
+403,3B,3,Proline,Ml,13,188.0,0.022
+404,3C,3,Proline,Ml,13,188.0,0.007
+405,4A,4,Cysteine + Proline,Ml,13,188.0,1.292
+406,4B,4,Cysteine + Proline,Ml,13,188.0,1.272
+407,4C,4,Cysteine + Proline,Ml,13,188.0,1.199
+408,5A,5,All AA,Ml,13,188.0,1.76
+409,5B,5,All AA,Ml,13,188.0,1.75
+410,5C,5,All AA,Ml,13,188.0,1.793
+411,6A,6,MM-,Oa,13,188.0,0.559
+412,6B,6,MM-,Oa,13,188.0,0.569
+413,6C,6,MM-,Oa,13,188.0,0.567
+414,7A,7,MM- + Thiamine,Oa,13,188.0,1.979
+415,7B,7,MM- + Thiamine,Oa,13,188.0,1.958
+416,7C,7,MM- + Thiamine,Oa,13,188.0,1.844
+417,8A,8,MM- + AA,Ml,13,188.0,0.563
+418,8B,8,MM- + AA,Ml,13,188.0,0.604
+419,8C,8,MM- + AA,Ml,13,188.0,0.508
+420,9A,9,MM- + AA + Thiamine,Ml,13,188.0,1.063
+421,9B,9,MM- + AA + Thiamine,Ml,13,188.0,1.9
+422,9C,9,MM- + AA + Thiamine,Ml,13,188.0,1.069
+423,10A,10,MM- + AA + Biotin,Ml,13,188.0,0.419
+424,10B,10,MM- + AA + Biotin,Ml,13,188.0,0.429
+425,10C,10,MM- + AA + Biotin,Ml,13,188.0,0.407
+426,11A,11,MM- + AA + Biotin + Thiamine,Ml,13,188.0,1.578
+427,11B,11,MM- + AA + Biotin + Thiamine,Ml,13,188.0,1.598
+428,11C,11,MM- + AA + Biotin + Thiamine,Ml,13,188.0,1.54
