@@ -1,0 +1,67 @@
+Sample ID,Medium no. ,Medium,Time,CFUs/ml,Days
+1A,1,MM + 15 mM glucose (negative control),CFU - day 0,24129353.233830843,0
+1B,1,MM + 15 mM glucose (negative control),CFU - day 0,24129353.233830843,0
+2A,2,MM + AA + 15 mM glucose,CFU - day 0,24129353.233830843,0
+2B,2,MM + AA + 15 mM glucose,CFU - day 0,24129353.233830843,0
+3A,3,MM + Vitamins + 15 mM glucose,CFU - day 0,24129353.233830843,0
+3B,3,MM + Vitamins + 15 mM glucose,CFU - day 0,24129353.233830843,0
+4A,4,MM + AA + Vitamins + 15 mM glucose,CFU - day 0,24129353.233830843,0
+4B,4,MM + AA + Vitamins + 15 mM glucose,CFU - day 0,24129353.233830843,0
+5A,5,MM +  25 mM glutamic acid (negative control),CFU - day 0,24129353.233830843,0
+5B,5,MM +  25 mM glutamic acid (negative control),CFU - day 0,24129353.233830843,0
+6A,6,MM + AA + 25 mM glutamic acid,CFU - day 0,24129353.233830843,0
+6B,6,MM + AA + 25 mM glutamic acid,CFU - day 0,24129353.233830843,0
+7A,7,MM + Vitamins + 25 mM glutamic acid,CFU - day 0,24129353.233830843,0
+7B,7,MM + Vitamins + 25 mM glutamic acid,CFU - day 0,24129353.233830843,0
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,CFU - day 0,24129353.233830843,0
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,CFU - day 0,24129353.233830843,0
+9A,9,Medium 4 without Ms (negative control),CFU - day 0,0.0,0
+9B,9,Medium 4 without Ms (negative control),CFU - day 0,0.0,0
+10A,10,Medium 8 without Ms (negative control),CFU - day 0,0.0,0
+10B,10,Medium 8 without Ms (negative control),CFU - day 0,0.0,0
+11A,11,TSB (positive control),CFU - day 0,24129353.233830843,0
+11B,11,TSB (positive control),CFU - day 0,24129353.233830843,0
+1A,1,MM + 15 mM glucose (negative control),CFU - day 2,5000000.0,2
+1B,1,MM + 15 mM glucose (negative control),CFU - day 2,6200000.0,2
+2A,2,MM + AA + 15 mM glucose,CFU - day 2,180000000.0,2
+2B,2,MM + AA + 15 mM glucose,CFU - day 2,220000000.0,2
+3A,3,MM + Vitamins + 15 mM glucose,CFU - day 2,5200000.0,2
+3B,3,MM + Vitamins + 15 mM glucose,CFU - day 2,4400000.0,2
+4A,4,MM + AA + Vitamins + 15 mM glucose,CFU - day 2,4800000000.0,2
+4B,4,MM + AA + Vitamins + 15 mM glucose,CFU - day 2,4400000000.0,2
+5A,5,MM +  25 mM glutamic acid (negative control),CFU - day 2,28000000.0,2
+5B,5,MM +  25 mM glutamic acid (negative control),CFU - day 2,36000000.0,2
+6A,6,MM + AA + 25 mM glutamic acid,CFU - day 2,160000000.0,2
+6B,6,MM + AA + 25 mM glutamic acid,CFU - day 2,180000000.0,2
+7A,7,MM + Vitamins + 25 mM glutamic acid,CFU - day 2,44000000.0,2
+7B,7,MM + Vitamins + 25 mM glutamic acid,CFU - day 2,32000000.0,2
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,CFU - day 2,2000000000.0,2
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,CFU - day 2,580000000.0,2
+9A,9,Medium 4 without Ms (negative control),CFU - day 2,0.0,2
+9B,9,Medium 4 without Ms (negative control),CFU - day 2,0.0,2
+10A,10,Medium 8 without Ms (negative control),CFU - day 2,0.0,2
+10B,10,Medium 8 without Ms (negative control),CFU - day 2,0.0,2
+11A,11,TSB (positive control),CFU - day 2,2800000000.0,2
+11B,11,TSB (positive control),CFU - day 2,2400000000.0,2
+1A,1,MM + 15 mM glucose (negative control),CFU - day 3,24000000.0,3
+1B,1,MM + 15 mM glucose (negative control),CFU - day 3,4800000.0,3
+2A,2,MM + AA + 15 mM glucose,CFU - day 3,220000000.0,3
+2B,2,MM + AA + 15 mM glucose,CFU - day 3,220000000.0,3
+3A,3,MM + Vitamins + 15 mM glucose,CFU - day 3,4200000.0,3
+3B,3,MM + Vitamins + 15 mM glucose,CFU - day 3,4000000.0,3
+4A,4,MM + AA + Vitamins + 15 mM glucose,CFU - day 3,4000000000.0,3
+4B,4,MM + AA + Vitamins + 15 mM glucose,CFU - day 3,4800000000.0,3
+5A,5,MM +  25 mM glutamic acid (negative control),CFU - day 3,32000000.0,3
+5B,5,MM +  25 mM glutamic acid (negative control),CFU - day 3,34000000.0,3
+6A,6,MM + AA + 25 mM glutamic acid,CFU - day 3,180000000.0,3
+6B,6,MM + AA + 25 mM glutamic acid,CFU - day 3,180000000.0,3
+7A,7,MM + Vitamins + 25 mM glutamic acid,CFU - day 3,42000000.0,3
+7B,7,MM + Vitamins + 25 mM glutamic acid,CFU - day 3,28000000.0,3
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,CFU - day 3,3000000000.0,3
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,CFU - day 3,4600000000.0,3
+9A,9,Medium 4 without Ms (negative control),CFU - day 3,0.0,3
+9B,9,Medium 4 without Ms (negative control),CFU - day 3,0.0,3
+10A,10,Medium 8 without Ms (negative control),CFU - day 3,0.0,3
+10B,10,Medium 8 without Ms (negative control),CFU - day 3,0.0,3
+11A,11,TSB (positive control),CFU - day 3,2600000000.0,3
+11B,11,TSB (positive control),CFU - day 3,5400000000.0,3

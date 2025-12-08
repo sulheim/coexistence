@@ -1,0 +1,133 @@
+Sample ID,Medium no. ,Medium,Time,OD600,Hours
+1A,1,MM + 15 mM glucose (negative control),OD600 - day 0,0.011,0
+1B,1,MM + 15 mM glucose (negative control),OD600 - day 0,0.013,0
+2A,2,MM + AA + 15 mM glucose,OD600 - day 0,0.016,0
+2B,2,MM + AA + 15 mM glucose,OD600 - day 0,0.014,0
+3A,3,MM + Vitamins + 15 mM glucose,OD600 - day 0,0.018,0
+3B,3,MM + Vitamins + 15 mM glucose,OD600 - day 0,0.015,0
+4A,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 0,0.012,0
+4B,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 0,0.023,0
+5A,5,MM +  25 mM glutamic acid (negative control),OD600 - day 0,0.028,0
+5B,5,MM +  25 mM glutamic acid (negative control),OD600 - day 0,0.014,0
+6A,6,MM + AA + 25 mM glutamic acid,OD600 - day 0,0.017,0
+6B,6,MM + AA + 25 mM glutamic acid,OD600 - day 0,0.011,0
+7A,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 0,0.007,0
+7B,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 0,0.009,0
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 0,0.018,0
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 0,0.017,0
+9A,9,Medium 4 without Ms (negative control),OD600 - day 0,0.0,0
+9B,9,Medium 4 without Ms (negative control),OD600 - day 0,0.0,0
+10A,10,Medium 8 without Ms (negative control),OD600 - day 0,0.006,0
+10B,10,Medium 8 without Ms (negative control),OD600 - day 0,0.002,0
+11A,11,TSB (positive control),OD600 - day 0,0.008,0
+11B,11,TSB (positive control),OD600 - day 0,0.007,0
+1A,1,MM + 15 mM glucose (negative control),OD600 - day 1 noon,0.007,19
+1B,1,MM + 15 mM glucose (negative control),OD600 - day 1 noon,0.007,19
+2A,2,MM + AA + 15 mM glucose,OD600 - day 1 noon,0.41,19
+2B,2,MM + AA + 15 mM glucose,OD600 - day 1 noon,0.442,19
+3A,3,MM + Vitamins + 15 mM glucose,OD600 - day 1 noon,0.019,19
+3B,3,MM + Vitamins + 15 mM glucose,OD600 - day 1 noon,0.007,19
+4A,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 1 noon,1.784,19
+4B,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 1 noon,1.933,19
+5A,5,MM +  25 mM glutamic acid (negative control),OD600 - day 1 noon,0.038,19
+5B,5,MM +  25 mM glutamic acid (negative control),OD600 - day 1 noon,0.022,19
+6A,6,MM + AA + 25 mM glutamic acid,OD600 - day 1 noon,0.117,19
+6B,6,MM + AA + 25 mM glutamic acid,OD600 - day 1 noon,0.107,19
+7A,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 1 noon,0.023,19
+7B,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 1 noon,0.015,19
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 1 noon,0.111,19
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 1 noon,0.096,19
+9A,9,Medium 4 without Ms (negative control),OD600 - day 1 noon,0.0,19
+9B,9,Medium 4 without Ms (negative control),OD600 - day 1 noon,0.0,19
+10A,10,Medium 8 without Ms (negative control),OD600 - day 1 noon,0.013,19
+10B,10,Medium 8 without Ms (negative control),OD600 - day 1 noon,0.018,19
+11A,11,TSB (positive control),OD600 - day 1 noon,1.758,19
+11B,11,TSB (positive control),OD600 - day 1 noon,1.419,19
+1A,1,MM + 15 mM glucose (negative control),OD600 - day 1 afternoon,0.013,24
+1B,1,MM + 15 mM glucose (negative control),OD600 - day 1 afternoon,0.012,24
+2A,2,MM + AA + 15 mM glucose,OD600 - day 1 afternoon,0.474,24
+2B,2,MM + AA + 15 mM glucose,OD600 - day 1 afternoon,0.513,24
+3A,3,MM + Vitamins + 15 mM glucose,OD600 - day 1 afternoon,0.018,24
+3B,3,MM + Vitamins + 15 mM glucose,OD600 - day 1 afternoon,0.009,24
+4A,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 1 afternoon,1.964,24
+4B,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 1 afternoon,1.996,24
+5A,5,MM +  25 mM glutamic acid (negative control),OD600 - day 1 afternoon,0.043,24
+5B,5,MM +  25 mM glutamic acid (negative control),OD600 - day 1 afternoon,0.025,24
+6A,6,MM + AA + 25 mM glutamic acid,OD600 - day 1 afternoon,0.132,24
+6B,6,MM + AA + 25 mM glutamic acid,OD600 - day 1 afternoon,0.124,24
+7A,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 1 afternoon,0.024,24
+7B,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 1 afternoon,0.023,24
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 1 afternoon,0.161,24
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 1 afternoon,0.14,24
+9A,9,Medium 4 without Ms (negative control),OD600 - day 1 afternoon,0.006,24
+9B,9,Medium 4 without Ms (negative control),OD600 - day 1 afternoon,0.007,24
+10A,10,Medium 8 without Ms (negative control),OD600 - day 1 afternoon,0.02,24
+10B,10,Medium 8 without Ms (negative control),OD600 - day 1 afternoon,0.015,24
+11A,11,TSB (positive control),OD600 - day 1 afternoon,1.396,24
+11B,11,TSB (positive control),OD600 - day 1 afternoon,1.388,24
+1A,1,MM + 15 mM glucose (negative control),OD600 - day 2 morning,0.007,41
+1B,1,MM + 15 mM glucose (negative control),OD600 - day 2 morning,0.004,41
+2A,2,MM + AA + 15 mM glucose,OD600 - day 2 morning,0.522,41
+2B,2,MM + AA + 15 mM glucose,OD600 - day 2 morning,0.574,41
+3A,3,MM + Vitamins + 15 mM glucose,OD600 - day 2 morning,0.02,41
+3B,3,MM + Vitamins + 15 mM glucose,OD600 - day 2 morning,0.012,41
+4A,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 2 morning,1.833,41
+4B,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 2 morning,1.841,41
+5A,5,MM +  25 mM glutamic acid (negative control),OD600 - day 2 morning,0.055,41
+5B,5,MM +  25 mM glutamic acid (negative control),OD600 - day 2 morning,0.028,41
+6A,6,MM + AA + 25 mM glutamic acid,OD600 - day 2 morning,0.128,41
+6B,6,MM + AA + 25 mM glutamic acid,OD600 - day 2 morning,0.144,41
+7A,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 2 morning,0.028,41
+7B,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 2 morning,0.024,41
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 2 morning,0.371,41
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 2 morning,0.415,41
+9A,9,Medium 4 without Ms (negative control),OD600 - day 2 morning,0.004,41
+9B,9,Medium 4 without Ms (negative control),OD600 - day 2 morning,0.009,41
+10A,10,Medium 8 without Ms (negative control),OD600 - day 2 morning,0.013,41
+10B,10,Medium 8 without Ms (negative control),OD600 - day 2 morning,0.018,41
+11A,11,TSB (positive control),OD600 - day 2 morning,1.691,41
+11B,11,TSB (positive control),OD600 - day 2 morning,1.663,41
+1A,1,MM + 15 mM glucose (negative control),OD600 - day 2 afternoon,0.012,46
+1B,1,MM + 15 mM glucose (negative control),OD600 - day 2 afternoon,0.008,46
+2A,2,MM + AA + 15 mM glucose,OD600 - day 2 afternoon,0.553,46
+2B,2,MM + AA + 15 mM glucose,OD600 - day 2 afternoon,0.636,46
+3A,3,MM + Vitamins + 15 mM glucose,OD600 - day 2 afternoon,0.02,46
+3B,3,MM + Vitamins + 15 mM glucose,OD600 - day 2 afternoon,0.009,46
+4A,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 2 afternoon,1.785,46
+4B,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 2 afternoon,1.76,46
+5A,5,MM +  25 mM glutamic acid (negative control),OD600 - day 2 afternoon,0.059,46
+5B,5,MM +  25 mM glutamic acid (negative control),OD600 - day 2 afternoon,0.078,46
+6A,6,MM + AA + 25 mM glutamic acid,OD600 - day 2 afternoon,0.251,46
+6B,6,MM + AA + 25 mM glutamic acid,OD600 - day 2 afternoon,0.142,46
+7A,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 2 afternoon,0.024,46
+7B,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 2 afternoon,0.02,46
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 2 afternoon,0.83,46
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 2 afternoon,0.56,46
+9A,9,Medium 4 without Ms (negative control),OD600 - day 2 afternoon,0.002,46
+9B,9,Medium 4 without Ms (negative control),OD600 - day 2 afternoon,0.009,46
+10A,10,Medium 8 without Ms (negative control),OD600 - day 2 afternoon,0.012,46
+10B,10,Medium 8 without Ms (negative control),OD600 - day 2 afternoon,0.013,46
+11A,11,TSB (positive control),OD600 - day 2 afternoon,1.786,46
+11B,11,TSB (positive control),OD600 - day 2 afternoon,1.789,46
+1A,1,MM + 15 mM glucose (negative control),OD600 - day 3,0.01,67
+1B,1,MM + 15 mM glucose (negative control),OD600 - day 3,0.007,67
+2A,2,MM + AA + 15 mM glucose,OD600 - day 3,0.483,67
+2B,2,MM + AA + 15 mM glucose,OD600 - day 3,0.577,67
+3A,3,MM + Vitamins + 15 mM glucose,OD600 - day 3,0.02,67
+3B,3,MM + Vitamins + 15 mM glucose,OD600 - day 3,0.005,67
+4A,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 3,1.767,67
+4B,4,MM + AA + Vitamins + 15 mM glucose,OD600 - day 3,1.821,67
+5A,5,MM +  25 mM glutamic acid (negative control),OD600 - day 3,0.056,67
+5B,5,MM +  25 mM glutamic acid (negative control),OD600 - day 3,0.108,67
+6A,6,MM + AA + 25 mM glutamic acid,OD600 - day 3,0.282,67
+6B,6,MM + AA + 25 mM glutamic acid,OD600 - day 3,0.133,67
+7A,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 3,0.025,67
+7B,7,MM + Vitamins + 25 mM glutamic acid,OD600 - day 3,0.021,67
+8A,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 3,1.146,67
+8B,8,MM + AA + Vitamins + 25 mM glutamic acid,OD600 - day 3,1.071,67
+9A,9,Medium 4 without Ms (negative control),OD600 - day 3,0.009,67
+9B,9,Medium 4 without Ms (negative control),OD600 - day 3,0.009,67
+10A,10,Medium 8 without Ms (negative control),OD600 - day 3,0.016,67
+10B,10,Medium 8 without Ms (negative control),OD600 - day 3,0.018,67
+11A,11,TSB (positive control),OD600 - day 3,2.0,67
+11B,11,TSB (positive control),OD600 - day 3,2.017,67
