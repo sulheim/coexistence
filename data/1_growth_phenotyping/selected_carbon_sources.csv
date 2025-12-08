@@ -1,0 +1,34 @@
+﻿Metabolite name,BiGG ID,Metabolite class
+Acetate,ac,Organic acid
+Adenosine,adn,Nucleoside
+Arabinose,arab__D,Simple sugar
+Citrate,cit,Organic acid
+Cysteine,cys__L,Amino acid
+Formate,for,Organic acid
+Fumarate,fum,Organic acid
+Glucose,glc__D,Simple sugar
+Glutarate,glutar,Organic acid
+Glycerol,glyc,Alcohol
+Glycine,gly,Amino acid
+Inosine,ins,Nucleoside
+L-alanine,ala__L,Amino acid
+L-arginine,arg__L,Amino acid
+L-aspartate,asp__L,Amino acid
+L-glutamate,glu__L,Amino acid
+L-glutamine,gln__L,Amino acid
+L-histidine,his__L,Amino acid
+L-isoleucine,ile__L,Amino acid
+L-Lactate,lac__L,Organic acid
+L-leucine,leu__L,Amino acid
+Malate,mal__L,Organic acid
+Mannitol,mnl,Alcohol
+Mannose,man,Simple sugar
+myo-inositol,inost,Other
+Orotate,orot,Organic acid
+Phenylalanine,phe__L,Amino acid
+Proline,pro__L,Amino acid
+Pyruvate,pyr,Organic acid
+Ribose,rib__D,Simple sugar
+Sucrose,sucr,Simple sugar
+Uridine,uri,Nucleoside
+Xylose,xyl__D,Simple sugar
