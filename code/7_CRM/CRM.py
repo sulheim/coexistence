@@ -3,8 +3,6 @@
 import numpy as np
 from scipy.integrate import solve_ivp
 
-from numba import cfunc,carray
-from numbalsoda import lsoda_sig,lsoda
 
 """
 Author: Snorre Sulheim
@@ -22,9 +20,6 @@ Includes:
 Does not include:
  - toxicity 
  - auxotrophy
-
-# Note!
-    - Not fully tested
 
 Todo:
 - Add a class for sampling random species / parameters
@@ -69,7 +64,7 @@ class CRM(object):
     However, according to FBA (on glucose) 38% of carbon is released as CO2. Roughly 10% is lost as other byproducts.
     Thus, roughly the yield is roughly 0.167 g/mol when accounting for byproducts. If not CO2 is included maybe a yield og 0.1 g/mmol is more appropriate.
     """
-    def __init__(self, N_species, N_resources, C, K = None, g = 1, 
+    def __init__(self, N_species, N_resources, C, K = None, g = 0.1, 
                 #  w = None,
                  l = None,
                 #    m = None,
@@ -82,6 +77,7 @@ class CRM(object):
         self.R_in = R_in
         self.rtol = rtol
         self.atol = atol
+        self.auxo_arr = None
         w = None # Not implemented
         m = None # Not implemented
         self._set_and_check_params(C, K, g, w, l, m, D, dilution_rate)
@@ -197,11 +193,19 @@ class CRM(object):
             iteration_limit.max_calls = int(max(1e4, int(np.round(100 * ns * nr**2,0)))) # Set the maximum number of iterations based on system size
         else:
             iteration_limit.max_calls = max_calls
-        # try:    
+        # try:  
+        # print('Running CRM with parameters:')
+        # print('N species:', self.N_species)
+        # print('N resources:', self.N_resources)
+        # print('Dilution rate:', self.dilution_rate)
+        # print('Leakage fractions:', self.l)
+        # print('Auxotrophs:', self.auxo_arr)
         if self.dilution_rate > 0:
+            # print('Dilution!')
+            # print('Auxo:', self.auxo_arr)
             sol = solve_ivp(CRM_fun_with_limit, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
                                                         self.w, self.l, self.m, self.D,
-                                                        self.dilution_rate, self.R_in), 
+                                                        self.dilution_rate, self.R_in, self.auxo_arr), 
                             dense_output=True, method = method,
                             # t_eval= np.arange(0, t_max, 10),
                             # max_step = dt,
@@ -258,7 +262,56 @@ def calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate = 0):
     dN_dt = N * (growth - dilution_rate)
     return dN_dt
 
-def calc_dN_dt_simple(N, g,Jin, l,  dilution_rate = 0):
+def calc_dN_dt_simple(N, g, Jin, l,  dilution_rate = 0):
+    # Vectorized version
+    growth = g * np.sum((1 - l[:, None]) * Jin, axis=1)
+    dN_dt = N * (growth - dilution_rate)
+    return dN_dt
+
+def calc_mu_lim_loop(g, Jin, auxo_arr, l, ns, epsilon=1e-6):
+    limited_growth_rates = []
+    aux_uptakes = []
+    cs_uptake_scale = []
+    Jin_adjusted = Jin.copy()
+    for i in range(ns):
+        growth_limits = []
+        aux_idxs = np.where(auxo_arr[i])[0]
+        aux_yields = auxo_arr[i, aux_idxs]
+        for (aux_idx, aux_yield) in zip(aux_idxs, aux_yields):
+            aux_uptake = Jin[i, aux_idx]
+            growth_limits.append(aux_uptake * (1-l[i]) * aux_yield)
+        mu_cs = g * (1 - l[i])*np.sum(Jin[i, :])
+        growth_limits.append(mu_cs)
+        mu_lim_i = min(growth_limits)
+
+        # aux_uptakes_i = []
+        # for (aux_idx, aux_yield) in zip(aux_idxs, aux_yields):
+        #     aux_uptake = Jin[i, aux_idx]
+        #     if aux_uptake * (1-l[i]) * aux_yield > mu_lim_i + epsilon:
+        #         aux_uptake = mu_lim_i / (aux_yield * (1-l[i]))
+        #         Jin_adjusted[i, aux_idx] = aux_uptake
+        #     aux_uptakes_i.append(aux_uptake)
+
+        if mu_cs > mu_lim_i + epsilon:
+            cs_uptake_scale_i = (mu_lim_i) / (mu_cs)
+            Jin_adjusted[i, ~aux_idxs] *= cs_uptake_scale_i
+        else:
+            cs_uptake_scale_i = 1.0
+        
+        
+        cs_uptake_scale.append(cs_uptake_scale_i)
+        aux_uptakes.append(aux_uptakes_i)
+        limited_growth_rates.append(mu_lim_i)
+
+        
+
+    return np.array(limited_growth_rates), aux_uptakes, cs_uptake_scale, Jin_adjusted
+
+def calc_dN_dt_simple_auxo(N, limited_growth_rates, dilution_rate = 0):
+    dN_dt = N * (limited_growth_rates - dilution_rate)
+    return dN_dt
+    
+def calc_dN_dt_simple(N, g, Jin, l,  dilution_rate = 0):
     # Vectorized version
     growth = g * np.sum((1 - l[:, None]) * Jin, axis=1)
     dN_dt = N * (growth - dilution_rate)
@@ -332,9 +385,13 @@ def calc_dR_dt_loop(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0)
 
 
 
-def CRM_fun_with_limit(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
+def CRM_fun_with_limit(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0, auxo_arr = None):
     iteration_limit()
-    return CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in)
+    if auxo_arr is None:
+        return CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in)
+    else:
+        print('Auxotrophs!')
+        return CRM_fun_auxo(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in, auxo_arr=auxo_arr)
 
 
 def CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
@@ -361,6 +418,49 @@ def CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
     dN_dt = calc_dN_dt_simple(N, g, Jin, l, dilution_rate)
     # dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
     dR_dt = calc_dR_dt_simple(N, Jin, D, l, dilution_rate, R_in, R)
+    
+    dN_dt[N<N_min] = 0
+
+    return np.concatenate([dN_dt, dR_dt])
+
+
+def CRM_fun_auxo(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0, auxo_arr = None):
+    N = y[:ns]
+    R = y[ns:]
+    N[N<N_min] = 0
+    R[R<R_min] = 0
+    R[R==np.inf] = 0
+
+    if np.sum(N) < N_min:
+        return np.zeros_like(y)
+
+    if not np.isfinite(R).all() or (R < 0).any():
+        print(R)
+        print("R has negative or non-finite values")
+        raise ValueError
+
+
+    Jin = calc_Jin(R, C, K)
+    # Jin[Jin < min_Jin] = 0
+
+    limited_growth_rates, aux_uptakes, cs_uptake_scale, Jin_adjusted = calc_mu_lim_loop(g, Jin, auxo_arr, l, ns, epsilon=1e-6)
+    print(t)
+    print('Limited growth rates:', limited_growth_rates[0])
+    print('Aux uptakes:', aux_uptakes[0])
+    print('CS uptake scales:', cs_uptake_scale[0])
+    print(Jin[0,:])
+    print(Jin_adjusted[0,:])
+    print('')
+    print('Species 2')
+    print('Limited growth rates:', limited_growth_rates[1])
+    print(Jin[1,:], Jin_adjusted[1,:])
+
+    dN_dt = calc_dN_dt_simple_auxo(N, limited_growth_rates, dilution_rate)
+    # dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
+    # dN_dt = calc_dN_dt_simple(N, g, Jin, l, dilution_rate)
+    # dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
+
+    dR_dt = calc_dR_dt_simple(N, Jin_adjusted, D, l, dilution_rate, R_in, R)
     
     dN_dt[N<N_min] = 0
 
@@ -406,104 +506,6 @@ def CRM_fun_batch(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
     return np.concatenate([dN_dt, dR_dt])
 
 
-def make_lsoda_crossfeeding(muMatrix,kMatrix,dTensor,lVector,supplyVec,delta,Ns,Nr):
-    """
-    Parameters
-    ----------
-    muMatrix : 2D array
-        uptake rates of shape (Ns,Nr) [C]
-    kMatrix : 2D array
-        half-saturation constants of shape (Ns,Nr) [K]
-    dTensor : 3D array
-        stoichiometric matrix of shape (Ns,Nr,Nr) [D]
-    lVector : 1D array
-        leakage fractions of shape (Ns,) [l]
-    supplyVec : 1D array
-        resource supply concentrations of shape (Nr,) [R]
-    delta : float
-        dilution rate [delta]
-    Ns : int
-        number of species
-    Nr : int
-        number of resources
-    """
-    @cfunc(lsoda_sig)
-    def cf_dynamics_lsoda(t, x, dx, p):
-        x_ = carray(x, (Ns+Nr,))
-        dx_ = carray(dx, (Ns+Nr,))
-        populations = x_[:Ns]
-        resources = x_[Ns:]
-        populations[populations<N_min] = 0
-        resources[resources<R_min] = 0
-
-        uptakeMatrix = (muMatrix.T * populations).T * resources/(kMatrix+resources)
-        resourceUsage = np.sum(uptakeMatrix,axis=0)
-        leakage_matrix = np.zeros((Ns,Nr))
-        for i in range(Ns):
-            leakage_matrix[i,:] = np.sum(dTensor[i].T*uptakeMatrix[i]*lVector[i], axis=1)
-        leakage = np.sum(leakage_matrix,axis=0)
-        # leakage = np.sum(np.dot(dTensor,(uptakeMatrix.T*lVector)),axis=1) ### Assuming that the stoichiometric matrix is the same for all species. Replace with loop species if dMatrix is species-specific. Note: try not to loop over resources - computationally expensive than species since Nr>Ns usually
-
-
-        dx_[:Ns] = (np.sum(uptakeMatrix,axis=1)*(1-lVector) - delta*populations )   
-        dx_[Ns:] = delta*(supplyVec[:Nr] - resources) - resourceUsage + leakage
-
-        dx_[:Ns][populations < 1e-20] = 0
-    return cf_dynamics_lsoda
-
-def run_lsoda_crossfeeding(muMatrix,kMatrix,dTensor,lVector,delta,Ns,Nr,N0,R0,t_max):
-    cf_dynamics_lsoda = make_lsoda_crossfeeding(muMatrix,kMatrix,dTensor,lVector,R0,delta,Ns,Nr)
-    funcptr = cf_dynamics_lsoda.address
-
-    
-
-    
-    initialConditions = np.concatenate((N0,R0))
-    t = np.linspace(0,t_max,1000)
-    
-    usol, success = lsoda(funcptr, initialConditions.flatten(), t,rtol=1e-8, atol=1e-8)
-
-    return usol, success
-
-
-def make_lsoda_crossfeeding_original(muMatrix,kMatrix,dTensor,lVector,supplyVec,delta,Ns,Nr):
-    """
-    Parameters
-    ----------
-    muMatrix : 2D array
-        uptake rates of shape (Ns,Nr) [C]
-    kMatrix : 2D array
-        half-saturation constants of shape (Ns,Nr) [K]
-    dTensor : 3D array
-        stoichiometric matrix of shape (Ns,Nr,Nr) [D]
-    lVector : 1D array
-        leakage fractions of shape (Ns,) [l]
-    supplyVec : 1D array
-        resource supply concentrations of shape (Nr,) [R]
-    delta : float
-        dilution rate [delta]
-    Ns : int
-        number of species
-    Nr : int
-        number of resources
-    """
-    @cfunc(lsoda_sig)
-    def cf_dynamics_lsoda(t, x, dx, p):
-        x_ = carray(x, (Ns+Nr,))
-        dx_ = carray(dx, (Ns+Nr,))
-        populations = x_[:Ns]
-        resources = x_[Ns:]
-
-        uptakeMatrix = (muMatrix.T * populations).T * resources/(kMatrix+resources)
-        resourceUsage = np.sum(uptakeMatrix,axis=0)          
-        leakage = np.sum(np.dot(dTensor,(uptakeMatrix.T*lVector)),axis=1) ### Assuming that the stoichiometric matrix is the same for all species. Replace with loop species if dMatrix is species-specific. Note: try not to loop over resources - computationally expensive than species since Nr>Ns usually
-
-
-        dx_[:Ns] = (np.sum(uptakeMatrix,axis=1)*(1-lVector) - delta*populations )   
-        dx_[Ns:] = delta*(supplyVec[:Nr] - resources) - resourceUsage + leakage
-
-        dx_[:Ns][populations < 1e-20] = 0
-    return cf_dynamics_lsoda
 
 
 if __name__ == "__main__":

@@ -165,4 +165,3 @@ cython_debug/
 /supplementary_figures
 *.npz
 *args.txt
-data/2_first_community_assembly/pca.csv

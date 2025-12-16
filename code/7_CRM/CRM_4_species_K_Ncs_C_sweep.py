@@ -9,9 +9,13 @@ from tqdm import tqdm
 import pickle
 
 from CRM import CRM
-from CRM_utils import make_D, numerical_error, has_converged
+from CRM_utils import make_D, numerical_error, has_converged, make_C
 
-
+# GLOBAL_PARAMS
+# From 6A_estmate_paramtersmax uptake rates consumer preference distribution
+# D_log10_dist = st.norm(loc=-3.48, scale = 1.35)  # Parameters for log10 of D distribution
+C_dist = st.lognorm(0.91, scale=1.44, loc=0)
+D_dist = st.uniform(0, 1)
 
 def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abundance,
                    time, dilution_rate, n_species, K_mean,
@@ -47,18 +51,12 @@ def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abu
     # print('n_cs:', n_cs)
 
     while k < iterations:
-        C = np.zeros((n_species, n_cs))
-        while C[:, 0].max() < 2 * dilution_rate:
-            C = st.gamma.rvs(1.2, 0.01, 0.16, size=(n_species, n_cs))
-            C0 = (np.random.uniform(0,1, size = (n_species, n_cs))>C_sparsity).astype(int)
-            C = C * C0
-            # C = C / C.max()
-
+        C = make_C(n_species, n_cs, C_dist, C_sparsity, g_yield = 0.1, min_ratio=2, dilution_rate=dilution_rate)
             
-        D = make_D(n_species, n_cs)
+        D = make_D(n_species, n_cs, D_dist= D_dist)
 
         K = np.random.lognormal(K_mean, K_std, (n_species, n_cs))
-        c = CRM(n_species, n_cs, C, D=D, dilution_rate=dilution_rate, l=l, K=K, atol=1e-9, rtol=1e-9)
+        c = CRM(n_species, n_cs, C, D=D, dilution_rate=dilution_rate, l=l, K=K, atol=1e-9, rtol=1e-9, g=0.1)
 
         try:
             sol = c.run(time, N0, R0, dt=dt, method=method)
@@ -90,7 +88,7 @@ def run_simulation(n_cs, K_std, iterations, leakage, initial_c_conc, initial_abu
             print(f"Total iterations attempted: {k_control}")
             print(f"Successful iterations: {k}")
             break
-
+    print(f'Runtime errors: {runtime_errors}, Numerical errors: {k_numerical_error}, Not converged: {k_not_converged}, Not successful: {k_not_successful}, Successful: {k} out of {k_control} attempts')
     return species_list
 
 def run_parameter_swipe_parallel(n_cs_arr, K_std_arr, C_sparsity_arr, iterations, leakage, initial_c_conc=10, 
@@ -154,9 +152,9 @@ if __name__ == '__main__':
 
 
     # Save final abundance matrix and parameters
-    all_C = {f'C_{i}{j}':species_data[i][j]['C'] for i in range(len(species_data)) for j in range(len(species_data[i]))}
-    all_D = {f'D_{i}{j}':species_data[i][j]['D'] for i in range(len(species_data)) for j in range(len(species_data[i]))}
-    all_K = {f'K_{i}{j}':species_data[i][j]['K'] for i in range(len(species_data)) for j in range(len(species_data[i]))}
+    all_C = {f'C_{i}_{j}':species_data[i][j]['C'] for i in range(len(species_data)) for j in range(len(species_data[i]))}
+    all_D = {f'D_{i}_{j}':species_data[i][j]['D'] for i in range(len(species_data)) for j in range(len(species_data[i]))}
+    all_K = {f'K_{i}_{j}':species_data[i][j]['K'] for i in range(len(species_data)) for j in range(len(species_data[i]))}
     all_N_final = np.zeros((len(species_data), args.iterations, 4))*np.nan
     all_R_final = np.zeros((len(species_data), args.iterations, args.cs_max))*np.nan
     for i in range(len(species_data)):
