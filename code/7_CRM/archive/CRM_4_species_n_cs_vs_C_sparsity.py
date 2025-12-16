@@ -30,8 +30,6 @@ def run_simulation(n_cs, C_sparsity, iterations, leakage, initial_c_conc, initia
             C = np.random.lognormal(0, 1, (n_species, n_cs))
             C0 = (np.random.uniform(0,1, size = (n_species, n_cs))>C_sparsity).astype(int)
             C = C*C0
-            # C = (C.T/C.sum(axis=1)).T # The existing data is with this line on - toggle off!
-            C = C/C.max()
 
 
         D  = np.random.uniform(0, 1, size = (n_species, n_cs, n_cs))
