@@ -139,7 +139,7 @@ if __name__ == '__main__':
     parser.add_argument("--K_std_min", help = 'Minimal K std', default = 0.1, type=float)
     parser.add_argument("--K_std_max", help = 'Maximal K std', default = 2, type=float)
     # parser.add_argument("--N_K_std", help = 'Number of different K std values', default = 11, type=int)
-    parser.add_argument("--iterations", help = 'Number of iterations per parameter combination', default = 5, type=int)
+    parser.add_argument("--iterations", help = 'Number of iterations per parameter combination', default = 7, type=int)
     parser.add_argument("--leakage", help = "Leakage fraction", default=0.1, type=float)
     parser.add_argument("--folder", help = 'Where to store data', default = f'simulation_results/cs_sweep', type=str)
     # parser.add_argument("--transfer", help = 'Run serial transfers', default = False, type=bool)
