@@ -164,7 +164,10 @@ def fix_compartments(model):
     old_to_new_compartments = {
         'C_c':'c',
         'C_p':'p',
-        'C_e':'e'
+        'C_e':'e',
+        'c':'c',
+        'p':'p',
+        'e':'e',
     }
     for m in model.metabolites.values():
         m.compartment = old_to_new_compartments[m.compartment]

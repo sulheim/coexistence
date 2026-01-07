@@ -18,7 +18,8 @@ import logging
 
 HOME_PATH = Path.home()
 REPO_PATH =  HOME_PATH / 'git' / 'coexistence' #Path(dotenv.find_dotenv()).parent
-ECOLI_FN =  REPO_PATH / 'gapfilling_data' / 'iML1515.xml'
+ECOLI_FN =  REPO_PATH / "data" / "7_GEM_reconstruction" / 'iML1515.xml'
+
 
 def add_biotin_synthase_reactions(model, logger = None):
     """
@@ -50,7 +51,7 @@ def add_biotin_synthase_reactions(model, logger = None):
                                          'R_PMEACPE',
                                          'R_MEOHtex',
                                          'R_BTS5']
-    print(ECOLI_FN, REPO_PATH, HOME_PATH)
+    # print(ECOLI_FN, REPO_PATH, HOME_PATH)
     ecoli = reframed.load_cbmodel(ECOLI_FN)
     fix_reframed_annotations(ecoli)
 
@@ -78,7 +79,10 @@ def add_biotin_synthase_reactions(model, logger = None):
         logger.info(f'Added biotin synthase reactions %s', added_reactions)
 
 
-def fix_misc(model):
+def fix_misc(model, logger = None):
+    if logger:
+        logger.info('Fixing miscellaneous issues in the universe model')
+    
     # Exchanges for na1 and ni2 are missing
     met_ids = ['na1', 'ni2', 'pectin']
     for m_id in met_ids:
