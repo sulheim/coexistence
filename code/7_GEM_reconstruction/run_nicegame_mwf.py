@@ -18,26 +18,30 @@ model_files = {
 auxotrophy_dict = {
 'Ml': {'amino acids': ['pro__L', 'cys__L'], 'vitamins':['thm', 'btn']},
 'Oa': {'vitamins': ['thm']},
-'1w': {'vitamins': ['thm', 'btn'], 'amino acids': ['his__L', 'val__L', 'tyr__L', 'arg__L', 'met__L', 'thr__L', 'ile__L']}, # Also niacin, but not in the bigg universe
-'108': {'vitamins': ['thm', 'btn', 'pheme'], # Also niacin and phylloquinone (k1), neither in universe
-        'amino acids': ['his__L','adn', 'cytd', 'gsn', 'ins', 'thymd', 'ura']}, #adenosine + cytidine + guanosine + inosine + thymidine + uracil
+# '1w': {'vitamins': ['thm', 'btn'], 'amino acids': ['his__L', 'val__L', 'tyr__L', 'arg__L', 'met__L', 'thr__L', 'ile__L']}, # Also niacin, but not in the bigg universe
+# '108': {'vitamins': ['thm', 'btn', 'pheme'], # Also niacin and phylloquinone (k1), neither in universe
+#         'amino acids': ['his__L','adn', 'cytd', 'gsn', 'ins', 'thymd', 'ura']}, #adenosine + cytidine + guanosine + inosine + thymidine + uracil
 }
 
 print(Path.home())
-repo_path = Path('/Users/snorre/git/mwf_gems')
-carveme_draft_folder = repo_path / 'models/carveme'
-binary_growth_data_path = repo_path / 'data'/'growth_no_growth.csv'
-carbon_source_ids_path = repo_path / 'data'/'carbon_source_ids_curated.csv'
+repo_folder = Path("../..")
+data_folder = repo_folder / "data" / "7_GEM_reconstruction"
+carveme_draft_folder = data_folder / 'models/carveme'
+growth_data_folder = repo_folder / 'data' / '1_growth_phenotyping'
+binary_growth_data_path = growth_data_folder / 'growth_no_growth.csv'
+carbon_source_ids_path = growth_data_folder / 'selected_carbon_sources.csv'#'carbon_source_ids_curated.csv'
 
-gapfilling_data_folder = repo_path / 'gapfilling_data'
-M9_minimal_media_file = gapfilling_data_folder / 'M9_minimal_media_bigg.csv'
+M9_minimal_media_file = data_folder / 'M9_minimal_media_bigg.csv'
 # vitamins_file = gapfilling_data_folder / 'vitamins_bigg.csv'
-bigg_universe_fn = gapfilling_data_folder / 'universe_bacteria.xml'#'bigg_universe.xml'
-compartment_data_fn = gapfilling_data_folder /'compartment_data.json'
+bigg_universe_fn = data_folder / 'carveme_universe_bacteria_fixed.xml'#'bigg_universe.xml'
+compartment_data_fn = data_folder /'compartment_data.json'
+add_TFA = False
 
 
 N = niceGAME(bigg_universe_fn, M9_minimal_media_file, binary_growth_data_path, carbon_source_ids_path, compartment_data_fn)
-N.get_universe_reactions_delta_G_from_equilibrator()
+
+if add_TFA:
+    N.get_universe_reactions_delta_G_from_equilibrator()
 # cs_slack_dict, all_slacks = N.relax_universe()
 N.set_model_folder(carveme_draft_folder)
 

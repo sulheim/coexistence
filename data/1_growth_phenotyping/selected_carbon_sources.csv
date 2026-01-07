@@ -11,19 +11,19 @@ Glutarate,glutar,Organic acid
 Glycerol,glyc,Alcohol
 Glycine,gly,Amino acid
 Inosine,ins,Nucleoside
-L-alanine,ala__L,Amino acid
-L-arginine,arg__L,Amino acid
-L-aspartate,asp__L,Amino acid
-L-glutamate,glu__L,Amino acid
-L-glutamine,gln__L,Amino acid
-L-histidine,his__L,Amino acid
-L-isoleucine,ile__L,Amino acid
+Alanine,ala__L,Amino acid
+Arginine,arg__L,Amino acid
+Aspartate,asp__L,Amino acid
+Glutamate,glu__L,Amino acid
+Glutamine,gln__L,Amino acid
+Histidine,his__L,Amino acid
+Isoleucine,ile__L,Amino acid
 Lactate,lac__L,Organic acid
-L-leucine,leu__L,Amino acid
+Leucine,leu__L,Amino acid
 Malate,mal__L,Organic acid
 Mannitol,mnl,Alcohol
 Mannose,man,Simple sugar
-myo-inositol,inost,Other
+Myo-inositol,inost,Other
 Orotate,orot,Organic acid
 Phenylalanine,phe__L,Amino acid
 Proline,pro__L,Amino acid

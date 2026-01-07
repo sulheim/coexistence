@@ -167,7 +167,7 @@ class niceGAME(object):
 
     def init_growth_data(self, binary_growth_fn, carbon_source_id_mapping_fn):
         self.binary_growth_data = pd.read_csv(binary_growth_fn, index_col=0)
-        self.cs_name_to_id = pd.read_csv(carbon_source_id_mapping_fn, index_col=1).to_dict()[f'{self.db} ID']
+        self.cs_name_to_id = pd.read_csv(carbon_source_id_mapping_fn, index_col=0).to_dict()[f'{self.db} ID']
         self.any_growth_carbon_sources = list(self.binary_growth_data.index[self.binary_growth_data.any(axis =1)])
         self.carbon_sources = [x for x in self.binary_growth_data.index]
         self.carbon_source_ids = [self.cs_name_to_id[x] for x in self.carbon_sources]
@@ -191,11 +191,11 @@ class niceGAME(object):
 
         # Prep universe
         # fix_reframed_annotations(self.universe)
-        fix_compartments(self.universe)
-        fix_biomass(self.universe)
-        add_biotin_synthase_reactions(self.universe, logger = logger)
-        fix_misc(self.universe)
-        curate_model(self.universe, logger = logger)
+        # fix_compartments(self.universe)
+        # fix_biomass(self.universe)
+        # add_biotin_synthase_reactions(self.universe, logger = logger)
+        # fix_misc(self.universe)
+        # curate_model(self.universe, logger = logger)
 
 
         if self.vitamins_fn and self.base_medium_fn:
@@ -1450,20 +1450,22 @@ def rank_auxotrophy_solutions(model, potential_solutions, auxotrophy_met_id):
 
 
 if __name__ == '__main__':
-    repo_path = Path('/Users/snorre/git/mwf_gems')
-    carveme_draft_folder = repo_path / 'models/carveme'
-    binary_growth_data_path = repo_path / 'data'/'growth_no_growth.csv'
-    carbon_source_ids_path = repo_path / 'data'/'carbon_source_ids_curated.csv'
+    repo_folder = Path("../..")
+    data_folder = repo_folder / "data" / "7_GEM_reconstruction"
+    carveme_draft_folder = data_folder / 'models/carveme'
+    growth_data_folder = repo_folder / 'data' / '1_growth_phenotyping'
+    binary_growth_data_path = growth_data_folder / 'growth_no_growth.csv'
+    carbon_source_ids_path = data_folder / 'selected_carbon_sources.csv'#'carbon_source_ids_curated.csv'
 
-    gapfilling_data_folder = repo_path / 'gapfilling_data'
-    M9_minimal_media_file = gapfilling_data_folder / 'M9_minimal_media_bigg.csv'
+    M9_minimal_media_file = data_folder / 'M9_minimal_media_bigg.csv'
     # vitamins_file = gapfilling_data_folder / 'vitamins_bigg.csv'
-    bigg_universe_fn = gapfilling_data_folder / 'universe_bacteria.xml'#'bigg_universe.xml'
-    compartment_data_fn = gapfilling_data_folder /'compartment_data.json'
-
+    bigg_universe_fn = data_folder / 'carveme_universe_bacteria_fixed.xml'#'bigg_universe.xml'
+    compartment_data_fn = data_folder /'compartment_data.json'
+    add_TFA = False
 
     N = niceGAME(bigg_universe_fn, M9_minimal_media_file, binary_growth_data_path, carbon_source_ids_path, compartment_data_fn)
-    N.get_universe_reactions_delta_G_from_equilibrator()
+    if add_TFA:
+        N.get_universe_reactions_delta_G_from_equilibrator()
     # cs_slack_dict, all_slacks = N.relax_universe()
     N.set_model_folder(carveme_draft_folder)
     auxotrophy_dict = {
@@ -1472,10 +1474,10 @@ if __name__ == '__main__':
     }
     N.set_auxotrophy_dict(auxotrophy_dict)
     N.load_gapfill_solutions()
-    for species_abbr in ['At', 'Ct', 'Ml', 'Oa']:#, ,, 'At', 'Ct', 
+    for species_abbr in ['At']:#, 'Ct', 'Ml', 'Oa']:#, ,, 'At', 'Ct', 
         N.load_model(species_abbr)
         if not N.gapfill_solutions.get(species_abbr):
-            N.gapfill_model_on_all_cs(species_abbr, N_alternative_solutions = 10, add_TFA=False)
+            N.gapfill_model_on_all_cs(species_abbr, N_alternative_solutions = 10, add_TFA=add_TFA)
         N.store_gapfill_solutions()
         # N.load_gapfill_solutions()
         N.select_gapfill_solutions_and_gapfill(species_abbr)
