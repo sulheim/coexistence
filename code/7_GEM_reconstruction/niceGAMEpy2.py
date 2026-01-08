@@ -53,7 +53,7 @@ logging.captureWarnings(True)
 
 # VITAMINS_FN = REPO_PATH / 'gapfilling_data' / 'vitamins_bigg.csv'
 # VITAMINS = ['thm', 'btn', 'ribflv', 'pydx', 'cbl1', 'lipoate', 'fol', 'pnto__R', 'nac', '4abz']
-DEFAULT_CS = ['glc__D', 'cit', 'ac', 'fru', 'pyr']
+DEFAULT_CS = ['glc__D', 'ac', 'cit', 'fru', 'pyr']
 
 
 class gapfillResults(object):

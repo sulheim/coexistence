@@ -165,16 +165,13 @@ def fix_compartments(model):
         'C_c':'c',
         'C_p':'p',
         'C_e':'e',
-        'c':'c',
-        'p':'p',
-        'e':'e',
     }
     for m in model.metabolites.values():
         m.compartment = old_to_new_compartments[m.compartment]
 
     for comp in model.compartments.values():
         comp.id = old_to_new_compartments[comp.id]
-
+    
     for old_id, new_id in old_to_new_compartments.items():
         model.compartments[new_id] = model.compartments[old_id]
         del model.compartments[old_id]

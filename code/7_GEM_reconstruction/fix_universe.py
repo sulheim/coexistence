@@ -107,6 +107,10 @@ def fix_misc(model, logger = None):
 
     # Delete GCDH (is it redundant and was previously found to cause issues with CO2)
     model.remove_reaction('R_GCDH')
+    
+
+
+
 
 def remove_metabolites_without_exchange_reactions(model, logger = None):
     """
