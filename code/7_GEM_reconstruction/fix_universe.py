@@ -11,9 +11,8 @@ date: October 27, 2023
 
 import numpy as np
 import reframed
-from ng_utils import get_mol_weight, check_reaction_mass_balance, fix_reframed_annotations
+from ng_utils import get_mol_weight, check_reaction_mass_balance
 from pathlib import Path
-import dotenv
 import logging
 
 HOME_PATH = Path.home()
@@ -53,7 +52,6 @@ def add_biotin_synthase_reactions(model, logger = None):
                                          'R_BTS5']
     # print(ECOLI_FN, REPO_PATH, HOME_PATH)
     ecoli = reframed.load_cbmodel(ECOLI_FN)
-    fix_reframed_annotations(ecoli)
 
     added_reactions = []
     for r_id in btn_synthesis_essential_reactions:
@@ -107,7 +105,7 @@ def fix_misc(model, logger = None):
 
     # Delete GCDH (is it redundant and was previously found to cause issues with CO2)
     model.remove_reaction('R_GCDH')
-    
+
 
 
 

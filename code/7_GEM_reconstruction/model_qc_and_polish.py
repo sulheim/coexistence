@@ -70,8 +70,8 @@ def curate_model(model, logger = None):
     if logger:
         logger.info(msg)
 
-    # 2. find and remove duplivated reactoions
-    msg = remove_duplicated_reactions(model)
+    # 2. find and remove duplivated reactions
+    msg = remove_duplicated_reactions(model, logger)
     if logger:
         logger.info(msg)
 
@@ -191,7 +191,7 @@ def remove_duplicated_metabolites(model):
     return msg
 
 
-def remove_duplicated_reactions(model):
+def remove_duplicated_reactions(model, logger = None):
     # Check for duplicates
     rs_dict = OrderedDict()
     for r in model.reactions.values():
@@ -210,13 +210,15 @@ def remove_duplicated_reactions(model):
         if  n_duplicates > 0:
             # print(r1.id)
             # duplicated_reactions = [r for i, r in enumerate(model.reactions) if duplicates[i]]
-            r1.metadata['Duplicates'] = ','.join(duplicates) 
+            r1.metadata['Duplicates'] = ','.join(duplicates)
+            if logger:
+                logger.info(f"{r1.id} duplicates: {r1.metadata['Duplicates']}") 
             for r_id in duplicates:
                 
                 r2 = model.reactions[r_id]
                 merge_reaction_metadata(r1, r2)
                 r1.lb = min(r2.lb, r1.lb)
-                r2.lb = min(r2.lb, r2.lb)
+                r1.ub = max(r2.ub, r2.ub)
 
                 # Merge GPRs
                 merge_GPRs(r1, r2)

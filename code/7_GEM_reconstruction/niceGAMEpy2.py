@@ -18,7 +18,6 @@ import sys
 from collections import defaultdict
 import time
 import random
-import dotenv
 
 import reframed
 reframed.set_default_solver('gurobi')
@@ -39,13 +38,13 @@ from model_qc_and_polish import curate_model, fix_biomass, polish_model
 
 ##### ADD REACTIONS FROM iJO1366 to allow biotin production
 
-REPO_PATH =  Path(dotenv.find_dotenv()).parent
-TMP_FOLDER = REPO_PATH / 'tmp'
+REPO_PATH =  Path('../..')
+TMP_FOLDER = REPO_PATH / 'code' / '7_GEM_reconstruction' / 'tmp'
 TMP_FOLDER.mkdir(exist_ok=True)
 timestr = time.strftime("%Y%m%d_%H%M")
 LOGFILE = TMP_FOLDER / f'niceGAMEpy_{timestr}.log'
 # logging.basicConfig(filename='nicegame.log', encoding='utf-8', level=logging.DEBUG
-logging.basicConfig(level=logging.INFO, 
+logging.basicConfig(level=logging.DEBUG, 
                     format='%(asctime)s %(levelname)s:%(name)-8s %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                      handlers=[logging.FileHandler(str(LOGFILE)),logging.StreamHandler()])
@@ -114,7 +113,7 @@ class niceGAME(object):
         self.gapfill_solutions = {}
         self.gapfill_results = {}
         self.gapfilled_models = {}
-        self.cobra_method = 'TFA'
+        self.cobra_method = 'FBA'
 
 
         self.vitamins_fn = None
@@ -136,6 +135,8 @@ class niceGAME(object):
         self.init_growth_data(binary_growth_fn, carbon_source_id_mapping_fn)
         self.load_and_prep_universe(universe_fn)
         self.load_compartment_data(compartment_data_fn)
+        self.deltaG0 = None
+        self.sdeltaG0 = None
 
 
 
@@ -190,12 +191,9 @@ class niceGAME(object):
 
 
         # Prep universe
-        # fix_reframed_annotations(self.universe)
-        # fix_compartments(self.universe)
-        # fix_biomass(self.universe)
-        # add_biotin_synthase_reactions(self.universe, logger = logger)
-        # fix_misc(self.universe)
-        # curate_model(self.universe, logger = logger)
+        fix_biomass(self.universe)
+        add_biotin_synthase_reactions(self.universe, logger = logger)
+        curate_model(self.universe, logger = logger)
 
 
         if self.vitamins_fn and self.base_medium_fn:
@@ -250,20 +248,17 @@ class niceGAME(object):
         if not model_name:
             model_name = f'{species_abbr}.xml'
         model_fn = self.model_folder / model_name
-        logger = logging.getLogger(f'loading.{model_fn}')
+        logger = logging.getLogger(f'load_model.{species_abbr}')
+        logger.info(f'Loading model for {species_abbr} from {model_fn}')
         model = reframed.load_cbmodel(model_fn)
-
-        logger = logging.getLogger(f'loaded.{species_abbr}')
         
         model.solver = 'gurobi'
-        logger = logging.getLogger('Set solver to gurobi')
+        logging.info('Set solver to gurobi')
         # Init umodel solver
         solver = solver_instance(model)
         self.init_solver(solver)
 
         # Prep model
-        fix_compartments(model)
-        # fix_reframed_annotations(model)
         curate_model(model, logger = logger)
         fix_biomass(model, universe = self.universe, add_biotin = True)
         if not species_abbr in self.biotin_auxotrophs:
@@ -290,115 +285,196 @@ class niceGAME(object):
         self.models[species_abbr] = model
 
         return model
-
-    def gapfill_model_on_all_cs(self, species_abbr, N_alternative_solutions = 1, add_TFA = True, min_growth = 0.1):
+    def gapfill_model_on_all_cs(self, species_abbr, N_alternative_solutions=1, add_TFA=True, min_growth=0.1):
         """
-        Todo: Perform gapfilling based on estimated growth yields
-
+        Perform gapfilling for all carbon sources where the organism should grow.
+        Returns the gapfilled model and a dictionary of alternative solutions per carbon source.
         """
         logger = logging.getLogger(f'gapfill.{species_abbr}')
         model = self.models[species_abbr].copy()
-        if add_TFA:
-            logger.info(f'Starting gapfilling for {species_abbr} with TFA')
-        else:
-            logger.info(f'Starting gapfilling for {species_abbr} with FBA')
+        logger.info(f"Starting gapfilling for {species_abbr} with {'TFA' if add_TFA else 'FBA'}")
 
-        # Merge and prep model
+        # Prepare model and universe for gapfilling
         gf_model, new_reactions = _prep_for_gapfill(model, self.universe, self.ignore_model_bounds, self.deltaG0)
-
-
-        # Get list of carbon sources where the organism should grow
-        carbon_sources = self.positive_growth_mets[species_abbr]
-
-        # Get solver
         solver = solver_instance(gf_model)
         self.init_solver(solver)
 
-        
-        constraints = {self.test_universe_growth_reaction: self.default_cs_lb}
-        
-        if self.auxotrophy_dict.get(species_abbr):
-            logger.info(f'{species_abbr} is an auxotroph for: %s', self.auxotrophy_dict[species_abbr])
-            auxotrophy_constraints = self.auxotrophy_constraints[species_abbr]
-        else:
-            auxotrophy_constraints = {}
-
-        # Add TFA constraints
+        # Add TFA constraints if requested
         if add_TFA:
             self.cobra_method = 'TFA'
             logger.info('Adding TFA variables and constraints')
-            lhs_dict = _add_TFA_constraints(gf_model, solver, self.deltaG0, self.sdeltaG0, 
-                            concentration_min=self.min_concentration,
-                            concentration_max=self.max_concentration, bigM = self.bigM)
+            _add_TFA_constraints(
+                gf_model, solver, self.deltaG0, self.sdeltaG0,
+                concentration_min=self.min_concentration,
+                concentration_max=self.max_concentration, bigM=self.bigM
+            )
 
-            nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
-            logger.info(f"Number of variables and constraints after TFA-preparation: {nv}, {nc}")
-            # if is_auxotroph:
-            #     constraints.update({key: value for key, value in auxotrophy_constraints.items() if not constraints.get(key)})
-            # logger.info(solver.solve(linear={'Growth':1}, minimize=False, get_values=False, constraints=constraints))
-        # Add gapfill variables and constraints
-        _add_gapfilling_constraints(gf_model, solver, new_reactions, min_growth, self.bigM, use_indicator_constraints = False)
-        nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
-        logger.info(f"Number of variables and constraints after gapfill-preparation: {nv}, {nc}")
-        # Set objective
-        gf_objective = {'z_'+r_id: 1.0 for r_id in new_reactions}
-    
-        # Generate multiple solutions
-        added_cut_constraints = []
+        # Add gapfilling constraints
+        _add_gapfilling_constraints(gf_model, solver, new_reactions, min_growth, self.bigM)
+
+        # Prepare carbon sources and constraints
+        carbon_sources = self.positive_growth_mets[species_abbr]
+        aux_constraints = self.auxotrophy_constraints.get(species_abbr, {})
+        gf_objective = {'z_' + r_id: 1.0 for r_id in new_reactions}
         cs_alt_solutions = {}
-        for i, cs in enumerate(carbon_sources):
-            alt_gf_solutions = []
+
+        print(self.positive_growth_mets[species_abbr])
+        for cs in carbon_sources:
             cs_id = self.cs_name_to_id[cs]
             cs_exchange_id = f'R_EX_{cs_id}_e'
             constraints = {cs_exchange_id: self.default_cs_lb}
+            constraints.update({k: v for k, v in aux_constraints.items() if k not in constraints})
+
+            # Test that growth is possible before gapfilling
+            test_solution = reframed.FBA(model, objective={'Growth': 1}, minimize=False, constraints=constraints)
+            if (test_solution.status == Status.OPTIMAL) and (test_solution.fobj > min_growth):
+                logger.warning(f'Skipping gapfilling for {cs} as growth is already possible.')
+                logger.info(f'Growth rate on {cs} before gapfilling: {test_solution.fobj}')
+                continue
+
 
             alt_gf_solutions = []
-            if len(auxotrophy_constraints):
-                constraints.update({key: value for key, value in auxotrophy_constraints.items() if not constraints.get(key)})
-            
-            if len(added_cut_constraints):
-                logger.debug(f'Clear cut constraints %s', added_cut_constraints)
-                # Clear cut constraints
-                nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
-                logger.debug(f"Number of variables and constraints before removing cut constraints: {nv}, {nc}")
-                for constr in added_cut_constraints:
-                    print(constr)
-                    # solver.problem.remove(constr)
-                    solver.remove_constraint(constr)
-                solver.update()
-                nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
-                logger.debug(f"Number of variables and constraints after removing cut constraints: {nv}, {nc}")
-                added_cut_constraints = []
-                
-            for j in range(N_alternative_solutions):
-                logger.info(f'Creating solution {j+1} for {cs}')
-                if j!=0:
-                    # Add cut constraints
-                    added_rxns_use_vars = ['z_'+r_id for r_id in added_reactions]
-                    # sum_use_var = np.sum([solution.values[x] for x in added_rxns_use_vars])
-                    solver.add_constraint(f'cut_{str(i)}_{str(j)}', {x:1 for x in added_rxns_use_vars},
-                                          '<', len(added_reactions)-1) # < is less or equal
-                    
-                    added_cut_constraints.append(solver.problem.getConstrByName(f'cut_{str(i)}_{str(j)}'))
-                    # added_cut_constraints.append('cut_'+str(j))
-                solver.update()
-                
-                solution = solver.solve(objective=gf_objective, minimize=True, constraints=constraints)
-                logger.debug(f'Gapfill-solution: %s', solution)
+            added_cut_constraint_names = []
 
-                # Find added reactions
-                inactive, added_reactions, failed = _get_added_gf_reactions(solution, new_reactions, self.abstol, tag = cs, logger = logger)
+            for j in range(N_alternative_solutions):
+                if j > 0 and alt_gf_solutions:
+                    prev_added = alt_gf_solutions[-1]
+                    cut_vars = ['z_' + r_id for r_id in prev_added]
+                    cut_name = f'cut_{cs}_{j}'
+                    solver.add_constraint(
+                        cut_name, {x: 1 for x in cut_vars}, '<', len(prev_added) - 1
+                    )
+                    added_cut_constraint_names.append(cut_name)
+                    solver.update()
+
+                logger.info(f'Gapfilling solution {j+1} for {cs}')
+                solution = solver.solve(objective=gf_objective, minimize=True, constraints=constraints)
+                inactive, added_reactions, failed = _get_added_gf_reactions(
+                    solution, new_reactions, self.abstol, tag=cs, logger=logger
+                )
+                logger.info(f'Added reactions for {cs}, solution {j+1}: {added_reactions}')
                 if failed:
                     break
-                else:            
-                    alt_gf_solutions.append(added_reactions)
-                    logger.debug('Added reactions: ', ', '.join(added_reactions))
-   
+                alt_gf_solutions.append(added_reactions)
+
+            # Remove all cut constraints for this carbon source before moving to the next
+            for cut_name in added_cut_constraint_names:
+                solver.remove_constraint(cut_name)
+            solver.update()
+
             cs_alt_solutions[cs] = alt_gf_solutions
-
         self.gapfill_solutions[species_abbr] = cs_alt_solutions
-
         return gf_model, cs_alt_solutions
+
+    # def gapfill_model_on_all_cs(self, species_abbr, N_alternative_solutions = 1, add_TFA = True, min_growth = 0.1):
+    #     """
+    #     Todo: Perform gapfilling based on estimated growth yields
+
+    #     """
+    #     logger = logging.getLogger(f'gapfill.{species_abbr}')
+    #     model = self.models[species_abbr].copy()
+    #     if add_TFA:
+    #         logger.info(f'Starting gapfilling for {species_abbr} with TFA')
+    #     else:
+    #         logger.info(f'Starting gapfilling for {species_abbr} with FBA')
+
+    #     # Merge and prep model
+    #     gf_model, new_reactions = _prep_for_gapfill(model, self.universe, self.ignore_model_bounds, self.deltaG0)
+
+
+    #     # Get list of carbon sources where the organism should grow
+    #     carbon_sources = self.positive_growth_mets[species_abbr]
+
+    #     # Get solver
+    #     solver = solver_instance(gf_model)
+    #     self.init_solver(solver)
+
+        
+    #     constraints = {self.test_universe_growth_reaction: self.default_cs_lb}
+        
+    #     if self.auxotrophy_dict.get(species_abbr):
+    #         logger.info(f'{species_abbr} is an auxotroph for: %s', self.auxotrophy_dict[species_abbr])
+    #         auxotrophy_constraints = self.auxotrophy_constraints[species_abbr]
+    #     else:
+    #         auxotrophy_constraints = {}
+
+    #     # Add TFA constraints
+    #     if add_TFA:
+    #         self.cobra_method = 'TFA'
+    #         logger.info('Adding TFA variables and constraints')
+    #         lhs_dict = _add_TFA_constraints(gf_model, solver, self.deltaG0, self.sdeltaG0, 
+    #                         concentration_min=self.min_concentration,
+    #                         concentration_max=self.max_concentration, bigM = self.bigM)
+
+    #         nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
+    #         logger.info(f"Number of variables and constraints after TFA-preparation: {nv}, {nc}")
+    #         # if is_auxotroph:
+    #         #     constraints.update({key: value for key, value in auxotrophy_constraints.items() if not constraints.get(key)})
+    #         # logger.info(solver.solve(linear={'Growth':1}, minimize=False, get_values=False, constraints=constraints))
+    #     # Add gapfill variables and constraints
+    #     _add_gapfilling_constraints(gf_model, solver, new_reactions, min_growth, self.bigM, use_indicator_constraints = False)
+    #     nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
+    #     logger.info(f"Number of variables and constraints after gapfill-preparation: {nv}, {nc}")
+    #     # Set objective
+    #     gf_objective = {'z_'+r_id: 1.0 for r_id in new_reactions}
+    
+    #     # Generate multiple solutions
+    #     added_cut_constraints = []
+    #     cs_alt_solutions = {}
+    #     # for i, cs in enumerate(carbon_sources):
+    #     for i, cs in enumerate(['Glucose', 'Acetate']):
+    #         alt_gf_solutions = []
+    #         cs_id = self.cs_name_to_id[cs]
+    #         cs_exchange_id = f'R_EX_{cs_id}_e'
+    #         constraints = {cs_exchange_id: self.default_cs_lb}
+    #         logger.debug(f'CS exchange constraint: %s', constraints)
+    #         alt_gf_solutions = []
+    #         if len(auxotrophy_constraints):
+    #             constraints.update({key: value for key, value in auxotrophy_constraints.items() if not constraints.get(key)})
+            
+    #         if len(added_cut_constraints):
+    #             logger.debug(f'Clear cut constraints %s', added_cut_constraints)
+    #             # Clear cut constraints
+    #             nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
+    #             logger.debug(f"Number of variables and constraints before removing cut constraints: {nv}, {nc}")
+    #             for constr in added_cut_constraints:
+    #                 print(constr)
+    #                 # solver.problem.remove(constr)
+    #                 solver.remove_constraint(constr)
+    #             solver.update()
+    #             nv, nc = len(solver.problem.getVars()), len(solver.problem.getConstrs())
+    #             logger.debug(f"Number of variables and constraints after removing cut constraints: {nv}, {nc}")
+    #             added_cut_constraints = []
+                
+    #         for j in range(N_alternative_solutions):
+    #             logger.info(f'Creating solution {j+1} for {cs}')
+    #             if j!=0:
+    #                 # Add cut constraints
+    #                 added_rxns_use_vars = ['z_'+r_id for r_id in added_reactions]
+    #                 # sum_use_var = np.sum([solution.values[x] for x in added_rxns_use_vars])
+    #                 solver.add_constraint(f'cut_{str(i)}_{str(j)}', {x:1 for x in added_rxns_use_vars},
+    #                                       '<', len(added_reactions)-1) # < is less or equal
+                    
+    #                 added_cut_constraints.append(solver.problem.getConstrByName(f'cut_{str(i)}_{str(j)}'))
+    #                 # added_cut_constraints.append('cut_'+str(j))
+    #             solver.update()
+    #             logger.debug(f'Solving with solution {j} with constraints: %s', constraints)
+    #             solution = solver.solve(objective=gf_objective, minimize=True, constraints=constraints)
+    #             logger.debug(f'Gapfill-solution: %s', solution)
+
+    #             # Find added reactions
+    #             inactive, added_reactions, failed = _get_added_gf_reactions(solution, new_reactions, self.abstol, tag = cs, logger = logger)
+    #             if failed:
+    #                 break
+    #             else:            
+    #                 alt_gf_solutions.append(added_reactions)
+    #                 logger.debug(f'Added reactions: {', '.join(added_reactions)}')
+   
+    #         cs_alt_solutions[cs] = alt_gf_solutions
+
+    #     self.gapfill_solutions[species_abbr] = cs_alt_solutions
+
+    #     return gf_model, cs_alt_solutions
 
     def store_gapfill_solutions(self, filename = None):
         if not filename:
@@ -635,9 +711,10 @@ class niceGAME(object):
         logger = logging.getLogger(f'save.{species_abbr}')
         if not model:
             model = self.gapfilled_models[species_abbr]
-
+        if not fn:
+            fn = self.model_folder / f'{species_abbr}_gapfilled.xml'
+        logger.info('Polishing model before saving...')
         polish_model(model, logger)
-        logger.info('Saving model ....')
         if simulation_ready:
             # Add carbon source and auxotrophy constraints
             if self.auxotrophy_constraints.get(species_abbr):
@@ -661,10 +738,9 @@ class niceGAME(object):
                     cs_idx += 1
 
         # SAve model
-        if not fn:
-            fn = TMP_FOLDER / f'gapfilled_{species_abbr}.xml'
+        fn.parent.mkdir(parents=True, exist_ok=True)
         reframed.save_cbmodel(model, str(fn))
-
+        logger.info(f'Saved model to {fn}')
 
 
     def get_universe_reactions_delta_G_from_equilibrator(self, save = True, try_load = True):

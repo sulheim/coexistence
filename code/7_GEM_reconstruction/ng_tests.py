@@ -76,5 +76,5 @@ def test_model(model, species_growth_data, cs_name_to_id, method = 'FBA',
     
     df = pd.DataFrame(data, columns = ['Carbon source', 'Carbon source ID',
                                        'In vitro', 'In silico', 'Pred outcome'])
-    pred_matrix = df['Pred outcome'].value_counts()
+    # pred_matrix = df['Pred outcome'].value_counts()
     return df, pred_matrix

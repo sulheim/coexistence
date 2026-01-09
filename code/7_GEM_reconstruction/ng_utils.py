@@ -1,5 +1,5 @@
 import reframed
-import xmltodict
+# import xmltodict
 import numpy as np
 from itertools import chain, combinations
 import re
@@ -176,47 +176,47 @@ def fix_compartments(model):
         model.compartments[new_id] = model.compartments[old_id]
         del model.compartments[old_id]
 
-def fix_reframed_annotations(model):
-    for r in model.reactions.values():
-        annotation_dict = convert_xml_to_annotation_dict(r)
-        r.metadata.update(annotation_dict)
-        if r.metadata.get('XMLAnnotation'):
-            del r.metadata['XMLAnnotation']
+# def fix_reframed_annotations(model):
+#     for r in model.reactions.values():
+#         annotation_dict = convert_xml_to_annotation_dict(r)
+#         r.metadata.update(annotation_dict)
+#         if r.metadata.get('XMLAnnotation'):
+#             del r.metadata['XMLAnnotation']
 
-    for m in model.metabolites.values():
-        annotation_dict = convert_xml_to_annotation_dict(m)
-        m.metadata.update(annotation_dict)
-        if m.metadata.get('XMLAnnotation'):
-            del m.metadata['XMLAnnotation']
-
-
+#     for m in model.metabolites.values():
+#         annotation_dict = convert_xml_to_annotation_dict(m)
+#         m.metadata.update(annotation_dict)
+#         if m.metadata.get('XMLAnnotation'):
+#             del m.metadata['XMLAnnotation']
 
 
 
 
-def convert_xml_to_annotation_dict(x):
-    """
-    x can be a reaction or a metabolite
-    """
+
+
+# def convert_xml_to_annotation_dict(x):
+#     """
+#     x can be a reaction or a metabolite
+#     """
     
-    ann_dict = {}
-    try:
-        ann_string = x.metadata['XMLAnnotation']
-        temp_dic = xmltodict.parse(ann_string)
-        entries = temp_dic['annotation']['rdf:RDF']['rdf:Description']['bqbiol:is']['rdf:Bag']['rdf:li']
-    except (TypeError, KeyError) as e:
-        pass
-    else:
-        for entry in entries:
-            try:
-                key = entry['@rdf:resource']
-            except TypeError:
-                pass
-            else:
-                db, value = key.split('/')[-2:]
-                ann_dict[db]=value
+#     ann_dict = {}
+#     try:
+#         ann_string = x.metadata['XMLAnnotation']
+#         temp_dic = xmltodict.parse(ann_string)
+#         entries = temp_dic['annotation']['rdf:RDF']['rdf:Description']['bqbiol:is']['rdf:Bag']['rdf:li']
+#     except (TypeError, KeyError) as e:
+#         pass
+#     else:
+#         for entry in entries:
+#             try:
+#                 key = entry['@rdf:resource']
+#             except TypeError:
+#                 pass
+#             else:
+#                 db, value = key.split('/')[-2:]
+#                 ann_dict[db]=value
             
-    return ann_dict
+#     return ann_dict
 
 # def convert_notes_to_xml_annotation(x):
 #     """

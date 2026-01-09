@@ -166,3 +166,4 @@ cython_debug/
 *.npz
 *args.txt
 *.pkl
+/code/7_GEM_reconstruction/tmp

@@ -11,12 +11,12 @@ model_files = {
     # '119': '119_GCA_041075285.xml',
     # '122': '122_GCA_040790085.xml',
     'At': 'At_GCA_030505215.xml',
-    # 'Ct': 'Ct_GCA_030505195.xml',
-    # 'Ml': 'Ml_GCA_030518755.xml',
-    # 'Oa': 'Oa_GCA_030518775.xml',
+    'Ct': 'Ct_GCA_030505195.xml',
+    'Ml': 'Ml_GCA_030518755.xml',
+    'Oa': 'Oa_GCA_030518775.xml',
 }
 auxotrophy_dict = {
-'Ml': {'amino acids': ['pro__L', 'cys__L'], 'vitamins':['thm', 'btn']},
+'Ml': {'amino acids': ['cys__L'], 'vitamins':['thm', 'btn']},#'pro__L', 
 'Oa': {'vitamins': ['thm']},
 # '1w': {'vitamins': ['thm', 'btn'], 'amino acids': ['his__L', 'val__L', 'tyr__L', 'arg__L', 'met__L', 'thr__L', 'ile__L']}, # Also niacin, but not in the bigg universe
 # '108': {'vitamins': ['thm', 'btn', 'pheme'], # Also niacin and phylloquinone (k1), neither in universe
@@ -33,9 +33,10 @@ carbon_source_ids_path = growth_data_folder / 'selected_carbon_sources.csv'#'car
 
 M9_minimal_media_file = data_folder / 'M9_minimal_media_bigg.csv'
 # vitamins_file = gapfilling_data_folder / 'vitamins_bigg.csv'
-bigg_universe_fn = data_folder / 'carveme_universe_bacteria_fixed.xml'#'bigg_universe.xml'
+bigg_universe_fn = data_folder /'carveme_universe_bacteria_fixed.xml'#'bigg_universe.xml'
 compartment_data_fn = data_folder /'compartment_data.json'
 add_TFA = False
+gapfilled_model_folder  = data_folder / 'models' / 'gapfilled_FBA'
 
 
 N = niceGAME(bigg_universe_fn, M9_minimal_media_file, binary_growth_data_path, carbon_source_ids_path, compartment_data_fn)
@@ -52,10 +53,10 @@ for species_abbr, model_name in model_files.items():
     if not N.gapfill_solutions.get(species_abbr):
         N.gapfill_model_on_all_cs(species_abbr, N_alternative_solutions = 10, add_TFA=False)
     N.store_gapfill_solutions()
-    # N.load_gapfill_solutions()
     N.select_gapfill_solutions_and_gapfill(species_abbr)
     N.check_auxotrophies(species_abbr)
-    N.save_gf_model(species_abbr, simulation_ready = True)
+    gf_model_fn = gapfilled_model_folder / f'{species_abbr}_gapfilled.xml'
+    N.save_gf_model(species_abbr, simulation_ready = True, fn = gf_model_fn)
 
 
 
