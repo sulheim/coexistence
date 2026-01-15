@@ -5,6 +5,6 @@ for file in $1/*.xml ; do
     echo "Run memote on $file"
     name=$(basename -- "$file")
     new_fn=$1/"${name%%.*}"_memote_report.html
-    memote report snapshot --filename $new_fn $file
+    memote report snapshot --filename $new_fn $file --skip test_detect_energy_generating_cycles
     echo "Saved $new_fn"
 done

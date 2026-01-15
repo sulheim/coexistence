@@ -32,7 +32,7 @@ def test_model(model, species_growth_data, cs_name_to_id, method = 'FBA',
     for cs, in_vitro_result in species_growth_data.items():
         cs_id = cs_name_to_id[cs]
         if np.isnan(in_vitro_result):
-            # Skip this as there is noe data
+            # Skip this as there is no data
             continue
         # ex_reaction = model.reactions[f'R_EX_{cs_id}_e']
         # ex_reaction.lb = -10
@@ -42,7 +42,7 @@ def test_model(model, species_growth_data, cs_name_to_id, method = 'FBA',
             constraints.update({key: value for key, value in additional_constraints.items() if not constraints.get(key)})
         if len(existing_cs_constraints):
             constraints.update({key: value for key, value in existing_cs_constraints.items() if not constraints.get(key)})
-            
+        # print(constraints)
         if method == 'FBA':
             solution = reframed.FBA(model, constraints=constraints, solver = solver)
             # print(cs_id, solution)

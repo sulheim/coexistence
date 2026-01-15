@@ -101,7 +101,7 @@ class niceGAME(object):
         self.min_concentration = 1e-6
         self.max_concentration = 1e-1
         self.default_cs_lb = -10
-        self.default_min_growth = 0.1
+        self.default_min_growth = 0.04
 
         # Vitamins can sometimes be used as carbon sources (in the universe), 
         # and it can therefore mess up with the gap-fill-solutions
@@ -1158,11 +1158,11 @@ def select_consensus_reactions(alt_solution_dict, ratio = 0.5, max_exact_subset_
     if max_length < max_exact_subset_length:
         if logger:
             logger.info('Finding exact subset solutions')
-        rdf = get_subset_solutions(alt_solution_dict, min_length=2)
+        rdf = get_subset_solutions(alt_solution_dict, min_length=1)
         idx = (rdf['Ratio of CS']>ratio) #& (rdf['L']>1)
         # Choose the "longest" subset of consensus reactions above a threshold
         if np.sum(idx)>0:
-            sol = rdf.loc[idx, :].sort_values(by = ['L', 'N unique', 'N'], ascending=[False, False, False]).iloc[0]['Key']
+            sol = rdf.loc[idx, :].sort_values(by = ['N unique', 'N', 'L'], ascending=[False, False, True]).iloc[0]['Key']
             added_reactions = sol.split(',')
         else:
             added_reactions = []
@@ -1545,7 +1545,7 @@ if __name__ == '__main__':
     # cs_slack_dict, all_slacks = N.relax_universe()
     N.set_model_folder(carveme_draft_folder)
     auxotrophy_dict = {
-    'Ml': {'amino acids': ['pro__L', 'cys__L'], 'vitamins':['thm', 'btn']},
+    'Ml': {'amino acids': ['cys__L'], 'vitamins':['thm', 'btn']},#'pro__L',
     'Oa': {'vitamins': ['thm']}
     }
     N.set_auxotrophy_dict(auxotrophy_dict)

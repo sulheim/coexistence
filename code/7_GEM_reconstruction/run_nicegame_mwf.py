@@ -35,7 +35,7 @@ M9_minimal_media_file = data_folder / 'M9_minimal_media_bigg.csv'
 # vitamins_file = gapfilling_data_folder / 'vitamins_bigg.csv'
 bigg_universe_fn = data_folder /'carveme_universe_bacteria_fixed.xml'#'bigg_universe.xml'
 compartment_data_fn = data_folder /'compartment_data.json'
-add_TFA = False
+add_TFA = False # Include thermodynamics in gapfilling
 gapfilled_model_folder  = data_folder / 'models' / 'gapfilled_FBA'
 
 

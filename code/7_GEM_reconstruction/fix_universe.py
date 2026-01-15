@@ -105,7 +105,16 @@ def fix_misc(model, logger = None):
 
     # Delete GCDH (is it redundant and was previously found to cause issues with CO2)
     model.remove_reaction('R_GCDH')
+    # Delete UNK2 and GLMS_syn which are not charge balanced anc create strange solutions
+    model.remove_reaction('R_UNK2')
+    model.remove_reaction('R_GLMS_syn')
+    model.remove_reaction('R_SUCD2')
+    model.remove_reaction('R_FEROc')
+    model.remove_reaction('R_SULR_syn')
+    model.remove_reaction('R_FNOR')
 
+    model.reactions['R_INOSTO'].lb = 0
+    model.reactions['R_BTS2'].lb=0
 
 
 

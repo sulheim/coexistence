@@ -525,3 +525,18 @@ elements_and_molecular_weights = {
     "Uuq": 289.000000,
     "Uuh": 292.000000,
 }
+
+def set_auxotrophy_dict(auxotrophy_dict):
+    constraints_dict = {}
+    for species_abbr, species_dict in auxotrophy_dict.items():
+        species_constraint_dict = {}
+        if species_dict.get('vitamins'):
+            for met_id in species_dict['vitamins']:
+                r_id = f'R_EX_{met_id}_e'
+                species_constraint_dict[r_id] = (-0.001, 0)
+        if species_dict.get('amino acids'):
+            for met_id in species_dict['amino acids']:
+                r_id = f'R_EX_{met_id}_e'
+                species_constraint_dict[r_id] = (-0.2, 0)
+        constraints_dict[species_abbr] = species_constraint_dict
+    return constraints_dict
