@@ -195,11 +195,11 @@ def remove_duplicated_reactions(model, logger = None):
     # Check for duplicates
     rs_dict = OrderedDict()
     for r in model.reactions.values():
-        rs_dict[r.id] = r.stoichiometry
+        rs_dict[r.id] = dict(r.stoichiometry)
 
     reaction_ids_to_delete = []
     reactions_to_update = []
-    protected_reactions = ['R_ATPM', 'R_NTPM']
+    protected_reactions = ['R_ATPM', 'R_NTP1']
     for i, r1 in enumerate(model.reactions.values()):
         if not rs_dict.get(r1.id):
             # Reaction has already been identified as a duplicate
