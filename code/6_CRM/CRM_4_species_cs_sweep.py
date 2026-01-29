@@ -139,14 +139,14 @@ if __name__ == '__main__':
     parser.add_argument("--K_std_min", help = 'Minimal K std', default = 0.1, type=float)
     parser.add_argument("--K_std_max", help = 'Maximal K std', default = 2, type=float)
     # parser.add_argument("--N_K_std", help = 'Number of different K std values', default = 11, type=int)
-    parser.add_argument("--iterations", help = 'Number of iterations per parameter combination', default = 7, type=int)
+    parser.add_argument("--iterations", help = 'Number of iterations per parameter combination', default = 8, type=int)
     parser.add_argument("--leakage", help = "Leakage fraction", default=0.1, type=float)
     parser.add_argument("--folder", help = 'Where to store data', default = f'simulation_results/cs_sweep', type=str)
     # parser.add_argument("--transfer", help = 'Run serial transfers', default = False, type=bool)
     parser.add_argument("--csp_min", help = 'Minimal C_sparsity', default = 0, type=float)
     parser.add_argument("--csp_max", help = 'Maximal C_sparsity', default = 0.4, type=float)
     # parser.add_argument("--N_Csp", help = 'Number of different C sparsity values', default = 3, type=int)
-    parser.add_argument("--N", help = "Number of simulations", default=50, type=int)
+    parser.add_argument("--N", help = "Number of simulations", default=10000, type=int)
     args = parser.parse_args()
     timestr = time.strftime("%Y%m%d-%H%M%S")
 
@@ -162,13 +162,13 @@ if __name__ == '__main__':
     # Save final abundance matrix and parameters
     all_C = {f'C_{i}':species_data[i]['C'] for i in range(len(species_data))}
     all_D = {f'D_{i}':species_data[i]['D'] for i in range(len(species_data))}
-    # all_K = {f'K_{i}':species_data[i]['K'] for i in range(len(species_data))}
+    all_K = {f'K_{i}':species_data[i]['K'] for i in range(len(species_data))}
     all_N = {f'N_final_{i}':species_data[i]['N_final'] for i in range(len(species_data))}
     
     save_dict = {
         **all_C,
-        # **all_D,
-        # **all_K
+        **all_D,
+        **all_K,
         **all_N,
         'cs_arr': n_cs_arr,
         'Kstd_arr': K_std_arr,
