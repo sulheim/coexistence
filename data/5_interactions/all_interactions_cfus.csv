@@ -1,656 +1,656 @@
-,Well,Plate,CFUs/mL,Species,Inoculated species,Medium,Initial OD,spent,Base carbon source,Short name,Background,Partner
-0,B10,2,200000000.0,At,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-1,C11,2,300000000.0,At,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-2,D1,2,520000000.0,At,At,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-3,D4,2,260000000.0,At,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-4,D5,2,300000000.0,At,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-5,D11,2,98000000.0,At,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-6,E4,2,240000000.0,At,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-7,E11,2,180000000.0,At,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-8,F4,2,240000000.0,At,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-9,F11,2,200000000.0,At,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-10,G1,2,44000000.0,At,At,No CS,0.001,True,No CS,No CS,No CS,No partner
-11,G2,2,52000000.0,At,At,No CS,0.001,True,No CS,No CS,No CS,No partner
-12,G3,2,52000000.0,At,At,No CS,0.001,True,No CS,No CS,No CS,No partner
-13,H3,2,82000000.0,At,At,At_mannose,0.001,True,Mannose,At,At,No partner
-14,A1,2,11000000.0,Ct,Ct,At_mannose,0.001,True,Mannose,At,At,No partner
-15,A4,2,10000000.0,Ct,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-16,A5,2,9000000.0,Ct,Ct+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-17,A8,2,700000000.0,Ct,Ct,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-18,B1,2,11200000.0,Ct,Ct,At_mannose,0.001,True,Mannose,At,At,No partner
-19,B4,2,11400000.0,Ct,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-20,B5,2,10200000.0,Ct,Ct+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-21,B8,2,580000000.0,Ct,Ct,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-22,B10,2,320000000.0,Ct,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-23,C1,2,11600000.0,Ct,Ct,At_mannose,0.001,True,Mannose,At,At,No partner
-24,C4,2,11400000.0,Ct,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-25,C5,2,11600000.0,Ct,Ct+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-26,C8,2,400000000.0,Ct,Ct,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-27,D8,2,42000000.0,Ct,Ct,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-28,D12,2,18000000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-29,G4,2,7800000.0,Ct,Ct,No CS,0.001,True,No CS,No CS,No CS,No partner
-30,G5,2,8000000.0,Ct,Ct,No CS,0.001,True,No CS,No CS,No CS,No partner
-31,G6,2,11000000.0,Ct,Ct,No CS,0.001,True,No CS,No CS,No CS,No partner
-32,H4,2,20000000.0,Ct,Ct,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-33,H5,2,16000000.0,Ct,Ct,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-34,H6,2,30000000.0,Ct,Ct,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-35,A2,2,7400000.0,Ml,Ml,At_mannose,0.001,True,Mannose,At,At,No partner
-36,A4,2,13400000.0,Ml,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-37,A6,2,10600000.0,Ml,Ml+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-38,B2,2,11400000.0,Ml,Ml,At_mannose,0.001,True,Mannose,At,At,No partner
-39,B4,2,58000000.0,Ml,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-40,B6,2,48000000.0,Ml,Ml+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-41,C2,2,11800000.0,Ml,Ml,At_mannose,0.001,True,Mannose,At,At,No partner
-42,C4,2,48000000.0,Ml,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-43,C6,2,44000000.0,Ml,Ml+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-44,D2,2,66000000.0,Ml,Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-45,D4,2,146000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-46,D6,2,118000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-47,D11,2,44000000.0,Ml,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-48,D12,2,36000000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-49,E2,2,104000000.0,Ml,Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-50,E4,2,280000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-51,E6,2,300000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-52,E11,2,60000000.0,Ml,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-53,F2,2,68000000.0,Ml,Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-54,F4,2,240000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-55,F6,2,150000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-56,F11,2,60000000.0,Ml,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-57,G7,2,12000.0,Ml,Ml,No CS,0.001,True,No CS,No CS,No CS,No partner
-58,G8,2,18000.0,Ml,Ml,No CS,0.001,True,No CS,No CS,No CS,No partner
-59,G9,2,120000.0,Ml,Ml,No CS,0.001,True,No CS,No CS,No CS,No partner
-60,H7,2,9200000.0,Ml,Ml,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-61,H8,2,10600000.0,Ml,Ml,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-62,H9,2,8400000.0,Ml,Ml,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-63,A3,2,440000000.0,Oa,Oa,At_mannose,0.001,True,Mannose,At,At,No partner
-64,A5,2,420000000.0,Oa,Ct+Oa,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-65,A6,2,420000000.0,Oa,Ml+Oa,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-66,A9,2,1080000000.0,Oa,Oa,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-67,B3,2,460000000.0,Oa,Oa,At_mannose,0.001,True,Mannose,At,At,No partner
-68,B5,2,168000000.0,Oa,Ct+Oa,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-69,B6,2,380000000.0,Oa,Ml+Oa,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-70,C3,2,340000000.0,Oa,Oa,At_mannose,0.001,True,Mannose,At,At,No partner
-71,C5,2,178000000.0,Oa,Ct+Oa,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-72,C6,2,180000000.0,Oa,Ml+Oa,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-73,C9,2,920000000.0,Oa,Oa,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-74,C11,2,920000000.0,Oa,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-75,D3,2,380000000.0,Oa,Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-76,D5,2,460000000.0,Oa,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-77,D6,2,380000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-78,E3,2,700000000.0,Oa,Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-79,E6,2,460000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-80,F3,2,600000000.0,Oa,Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-81,F6,2,500000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-82,G10,2,32000000.0,Oa,Oa,No CS,0.001,True,No CS,No CS,No CS,No partner
-83,G11,2,32000000.0,Oa,Oa,No CS,0.001,True,No CS,No CS,No CS,No partner
-84,G12,2,32000000.0,Oa,Oa,No CS,0.001,True,No CS,No CS,No CS,No partner
-85,H11,2,132000000.0,Oa,Oa,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-86,H12,2,112000000.0,Oa,Oa,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-87,A7,2,480000000.0,At,At,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-88,A10,2,400000000.0,At,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-89,A11,2,320000000.0,At,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-90,B7,2,480000000.0,At,At,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-91,B10,2,500000000.0,At,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-92,B11,2,280000000.0,At,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-93,C7,2,520000000.0,At,At,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-94,C10,2,360000000.0,At,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-95,C11,2,260000000.0,At,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-96,D1,2,440000000.0,At,At,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-97,D4,2,240000000.0,At,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-98,D5,2,440000000.0,At,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-99,D7,2,280000000.0,At,At,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-100,D10,2,160000000.0,At,At+Ct,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-101,D11,2,220000000.0,At,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-102,E1,2,460000000.0,At,At,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-103,E4,2,180000000.0,At,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-104,E5,2,280000000.0,At,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-105,E7,2,180000000.0,At,At,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-106,E10,2,220000000.0,At,At+Ct,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-107,E11,2,180000000.0,At,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-108,F1,2,420000000.0,At,At,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-109,F4,2,340000000.0,At,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-110,F5,2,440000000.0,At,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-111,F7,2,240000000.0,At,At,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-112,F10,2,200000000.0,At,At+Ct,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-113,F11,2,220000000.0,At,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-114,G1,2,30000000.0,At,At,No CS,0.001,True,No CS,No CS,No CS,No partner
-115,G2,2,40000000.0,At,At,No CS,0.001,True,No CS,No CS,No CS,No partner
-116,G3,2,44000000.0,At,At,No CS,0.001,True,No CS,No CS,No CS,No partner
-117,H1,2,54000000.0,At,At,At_mannose,0.001,True,Mannose,At,At,No partner
-118,H2,2,62000000.0,At,At,At_mannose,0.001,True,Mannose,At,At,No partner
-119,H3,2,220000000.0,At,At,At_mannose,0.001,True,Mannose,At,At,No partner
-120,A1,2,10600000.0,Ct,Ct,At_mannose,0.001,True,Mannose,At,At,No partner
-121,A4,2,9000000.0,Ct,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-122,A5,2,9000000.0,Ct,Ct+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-123,A8,2,860000000.0,Ct,Ct,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-124,A10,2,840000000.0,Ct,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-125,A12,2,400000000.0,Ct,Ct+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-126,B1,2,8200000.0,Ct,Ct,At_mannose,0.001,True,Mannose,At,At,No partner
-127,B4,2,7800000.0,Ct,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-128,B5,2,9000000.0,Ct,Ct+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-129,B8,2,720000000.0,Ct,Ct,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-130,B10,2,580000000.0,Ct,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-131,B12,2,600000000.0,Ct,Ct+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-132,C4,2,7600000.0,Ct,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-133,C5,2,5200000.0,Ct,Ct+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-134,C8,2,760000000.0,Ct,Ct,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-135,C10,2,540000000.0,Ct,At+Ct,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-136,C12,2,520000000.0,Ct,Ct+Oa,Ml_mannose,0.001,True,Mannose,Ml (Oa),Ml,Oa
-137,D8,2,12400000.0,Ct,Ct,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-138,D10,2,14400000.0,Ct,At+Ct,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-139,D12,2,9600000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-140,E8,2,11400000.0,Ct,Ct,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-141,E10,2,16800000.0,Ct,At+Ct,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-142,E12,2,14600000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-143,F8,2,15800000.0,Ct,Ct,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-144,F10,2,14600000.0,Ct,At+Ct,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-145,F12,2,12000000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ml),Oa,Ml
-146,G4,2,2400000.0,Ct,Ct,No CS,0.001,True,No CS,No CS,No CS,No partner
-147,G5,2,4200000.0,Ct,Ct,No CS,0.001,True,No CS,No CS,No CS,No partner
-148,G6,2,4400000.0,Ct,Ct,No CS,0.001,True,No CS,No CS,No CS,No partner
-149,H4,2,10800000.0,Ct,Ct,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-150,H5,2,10600000.0,Ct,Ct,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-151,H6,2,11000000.0,Ct,Ct,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-152,A2,2,8000000.0,Ml,Ml,At_mannose,0.001,True,Mannose,At,At,No partner
-153,A4,2,4800000.0,Ml,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-154,A6,2,8000000.0,Ml,Ml+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-155,B2,2,10000000.0,Ml,Ml,At_mannose,0.001,True,Mannose,At,At,No partner
-156,B4,2,9000000.0,Ml,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-157,B6,2,16000000.0,Ml,Ml+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-158,C2,2,14000000.0,Ml,Ml,At_mannose,0.001,True,Mannose,At,At,No partner
-159,C4,2,10400000.0,Ml,Ct+Ml,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-160,C6,2,18000000.0,Ml,Ml+Oa,At_mannose,0.001,True,Mannose,At (Oa),At,Oa
-161,D2,2,42000000.0,Ml,Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-162,D4,2,96000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-163,D6,2,180000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-164,D9,2,38000000.0,Ml,Ml,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-165,D11,2,66000000.0,Ml,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-166,D12,2,6800000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-167,E2,2,42000000.0,Ml,Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-168,E4,2,86000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-169,E6,2,140000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-170,E9,2,30000000.0,Ml,Ml,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-171,E11,2,56000000.0,Ml,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-172,E12,2,8400000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-173,F2,2,40000000.0,Ml,Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-174,F4,2,96000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-175,F6,2,220000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Oa),Ct,Oa
-176,F9,2,24000000.0,Ml,Ml,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-177,F11,2,48000000.0,Ml,At+Ml,Oa_mannose,0.001,True,Mannose,Oa (At),Oa,At
-178,F12,2,7800000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,Mannose,Oa (Ct),Oa,Ct
-179,G7,2,14000.0,Ml,Ml,No CS,0.001,True,No CS,No CS,No CS,No partner
-180,G9,2,8000.0,Ml,Ml,No CS,0.001,True,No CS,No CS,No CS,No partner
-181,H7,2,6200000.0,Ml,Ml,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-182,H8,2,6000000.0,Ml,Ml,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-183,H9,2,6400000.0,Ml,Ml,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-184,A3,2,500000000.0,Oa,Oa,At_mannose,0.001,True,Mannose,At,At,No partner
-185,A5,2,140000000.0,Oa,Ct+Oa,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-186,A6,2,100000000.0,Oa,Ml+Oa,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-187,A9,2,2200000000.0,Oa,Oa,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-188,A11,2,740000000.0,Oa,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-189,A12,2,340000000.0,Oa,Ct+Oa,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-190,B3,2,380000000.0,Oa,Oa,At_mannose,0.001,True,Mannose,At,At,No partner
-191,B5,2,260000000.0,Oa,Ct+Oa,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-192,B6,2,160000000.0,Oa,Ml+Oa,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-193,B9,2,1400000000.0,Oa,Oa,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-194,B11,2,520000000.0,Oa,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-195,B12,2,440000000.0,Oa,Ct+Oa,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-196,C3,2,300000000.0,Oa,Oa,At_mannose,0.001,True,Mannose,At,At,No partner
-197,C5,2,120000000.0,Oa,Ct+Oa,At_mannose,0.001,True,Mannose,At (Ct),At,Ct
-198,C6,2,180000000.0,Oa,Ml+Oa,At_mannose,0.001,True,Mannose,At (Ml),At,Ml
-199,C9,2,1200000000.0,Oa,Oa,Ml_mannose,0.001,True,Mannose,Ml,Ml,No partner
-200,C11,2,660000000.0,Oa,At+Oa,Ml_mannose,0.001,True,Mannose,Ml (At),Ml,At
-201,C12,2,440000000.0,Oa,Ct+Oa,Ml_mannose,0.001,True,Mannose,Ml (Ct),Ml,Ct
-202,D3,2,400000000.0,Oa,Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-203,D5,2,100000000.0,Oa,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-204,D6,2,400000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-205,E3,2,500000000.0,Oa,Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct,Ct,No partner
-206,E5,2,220000000.0,Oa,At+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (At),Ct,At
-207,E6,2,260000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,Isoleucine,Ct (Ml),Ct,Ml
-208,G10,2,10000000.0,Oa,Oa,No CS,0.001,True,No CS,No CS,No CS,No partner
-209,G11,2,16000000.0,Oa,Oa,No CS,0.001,True,No CS,No CS,No CS,No partner
-210,G12,2,6000000.0,Oa,Oa,No CS,0.001,True,No CS,No CS,No CS,No partner
-211,H10,2,220000000.0,Oa,Oa,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-212,H11,2,160000000.0,Oa,Oa,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-213,H12,2,300000000.0,Oa,Oa,Oa_mannose,0.001,True,Mannose,Oa,Oa,No partner
-214,A1,5,7600000000.0,At,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-215,A2,5,5600000000.0,At,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-216,A3,5,7000000000.0,At,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-217,A7,5,8400000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-218,A10,5,4000000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-219,B1,5,7600000000.0,At,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-220,B2,5,5600000000.0,At,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-221,B3,5,5600000000.0,At,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-222,B7,5,7800000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-223,B10,5,3800000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-224,C1,5,9800000000.0,At,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-225,C2,5,6600000000.0,At,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-226,C3,5,6000000000.0,At,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-227,C7,5,7400000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-228,C10,5,3200000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-229,D1,5,7400000000.0,At,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-230,D2,5,5600000000.0,At,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-231,D3,5,7000000000.0,At,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-232,D7,5,5600000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-233,D10,5,2400000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-234,E1,5,12000000000.0,At,At,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-235,E5,5,6200000000.0,At,At,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-236,E9,5,4400000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-237,F1,5,18000000000.0,At,At,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-238,F5,5,4200000000.0,At,At,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-239,F9,5,4200000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-240,G1,5,16000000000.0,At,At,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-241,G5,5,4400000000.0,At,At,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-242,G9,5,5200000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-243,H1,5,5000000000.0,At,At,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-244,H5,5,4400000000.0,At,At,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-245,H9,5,5600000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-246,A1,5,480000000.0,Ct,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-247,A4,5,70000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-248,A5,5,180000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-249,A8,5,14000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-250,A11,5,2200000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-251,B1,5,340000000.0,Ct,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-252,B4,5,68000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-253,B5,5,180000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-254,B8,5,18000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-255,B11,5,2000000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-256,C1,5,440000000.0,Ct,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-257,C4,5,76000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-258,C5,5,220000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-259,C8,5,24000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-260,C11,5,2800000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-261,D1,5,580000000.0,Ct,At+Ct,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-262,D4,5,102000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-263,D5,5,160000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-264,D8,5,20000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-265,D11,5,1400000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-266,E2,5,5800000.0,Ct,Ct,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-267,E6,5,3400000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-268,E10,5,520000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-269,F2,5,6400000.0,Ct,Ct,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-270,F6,5,5400000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-271,F10,5,460000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-272,G2,5,6000000.0,Ct,Ct,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-273,G6,5,4200000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-274,G10,5,420000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-275,H2,5,11200000.0,Ct,Ct,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-276,H6,5,10000000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-277,H10,5,500000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-278,A2,5,960000000.0,Ml,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-279,A4,5,2000000.0,Ml,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-280,A6,5,80000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-281,A9,5,580000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-282,A10,5,6400000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At
-283,A11,5,6600000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-284,A12,5,14000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-285,B2,5,840000000.0,Ml,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-286,B4,5,1800000.0,Ml,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-287,B6,5,54000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-288,B9,5,480000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-289,B10,5,4000000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At
-290,B11,5,4200000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-291,B12,5,6000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-292,C2,5,860000000.0,Ml,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-293,C4,5,1800000.0,Ml,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-294,C6,5,46000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-295,C9,5,300000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-296,C10,5,5000000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At
-297,C11,5,5400000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-298,C12,5,16000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-299,D2,5,1040000000.0,Ml,At+Ml,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-300,D4,5,2000000.0,Ml,Ct+Ml,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-301,D6,5,48000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Oa),Fresh (coculture),Oa
-302,D9,5,260000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Oa),Fresh (coculture),Oa
-303,D10,5,3600000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At
-304,D11,5,4800000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-305,D12,5,14000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-306,E3,5,200000.0,Ml,Ml,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-307,E7,5,240000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-308,E11,5,4200000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-309,F3,5,40000.0,Ml,Ml,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-310,F7,5,180000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-311,F11,5,2600000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-312,G3,5,240000.0,Ml,Ml,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-313,G7,5,260000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-314,G11,5,2600000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-315,H3,5,640000.0,Ml,Ml,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-316,H7,5,120000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-317,H11,5,4800000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-318,A3,5,1360000000.0,Oa,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-319,A5,5,1200000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-320,A6,5,340000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-321,A7,5,1020000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (At),Fresh (coculture),At
-322,A8,5,14800000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ct),Fresh (coculture),Ct
-323,A9,5,13000000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ml),Fresh (coculture),Ml
-324,A12,5,1200000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-325,B3,5,1620000000.0,Oa,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-326,B5,5,980000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-327,B6,5,200000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-328,B7,5,1000000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (At),Fresh (coculture),At
-329,B8,5,13600000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ct),Fresh (coculture),Ct
-330,B9,5,9600000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ml),Fresh (coculture),Ml
-331,B12,5,8000000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-332,C3,5,1380000000.0,Oa,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-333,C5,5,920000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-334,C6,5,220000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-335,C7,5,840000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (At),Fresh (coculture),At
-336,C8,5,12000000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ct),Fresh (coculture),Ct
-337,C9,5,7400000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ml),Fresh (coculture),Ml
-338,C12,5,8000000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-339,D3,5,1460000000.0,Oa,At+Oa,M9_mannose,0.001,False,Mannose,Fresh (At),Fresh (coculture),At
-340,D5,5,1020000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ct),Fresh (coculture),Ct
-341,D6,5,180000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,Mannose,Fresh (Ml),Fresh (coculture),Ml
-342,D7,5,940000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (At),Fresh (coculture),At
-343,D8,5,11400000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ct),Fresh (coculture),Ct
-344,D9,5,8600000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T (Ml),Fresh (coculture),Ml
-345,D12,5,400000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-346,E4,5,60000000.0,Oa,Oa,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-347,E8,5,8000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-348,E12,5,24000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-349,F4,5,50000000.0,Oa,Oa,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-350,F8,5,6000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-351,F12,5,20000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-352,G4,5,60000000.0,Oa,Oa,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-353,G8,5,6000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-354,G12,5,34000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-355,H4,5,54000000.0,Oa,Oa,M9_mannose,0.001,False,Mannose,Fresh,Fresh (monoculture),No partner
-356,H8,5,18000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,Mannose,Fresh + T,Fresh (monoculture),No partner
-357,H12,5,8000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner
-358,A1,3,1800000000.0,At,At,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-359,B1,3,1600000000.0,At,At,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-360,B4,3,240000000.0,At,At,M9_isoleucine,0.05,False,Isoleucine,Fresh,Fresh (monoculture),No partner
-361,C1,3,2200000000.0,At,At,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-362,C4,3,260000000.0,At,At,M9_isoleucine,0.05,False,Isoleucine,Fresh,Fresh (monoculture),No partner
-363,G1,3,320000000.0,At,At,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-364,G2,3,240000000.0,At,At,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-365,G3,3,420000000.0,At,At,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-366,D1,3,220000000.0,Ct,Ct,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-367,D2,3,460000000.0,Ct,Ct,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-368,D3,3,420000000.0,Ct,Ct,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-369,D4,3,7600000000.0,Ct,Ct,M9_isoleucine,0.05,False,Isoleucine,Fresh,Fresh (monoculture),No partner
-370,D5,3,7600000000.0,Ct,Ct,M9_isoleucine,0.05,False,Isoleucine,Fresh,Fresh (monoculture),No partner
-371,D6,3,6800000000.0,Ct,Ct,M9_isoleucine,0.05,False,Isoleucine,Fresh,Fresh (monoculture),No partner
-372,G4,3,92000000.0,Ct,Ct,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-373,G5,3,78000000.0,Ct,Ct,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-374,G6,3,72000000.0,Ct,Ct,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-375,A2,3,1000000000.0,Ml,Ml,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-376,A5,3,380000000.0,Ml,Ml,M9_isoleucine+thiamine+biotin+cysteine+proline,0.05,False,Isoleucine,Fresh + Vit. & AA,Fresh (monoculture),No partner
-377,B2,3,800000000.0,Ml,Ml,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-378,B5,3,1200000000.0,Ml,Ml,M9_isoleucine+thiamine+biotin+cysteine+proline,0.05,False,Isoleucine,Fresh + Vit. & AA,Fresh (monoculture),No partner
-379,C2,3,1600000000.0,Ml,Ml,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-380,C5,3,360000000.0,Ml,Ml,M9_isoleucine+thiamine+biotin+cysteine+proline,0.05,False,Isoleucine,Fresh + Vit. & AA,Fresh (monoculture),No partner
-381,G7,3,28000000.0,Ml,Ml,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-382,G8,3,28000000.0,Ml,Ml,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-383,G9,3,38000000.0,Ml,Ml,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-384,A6,3,3200000000.0,Oa,Oa,M9_isoleucine+thiamine,0.05,False,Isoleucine,Fresh + T,Fresh (monoculture),No partner
-385,B6,3,2600000000.0,Oa,Oa,M9_isoleucine+thiamine,0.05,False,Isoleucine,Fresh + T,Fresh (monoculture),No partner
-386,C3,3,1800000000.0,Oa,Oa,Ct_isoleucine,0.05,False,Isoleucine,Ct 2,Ct,No partner
-387,C6,3,2000000000.0,Oa,Oa,M9_isoleucine+thiamine,0.05,False,Isoleucine,Fresh + T,Fresh (monoculture),No partner
-388,G10,3,80000000.0,Oa,Oa,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-389,G11,3,80000000.0,Oa,Oa,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-390,G12,3,300000000.0,Oa,Oa,No CS,0.05,False,No CS,No CS 2,No CS,No partner
-391,A1,4,360000000.0,At,At,At_malate,,True,Malate,At,At,No partner
-392,A2,4,320000000.0,At,At,At_malate,,True,Malate,At,At,No partner
-393,A3,4,300000000.0,At,At,At_malate,,True,Malate,At,At,No partner
-394,A4,4,2000000000.0,At,At,Ct_malate,,True,Malate,Ct,Ct,No partner
-395,A5,4,1200000000.0,At,At,Ct_malate,,True,Malate,Ct,Ct,No partner
-396,A6,4,520000000.0,At,At,Ct_malate,,True,Malate,Ct,Ct,No partner
-397,A7,4,3200000000.0,At,At,Ml_malate,,True,Malate,Ml,Ml,No partner
-398,A8,4,4400000000.0,At,At,Ml_malate,,True,Malate,Ml,Ml,No partner
-399,A9,4,1180000000.0,At,At,Ml_malate,,True,Malate,Ml,Ml,No partner
-400,A12,4,5600000000.0,At,At,Oa_malate,,True,Malate,Oa,Oa,No partner
-401,E1,4,42000000.0,At,At,No CS,,True,No CS,No CS,No CS,No partner
-402,E2,4,40000000.0,At,At,No CS,,True,No CS,No CS,No CS,No partner
-403,E3,4,34000000.0,At,At,No CS,,True,No CS,No CS,No CS,No partner
-404,F4,4,680000000.0,At,At+Ml,Ct_malate,,True,Malate,Ct (Ml),Ct,Ml
-405,F5,4,520000000.0,At,At+Ml,Ct_malate,,True,Malate,Ct (Ml),Ct,Ml
-406,F6,4,540000000.0,At,At+Ml,Ct_malate,,True,Malate,Ct (Ml),Ct,Ml
-407,F7,4,80000000.0,At,At+Ct,Ml_malate,,True,Malate,Ml (Ct),Ml,Ct
-408,F8,4,84000000.0,At,At+Ct,Ml_malate,,True,Malate,Ml (Ct),Ml,Ct
-409,F9,4,86000000.0,At,At+Ct,Ml_malate,,True,Malate,Ml (Ct),Ml,Ct
-410,F10,4,110000000.0,At,At+Ct,Oa_malate,,True,Malate,Oa (Ct),Oa,Ct
-411,F11,4,106000000.0,At,At+Ct,Oa_malate,,True,Malate,Oa (Ct),Oa,Ct
-412,F12,4,104000000.0,At,At+Ct,Oa_malate,,True,Malate,Oa (Ct),Oa,Ct
-413,G4,4,340000000.0,At,At+Oa,Ct_malate,,True,Malate,Ct (Oa),Ct,Oa
-414,G5,4,240000000.0,At,At+Oa,Ct_malate,,True,Malate,Ct (Oa),Ct,Oa
-415,G6,4,320000000.0,At,At+Oa,Ct_malate,,True,Malate,Ct (Oa),Ct,Oa
-416,G7,4,720000000.0,At,At+Oa,Ml_malate,,True,Malate,Ml (Oa),Ml,Oa
-417,G8,4,420000000.0,At,At+Oa,Ml_malate,,True,Malate,Ml (Oa),Ml,Oa
-418,G9,4,660000000.0,At,At+Oa,Ml_malate,,True,Malate,Ml (Oa),Ml,Oa
-419,G10,4,500000000.0,At,At+Ml,Oa_malate,,True,Malate,Oa (Ml),Oa,Ml
-420,G11,4,400000000.0,At,At+Ml,Oa_malate,,True,Malate,Oa (Ml),Oa,Ml
-421,G12,4,520000000.0,At,At+Ml,Oa_malate,,True,Malate,Oa (Ml),Oa,Ml
-422,B1,4,78000000.0,Ct,Ct,At_malate,,True,Malate,At,At,No partner
-423,B2,4,108000000.0,Ct,Ct,At_malate,,True,Malate,At,At,No partner
-424,B3,4,54000000.0,Ct,Ct,At_malate,,True,Malate,At,At,No partner
-425,B6,4,58000000.0,Ct,Ct,Ct_malate,,True,Malate,Ct,Ct,No partner
-426,B7,4,1140000000.0,Ct,Ct,Ml_malate,,True,Malate,Ml,Ml,No partner
-427,B8,4,1360000000.0,Ct,Ct,Ml_malate,,True,Malate,Ml,Ml,No partner
-428,B9,4,1400000000.0,Ct,Ct,Ml_malate,,True,Malate,Ml,Ml,No partner
-429,B10,4,40000000.0,Ct,Ct,Oa_malate,,True,Malate,Oa,Oa,No partner
-430,B11,4,58000000.0,Ct,Ct,Oa_malate,,True,Malate,Oa,Oa,No partner
-431,B12,4,56000000.0,Ct,Ct,Oa_malate,,True,Malate,Oa,Oa,No partner
-432,F1,4,42000000.0,Ct,Ct+Ml,At_malate,,True,Malate,At (Ml),At,Ml
-433,F2,4,42000000.0,Ct,Ct+Ml,At_malate,,True,Malate,At (Ml),At,Ml
-434,F3,4,52000000.0,Ct,Ct+Ml,At_malate,,True,Malate,At (Ml),At,Ml
-435,F7,4,1360000000.0,Ct,At+Ct,Ml_malate,,True,Malate,Ml (At),Ml,At
-436,F8,4,1380000000.0,Ct,At+Ct,Ml_malate,,True,Malate,Ml (At),Ml,At
-437,F9,4,1320000000.0,Ct,At+Ct,Ml_malate,,True,Malate,Ml (At),Ml,At
-438,F10,4,106000000.0,Ct,At+Ct,Oa_malate,,True,Malate,Oa (At),Oa,At
-439,F11,4,108000000.0,Ct,At+Ct,Oa_malate,,True,Malate,Oa (At),Oa,At
-440,F12,4,106000000.0,Ct,At+Ct,Oa_malate,,True,Malate,Oa (At),Oa,At
-441,G1,4,36000000.0,Ct,Ct+Oa,At_malate,,True,Malate,At (Oa),At,Oa
-442,G2,4,64000000.0,Ct,Ct+Oa,At_malate,,True,Malate,At (Oa),At,Oa
-443,G3,4,56000000.0,Ct,Ct+Oa,At_malate,,True,Malate,At (Oa),At,Oa
-444,H7,4,1520000000.0,Ct,Ct+Oa,Ml_malate,,True,Malate,Ml (Oa),Ml,Oa
-445,H8,4,1100000000.0,Ct,Ct+Oa,Ml_malate,,True,Malate,Ml (Oa),Ml,Oa
-446,H9,4,1640000000.0,Ct,Ct+Oa,Ml_malate,,True,Malate,Ml (Oa),Ml,Oa
-447,H10,4,26000000.0,Ct,Ct+Ml,Oa_malate,,True,Malate,Oa (Ml),Oa,Ml
-448,H11,4,82000000.0,Ct,Ct+Ml,Oa_malate,,True,Malate,Oa (Ml),Oa,Ml
-449,H12,4,32000000.0,Ct,Ct+Ml,Oa_malate,,True,Malate,Oa (Ml),Oa,Ml
-450,C1,4,1360000.0,Ml,Ml,At_malate,,True,Malate,At,At,No partner
-451,C2,4,1340000.0,Ml,Ml,At_malate,,True,Malate,At,At,No partner
-452,C5,4,60000000.0,Ml,Ml,Ct_malate,,True,Malate,Ct,Ct,No partner
-453,C6,4,50000000.0,Ml,Ml,Ct_malate,,True,Malate,Ct,Ct,No partner
-454,C7,4,520000.0,Ml,Ml,Ml_malate,,True,Malate,Ml,Ml,No partner
-455,C8,4,300000.0,Ml,Ml,Ml_malate,,True,Malate,Ml,Ml,No partner
-456,C9,4,340000.0,Ml,Ml,Ml_malate,,True,Malate,Ml,Ml,No partner
-457,C10,4,18000000.0,Ml,Ml,Oa_malate,,True,Malate,Oa,Oa,No partner
-458,C11,4,30000000.0,Ml,Ml,Oa_malate,,True,Malate,Oa,Oa,No partner
-459,C12,4,18000000.0,Ml,Ml,Oa_malate,,True,Malate,Oa,Oa,No partner
-460,E7,4,10000.0,Ml,Ml,No CS,,True,No CS,No CS,No CS,No partner
-461,E8,4,4000.0,Ml,Ml,No CS,,True,No CS,No CS,No CS,No partner
-462,E9,4,10000.0,Ml,Ml,No CS,,True,No CS,No CS,No CS,No partner
-463,F1,4,8400000.0,Ml,Ct+Ml,At_malate,,True,Malate,At (Ct),At,Ct
-464,F2,4,8800000.0,Ml,Ct+Ml,At_malate,,True,Malate,At (Ct),At,Ct
-465,F3,4,13800000.0,Ml,Ct+Ml,At_malate,,True,Malate,At (Ct),At,Ct
-466,F4,4,108000000.0,Ml,At+Ml,Ct_malate,,True,Malate,Ct (At),Ct,At
-467,F5,4,86000000.0,Ml,At+Ml,Ct_malate,,True,Malate,Ct (At),Ct,At
-468,F6,4,66000000.0,Ml,At+Ml,Ct_malate,,True,Malate,Ct (At),Ct,At
-469,G10,4,28000000.0,Ml,At+Ml,Oa_malate,,True,Malate,Oa (At),Oa,At
-470,G11,4,36000000.0,Ml,At+Ml,Oa_malate,,True,Malate,Oa (At),Oa,At
-471,G12,4,40000000.0,Ml,At+Ml,Oa_malate,,True,Malate,Oa (At),Oa,At
-472,H1,4,2800000.0,Ml,Ml+Oa,At_malate,,True,Malate,At (Oa),At,Oa
-473,H2,4,3400000.0,Ml,Ml+Oa,At_malate,,True,Malate,At (Oa),At,Oa
-474,H3,4,8000000.0,Ml,Ml+Oa,At_malate,,True,Malate,At (Oa),At,Oa
-475,H4,4,58000000.0,Ml,Ml+Oa,Ct_malate,,True,Malate,Ct (Oa),Ct,Oa
-476,H5,4,56000000.0,Ml,Ml+Oa,Ct_malate,,True,Malate,Ct (Oa),Ct,Oa
-477,H6,4,60000000.0,Ml,Ml+Oa,Ct_malate,,True,Malate,Ct (Oa),Ct,Oa
-478,H10,4,8800000.0,Ml,Ct+Ml,Oa_malate,,True,Malate,Oa (Ct),Oa,Ct
-479,H11,4,11200000.0,Ml,Ct+Ml,Oa_malate,,True,Malate,Oa (Ct),Oa,Ct
-480,H12,4,8600000.0,Ml,Ct+Ml,Oa_malate,,True,Malate,Oa (Ct),Oa,Ct
-481,D1,4,2400000000.0,Oa,Oa,At_malate,,True,Malate,At,At,No partner
-482,D2,4,6600000000.0,Oa,Oa,At_malate,,True,Malate,At,At,No partner
-483,D3,4,2200000000.0,Oa,Oa,At_malate,,True,Malate,At,At,No partner
-484,D4,4,1780000000.0,Oa,Oa,Ct_malate,,True,Malate,Ct,Ct,No partner
-485,D5,4,1000000000.0,Oa,Oa,Ct_malate,,True,Malate,Ct,Ct,No partner
-486,D7,4,3800000000.0,Oa,Oa,Ml_malate,,True,Malate,Ml,Ml,No partner
-487,D8,4,3400000000.0,Oa,Oa,Ml_malate,,True,Malate,Ml,Ml,No partner
-488,D9,4,3800000000.0,Oa,Oa,Ml_malate,,True,Malate,Ml,Ml,No partner
-489,D10,4,780000000.0,Oa,Oa,Oa_malate,,True,Malate,Oa,Oa,No partner
-490,D11,4,580000000.0,Oa,Oa,Oa_malate,,True,Malate,Oa,Oa,No partner
-491,D12,4,700000000.0,Oa,Oa,Oa_malate,,True,Malate,Oa,Oa,No partner
-492,E10,4,3000000.0,Oa,Oa,No CS,,True,No CS,No CS,No CS,No partner
-493,E11,4,2400000.0,Oa,Oa,No CS,,True,No CS,No CS,No CS,No partner
-494,G1,4,134000000.0,Oa,Ct+Oa,At_malate,,True,Malate,At (Ct),At,Ct
-495,G2,4,580000000.0,Oa,Ct+Oa,At_malate,,True,Malate,At (Ct),At,Ct
-496,G3,4,400000000.0,Oa,Ct+Oa,At_malate,,True,Malate,At (Ct),At,Ct
-497,G4,4,240000000.0,Oa,At+Oa,Ct_malate,,True,Malate,Ct (At),Ct,At
-498,G5,4,400000000.0,Oa,At+Oa,Ct_malate,,True,Malate,Ct (At),Ct,At
-499,G6,4,170000000.0,Oa,At+Oa,Ct_malate,,True,Malate,Ct (At),Ct,At
-500,G7,4,4000000000.0,Oa,At+Oa,Ml_malate,,True,Malate,Ml (At),Ml,At
-501,G8,4,3600000000.0,Oa,At+Oa,Ml_malate,,True,Malate,Ml (At),Ml,At
-502,G9,4,1800000000.0,Oa,At+Oa,Ml_malate,,True,Malate,Ml (At),Ml,At
-503,H1,4,640000000.0,Oa,Ml+Oa,At_malate,,True,Malate,At (Ml),At,Ml
-504,H2,4,560000000.0,Oa,Ml+Oa,At_malate,,True,Malate,At (Ml),At,Ml
-505,H3,4,560000000.0,Oa,Ml+Oa,At_malate,,True,Malate,At (Ml),At,Ml
-506,H4,4,380000000.0,Oa,Ml+Oa,Ct_malate,,True,Malate,Ct (Ml),Ct,Ml
-507,H5,4,420000000.0,Oa,Ml+Oa,Ct_malate,,True,Malate,Ct (Ml),Ct,Ml
-508,H6,4,280000000.0,Oa,Ml+Oa,Ct_malate,,True,Malate,Ct (Ml),Ct,Ml
-509,H7,4,260000000.0,Oa,Ct+Oa,Ml_malate,,True,Malate,Ml (Ct),Ml,Ct
-510,H8,4,500000000.0,Oa,Ct+Oa,Ml_malate,,True,Malate,Ml (Ct),Ml,Ct
-511,H9,4,700000000.0,Oa,Ct+Oa,Ml_malate,,True,Malate,Ml (Ct),Ml,Ct
-512,A1,6,360000000.0,At,At+Ct,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-513,A2,6,12000000000.0,At,At+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-514,A3,6,10600000000.0,At,At+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-515,A7,6,5800000000.0,At,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-516,A10,6,10600000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-517,B1,6,260000000.0,At,At+Ct,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-518,B2,6,6600000000.0,At,At+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-519,B3,6,6200000000.0,At,At+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-520,B7,6,3600000000.0,At,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-521,B10,6,8000000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-522,C1,6,280000000.0,At,At+Ct,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-523,C2,6,7200000000.0,At,At+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-524,C3,6,3400000000.0,At,At+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-525,C7,6,3000000000.0,At,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-526,C10,6,2200000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-527,D1,6,160000000.0,At,At+Ct,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-528,D2,6,6000000000.0,At,At+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-529,D3,6,6400000000.0,At,At+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-530,D7,6,2000000000.0,At,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-531,D10,6,6200000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-532,E1,6,8200000000.0,At,At,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-533,E5,6,8200000000.0,At,At,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-534,E9,6,6600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-535,F1,6,7000000000.0,At,At,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-536,F5,6,6400000000.0,At,At,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-537,F9,6,4600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-538,G1,6,5800000000.0,At,At,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-539,G5,6,6600000000.0,At,At,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-540,G9,6,5600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-541,H1,6,11200000000.0,At,At,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-542,H5,6,8200000000.0,At,At,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-543,H9,6,6600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-544,A1,6,7000000000.0,Ct,At+Ct,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-545,A4,6,7800000000.0,Ct,Ct+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-546,A5,6,6600000000.0,Ct,Ct+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-547,A8,6,6600000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-548,A11,6,8600000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-549,B1,6,5200000000.0,Ct,At+Ct,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-550,B4,6,5200000000.0,Ct,Ct+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-551,B5,6,5200000000.0,Ct,Ct+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-552,B8,6,4000000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-553,B11,6,6600000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-554,C1,6,6400000000.0,Ct,At+Ct,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-555,C4,6,3800000000.0,Ct,Ct+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-556,C5,6,4400000000.0,Ct,Ct+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-557,C8,6,3600000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-558,C11,6,5200000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-559,D1,6,7800000000.0,Ct,At+Ct,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-560,D4,6,4000000000.0,Ct,Ct+Ml,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-561,D5,6,5800000000.0,Ct,Ct+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-562,D8,6,5000000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-563,D11,6,5400000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-564,E2,6,5000000000.0,Ct,Ct,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-565,E6,6,5600000000.0,Ct,Ct,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-566,E10,6,5600000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-567,F2,6,5800000000.0,Ct,Ct,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-568,F6,6,6000000000.0,Ct,Ct,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-569,F10,6,5400000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-570,G2,6,5600000000.0,Ct,Ct,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-571,G6,6,4800000000.0,Ct,Ct,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-572,G10,6,4600000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-573,H2,6,4200000000.0,Ct,Ct,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-574,H6,6,5800000000.0,Ct,Ct,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-575,H10,6,8000000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-576,A2,6,340000000.0,Ml,At+Ml,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-577,A4,6,160000000.0,Ml,Ct+Ml,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-578,A6,6,12000000.0,Ml,Ml+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-579,A9,6,380000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-580,A10,6,300000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At
-581,A11,6,240000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-582,A12,6,320000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-583,B2,6,240000000.0,Ml,At+Ml,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-584,B4,6,140000000.0,Ml,Ct+Ml,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-585,B6,6,4000000.0,Ml,Ml+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-586,B9,6,420000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-587,B10,6,280000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At
-588,B11,6,160000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-589,B12,6,280000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-590,C2,6,160000000.0,Ml,At+Ml,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-591,C4,6,160000000.0,Ml,Ct+Ml,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-592,C6,6,2800000.0,Ml,Ml+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-593,C9,6,500000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-594,C10,6,180000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At
-595,C11,6,80000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-596,C12,6,260000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-597,D2,6,160000000.0,Ml,At+Ml,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-598,D4,6,120000000.0,Ml,Ct+Ml,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-599,D6,6,4000000.0,Ml,Ml+Oa,M9_malate,,False,Malate,Fresh (Oa),Fresh (coculture),Oa
-600,D9,6,440000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Oa),Fresh (coculture),Oa
-601,D10,6,120000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At
-602,D11,6,100000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct
-603,D12,6,240000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa
-604,E7,6,4000000.0,Ml,Ml,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-605,E11,6,1400000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-606,F3,6,2200000.0,Ml,Ml,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-607,F7,6,4000000.0,Ml,Ml,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-608,F11,6,1000000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-609,G3,6,800000.0,Ml,Ml,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-610,G7,6,16000000.0,Ml,Ml,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-611,G11,6,2000000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-612,H3,6,2200000.0,Ml,Ml,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-613,H7,6,28000000.0,Ml,Ml,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-614,H11,6,2400000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-615,A3,6,6400000000.0,Oa,At+Oa,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-616,A5,6,780000000.0,Oa,Ct+Oa,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-617,A6,6,500000000.0,Oa,Ml+Oa,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-618,A7,6,12000000000.0,Oa,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (At),Fresh (coculture),At
-619,A8,6,380000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ct),Fresh (coculture),Ct
-620,A9,6,28000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ml),Fresh (coculture),Ml
-621,A12,6,20000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-622,B3,6,1800000000.0,Oa,At+Oa,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-623,B5,6,400000000.0,Oa,Ct+Oa,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-624,B6,6,220000000.0,Oa,Ml+Oa,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-625,B7,6,8000000000.0,Oa,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (At),Fresh (coculture),At
-626,B8,6,300000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ct),Fresh (coculture),Ct
-627,B9,6,14000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ml),Fresh (coculture),Ml
-628,B12,6,18000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-629,C3,6,4600000000.0,Oa,At+Oa,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-630,C5,6,260000000.0,Oa,Ct+Oa,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-631,C6,6,660000000.0,Oa,Ml+Oa,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-632,C7,6,5000000000.0,Oa,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (At),Fresh (coculture),At
-633,C8,6,340000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ct),Fresh (coculture),Ct
-634,C9,6,16000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ml),Fresh (coculture),Ml
-635,C12,6,20000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-636,D3,6,4400000000.0,Oa,At+Oa,M9_malate,,False,Malate,Fresh (At),Fresh (coculture),At
-637,D5,6,400000000.0,Oa,Ct+Oa,M9_malate,,False,Malate,Fresh (Ct),Fresh (coculture),Ct
-638,D6,6,440000000.0,Oa,Ml+Oa,M9_malate,,False,Malate,Fresh (Ml),Fresh (coculture),Ml
-639,D7,6,6200000000.0,Oa,At+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (At),Fresh (coculture),At
-640,D8,6,420000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ct),Fresh (coculture),Ct
-641,D9,6,16000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,Malate,Fresh + T (Ml),Fresh (coculture),Ml
-642,D12,6,12000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml
-643,E4,6,180000000.0,Oa,Oa,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-644,E8,6,8800000000.0,Oa,Oa,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-645,E12,6,20000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-646,F4,6,700000000.0,Oa,Oa,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-647,F8,6,8400000000.0,Oa,Oa,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-648,F12,6,12000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-649,G4,6,240000000.0,Oa,Oa,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-650,G8,6,7800000000.0,Oa,Oa,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-651,G12,6,16000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
-652,H4,6,320000000.0,Oa,Oa,M9_malate,,False,Malate,Fresh,Fresh (monoculture),No partner
-653,H8,6,7800000000.0,Oa,Oa,M9_malate+thiamine,,False,Malate,Fresh + T,Fresh (monoculture),No partner
-654,H12,6,22000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner
+,Well,Plate,CFUs/mL,Species,Inoculated species,Medium,Initial OD,spent,fn,Base carbon source,Short name,Background,Partner,log2 fold change
+0,B10,2,200000000.0,At,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,7.91990275069128
+1,C11,2,300000000.0,At,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,8.504865251412436
+2,D1,2,520000000.0,At,At,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.29841437394501
+3,D4,2,260000000.0,At,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.29841437394501
+4,D5,2,300000000.0,At,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,8.504865251412436
+5,D11,2,98000000.0,At,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,6.890756405031763
+6,E4,2,240000000.0,At,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.182937156525073
+7,E11,2,180000000.0,At,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,7.76789965724623
+8,F4,2,240000000.0,At,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.182937156525073
+9,F11,2,200000000.0,At,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,7.91990275069128
+10,G1,2,44000000.0,At,At,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.735478179553852
+11,G2,2,52000000.0,At,At,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.976486279057648
+12,G3,2,52000000.0,At,At,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.976486279057648
+13,H3,2,82000000.0,At,At,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,6.633598565534639
+14,A1,2,11000000.0,Ct,Ct,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,4.886234525055013
+15,A4,2,10000000.0,Ct,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,4.748731001305078
+16,A5,2,9000000.0,Ct,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.596727907860028
+17,A8,2,700000000.0,Ct,Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.878014018250044
+18,B1,2,11200000.0,Ct,Ct,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,4.9122297335879574
+19,B4,2,11400000.0,Ct,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,4.937764825695094
+20,B5,2,10200000.0,Ct,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.777300153501848
+21,B8,2,580000000.0,Ct,Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.606711996432649
+22,B10,2,320000000.0,Ct,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,9.748731001305078
+23,C1,2,11600000.0,Ct,Ct,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,4.962855806657925
+24,C4,2,11400000.0,Ct,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,4.937764825695094
+25,C5,2,11600000.0,Ct,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.962855806657925
+26,C8,2,400000000.0,Ct,Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.07065909619244
+27,D8,2,42000000.0,Ct,Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,6.819120329196475
+28,D12,2,18000000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,5.596727907860028
+29,G4,2,7800000.0,Ct,Ct,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,4.3902770303926015
+30,G5,2,8000000.0,Ct,Ct,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,4.4268029064177155
+31,G6,2,11000000.0,Ct,Ct,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,4.886234525055013
+32,H4,2,20000000.0,Ct,Ct,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,5.748731001305078
+33,H5,2,16000000.0,Ct,Ct,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,5.4268029064177155
+34,H6,2,30000000.0,Ct,Ct,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,6.333693502026234
+35,A2,2,7400000.0,Ml,Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,2.2087425033130703
+36,A4,2,13400000.0,Ml,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,3.0653783281418927
+37,A6,2,10600000.0,Ml,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,2.7272095922473194
+38,B2,2,11400000.0,Ml,Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,2.8321791518488624
+39,B4,2,58000000.0,Ml,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,5.179198227699055
+40,B6,2,48000000.0,Ml,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.906179733292639
+41,C2,2,11800000.0,Ml,Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,2.8819321870459618
+42,C4,2,48000000.0,Ml,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,4.906179733292639
+43,C6,2,44000000.0,Ml,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.78064885120878
+44,D2,2,66000000.0,Ml,Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,5.365611351929936
+45,D4,2,146000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,6.5110417914514995
+46,D6,2,118000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,6.203860281933324
+47,D11,2,44000000.0,Ml,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,4.78064885120878
+48,D12,2,36000000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,4.491142234013795
+49,E2,2,104000000.0,Ml,Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,6.021656950712575
+50,E4,2,280000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,7.450500249516449
+51,E6,2,300000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,7.550035923067363
+52,E11,2,60000000.0,Ml,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.2281078281800015
+53,F2,2,68000000.0,Ml,Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,5.408680073821822
+54,F4,2,240000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,7.2281078281800015
+55,F6,2,150000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,6.550035923067363
+56,F11,2,60000000.0,Ml,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.2281078281800015
+57,G7,2,12000.0,Ml,Ml,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,-7.059604551369448
+58,G8,2,18000.0,Ml,Ml,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,-6.474642050648292
+59,G9,2,120000.0,Ml,Ml,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,-3.7376764564820855
+60,H7,2,9200000.0,Ml,Ml,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,2.5228510937411333
+61,H8,2,10600000.0,Ml,Ml,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,2.7272095922473194
+62,H9,2,8400000.0,Ml,Ml,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,2.391606560462881
+63,A3,2,440000000.0,Oa,Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,9.20585754205257
+64,A5,2,420000000.0,Oa,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,9.138743346194033
+65,A6,2,420000000.0,Oa,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,9.138743346194033
+66,A9,2,1080000000.0,Oa,Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.501313425578742
+67,B3,2,460000000.0,Oa,Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,9.269987879472286
+68,B5,2,168000000.0,Oa,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,7.816815251306671
+69,B6,2,380000000.0,Oa,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,8.994353436858859
+70,C3,2,340000000.0,Oa,Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,8.833888764665613
+71,C5,2,178000000.0,Oa,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,7.900231259494308
+72,C6,2,180000000.0,Oa,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,7.916350924857585
+73,C9,2,920000000.0,Oa,Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.269987879472286
+74,C11,2,920000000.0,Oa,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,10.269987879472286
+75,D3,2,380000000.0,Oa,Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,8.994353436858859
+76,D5,2,460000000.0,Oa,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,9.269987879472286
+77,D6,2,380000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.994353436858859
+78,E3,2,700000000.0,Oa,Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.875708940360239
+79,E6,2,460000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,9.269987879472286
+80,F3,2,600000000.0,Oa,Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.653316519023791
+81,F6,2,500000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,9.390282113189997
+82,G10,2,32000000.0,Oa,Oa,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.42449782852791
+83,G11,2,32000000.0,Oa,Oa,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.42449782852791
+84,G12,2,32000000.0,Oa,Oa,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.42449782852791
+85,H11,2,132000000.0,Oa,Oa,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,7.468891947886363
+86,H12,2,112000000.0,Oa,Oa,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,7.231852750585515
+87,A7,2,480000000.0,At,At,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,9.182937156525073
+88,A10,2,400000000.0,At,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,8.91990275069128
+89,A11,2,320000000.0,At,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,8.597974655803917
+90,B7,2,480000000.0,At,At,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,9.182937156525073
+91,B10,2,500000000.0,At,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,9.241830845578642
+92,B11,2,280000000.0,At,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,8.405329577861522
+93,C7,2,520000000.0,At,At,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,9.29841437394501
+94,C10,2,360000000.0,At,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,8.76789965724623
+95,C11,2,260000000.0,At,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,8.29841437394501
+96,D1,2,440000000.0,At,At,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.057406274441215
+97,D4,2,240000000.0,At,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.182937156525073
+98,D5,2,440000000.0,At,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,9.057406274441215
+99,D7,2,280000000.0,At,At,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,8.405329577861522
+100,D10,2,160000000.0,At,At+Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,7.597974655803918
+101,D11,2,220000000.0,At,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,8.057406274441215
+102,E1,2,460000000.0,At,At,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.12153661186093
+103,E4,2,180000000.0,At,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,7.76789965724623
+104,E5,2,280000000.0,At,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,8.405329577861522
+105,E7,2,180000000.0,At,At,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,7.76789965724623
+106,E10,2,220000000.0,At,At+Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,8.057406274441215
+107,E11,2,180000000.0,At,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,7.76789965724623
+108,F1,2,420000000.0,At,At,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,8.990292078582678
+109,F4,2,340000000.0,At,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.685437497054258
+110,F5,2,440000000.0,At,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,9.057406274441215
+111,F7,2,240000000.0,At,At,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,8.182937156525073
+112,F10,2,200000000.0,At,At+Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,7.91990275069128
+113,F11,2,220000000.0,At,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,8.057406274441215
+114,G1,2,30000000.0,At,At,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.182937156525074
+115,G2,2,40000000.0,At,At,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.597974655803918
+116,G3,2,44000000.0,At,At,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,5.735478179553852
+117,H1,2,54000000.0,At,At,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,6.030934063080024
+118,H2,2,62000000.0,At,At,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,6.230242871303431
+119,H3,2,220000000.0,At,At,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,8.057406274441215
+120,A1,2,10600000.0,Ct,Ct,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,4.8327952660935525
+121,A4,2,9000000.0,Ct,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,4.596727907860028
+122,A5,2,9000000.0,Ct,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.596727907860028
+123,A8,2,860000000.0,Ct,Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,11.174995756007176
+124,A10,2,840000000.0,Ct,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,11.141048424083838
+125,A12,2,400000000.0,Ct,Ct+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,10.07065909619244
+126,B1,2,8200000.0,Ct,Ct,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,4.462426816148437
+127,B4,2,7800000.0,Ct,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,4.3902770303926015
+128,B5,2,9000000.0,Ct,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,4.596727907860028
+129,B8,2,720000000.0,Ct,Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.91865600274739
+130,B10,2,580000000.0,Ct,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,10.606711996432649
+131,B12,2,600000000.0,Ct,Ct+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,10.655621596913596
+132,C4,2,7600000.0,Ct,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,4.352802324973938
+133,C5,2,5200000.0,Ct,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,3.805314529671445
+134,C8,2,760000000.0,Ct,Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.996658514748663
+135,C10,2,540000000.0,Ct,At+Ct,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,10.503618503468546
+136,C12,2,520000000.0,Ct,Ct+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Oa),Ml,Oa,10.449170719446169
+137,D8,2,12400000.0,Ct,Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,5.059071121917228
+138,D10,2,14400000.0,Ct,At+Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.274799812972665
+139,D12,2,9600000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,4.689837312251509
+140,E8,2,11400000.0,Ct,Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,4.937764825695094
+141,E10,2,16800000.0,Ct,At+Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.4971922343091135
+142,E12,2,14600000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,5.29469937041037
+143,F8,2,15800000.0,Ct,Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,5.408655559707456
+144,F10,2,14600000.0,Ct,At+Ct,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.29469937041037
+145,F12,2,12000000.0,Ct,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ml),Oa,Ml,5.0117654071388715
+146,G4,2,2400000.0,Ct,Ct,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,2.6898373122515093
+147,G5,2,4200000.0,Ct,Ct,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,3.4971922343091135
+148,G6,2,4400000.0,Ct,Ct,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,3.56430643016765
+149,H4,2,10800000.0,Ct,Ct,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,4.859762313693821
+150,H5,2,10600000.0,Ct,Ct,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,4.8327952660935525
+151,H6,2,11000000.0,Ct,Ct,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,4.886234525055013
+152,A2,2,8000000.0,Ml,Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,2.321217232571483
+153,A4,2,4800000.0,Ml,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,1.5842516384052767
+154,A6,2,8000000.0,Ml,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,2.321217232571483
+155,B2,2,10000000.0,Ml,Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,2.643145327458845
+156,B4,2,9000000.0,Ml,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,2.491142234013795
+157,B6,2,16000000.0,Ml,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,3.321217232571483
+158,C2,2,14000000.0,Ml,Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,3.128572154629087
+159,C4,2,10400000.0,Ml,Ct+Ml,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,2.6997288558252124
+160,C6,2,18000000.0,Ml,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Oa),At,Oa,3.491142234013795
+161,D2,2,42000000.0,Ml,Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,4.713534655350243
+162,D4,2,96000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,5.906179733292639
+163,D6,2,180000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,6.813070328901158
+164,D9,2,38000000.0,Ml,Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,4.569144746015068
+165,D11,2,66000000.0,Ml,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.365611351929936
+166,D12,2,6800000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,2.08675197893446
+167,E2,2,42000000.0,Ml,Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,4.713534655350243
+168,E4,2,86000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,5.747481987273581
+169,E6,2,140000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,6.450500249516449
+170,E9,2,30000000.0,Ml,Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,4.2281078281800015
+171,E11,2,56000000.0,Ml,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,5.1285721546290866
+172,E12,2,8400000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,2.391606560462881
+173,F2,2,40000000.0,Ml,Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,4.6431453274588455
+174,F4,2,96000000.0,Ml,At+Ml,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,5.906179733292639
+175,F6,2,220000000.0,Ml,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Oa),Ct,Oa,7.102576946096142
+176,F9,2,24000000.0,Ml,Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,3.906179733292639
+177,F11,2,48000000.0,Ml,At+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (At),Oa,At,4.906179733292639
+178,F12,2,7800000.0,Ml,Ct+Ml,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa (Ct),Oa,Ct,2.284691356546369
+179,G7,2,14000.0,Ml,Ml,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,-6.837212130033
+180,G9,2,8000.0,Ml,Ml,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,-7.644567052090604
+181,H7,2,6200000.0,Ml,Ml,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,1.9534854480709956
+182,H8,2,6000000.0,Ml,Ml,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,1.9061797332926391
+183,H9,2,6400000.0,Ml,Ml,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,1.9992891376841204
+184,A3,2,500000000.0,Oa,Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,9.390282113189997
+185,A5,2,140000000.0,Oa,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,7.553780845472876
+186,A6,2,100000000.0,Oa,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,7.068354018302635
+187,A9,2,2200000000.0,Oa,Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,11.527785636939932
+188,A11,2,740000000.0,Oa,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,9.955879289044223
+189,A12,2,340000000.0,Oa,Ct+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,8.833888764665613
+190,B3,2,380000000.0,Oa,Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,8.994353436858859
+191,B5,2,260000000.0,Oa,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,8.446865641556364
+192,B6,2,160000000.0,Oa,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,7.746425923415273
+193,B9,2,1400000000.0,Oa,Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.875708940360239
+194,B11,2,520000000.0,Oa,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,9.446865641556364
+195,B12,2,440000000.0,Oa,Ct+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,9.20585754205257
+196,C3,2,300000000.0,Oa,Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At,At,No partner,8.653316519023791
+197,C5,2,120000000.0,Oa,Ct+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ct),At,Ct,7.331388424136429
+198,C6,2,180000000.0,Oa,Ml+Oa,At_mannose,0.001,True,cfus_spent_mannose,Mannose,At (Ml),At,Ml,7.916350924857585
+199,C9,2,1200000000.0,Oa,Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml,Ml,No partner,10.653316519023791
+200,C11,2,660000000.0,Oa,At+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (At),Ml,At,9.790820042773726
+201,C12,2,440000000.0,Oa,Ct+Oa,Ml_mannose,0.001,True,cfus_spent_mannose,Mannose,Ml (Ct),Ml,Ct,9.20585754205257
+202,D3,2,400000000.0,Oa,Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.068354018302635
+203,D5,2,100000000.0,Oa,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,7.068354018302635
+204,D6,2,400000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,9.068354018302635
+205,E3,2,500000000.0,Oa,Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct,Ct,No partner,9.390282113189997
+206,E5,2,220000000.0,Oa,At+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (At),Ct,At,8.20585754205257
+207,E6,2,260000000.0,Oa,Ml+Oa,Ct_isoleucine,0.001,True,cfus_spent_mannose,Isoleucine,Ct (Ml),Ct,Ml,8.446865641556364
+208,G10,2,10000000.0,Oa,Oa,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,3.7464259234152726
+209,G11,2,16000000.0,Oa,Oa,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,4.42449782852791
+210,G12,2,6000000.0,Oa,Oa,No CS,0.001,True,cfus_spent_mannose,No CS,No CS,No CS,No partner,3.009460329249066
+211,H10,2,220000000.0,Oa,Oa,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,8.20585754205257
+212,H11,2,160000000.0,Oa,Oa,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,7.746425923415273
+213,H12,2,300000000.0,Oa,Oa,Oa_mannose,0.001,True,cfus_spent_mannose,Mannose,Oa,Oa,No partner,8.653316519023791
+214,A1,5,7600000000.0,At,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,13.167830264134865
+215,A2,5,5600000000.0,At,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,12.727257672748884
+216,A3,5,7000000000.0,At,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,13.049185767636246
+217,A7,5,8400000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,13.31222017347004
+218,A10,5,4000000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,12.241830845578642
+219,B1,5,7600000000.0,At,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,13.167830264134865
+220,B2,5,5600000000.0,At,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,12.727257672748884
+221,B3,5,5600000000.0,At,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,12.727257672748884
+222,B7,5,7800000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,13.205304969553529
+223,B10,5,3800000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,12.167830264134865
+224,C1,5,9800000000.0,At,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,13.534612594806488
+225,C2,5,6600000000.0,At,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,12.964296870049733
+226,C3,5,6000000000.0,At,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,12.826793346299798
+227,C7,5,7400000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,13.12935611632023
+228,C10,5,3200000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,11.91990275069128
+229,D1,5,7400000000.0,At,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,13.12935611632023
+230,D2,5,5600000000.0,At,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,12.727257672748884
+231,D3,5,7000000000.0,At,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,13.049185767636246
+232,D7,5,5600000000.0,At,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,12.727257672748884
+233,D10,5,2400000000.0,At,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,11.504865251412436
+234,E1,5,12000000000.0,At,At,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,13.826793346299798
+235,E5,5,6200000000.0,At,At,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,12.874099061078155
+236,E9,5,4400000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.379334369328577
+237,F1,5,18000000000.0,At,At,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,14.411755847020954
+238,F5,5,4200000000.0,At,At,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,12.31222017347004
+239,F9,5,4200000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.31222017347004
+240,G1,5,16000000000.0,At,At,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,14.241830845578642
+241,G5,5,4400000000.0,At,At,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,12.379334369328577
+242,G9,5,5200000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.620342468832373
+243,H1,5,5000000000.0,At,At,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,12.563758940466004
+244,H5,5,4400000000.0,At,At,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,12.379334369328577
+245,H9,5,5600000000.0,At,At,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.727257672748884
+246,A1,5,480000000.0,Ct,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,10.333693502026234
+247,A4,5,70000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,7.556085923362682
+248,A5,5,180000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,8.91865600274739
+249,A8,5,14000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,5.234157828475319
+250,A11,5,2200000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,12.530090714829738
+251,B1,5,340000000.0,Ct,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,9.836193842555417
+252,B4,5,68000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,7.5142657476680546
+253,B5,5,180000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,8.91865600274739
+254,B8,5,18000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,5.596727907860028
+255,B11,5,2000000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,12.392587191079802
+256,C1,5,440000000.0,Ct,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,10.208162619942375
+257,C4,5,76000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,7.674730419861301
+258,C5,5,220000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,9.208162619942375
+259,C8,5,24000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,6.0117654071388715
+260,C11,5,2800000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,12.878014018250044
+261,D1,5,580000000.0,Ct,At+Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,10.606711996432649
+262,D4,5,102000000.0,Ct,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,8.099228248389212
+263,D5,5,160000000.0,Ct,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,8.748731001305078
+264,D8,5,20000000.0,Ct,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,5.748731001305078
+265,D11,5,1400000000.0,Ct,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,11.878014018250044
+266,E2,5,5800000.0,Ct,Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,3.962855806657925
+267,E6,5,3400000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,3.1923376527806924
+268,E10,5,520000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.449170719446169
+269,F2,5,6400000.0,Ct,Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,4.104874811530353
+270,F6,5,5400000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,3.8597623136938215
+271,F10,5,460000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.27229295736209
+272,G2,5,6000000.0,Ct,Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,4.0117654071388715
+273,G6,5,4200000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,3.4971922343091135
+274,G10,5,420000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.141048424083838
+275,H2,5,11200000.0,Ct,Ct,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,4.9122297335879574
+276,H6,5,10000000.0,Ct,Ct,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,4.748731001305078
+277,H10,5,500000000.0,Ct,Ct,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.392587191079802
+278,A2,5,960000000.0,Ml,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,9.22810782818
+279,A4,5,2000000.0,Ml,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,0.3212172325714827
+280,A6,5,80000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,5.6431453274588455
+281,A9,5,580000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,8.501126322586417
+282,A10,5,6400000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At,11.965073422346208
+283,A11,5,6600000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,12.00946754170466
+284,A12,5,14000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,13.094356439291174
+285,B2,5,840000000.0,Ml,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,9.035462750237606
+286,B4,5,1800000.0,Ml,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,0.1692141391264328
+287,B6,5,54000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,5.076104734734951
+288,B9,5,480000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,8.22810782818
+289,B10,5,4000000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At,11.28700151723357
+290,B11,5,4200000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,11.357390845124968
+291,B12,5,6000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,11.871964017954726
+292,C2,5,860000000.0,Ml,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,9.069410082160942
+293,C4,5,1800000.0,Ml,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,0.1692141391264328
+294,C6,5,46000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,4.844779188628496
+295,C9,5,300000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,7.550035923067363
+296,C10,5,5000000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At,11.608929612120932
+297,C11,5,5400000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,11.719960924509676
+298,C12,5,16000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,13.28700151723357
+299,D2,5,1040000000.0,Ml,At+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,9.343585045599937
+300,D4,5,2000000.0,Ml,Ct+Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,0.3212172325714827
+301,D6,5,48000000.0,Ml,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Oa),Fresh (coculture),Oa,4.906179733292639
+302,D9,5,260000000.0,Ml,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Oa),Fresh (coculture),Oa,7.343585045599937
+303,D10,5,3600000000.0,Ml,At+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (At),Fresh (coculture),At,11.13499842378852
+304,D11,5,4800000000.0,Ml,Ct+Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,11.550035923067364
+305,D12,5,14000000000.0,Ml,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,13.094356439291174
+306,E3,5,200000.0,Ml,Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,-3.0007108623158794
+307,E7,5,240000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,-2.7376764564820855
+308,E11,5,4200000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,11.357390845124968
+309,F3,5,40000.0,Ml,Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,-5.3226389572032415
+310,F7,5,180000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,-3.1527139557609294
+311,F11,5,2600000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.665513140487299
+312,G3,5,240000.0,Ml,Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,-2.7376764564820855
+313,G7,5,260000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,-2.62219923906215
+314,G11,5,2600000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.665513140487299
+315,H3,5,640000.0,Ml,Ml,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,-1.3226389572032418
+316,H7,5,120000.0,Ml,Ml,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,-3.7376764564820855
+317,H11,5,4800000000.0,Ml,Ml,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,11.550035923067364
+318,A3,5,1360000000.0,Oa,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,10.833888764665613
+319,A5,5,1200000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,10.653316519023791
+320,A6,5,340000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,8.833888764665613
+321,A7,5,1020000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (At),Fresh (coculture),At,10.418851265386769
+322,A8,5,14800000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ct),Fresh (coculture),Ct,14.277807383931584
+323,A9,5,13000000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ml),Fresh (coculture),Ml,14.09072183133109
+324,A12,5,1200000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,10.653316519023791
+325,B3,5,1620000000.0,Oa,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,11.086275926299898
+326,B5,5,980000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,10.361135767530481
+327,B6,5,200000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,8.068354018302635
+328,B7,5,1000000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (At),Fresh (coculture),At,10.390282113189997
+329,B8,5,13600000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ct),Fresh (coculture),Ct,14.155816859552974
+330,B9,5,9600000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ml),Fresh (coculture),Ml,13.653316519023791
+331,B12,5,8000000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.390282113189997
+332,C3,5,1380000000.0,Oa,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,10.854950380193442
+333,C5,5,920000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,10.269987879472286
+334,C6,5,220000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,8.20585754205257
+335,C7,5,840000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (At),Fresh (coculture),At,10.138743346194033
+336,C8,5,12000000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ct),Fresh (coculture),Ct,13.975244613911153
+337,C9,5,7400000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ml),Fresh (coculture),Ml,13.277807383931584
+338,C12,5,8000000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.390282113189997
+339,D3,5,1460000000.0,Oa,At+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (At),Fresh (coculture),At,10.93625048229529
+340,D5,5,1020000000.0,Oa,Ct+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ct),Fresh (coculture),Ct,10.418851265386769
+341,D6,5,180000000.0,Oa,Ml+Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh (Ml),Fresh (coculture),Ml,7.916350924857585
+342,D7,5,940000000.0,Oa,At+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (At),Fresh (coculture),At,10.30101477509291
+343,D8,5,11400000000.0,Oa,Ct+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ct),Fresh (coculture),Ct,13.901244032467376
+344,D9,5,8600000000.0,Oa,Ml+Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T (Ml),Fresh (coculture),Ml,13.494618773004733
+345,D12,5,400000000.0,Oa,Ml+Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,9.068354018302635
+346,E4,5,60000000.0,Oa,Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,6.331388424136429
+347,E8,5,8000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,13.390282113189997
+348,E12,5,24000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,14.975244613911153
+349,F4,5,50000000.0,Oa,Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,6.068354018302635
+350,F8,5,6000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,12.975244613911153
+351,F12,5,20000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,14.71221020807736
+352,G4,5,60000000.0,Oa,Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,6.331388424136429
+353,G8,5,6000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,12.975244613911153
+354,G12,5,34000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,15.477744954440336
+355,H4,5,54000000.0,Oa,Oa,M9_mannose,0.001,False,cfus_fresh_mannose,Mannose,Fresh,Fresh (monoculture),No partner,6.179385330691378
+356,H8,5,18000000000.0,Oa,Oa,M9_mannose+thiamine,0.001,False,cfus_fresh_mannose,Mannose,Fresh + T,Fresh (monoculture),No partner,14.560207114632309
+357,H12,5,8000000000.0,Oa,Oa,M9_mannose+thiamine+biotin+cysteine+proline,0.001,False,cfus_fresh_mannose,Mannose,Fresh + Vit. & AA,Fresh (monoculture),No partner,13.390282113189997
+358,A1,3,1800000000.0,At,At,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,11.089827752133592
+359,B1,3,1600000000.0,At,At,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,10.91990275069128
+360,B4,3,240000000.0,At,At,M9_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh,Fresh (monoculture),No partner,8.182937156525073
+361,C1,3,2200000000.0,At,At,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,11.379334369328577
+362,C4,3,260000000.0,At,At,M9_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh,Fresh (monoculture),No partner,8.29841437394501
+363,G1,3,320000000.0,At,At,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,8.597974655803917
+364,G2,3,240000000.0,At,At,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,8.182937156525073
+365,G3,3,420000000.0,At,At,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,8.990292078582678
+366,D1,3,220000000.0,Ct,Ct,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,9.208162619942375
+367,D2,3,460000000.0,Ct,Ct,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,10.27229295736209
+368,D3,3,420000000.0,Ct,Ct,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,10.141048424083838
+369,D4,3,7600000000.0,Ct,Ct,M9_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh,Fresh (monoculture),No partner,14.318586609636025
+370,D5,3,7600000000.0,Ct,Ct,M9_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh,Fresh (monoculture),No partner,14.318586609636025
+371,D6,3,6800000000.0,Ct,Ct,M9_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh,Fresh (monoculture),No partner,14.158121937442779
+372,G4,3,92000000.0,Ct,Ct,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,7.9503648624747285
+373,G5,3,78000000.0,Ct,Ct,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,7.712205125279963
+374,G6,3,72000000.0,Ct,Ct,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,7.596727907860028
+375,A2,3,1000000000.0,Ml,Ml,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,9.28700151723357
+376,A5,3,380000000.0,Ml,Ml,M9_isoleucine+thiamine+biotin+cysteine+proline,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh + Vit. & AA,Fresh (monoculture),No partner,7.891072840902431
+377,B2,3,800000000.0,Ml,Ml,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,8.965073422346208
+378,B5,3,1200000000.0,Ml,Ml,M9_isoleucine+thiamine+biotin+cysteine+proline,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh + Vit. & AA,Fresh (monoculture),No partner,9.550035923067364
+379,C2,3,1600000000.0,Ml,Ml,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,9.965073422346208
+380,C5,3,360000000.0,Ml,Ml,M9_isoleucine+thiamine+biotin+cysteine+proline,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh + Vit. & AA,Fresh (monoculture),No partner,7.813070328901158
+381,G7,3,28000000.0,Ml,Ml,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,4.1285721546290866
+382,G8,3,28000000.0,Ml,Ml,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,4.1285721546290866
+383,G9,3,38000000.0,Ml,Ml,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,4.569144746015068
+384,A6,3,3200000000.0,Oa,Oa,M9_isoleucine+thiamine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh + T,Fresh (monoculture),No partner,12.068354018302635
+385,B6,3,2600000000.0,Oa,Oa,M9_isoleucine+thiamine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh + T,Fresh (monoculture),No partner,11.768793736443726
+386,C3,3,1800000000.0,Oa,Oa,Ct_isoleucine,0.05,False,cfus_fresh_mannose,Isoleucine,Ct,Ct,No partner,11.238279019744947
+387,C6,3,2000000000.0,Oa,Oa,M9_isoleucine+thiamine,0.05,False,cfus_fresh_mannose,Isoleucine,Fresh + T,Fresh (monoculture),No partner,11.390282113189997
+388,G10,3,80000000.0,Oa,Oa,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,6.746425923415273
+389,G11,3,80000000.0,Oa,Oa,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,6.746425923415273
+390,G12,3,300000000.0,Oa,Oa,No CS,0.05,False,cfus_fresh_mannose,No CS,No CS,No CS,No partner,8.653316519023791
+391,A1,4,360000000.0,At,At,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,8.76789965724623
+392,A2,4,320000000.0,At,At,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,8.597974655803917
+393,A3,4,300000000.0,At,At,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,8.504865251412436
+394,A4,4,2000000000.0,At,At,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,11.241830845578642
+395,A5,4,1200000000.0,At,At,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,10.504865251412436
+396,A6,4,520000000.0,At,At,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,9.29841437394501
+397,A7,4,3200000000.0,At,At,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,11.91990275069128
+398,A8,4,4400000000.0,At,At,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,12.379334369328577
+399,A9,4,1180000000.0,At,At,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,10.48061770516576
+400,A12,4,5600000000.0,At,At,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,12.727257672748884
+401,E1,4,42000000.0,At,At,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,5.668363983695316
+402,E2,4,40000000.0,At,At,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,5.597974655803918
+403,E3,4,34000000.0,At,At,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,5.363509402166895
+404,F4,4,680000000.0,At,At+Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Ml),Ct,Ml,9.685437497054258
+405,F5,4,520000000.0,At,At+Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Ml),Ct,Ml,9.29841437394501
+406,F6,4,540000000.0,At,At+Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Ml),Ct,Ml,9.352862157967387
+407,F7,4,80000000.0,At,At+Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Ct),Ml,Ct,6.597974655803918
+408,F8,4,84000000.0,At,At+Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Ct),Ml,Ct,6.668363983695316
+409,F9,4,86000000.0,At,At+Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Ct),Ml,Ct,6.702311315618653
+410,F10,4,110000000.0,At,At+Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ct),Oa,Ct,7.057406274441215
+411,F11,4,106000000.0,At,At+Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ct),Oa,Ct,7.003967015479755
+412,F12,4,104000000.0,At,At+Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ct),Oa,Ct,6.976486279057648
+413,G4,4,340000000.0,At,At+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Oa),Ct,Oa,8.685437497054258
+414,G5,4,240000000.0,At,At+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Oa),Ct,Oa,8.182937156525073
+415,G6,4,320000000.0,At,At+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Oa),Ct,Oa,8.597974655803917
+416,G7,4,720000000.0,At,At+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Oa),Ml,Oa,9.76789965724623
+417,G8,4,420000000.0,At,At+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Oa),Ml,Oa,8.990292078582678
+418,G9,4,660000000.0,At,At+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Oa),Ml,Oa,9.642368775162371
+419,G10,4,500000000.0,At,At+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ml),Oa,Ml,9.241830845578642
+420,G11,4,400000000.0,At,At+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ml),Oa,Ml,8.91990275069128
+421,G12,4,520000000.0,At,At+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ml),Oa,Ml,9.29841437394501
+422,B1,4,78000000.0,Ct,Ct,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,7.712205125279963
+423,B2,4,108000000.0,Ct,Ct,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,8.181690408581185
+424,B3,4,54000000.0,Ct,Ct,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,7.181690408581184
+425,B6,4,58000000.0,Ct,Ct,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,7.284783901545287
+426,B7,4,1140000000.0,Ct,Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,11.58162101546982
+427,B8,4,1360000000.0,Ct,Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,11.836193842555417
+428,B9,4,1400000000.0,Ct,Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,11.878014018250044
+429,B10,4,40000000.0,Ct,Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,6.748731001305078
+430,B11,4,58000000.0,Ct,Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,7.284783901545287
+431,B12,4,56000000.0,Ct,Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,7.234157828475319
+432,F1,4,42000000.0,Ct,Ct+Ml,At_malate,,True,cfus_spent_malate,Malate,At (Ml),At,Ml,6.819120329196475
+433,F2,4,42000000.0,Ct,Ct+Ml,At_malate,,True,cfus_spent_malate,Malate,At (Ml),At,Ml,6.819120329196475
+434,F3,4,52000000.0,Ct,Ct+Ml,At_malate,,True,cfus_spent_malate,Malate,At (Ml),At,Ml,7.127242624558807
+435,F7,4,1360000000.0,Ct,At+Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml (At),Ml,At,11.836193842555417
+436,F8,4,1380000000.0,Ct,At+Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml (At),Ml,At,11.857255458083246
+437,F9,4,1320000000.0,Ct,At+Ct,Ml_malate,,True,cfus_spent_malate,Malate,Ml (At),Ml,At,11.79312512066353
+438,F10,4,106000000.0,Ct,At+Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa (At),Oa,At,8.154723360980915
+439,F11,4,108000000.0,Ct,At+Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa (At),Oa,At,8.181690408581185
+440,F12,4,106000000.0,Ct,At+Ct,Oa_malate,,True,cfus_spent_malate,Malate,Oa (At),Oa,At,8.154723360980915
+441,G1,4,36000000.0,Ct,Ct+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Oa),At,Oa,6.596727907860028
+442,G2,4,64000000.0,Ct,Ct+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Oa),At,Oa,7.4268029064177155
+443,G3,4,56000000.0,Ct,Ct+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Oa),At,Oa,7.234157828475319
+444,H7,4,1520000000.0,Ct,Ct+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Oa),Ml,Oa,11.996658514748663
+445,H8,4,1100000000.0,Ct,Ct+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Oa),Ml,Oa,11.530090714829738
+446,H9,4,1640000000.0,Ct,Ct+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Oa),Ml,Oa,12.106283005923162
+447,H10,4,26000000.0,Ct,Ct+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ml),Oa,Ml,6.127242624558807
+448,H11,4,82000000.0,Ct,Ct+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ml),Oa,Ml,7.784354911035799
+449,H12,4,32000000.0,Ct,Ct+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ml),Oa,Ml,6.4268029064177155
+450,C1,4,1360000.0,Ml,Ml,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,-0.23517611595290244
+451,C2,4,1340000.0,Ml,Ml,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,-0.25654976674546937
+452,C5,4,60000000.0,Ml,Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,5.2281078281800015
+453,C6,4,50000000.0,Ml,Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,4.965073422346207
+454,C7,4,520000.0,Ml,Ml,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,-1.6221992390621498
+455,C8,4,300000.0,Ml,Ml,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,-2.4157483615947233
+456,C9,4,340000.0,Ml,Ml,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,-2.2351761159529024
+457,C10,4,18000000.0,Ml,Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,3.491142234013795
+458,C11,4,30000000.0,Ml,Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,4.2281078281800015
+459,C12,4,18000000.0,Ml,Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,3.491142234013795
+460,E7,4,10000.0,Ml,Ml,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,-7.3226389572032415
+461,E8,4,4000.0,Ml,Ml,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,-8.644567052090604
+462,E9,4,10000.0,Ml,Ml,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,-7.3226389572032415
+463,F1,4,8400000.0,Ml,Ct+Ml,At_malate,,True,cfus_spent_malate,Malate,At (Ct),At,Ct,2.391606560462881
+464,F2,4,8800000.0,Ml,Ct+Ml,At_malate,,True,cfus_spent_malate,Malate,At (Ct),At,Ct,2.458720756321418
+465,F3,4,13800000.0,Ml,Ct+Ml,At_malate,,True,cfus_spent_malate,Malate,At (Ct),At,Ct,3.1078135944622898
+466,F4,4,108000000.0,Ml,At+Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct (At),Ct,At,6.076104734734951
+467,F5,4,86000000.0,Ml,At+Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct (At),Ct,At,5.747481987273581
+468,F6,4,66000000.0,Ml,At+Ml,Ct_malate,,True,cfus_spent_malate,Malate,Ct (At),Ct,At,5.365611351929936
+469,G10,4,28000000.0,Ml,At+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (At),Oa,At,4.1285721546290866
+470,G11,4,36000000.0,Ml,At+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (At),Oa,At,4.491142234013795
+471,G12,4,40000000.0,Ml,At+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (At),Oa,At,4.6431453274588455
+472,H1,4,2800000.0,Ml,Ml+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Oa),At,Oa,0.8066440597417245
+473,H2,4,3400000.0,Ml,Ml+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Oa),At,Oa,1.08675197893446
+474,H3,4,8000000.0,Ml,Ml+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Oa),At,Oa,2.321217232571483
+475,H4,4,58000000.0,Ml,Ml+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Oa),Ct,Oa,5.179198227699055
+476,H5,4,56000000.0,Ml,Ml+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Oa),Ct,Oa,5.1285721546290866
+477,H6,4,60000000.0,Ml,Ml+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Oa),Ct,Oa,5.2281078281800015
+478,H10,4,8800000.0,Ml,Ct+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ct),Oa,Ct,2.458720756321418
+479,H11,4,11200000.0,Ml,Ct+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ct),Oa,Ct,2.8066440597417244
+480,H12,4,8600000.0,Ml,Ct+Ml,Oa_malate,,True,cfus_spent_malate,Malate,Oa (Ct),Oa,Ct,2.4255538923862185
+481,D1,4,2400000000.0,Oa,Oa,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,11.653316519023791
+482,D2,4,6600000000.0,Oa,Oa,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,13.112748137661088
+483,D3,4,2200000000.0,Oa,Oa,At_malate,,True,cfus_spent_malate,Malate,At,At,No partner,11.527785636939932
+484,D4,4,1780000000.0,Oa,Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,11.22215935438167
+485,D5,4,1000000000.0,Oa,Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct,Ct,No partner,10.390282113189997
+486,D7,4,3800000000.0,Oa,Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,12.31628153174622
+487,D8,4,3400000000.0,Oa,Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,12.155816859552974
+488,D9,4,3800000000.0,Oa,Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml,Ml,No partner,12.31628153174622
+489,D10,4,780000000.0,Oa,Oa,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,10.03182814227752
+490,D11,4,580000000.0,Oa,Oa,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,9.604406918542844
+491,D12,4,700000000.0,Oa,Oa,Oa_malate,,True,cfus_spent_malate,Malate,Oa,Oa,No partner,9.875708940360239
+492,E10,4,3000000.0,Oa,Oa,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,2.009460329249066
+493,E11,4,2400000.0,Oa,Oa,No CS,,True,cfus_spent_malate,No CS,No CS,No CS,No partner,1.687532234361704
+494,G1,4,134000000.0,Oa,Ct+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Ct),At,Ct,7.490587018985683
+495,G2,4,580000000.0,Oa,Ct+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Ct),At,Ct,9.604406918542844
+496,G3,4,400000000.0,Oa,Ct+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Ct),At,Ct,9.068354018302635
+497,G4,4,240000000.0,Oa,At+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (At),Ct,At,8.331388424136428
+498,G5,4,400000000.0,Oa,At+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (At),Ct,At,9.068354018302635
+499,G6,4,170000000.0,Oa,At+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (At),Ct,At,7.833888764665612
+500,G7,4,4000000000.0,Oa,At+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (At),Ml,At,12.390282113189997
+501,G8,4,3600000000.0,Oa,At+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (At),Ml,At,12.238279019744947
+502,G9,4,1800000000.0,Oa,At+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (At),Ml,At,11.238279019744947
+503,H1,4,640000000.0,Oa,Ml+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Ml),At,Ml,9.746425923415272
+504,H2,4,560000000.0,Oa,Ml+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Ml),At,Ml,9.553780845472877
+505,H3,4,560000000.0,Oa,Ml+Oa,At_malate,,True,cfus_spent_malate,Malate,At (Ml),At,Ml,9.553780845472877
+506,H4,4,380000000.0,Oa,Ml+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Ml),Ct,Ml,8.994353436858859
+507,H5,4,420000000.0,Oa,Ml+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Ml),Ct,Ml,9.138743346194033
+508,H6,4,280000000.0,Oa,Ml+Oa,Ct_malate,,True,cfus_spent_malate,Malate,Ct (Ml),Ct,Ml,8.553780845472877
+509,H7,4,260000000.0,Oa,Ct+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Ct),Ml,Ct,8.446865641556364
+510,H8,4,500000000.0,Oa,Ct+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Ct),Ml,Ct,9.390282113189997
+511,H9,4,700000000.0,Oa,Ct+Oa,Ml_malate,,True,cfus_spent_malate,Malate,Ml (Ct),Ml,Ct,9.875708940360239
+512,A1,6,360000000.0,At,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,8.76789965724623
+513,A2,6,12000000000.0,At,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,13.826793346299798
+514,A3,6,10600000000.0,At,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,13.647823205254479
+515,A7,6,5800000000.0,At,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,12.777883745818851
+516,A10,6,10600000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.647823205254479
+517,B1,6,260000000.0,At,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,8.29841437394501
+518,B2,6,6600000000.0,At,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,12.964296870049733
+519,B3,6,6200000000.0,At,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,12.874099061078155
+520,B7,6,3600000000.0,At,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,12.089827752133592
+521,B10,6,8000000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.241830845578642
+522,C1,6,280000000.0,At,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,8.405329577861522
+523,C2,6,7200000000.0,At,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,13.089827752133592
+524,C3,6,3400000000.0,At,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,12.00736559194162
+525,C7,6,3000000000.0,At,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,11.826793346299798
+526,C10,6,2200000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,11.379334369328577
+527,D1,6,160000000.0,At,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,7.597974655803918
+528,D2,6,6000000000.0,At,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,12.826793346299798
+529,D3,6,6400000000.0,At,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,12.91990275069128
+530,D7,6,2000000000.0,At,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,11.241830845578642
+531,D10,6,6200000000.0,At,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,12.874099061078155
+532,E1,6,8200000000.0,At,At,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.277454755309364
+533,E5,6,8200000000.0,At,At,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.277454755309364
+534,E9,6,6600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.964296870049733
+535,F1,6,7000000000.0,At,At,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.049185767636246
+536,F5,6,6400000000.0,At,At,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,12.91990275069128
+537,F9,6,4600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.443464706748292
+538,G1,6,5800000000.0,At,At,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,12.777883745818851
+539,G5,6,6600000000.0,At,At,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,12.964296870049733
+540,G9,6,5600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.727257672748884
+541,H1,6,11200000000.0,At,At,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.727257672748884
+542,H5,6,8200000000.0,At,At,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.277454755309364
+543,H9,6,6600000000.0,At,At,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,12.964296870049733
+544,A1,6,7000000000.0,Ct,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,14.199942113137407
+545,A4,6,7800000000.0,Ct,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,14.356061315054689
+546,A5,6,6600000000.0,Ct,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,14.115053215550894
+547,A8,6,6600000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,14.115053215550894
+548,A11,6,8600000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,14.496923850894538
+549,B1,6,5200000000.0,Ct,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,13.771098814333532
+550,B4,6,5200000000.0,Ct,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,13.771098814333532
+551,B5,6,5200000000.0,Ct,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,13.771098814333532
+552,B8,6,4000000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,13.392587191079802
+553,B11,6,6600000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,14.115053215550894
+554,C1,6,6400000000.0,Ct,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,14.07065909619244
+555,C4,6,3800000000.0,Ct,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,13.318586609636025
+556,C5,6,4400000000.0,Ct,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,13.530090714829738
+557,C8,6,3600000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,13.240584097634752
+558,C11,6,5200000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.771098814333532
+559,D1,6,7800000000.0,Ct,At+Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,14.356061315054689
+560,D4,6,4000000000.0,Ct,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,13.392587191079802
+561,D5,6,5800000000.0,Ct,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,13.928640091320013
+562,D8,6,5000000000.0,Ct,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,13.714515285967165
+563,D11,6,5400000000.0,Ct,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.825546598355908
+564,E2,6,5000000000.0,Ct,Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.714515285967165
+565,E6,6,5600000000.0,Ct,Ct,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.878014018250044
+566,E10,6,5600000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,13.878014018250044
+567,F2,6,5800000000.0,Ct,Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.928640091320013
+568,F6,6,6000000000.0,Ct,Ct,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.97754969180096
+569,F10,6,5400000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,13.825546598355908
+570,G2,6,5600000000.0,Ct,Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.878014018250044
+571,G6,6,4800000000.0,Ct,Ct,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.655621596913596
+572,G10,6,4600000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,13.594221052249454
+573,H2,6,4200000000.0,Ct,Ct,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,13.4629765189712
+574,H6,6,5800000000.0,Ct,Ct,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.928640091320013
+575,H10,6,8000000000.0,Ct,Ct,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,14.392587191079802
+576,A2,6,340000000.0,Ml,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,7.7306081687091845
+577,A4,6,160000000.0,Ml,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,6.6431453274588455
+578,A6,6,12000000.0,Ml,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,2.906179733292639
+579,A9,6,380000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,7.891072840902431
+580,A10,6,300000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At,7.550035923067363
+581,A11,6,240000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,7.2281078281800015
+582,A12,6,320000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,7.6431453274588455
+583,B2,6,240000000.0,Ml,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,7.2281078281800015
+584,B4,6,140000000.0,Ml,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,6.450500249516449
+585,B6,6,4000000.0,Ml,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,1.3212172325714826
+586,B9,6,420000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,8.035462750237606
+587,B10,6,280000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At,7.450500249516449
+588,B11,6,160000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,6.6431453274588455
+589,B12,6,280000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,7.450500249516449
+590,C2,6,160000000.0,Ml,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,6.6431453274588455
+591,C4,6,160000000.0,Ml,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,6.6431453274588455
+592,C6,6,2800000.0,Ml,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,0.8066440597417245
+593,C9,6,500000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,8.28700151723357
+594,C10,6,180000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At,6.813070328901158
+595,C11,6,80000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,5.6431453274588455
+596,C12,6,260000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,7.343585045599937
+597,D2,6,160000000.0,Ml,At+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,6.6431453274588455
+598,D4,6,120000000.0,Ml,Ct+Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,6.2281078281800015
+599,D6,6,4000000.0,Ml,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Oa),Fresh (coculture),Oa,1.3212172325714826
+600,D9,6,440000000.0,Ml,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Oa),Fresh (coculture),Oa,8.102576946096143
+601,D10,6,120000000.0,Ml,At+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (At),Fresh (coculture),At,6.2281078281800015
+602,D11,6,100000000.0,Ml,Ct+Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ct),Fresh (coculture),Ct,5.965073422346207
+603,D12,6,240000000.0,Ml,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Oa),Fresh (coculture),Oa,7.2281078281800015
+604,E7,6,4000000.0,Ml,Ml,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,1.3212172325714826
+605,E11,6,1400000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,9.772428344403812
+606,F3,6,2200000.0,Ml,Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,0.4587207563214178
+607,F7,6,4000000.0,Ml,Ml,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,1.3212172325714826
+608,F11,6,1000000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,9.28700151723357
+609,G3,6,800000.0,Ml,Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,-1.0007108623158796
+610,G7,6,16000000.0,Ml,Ml,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,3.321217232571483
+611,G11,6,2000000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.28700151723357
+612,H3,6,2200000.0,Ml,Ml,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,0.4587207563214178
+613,H7,6,28000000.0,Ml,Ml,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,4.1285721546290866
+614,H11,6,2400000000.0,Ml,Ml,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,10.550035923067364
+615,A3,6,6400000000.0,Oa,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,13.068354018302635
+616,A5,6,780000000.0,Oa,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,10.03182814227752
+617,A6,6,500000000.0,Oa,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,9.390282113189997
+618,A7,6,12000000000.0,Oa,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (At),Fresh (coculture),At,13.975244613911153
+619,A8,6,380000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ct),Fresh (coculture),Ct,8.994353436858859
+620,A9,6,28000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ml),Fresh (coculture),Ml,15.1976370352476
+621,A12,6,20000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,14.71221020807736
+622,B3,6,1800000000.0,Oa,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,11.238279019744947
+623,B5,6,400000000.0,Oa,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,9.068354018302635
+624,B6,6,220000000.0,Oa,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,8.20585754205257
+625,B7,6,8000000000.0,Oa,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (At),Fresh (coculture),At,13.390282113189997
+626,B8,6,300000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ct),Fresh (coculture),Ct,8.653316519023791
+627,B9,6,14000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ml),Fresh (coculture),Ml,14.1976370352476
+628,B12,6,18000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,14.560207114632309
+629,C3,6,4600000000.0,Oa,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,12.591915974359647
+630,C5,6,260000000.0,Oa,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,8.446865641556364
+631,C6,6,660000000.0,Oa,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,9.790820042773726
+632,C7,6,5000000000.0,Oa,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (At),Fresh (coculture),At,12.71221020807736
+633,C8,6,340000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ct),Fresh (coculture),Ct,8.833888764665613
+634,C9,6,16000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ml),Fresh (coculture),Ml,14.390282113189997
+635,C12,6,20000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,14.71221020807736
+636,D3,6,4400000000.0,Oa,At+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (At),Fresh (coculture),At,12.527785636939932
+637,D5,6,400000000.0,Oa,Ct+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ct),Fresh (coculture),Ct,9.068354018302635
+638,D6,6,440000000.0,Oa,Ml+Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh (Ml),Fresh (coculture),Ml,9.20585754205257
+639,D7,6,6200000000.0,Oa,At+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (At),Fresh (coculture),At,13.02255032868951
+640,D8,6,420000000.0,Oa,Ct+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ct),Fresh (coculture),Ct,9.138743346194033
+641,D9,6,16000000000.0,Oa,Ml+Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T (Ml),Fresh (coculture),Ml,14.390282113189997
+642,D12,6,12000000000.0,Oa,Ml+Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA (Ml),Fresh (coculture),Ml,13.975244613911153
+643,E4,6,180000000.0,Oa,Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,7.916350924857585
+644,E8,6,8800000000.0,Oa,Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.527785636939932
+645,E12,6,20000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,14.71221020807736
+646,F4,6,700000000.0,Oa,Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,9.875708940360239
+647,F8,6,8400000000.0,Oa,Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.460671441081395
+648,F12,6,12000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,13.975244613911153
+649,G4,6,240000000.0,Oa,Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,8.331388424136428
+650,G8,6,7800000000.0,Oa,Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.353756237164884
+651,G12,6,16000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,14.390282113189997
+652,H4,6,320000000.0,Oa,Oa,M9_malate,,False,cfus_fresh_malate,Malate,Fresh,Fresh (monoculture),No partner,8.746425923415272
+653,H8,6,7800000000.0,Oa,Oa,M9_malate+thiamine,,False,cfus_fresh_malate,Malate,Fresh + T,Fresh (monoculture),No partner,13.353756237164884
+654,H12,6,22000000000.0,Oa,Oa,M9_malate+thiamine+biotin+cysteine+proline,,False,cfus_fresh_malate,Malate,Fresh + Vit. & AA,Fresh (monoculture),No partner,14.849713731827295
