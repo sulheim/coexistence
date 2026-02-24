@@ -65,9 +65,9 @@ class CRM(object):
     Thus, roughly the yield is roughly 0.167 g/mol when accounting for byproducts. If not CO2 is included maybe a yield og 0.1 g/mmol is more appropriate.
     """
     def __init__(self, N_species, N_resources, C, K = None, g = 0.1, 
-                #  w = None,
+                 w = None,
                  l = None,
-                #    m = None,
+                   m = None,
                      D = None,
                   dilution_rate = 0, R_in = None, transfer_time = None, 
                   transfer_dilution = None,
@@ -78,8 +78,7 @@ class CRM(object):
         self.rtol = rtol
         self.atol = atol
         self.auxo_arr = None
-        w = None # Not implemented
-        m = None # Not implemented
+        
         self._set_and_check_params(C, K, g, w, l, m, D, dilution_rate)
 
     def _set_and_check_params(self, C, K, g, w, l, m, D, dilution_rate):
@@ -210,14 +209,16 @@ class CRM(object):
                             # t_eval= np.arange(0, t_max, 10),
                             # max_step = dt,
                             # first_step = dt,
-                            # min_step = 1e-6,
+                            first_step=1e-2,
+                            min_step = 1e-6,
                             rtol = self.rtol, atol = self.atol)
         else:
             sol = solve_ivp(CRM_fun_with_limit_batch, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
                                                         self.w, self.l, self.m, self.D,
                                                         self.dilution_rate, self.R_in), 
                             dense_output=True, method = method,
-                            events = steady_state_event,
+                            min_step = 1e-6,
+                            # events = steady_state_event,
                             rtol = self.rtol, atol = self.atol)
         #     print("solve_ivp terminated early:", e)
         #     sol = None
