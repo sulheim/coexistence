@@ -77,7 +77,6 @@ class CRM(object):
         self.R_in = R_in
         self.rtol = rtol
         self.atol = atol
-        self.auxo_arr = None
         
         self._set_and_check_params(C, K, g, w, l, m, D, dilution_rate)
 
@@ -192,40 +191,14 @@ class CRM(object):
             iteration_limit.max_calls = int(max(1e4, int(np.round(100 * ns * nr**2,0)))) # Set the maximum number of iterations based on system size
         else:
             iteration_limit.max_calls = max_calls
-        # try:  
-        # print('Running CRM with parameters:')
-        # print('N species:', self.N_species)
-        # print('N resources:', self.N_resources)
-        # print('Dilution rate:', self.dilution_rate)
-        # print('Leakage fractions:', self.l)
-        # print('Auxotrophs:', self.auxo_arr)
         if self.dilution_rate > 0:
-            # print('Dilution!')
-            # print('Auxo:', self.auxo_arr)
             sol = solve_ivp(CRM_fun_with_limit, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
-                                                        self.w, self.l, self.m, self.D,
-                                                        self.dilution_rate, self.R_in, self.auxo_arr), 
-                            dense_output=True, method = method,
-                            # t_eval= np.arange(0, t_max, 10),
-                            # max_step = dt,
-                            # first_step = dt,
-                            first_step=1e-2,
-                            min_step = 1e-6,
-                            rtol = self.rtol, atol = self.atol)
-        else:
-            sol = solve_ivp(CRM_fun_with_limit_batch, [0, t_max], y0, args = (ns, nr, self.C, self.K, self.g, 
                                                         self.w, self.l, self.m, self.D,
                                                         self.dilution_rate, self.R_in), 
                             dense_output=True, method = method,
+                            first_step=1e-2,
                             min_step = 1e-6,
-                            # events = steady_state_event,
                             rtol = self.rtol, atol = self.atol)
-        #     print("solve_ivp terminated early:", e)
-        #     sol = None
-        # else:
-        # if sol.nfev > 1000:
-        #     print(self.N_species, self.N_resources)
-        #     print("N solver steps", max(sol.t), sol.nfev, sol.njev, sol.nlu, sol.success)
         if sol.success is False:
             print(sol.message)
         # print(iteration_limit.calls, iteration_limit.max_calls)
@@ -267,49 +240,6 @@ def calc_dN_dt_simple(N, g, Jin, l,  dilution_rate = 0):
     # Vectorized version
     growth = g * np.sum((1 - l[:, None]) * Jin, axis=1)
     dN_dt = N * (growth - dilution_rate)
-    return dN_dt
-
-def calc_mu_lim_loop(g, Jin, auxo_arr, l, ns, epsilon=1e-6):
-    limited_growth_rates = []
-    aux_uptakes = []
-    cs_uptake_scale = []
-    Jin_adjusted = Jin.copy()
-    for i in range(ns):
-        growth_limits = []
-        aux_idxs = np.where(auxo_arr[i])[0]
-        aux_yields = auxo_arr[i, aux_idxs]
-        for (aux_idx, aux_yield) in zip(aux_idxs, aux_yields):
-            aux_uptake = Jin[i, aux_idx]
-            growth_limits.append(aux_uptake * (1-l[i]) * aux_yield)
-        mu_cs = g * (1 - l[i])*np.sum(Jin[i, :])
-        growth_limits.append(mu_cs)
-        mu_lim_i = min(growth_limits)
-
-        # aux_uptakes_i = []
-        # for (aux_idx, aux_yield) in zip(aux_idxs, aux_yields):
-        #     aux_uptake = Jin[i, aux_idx]
-        #     if aux_uptake * (1-l[i]) * aux_yield > mu_lim_i + epsilon:
-        #         aux_uptake = mu_lim_i / (aux_yield * (1-l[i]))
-        #         Jin_adjusted[i, aux_idx] = aux_uptake
-        #     aux_uptakes_i.append(aux_uptake)
-
-        if mu_cs > mu_lim_i + epsilon:
-            cs_uptake_scale_i = (mu_lim_i) / (mu_cs)
-            Jin_adjusted[i, ~aux_idxs] *= cs_uptake_scale_i
-        else:
-            cs_uptake_scale_i = 1.0
-        
-        
-        cs_uptake_scale.append(cs_uptake_scale_i)
-        aux_uptakes.append(aux_uptakes_i)
-        limited_growth_rates.append(mu_lim_i)
-
-        
-
-    return np.array(limited_growth_rates), aux_uptakes, cs_uptake_scale, Jin_adjusted
-
-def calc_dN_dt_simple_auxo(N, limited_growth_rates, dilution_rate = 0):
-    dN_dt = N * (limited_growth_rates - dilution_rate)
     return dN_dt
     
 def calc_dN_dt_simple(N, g, Jin, l,  dilution_rate = 0):
@@ -386,14 +316,9 @@ def calc_dR_dt_loop(N, Jin, D, w, l, ns, nr, dilution_rate = 0, R_in = 0, R = 0)
 
 
 
-def CRM_fun_with_limit(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0, auxo_arr = None):
+def CRM_fun_with_limit(t, y, ns, nr, C, K, g, w, l, m, D, dilution_rate = 0, R_in=0):
     iteration_limit()
-    if auxo_arr is None:
-        return CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in)
-    else:
-        print('Auxotrophs!')
-        return CRM_fun_auxo(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in, auxo_arr=auxo_arr)
-
+    return CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate, R_in)
 
 def CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
     N = y[:ns]
@@ -419,49 +344,6 @@ def CRM_fun(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0):
     dN_dt = calc_dN_dt_simple(N, g, Jin, l, dilution_rate)
     # dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
     dR_dt = calc_dR_dt_simple(N, Jin, D, l, dilution_rate, R_in, R)
-    
-    dN_dt[N<N_min] = 0
-
-    return np.concatenate([dN_dt, dR_dt])
-
-
-def CRM_fun_auxo(t, y, ns, nr, C, K, g, l, D, dilution_rate = 0, R_in=0, auxo_arr = None):
-    N = y[:ns]
-    R = y[ns:]
-    N[N<N_min] = 0
-    R[R<R_min] = 0
-    R[R==np.inf] = 0
-
-    if np.sum(N) < N_min:
-        return np.zeros_like(y)
-
-    if not np.isfinite(R).all() or (R < 0).any():
-        print(R)
-        print("R has negative or non-finite values")
-        raise ValueError
-
-
-    Jin = calc_Jin(R, C, K)
-    # Jin[Jin < min_Jin] = 0
-
-    limited_growth_rates, aux_uptakes, cs_uptake_scale, Jin_adjusted = calc_mu_lim_loop(g, Jin, auxo_arr, l, ns, epsilon=1e-6)
-    print(t)
-    print('Limited growth rates:', limited_growth_rates[0])
-    print('Aux uptakes:', aux_uptakes[0])
-    print('CS uptake scales:', cs_uptake_scale[0])
-    print(Jin[0,:])
-    print(Jin_adjusted[0,:])
-    print('')
-    print('Species 2')
-    print('Limited growth rates:', limited_growth_rates[1])
-    print(Jin[1,:], Jin_adjusted[1,:])
-
-    dN_dt = calc_dN_dt_simple_auxo(N, limited_growth_rates, dilution_rate)
-    # dN_dt = calc_dN_dt(N, g, m, Jin, w, l, ns, nr, dilution_rate)
-    # dN_dt = calc_dN_dt_simple(N, g, Jin, l, dilution_rate)
-    # dR_dt = calc_dR_dt(N, Jin, D, w, l, ns, nr, dilution_rate, R_in, R)
-
-    dR_dt = calc_dR_dt_simple(N, Jin_adjusted, D, l, dilution_rate, R_in, R)
     
     dN_dt[N<N_min] = 0
 
