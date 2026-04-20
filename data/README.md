@@ -52,7 +52,7 @@ CFU and OD measurements from chemostat coexistence experiments.
 
 ## 5_interactions/
 
-Pairwise interaction measurements between species in fresh and spent media on malate and mannose.
+Pairwise interaction measurements between species in fresh and spent media on malate and mannose / isoleucine.
 
 | File | Description |
 |---|---|

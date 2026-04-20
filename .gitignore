@@ -167,4 +167,3 @@ cython_debug/
 *args.txt
 *.pkl
 /code/7_GEM_reconstruction/tmp
-/simulation_results
