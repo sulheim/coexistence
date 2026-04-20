@@ -1,0 +1,13 @@
+{
+  "cs_min": 15,
+  "cs_max": 30,
+  "K_mean": -1,
+  "K_std_min": 0.1,
+  "K_std_max": 2,
+  "iterations": 7,
+  "leakage": 0.1,
+  "folder": "../../simulation_results/cs_sweep",
+  "csp_min": 0,
+  "csp_max": 0.4,
+  "N": 10000
+}
