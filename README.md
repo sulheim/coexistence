@@ -41,3 +41,6 @@ Run notebooks in order within each section. CRM parameter sweeps (section 6) are
 - `numpy`, `scipy`, `pandas`, `matplotlib`, `seaborn`
 - `joblib` (for parallel CRM sweeps)
 - Jupyter for notebooks
+
+## Cite our work
+Please cite this preprint: 
