@@ -43,4 +43,4 @@ Run notebooks in order within each section. CRM parameter sweeps (section 6) are
 - Jupyter for notebooks
 
 ## Cite our work
-Please cite this preprint: 
+_Snorre Sulheim, Miguel Teixeira, Eric Ulrich, Alisson Gillon, Samuel Testa, Prajwal Padmanabha, Daniel Machado & Sara Mitri (2026). [Cross-feeding enables robust coexistence between four bacterial species](https://doi.org/10.64898/2026.04.20.719729). bioRxiv 2026.04.20.719729_
